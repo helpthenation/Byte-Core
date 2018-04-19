@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<odoo>
+    <!-- Form view of product -->
+    <record id="view_product_product_form_inherit" model="ir.ui.view">
+        <field name="name">product.product.form.inherit</field>
+        <field name="model">product.product</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <field name="default_code" position="before">
+                    <field name="is_supply"/>
+            </field>
+        </field>
+    </record>
+
+    <record id="action_product_product" model="ir.actions.act_window">
+        <field name="name">Supplies</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">product.product</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_supply','=',True)]</field>
+    </record>
+
+
+    <menuitem name="Supplies" id="menu_product_supply"
+        action="action_product_product" parent="menu_room_supply_root"
+        sequence="1" />
+</odoo>
+

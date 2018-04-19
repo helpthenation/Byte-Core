@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE xml>
+<odoo>
+    <!-- Form view of room supply -->
+    <record id="view_room_supply" model="ir.ui.view">
+        <field name="name">hotel.room.supply.form</field>
+        <field name="model">hotel.room.supply</field>
+        <field name="arch" type="xml">
+            <form string="Room Supply">
+                <header>
+                    <button name="set_confirm" type="object"
+                        string="Confirm" states="draft" class="oe_highlight" />
+                    <button name="set_draft" type="object"
+                        string="Set To Draft" states="confirm" class="oe_highlight" />
+                    <button name="set_approve" type="object"
+                        string="Approve" states="confirm" class="oe_highlight" />
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group string="Details">
+                        <field name="date"/>
+                        <field name="room_id"/>
+                        <field name="supply_type_id"/>
+                        <field name="supplier_id"/>
+                    </group>
+                    <field name="supply_line_ids" context="{'default_supply_id': active_id}">
+                        <tree string="Supply Lines" editable="top">
+                            <field name="product_id"/>
+                            <field name="amount"/>
+                        </tree>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Tree view of room supply -->
+    <record id="view_room_supply_tree" model="ir.ui.view">
+        <field name="model">hotel.room.supply</field>
+        <field name="name">hotel.room.supply.tree</field>
+        <field name="arch" type="xml">
+            <tree string="Room Supply">
+                <field name="room_id"/>
+                <field name="supply_type_id"/>
+                <field name="supplier_id"/>
+                <field name="date"/>
+                <field name="state"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- Search view of room supply -->
+    <record id="view_room_supply_form" model="ir.ui.view">
+        <field name="name">hotel.room.supply.search</field>
+        <field name="model">hotel.room.supply</field>
+        <field name="arch" type="xml">
+            <search string="Room Supply">
+                <filter domain="[('state','=','draft')]" string="Draft" />
+                <filter domain="[('state','=','confirm')]" string="Confirmed" />
+                <filter domain="[('state','=','done')]" string="Approved" />
+                <field name="room_id"/>
+                <field name="supply_type_id"/>
+                <newline />
+                <group expand="0" string="Group By">
+                    <filter string="Room" domain="[]"
+                        context="{'group_by':'room_id'}" />
+                    <filter string="Supply type" domain="[]"
+                        context="{'group_by':'supply_type_id'}" />
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_room_supply" model="ir.actions.act_window">
+        <field name="name">Room Supply</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hotel.room.supply</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_room_supply_root" name="Hotel Supply"
+        parent="hotel.hotel_management_menu" sequence="2" />
+    <menuitem name="Room Supply" id="menu_room_supply"
+        action="action_room_supply" parent="menu_room_supply_root"
+        sequence="1" />
+</odoo>
