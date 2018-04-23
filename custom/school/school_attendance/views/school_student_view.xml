@@ -4,7 +4,7 @@
     <record id="view_student_form_inherit_school_attendance" model="ir.ui.view">
         <field name="name">school.student</field>
         <field name="model">school.student</field>
-        <field name="inherit_id" ref="school.view_school_student_form_1"/>
+        <field name="inherit_id" ref="school.view_school_student_profile_form"/>
         <field name="arch" type="xml">
             <field name="name" position="before">
                 <field name="attendance_state" widget="school_attendance_form_presence_indicator"/>

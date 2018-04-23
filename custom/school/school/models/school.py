@@ -40,7 +40,7 @@ class AcademicYear(models.Model):
                                'academic_year_id',
                                string='Terms',
                                help="Related Academic Terms",
-                               domain=[('academic_year', '=', False)]
+                               domain=[('academic_year_id', '=', False)]
                                )
     grade_id = fields.Many2one('grade.master',
                                string="Grading Sequence")
@@ -282,6 +282,9 @@ class SchoolForm(models.Model):
                                    required=True,
                                    readonly=True
                                    )
+    stream_id = fields.Many2one('school.stream',
+                                string='Stream',
+                                help='Stream related to this form (If applicable)')
 
     _sql_constraints = [('form_name', 'unique(form_name)',
                          'Name must be unique!'),
@@ -823,7 +826,8 @@ class StudentStudent(models.Model):
     marital_status = fields.Selection([('unmarried', 'Unmarried'),
                                        ('married', 'Married')],
                                       'Marital Status')
-    reference_ids = fields.One2many('student.reference', 'reference_id',
+    reference_ids = fields.One2many('student.reference', 'student_id',
+                                    help='References for this student'
                                     'References')
     previous_school_ids = fields.One2many('student.previous.school',
                                           'previous_school_id',
@@ -859,18 +863,15 @@ class StudentStudent(models.Model):
     history_ids = fields.One2many('student.history', 'student_id', 'History')
     certificate_ids = fields.One2many('student.certificate', 'student_id',
                                       'Certificate')
-    student_discipline_ids = fields.One2many('student.descipline',
-                                              'student_id', 'Discipline')
     document_ids = fields.One2many('student.document', 'doc_id', 'Documents')
     description_ids = fields.One2many('student.description', 'student_id',
                                   'Description')
-    contact_phone = fields.Char('Phone No', related='student_id.phone')
-    contact_mobile = fields.Char('Mobile No', related='student_id.mobile')
+    contact_phone = fields.Char(string='Phone No')
+    contact_mobile = fields.Char(string='Mobile No')
     student_id = fields.Many2one('school.student', 'Name', ondelete="cascade")
     can_take_exam = fields.Boolean('Can take exam', default=True)
 
-    contact_email = fields.Char('Email', related='student_id.email',
-                                readonly=True)
+    contact_email = fields.Char(string='Email')
     city = fields.Char('City', default='Freetown', required=True)
     award_ids = fields.One2many('student.award', 'award_list_id', 'Award List')
     parent_id = fields.Many2one('school.parent', "Parent/Guardian", help="Parent/Guardian allowed to login")
@@ -1148,6 +1149,7 @@ class StudentReference(models.Model):
                               'Gender')
 
 
+
 class StudentPreviousSchool(models.Model):
     _name = "student.previous.school"
     _description = "Student Previous School"
@@ -1170,8 +1172,6 @@ class StudentFamilyContact(models.Model):
                                 'Related Student', help="Select Name",
                                 required=True)
     relation_name = fields.Char('Name')
-    relation = fields.Many2one('student.relation.master', 'Relation',
-                               required=True)
     phone = fields.Char('Phone')
     email = fields.Char('E-Mail')
 

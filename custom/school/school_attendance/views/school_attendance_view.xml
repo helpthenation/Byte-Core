@@ -139,11 +139,11 @@
 
     </record>
 
-            <!-- Inherited Form View Of Student -->
+    <!-- Inherited Form View Of Student -->
     <record id="view_school_student_form2" model="ir.ui.view">
         <field name="name">school.student.form.inherit</field>
         <field name="model">school.student</field>
-        <field name="inherit_id" ref="school.view_school_student_form_1"/>
+        <field name="inherit_id" ref="school.view_school_student_profile_form"/>
         <field name="arch" type="xml">
             <data>
                 <xpath expr="//div[@class='oe_button_box']" position="inside">
@@ -155,7 +155,6 @@
             </data>
         </field>
     </record>
-
 
     <record id="school_attendance_action_greeting_message" model="ir.actions.client">
         <field name="name">Message</field>

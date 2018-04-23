@@ -50,8 +50,8 @@
                             </group>
                         </group>
                         <field name="status" invisible="1"/>
-                        <separator string="Subject Information" colspan="4" attrs="{'invisible': [('status', 'not in' ('admitted', 'alumni'))]}"/>
-                        <notebook colspan="4" attrs="{'invisible': [('status', 'not in' ('admitted', 'alumni'))]}">
+                        <separator string="Subject Information" colspan="4" attrs="{'invisible': [('status', '=' 'draft')]}"/>
+                        <notebook colspan="4" attrs="{'invisible': [('status', '=' 'draft')]}">
                             <page string="Subjects">
                                 <field name="subject_ids"/>
                             </page>
@@ -99,7 +99,7 @@
                                 </field>
                             </page>
                             <page string="Award Info">
-                                <field name="award_list" nolabel="1" colspan="4">
+                                <field name="award_ids" nolabel="1" colspan="4">
                                     <tree string="Reference">
                                         <field name="name"/>
                                         <field name="description"/>
@@ -128,7 +128,6 @@
                                                        attrs="{'invisible':[('rel_name','!=','exist')]}"/>
                                                 <field name='relation_name' placeholder="Name"
                                                        attrs="{'invisible':[('rel_name','!=','new')]}"/>
-                                                <field name='relation' placeholder="Enter or select Relation"/>
                                             </group>
                                             <group col="2">
                                                 <separator colspan="2" />
@@ -140,7 +139,6 @@
                                     <tree string="Family Contact Details">
                                        <field name='family_contact_id' String="Related Student"/>
                                         <field name='relation_name'/>
-                                        <field name="relation"/>
                                         <field name="phone"/>
                                     </tree>
                                 </field>
@@ -179,24 +177,10 @@
                                     <form string="Certificate">
                                         <group col="4">
                                             <field name="description" placeholder="Description About Certificate"/>
-                                            <field name="certi"/>
+                                            <field name="certificate"/>
                                         </group>
                                     </form>
                                     <tree string="Certifaicate">
-                                        <field name="description"/>
-                                    </tree>
-                                </field>
-                            </page>
-                            <page string="Remarks">
-                                <field name="description" nolabel="1" colspan="4">
-                                    <form string="Extra Details">
-                                        <group col="4" colspan="2">
-                                            <field name="name" placeholder="Field Name"/>
-                                            <field name="description" placeholder="Description"/>
-                                        </group>
-                                    </form>
-                                    <tree string="Remarks">
-                                        <field name="name"/>
                                         <field name="description"/>
                                     </tree>
                                 </field>
@@ -214,7 +198,7 @@
 
         <!-- Tree View 1 Of Student's Profiles -->
 
-        <record id="view_school_student_tree_1" model="ir.ui.view">
+        <record id="view_school_student_profile_tree" model="ir.ui.view">
             <field name="name">school.student.tree.1</field>
             <field name="model">school.student</field>
             <field name="arch" type="xml">
@@ -236,7 +220,7 @@
 
         <!-- Search View 1 Of Student's Profiles -->
 
-        <record id="view_school_student_search_1" model="ir.ui.view">
+        <record id="view_school_student_profile_search" model="ir.ui.view">
             <field name="name">school.student.search.1</field>
             <field name="model">school.student</field>
             <field name="arch" type="xml">
@@ -380,7 +364,7 @@
 
        <!-- Form View Of Admission Register Information -->
 
-       <record id="view_school_student_form_2" model="ir.ui.view">
+       <record id="view_school_student_register_form" model="ir.ui.view">
            <field name="name">school.student.form.2</field>
            <field name="model">school.student</field>
            <field name="arch" type="xml">
@@ -457,10 +441,10 @@
                            <page string="General">
                                <group col="2" colspan="4">
                                         <group string="General Information">
-                                           <field name="mother_tongue"/>
+                                           <field name="mother_tongue_id"/>
                                         </group>
                                         <group string="Emergency Contact Details">
-                                            <field name="contact_phone1" String="Emergency Contact #"/>
+                                            <field name="contact_phone" String="Emergency Contact #"/>
                                         </group>
                                </group>
                            </page>
@@ -499,8 +483,6 @@
                                             <field name="admission_date"/>
                                             <field name="exit_date"/>
                                             <field name="stage"/>
-                                            <field name="class_id" placeholder="Class" attrs="{'invisible': [('stage', '=', 'secondary')]}"/>
-                                            <field name="form_id" placeholder="Form" attrs="{'invisible': [('stage', '=', 'primary')]}"/>
                                         </group>
                                     </form>
                                 </field>
@@ -536,7 +518,6 @@
                                                        attrs="{'invisible':[('rel_name','!=','exist')]}"/>
                                                 <field name='relation_name' placeholder="Name"
                                                        attrs="{'invisible':[('rel_name','!=','new')]}"/>
-                                                <field name='relation' placeholder="Enter or select Relation"/>
                                             </group>
                                             <group col="2">
                                                 <separator colspan="2" />
@@ -548,7 +529,6 @@
                                     <tree string="Family Contact Details">
                                        <field name='family_contact_id' String="Related Student"/>
                                         <field name='relation_name'/>
-                                        <field name="relation"/>
                                         <field name="phone"/>
                                     </tree>
                                 </field>
@@ -587,24 +567,10 @@
                                     <form string="Certificate">
                                         <group col="4">
                                             <field name="description" placeholder="Description of Certificate"/>
-                                            <field name="certi"/>
+                                            <field name="certificate"/>
                                         </group>
                                     </form>
                                     <tree string="Certifaicate">
-                                        <field name="description"/>
-                                    </tree>
-                                </field>
-                            </page>
-                            <page string="Remarks/Description">
-                                <field name="description_ids" nolabel="1" colspan="4" context="{'default_student_id': active_id}">
-                                    <form string="Extra Details">
-                                        <group col="4" colspan="2">
-                                            <field name="name" placeholder="Field Name"/>
-                                            <field name="description" placeholder="Description"/>
-                                        </group>
-                                    </form>
-                                    <tree string="Remarks/Description">
-                                        <field name="name"/>
                                         <field name="description"/>
                                     </tree>
                                 </field>
@@ -621,7 +587,7 @@
 
         <!-- Tree View Of Admission Register Information -->
 
-        <record id="view_school_student_tree_2" model="ir.ui.view">
+        <record id="view_school_student_register_tree" model="ir.ui.view">
             <field name="name">school.student.tree.2</field>
             <field name="model">school.student</field>
             <field name="arch" type="xml">
@@ -643,7 +609,7 @@
 
         <!-- Search View Of Admission Register Information -->
 
-        <record id="view_school_student_search_2" model="ir.ui.view">
+        <record id="view_school_student_register_search" model="ir.ui.view">
             <field name="name">school.student.search.2</field>
             <field name="model">school.student</field>
             <field name="arch" type="xml">
@@ -672,7 +638,7 @@
 
         <!-- Form View Of Student Reminder -->
 
-        <record id="view_student_reminder_form_2" model="ir.ui.view">
+        <record id="view_student_reminder_form" model="ir.ui.view">
             <field name="name">student.reminder.form</field>
             <field name="model">student.reminder</field>
             <field name="arch" type="xml">
@@ -869,7 +835,7 @@
                                     <tree string="Students" edit="0" create="0">
                                         <field name="state" invisible="1"/>
                                         <field name="pid"/>
-                                        <field name="student_name"/>
+                                        <field name="name"/>
                                         <field name="form_id"/>
                                         <field name="gender"/>
 
@@ -902,7 +868,6 @@
                             <field name="stream_id" attrs="{'invisible': ['|',('school_level','=','jss'),('school_type','=','primary')]}"/>
                             <field name="class_id" attrs="{'invisible': [('school_type','=','secondary')], 'required': [('school_type','=','primary')]}" domain="[('school_type','=',school_type),('school_level','=',p_school_level)]"/>
                             <field name="code" placeholder="Code Eg. A"/>
-                            <field name="teacher_id" />
                             <field name="description"/>
                             <notebook colspan="4">
                                 <page string="Students" >
@@ -910,7 +875,7 @@
                                     <tree string="Students" edit="0" create="0">
                                         <field name="state" invisible="1"/>
                                         <field name="pid"/>
-                                        <field name="student_name"/>
+                                        <field name="name"/>
                                         <field name="form_id"/>
                                         <field name="gender"/>
 
@@ -932,7 +897,6 @@
             <field name="arch" type="xml">
                 <tree string="Student Classroom">
                     <field name="classroom_name"/>
-                    <field name="teacher_id"/>
                     <field name="seat_no"/>
                     <field name="available_seats"/>
                 </tree>
@@ -1245,7 +1209,6 @@
                             <field name="family_contact_id"/>
                             <field name="rel_name"/>
                             <field name="relation_name"/>
-                            <field name="relation"/>
                             <field name="phone"/>
                             <field name="email"/>
                         </group>
@@ -1264,7 +1227,6 @@
                     <field name="family_contact_id"/>
                     <field name="rel_name"/>
                     <field name="relation_name"/>
-                    <field name="relation"/>
                     <field name="phone"/>
                     <field name="email"/>
                 </tree>
@@ -1512,8 +1474,8 @@
             <field name="name">Admission Register</field>
             <field name="res_model">school.student</field>
             <field name="view_type">form</field>
-            <field name="view_id" ref="view_school_student_form_2" />
-            <field name="search_view_id" ref="view_school_student_search_2"/>
+            <field name="view_id" ref="view_school_student_register_form" />
+            <field name="search_view_id" ref="view_school_student_register_search"/>
             <field name="view_mode">kanban,tree,form</field>
         </record>
 
@@ -1531,7 +1493,7 @@
         <record id="action_student_student_tree_2" model="ir.actions.act_window.view">
             <field name="view_mode">tree</field>
             <field eval="20" name="sequence"/>
-            <field name="view_id" ref="view_school_student_tree_2" />
+            <field name="view_id" ref="view_school_student_register_tree" />
             <field name="act_window_id" ref="action_student_student_form_2"/>
         </record>
 
@@ -1542,8 +1504,8 @@
             <field name="domain">[('state', '!=', 'draft')]</field>
             <field name="res_model">school.student</field>
             <field name="view_type">form</field>
-            <field name="view_id" ref="view_school_student_form_1"/>
-            <field name="search_view_id" ref="view_school_student_search_1"/>
+            <field name="view_id" ref="view_school_student_profile_form"/>
+            <field name="search_view_id" ref="view_school_student_profile_search"/>
             <field name="view_mode">kanban,tree,form</field>
         </record>
 
@@ -1552,7 +1514,7 @@
         <record id="action_view_school_student_tree_1" model="ir.actions.act_window.view">
             <field name="view_mode">tree</field>
             <field eval="20" name="sequence"/>
-            <field name="view_id" ref="view_school_student_tree_1"/>
+            <field name="view_id" ref="view_school_student_profile_tree"/>
             <field name="act_window_id" ref="action_student_student_form_12"/>
         </record>
 
@@ -1561,7 +1523,7 @@
         <record id="action_view_school_student_form_1" model="ir.actions.act_window.view">
             <field name="view_mode">form</field>
             <field eval="30" name="sequence"/>
-            <field name="view_id" ref="view_school_student_form_1"/>
+            <field name="view_id" ref="view_school_student_profile_form"/>
             <field name="act_window_id" ref="action_student_student_form_12"/>
         </record>
 

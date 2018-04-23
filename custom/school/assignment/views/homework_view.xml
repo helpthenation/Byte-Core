@@ -208,7 +208,7 @@
         <record id="view_school_student_form2" model="ir.ui.view">
             <field name="name">school.student.form.inherit</field>
             <field name="model">school.student</field>
-            <field name="inherit_id" ref="school.view_school_student_form_1"/>
+            <field name="inherit_id" ref="school.view_school_student_profile_form"/>
             <field name="arch" type="xml">
                 <data>
                     <xpath expr="//div[@class='oe_button_box']" position="inside">
