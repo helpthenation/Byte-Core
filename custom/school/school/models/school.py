@@ -36,6 +36,7 @@ class AcademicYear(models.Model):
     date_stop = fields.Date(string='End Date',
                             required=True,
                             help='Ending date of this Academic year')
+    no_of_terms = fields.Integer(string='No of terms', default=3)
     term_ids = fields.One2many('school.academic.term',
                                'academic_year_id',
                                string='Terms',
@@ -46,6 +47,15 @@ class AcademicYear(models.Model):
                                string="Grading Sequence")
     description = fields.Text(string='Description',
                               help="Description of this Academic year")
+
+    @api.constrains('no_of_terms', 'term_ids')
+    @api.multi
+    def check_terms(self):
+        self.ensure_one()
+        for rec in self:
+            if rec.term_ids and len(rec.term_ids) != rec.no_of_terms:
+                raise ValidationError('Number of terms created for this academic year must be equal to the %s') \
+                      % rec.no_of_terms
 
     @api.model
     def next_year(self, sequence):
