@@ -26,7 +26,7 @@
     "sequence": 3,
     'version': '10.0.3.0.0',
     'license': 'LGPL-3',
-    'author': 'Tech Receptives',
+    'author': 'Byte Limited',
     'website': 'http://www.byteltd.org',
     'data': [
         'views/assets.xml',
@@ -36,7 +36,7 @@
         'demo/feature_template.xml',
     ],
     'images': [
-        'static/description/web_openeducat_banner.jpg',
+        'static/description/web_school_site_banner.jpg',
     ],
     'depends': [
         'website',

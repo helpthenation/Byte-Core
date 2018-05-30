@@ -3,7 +3,7 @@
     <data noupdate="1">
 
         <template id="footer_custom1" inherit_id="website.layout"
-            name="Openeducat Footer">
+            name="Byte School Footer">
             <xpath expr="//div[@id='footer']" position="replace">
                 <div class="oe_structure" id="footer" style="padding-top:0px;">
                     <section class="footer-section">
