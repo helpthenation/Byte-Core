@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <data noupdate="1">
+    <data>
 
         <template id="feature_byteschool" inherit_id="website.layout">
             <xpath expr="//div[@id='wrapwrap']/header/div[1]"
@@ -10,7 +10,6 @@
                 </attribute>
             </xpath>
             <xpath expr="//ul[@id='top_menu']/li" position="before">
-
                 <li class="dropdown yamm-fw">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <span> Features</span>
@@ -202,57 +201,6 @@
                                                         href="https://www.byteltd.com/page/features/parentlogin">Parent
                                                         Login
                                                     </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <ul class="list-unstyled mb32">
-                                                <li class="btm-li-border">
-                                                    <h5>
-                                                        <strong>
-                                                            Communicate
-                                                            n
-                                                            Collaborate
-                                                        </strong>
-                                                    </h5>
-                                                </li>
-                                                <li class="li-bo-border">
-                                                    <i
-                                                        class="fa fa-question i-bo-pad fa-li-po pr8" />
-                                                    <a
-                                                        href="https://www.byteltd.com/page/features/forum">Forum</a>
-                                                </li>
-                                                <li class="li-bo-border">
-                                                    <i
-                                                        class="fa fa-list-alt i-bo-pad fa-li-po pr8" />
-                                                    <a
-                                                        href="https://www.byteltd.com/page/features/survey">Survey</a>
-                                                </li>
-                                                <li class="li-bo-border">
-                                                    <i
-                                                        class="fa fa-comments-o i-bo-pad fa-li-po pr8" />
-                                                    <a
-                                                        href="https://www.byteltd.com/page/features/discussion">Discussion
-                                                    </a>
-                                                </li>
-                                                <li class="li-bo-border">
-                                                    <i
-                                                        class="fa fa-newspaper-o i-bo-pad fa-li-po pr8" />
-                                                    <a
-                                                        href="https://www.byteltd.com/page/features/news">News Portal
-                                                    </a>
-                                                </li>
-                                                <li class="li-bo-border">
-                                                    <i
-                                                        class="fa fa-bar-chart i-bo-pad fa-li-po pr8" />
-                                                    <a
-                                                        href="https://www.byteltd.com/page/features/poll">Poll</a>
-                                                </li>
-                                                <li class="li-bo-border">
-                                                    <i
-                                                        class="fa fa-bullhorn i-bo-pad fa-li-po pr8" />
-                                                    <a
-                                                        href="https://www.byteltd.com/page/features/blog">Blog</a>
                                                 </li>
                                             </ul>
                                         </div>

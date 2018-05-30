@@ -27,23 +27,19 @@
                         <nav class="header-nav-top pull-right">
 
                             <div id="social">
-                                <a href="https://www.facebook.com/ByteSchool"
+                                <a href="https://www.facebook.com/bytelimited"
                                     target="_blank">
                                     <i class="fa fa-facebook fa-1x img-circle"></i>
                                 </a>
-                                <a href="https://twitter.com/ByteSchool"
+                                <a href="https://twitter.com/byte_ltd"
                                     target="_blank">
                                     <i class="fa fa-twitter fa-1x img-circle"></i>
                                 </a>
                                 <a
-                                    href="https://plus.google.com/u/0/+ByteSchool/posts"
+                                    href="https://plus.google.com/u/0/+Byteltd0/posts"
                                     target="_blank">
                                     <i
                                         class="fa fa-google-plus fa-1x img-circle"></i>
-                                </a>
-                                <a href="https://github.com/ByteSchool"
-                                    target="_blank">
-                                    <i class="fa fa-github fa-1x img-circle"></i>
                                 </a>
                             </div>
                         </nav>
