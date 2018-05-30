@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <template id="feature_byteschool" inherit_id="website.layout">
+            <xpath expr="//div[@id='wrapwrap']/header/div[1]"
+                position="attributes">
+                <attribute name="class">navbar navbar-default yamm
+                    navbar-static-top
+                </attribute>
+            </xpath>
+            <xpath expr="//ul[@id='top_menu']/li" position="before">
+
+                <li class="dropdown yamm-fw">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span> Features</span>
+                        <span class="caret" />
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <div class="yamm-content">
+                            <div class="row features">
+                                <div class="col-md-12 mt16">
+                                    <div class="col-md-12 ">
+                                        <div class="col-md-3 ">
+                                            <ul class="list-unstyled mb32">
+                                                <li class="btm-li-border">
+                                                    <h5>
+                                                        <strong>
+                                                            Core
+                                                        </strong>
+                                                    </h5>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-child i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/student">Student  Management</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-leanpub i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/course">Email and Sms Notifications</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-check-square-o i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/enrollment">Enrollment
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-pencil i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/exam">Exam</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-money i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/financial">Finance
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="list-unstyled mb32">
+                                                <li class="btm-li-border">
+                                                    <h5>
+                                                        <strong>
+                                                            Essential
+                                                        </strong>
+                                                    </h5>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-pencil-square-o i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/application">Online Application
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-usd i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/payment">Fees Payment</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-university i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/classroom">Class</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-calendar i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/timetable">Time Table
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-hand-o-up i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/attendance">Attendance
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-file-text-o i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/assignment">Assignment
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 ">
+                                            <ul class="list-unstyled mb32">
+                                                <li class="btm-li-border">
+                                                    <h5>
+                                                        <strong>
+                                                            Advance
+                                                        </strong>
+                                                    </h5>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-book i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/library">Library Management</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-line-chart i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/results">Result</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-flag i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/events">Events Management</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-tachometer i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/dashboard">Dashboard
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-pie-chart i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/reporting">Reporting
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3 ">
+                                            <ul class="list-unstyled mb32">
+                                                <li class="btm-li-border">
+                                                    <h5>
+                                                        <strong>
+                                                            Manage
+                                                            Better
+                                                        </strong>
+                                                    </h5>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-building-o i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/hostel">Asset Management</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-bus i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/transportation">Transportation
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-leaf i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/facility">Facility
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-graduation-cap i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/placement">Placement
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-user i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/parentlogin">Parent
+                                                        Login
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <ul class="list-unstyled mb32">
+                                                <li class="btm-li-border">
+                                                    <h5>
+                                                        <strong>
+                                                            Communicate
+                                                            n
+                                                            Collaborate
+                                                        </strong>
+                                                    </h5>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-question i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/forum">Forum</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-list-alt i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/survey">Survey</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-comments-o i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/discussion">Discussion
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-newspaper-o i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/news">News Portal
+                                                    </a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-bar-chart i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/poll">Poll</a>
+                                                </li>
+                                                <li class="li-bo-border">
+                                                    <i
+                                                        class="fa fa-bullhorn i-bo-pad fa-li-po pr8" />
+                                                    <a
+                                                        href="https://www.byteltd.com/page/features/blog">Blog</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </xpath>
+        </template>
+
+    </data>
+</odoo>
