@@ -119,7 +119,6 @@ class SchoolApplication(models.Model):
         admission_obj = self.env['school.student']
         parent_obj = self.env['school.parent']
         previous_school_obj = self.env['student.previous.school']
-        remark_obj = self.env['student.description']
         parent_id = parent_obj.create({'name': self.parent_name,
                                        'phone': self.parent_phone,
                                        'email': self.parent_email,
@@ -193,8 +192,6 @@ class SchoolApplication(models.Model):
     p_school_name = fields.Char('Previous School Name')
     p_school_admit_date = fields.Date('Admission Date')
     p_school_exit_date = fields.Date('Exit Date')
-    class_id = fields.Many2one('school.class', 'Class')
-    form_id = fields.Many2one('school.form', 'Form', help='Form')
     stage = fields.Selection([
                               ('primary', 'Primary'),
                               ('secondary', 'Secondary')],
@@ -223,8 +220,6 @@ class SchoolApplication(models.Model):
                               ('reject', 'Rejected')
                               ],
                              'State', readonly=True, default='draft')
-    description = fields.One2many('student.description', 'des_id',
-                                  'Description')
     student_mobile = fields.Char('Mobile No.', default='232', size=11)
     student_email = fields.Char('Email')
     city = fields.Char('City', default='Freetown', required=True)
@@ -275,6 +270,10 @@ class SchoolApplication(models.Model):
 
     medical_note = fields.Text(string="Medical Note/Comment")
     note = fields.Text(string="Note/Comment")
+
+    @api.multi
+    def send_accept_notification(self):
+        pass
 
     @api.multi
     def set_to_draft(self):
