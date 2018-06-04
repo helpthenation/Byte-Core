@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Form view  of auto Payment -->
+        <record id="view_auto_payment_form" model="ir.ui.view">
+            <field name="name">auto.payment.form</field>
+            <field name="model">auto.payment</field>
+            <field name="arch" type="xml">
+                <form string="Payments">
+                <header>
+                    <!--
+                   <button name="set_terminate" string="Terminate Driver" type="object"
+                           states="active" icon="fa-times-circle" class="oe_highlight"/>
+                   <button name="set_draft" string="Set to Draft" type="object"
+                           states="confirm,boarding" icon="fa-times-circle" class="oe_highlight"/>
+                   <button name="set_confirm" string="Confirm Payment" type="object"
+                           states="draft" icon="fa-check" class="oe_highlight"/>
+                   <button name="set_on_board" string="On board Payment" type="object"
+                           icon="fa-certificate" class="oe_highlight" states="confirm,terminate"/>
+                   <button name="set_active" type="object" string="Activate Payment"
+                           states="boarding" icon="fa-check"/>
+                   -->
+                   <field name="state" widget="statusbar" nolabel="1"/>
+               </header>
+                <sheet>
+                    <!--
+                    <div class="oe_button_box" name="button_box">
+                        <button name="toggle_active" type="object"
+                                class="oe_stat_button" icon="fa-archive">
+                            <field name="active" widget="boolean_button"
+                                options='{"terminology": "archive"}'/>
+                        </button>
+                    </div>
+                    -->
+                    <group col="2">
+                        <group>
+                            <field name="mechanic_id"/>
+                            <field name="related_user_id"/>
+
+                        </group>
+
+                    </group>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view  of auto Payment -->
+
+        <record id="view_auto_payment_tree" model="ir.ui.view">
+            <field name="name">auto.payment.tree</field>
+            <field name="model">auto.payment</field>
+            <field name="arch" type="xml">
+                <tree string="Payment Information">
+                    <field name="mechanic_id"/>
+                    <field name="related_user_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search view  of auto Payment -->
+
+        <record id="view_auto_payment_search" model="ir.ui.view">
+            <field name="name">auto.payment.search</field>
+            <field name="model">auto.payment</field>
+            <field name="arch" type="xml">
+                <search string="Payment Information">
+                    <group col="10" colspan="4">
+                        <field name="payment_reference"/>
+                        <field name="mechanic_id"/>
+                        <field name="related_user_id"/>
+                    </group>
+                    <newline/>
+                    <group expand="0" string="Group By..." colspan="12" col="10">
+                        <filter icon="terp-project" string="Mechanic" help="By Mechanic" context="{'group_by':'mechanic_id'}" />
+                        <filter icon="terp-project" string="User" help="By User/Driver" context="{'group_by':'related_user_id'}"/>
+                        <filter icon="terp-project" string="State" help="By State" context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Kanban view  of auto Payment -->
+
+        <record id="action_auto_payment" model="ir.actions.act_window">
+            <field name="name">Payments</field>
+            <field name="res_model">auto.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>
