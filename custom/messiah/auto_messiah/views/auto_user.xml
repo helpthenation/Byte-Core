@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="action_user_service_request_form_btn" model="ir.actions.act_window">
+            <field name="name">Service Requests</field>
+            <field name="res_model">auto.service</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('related_user_id', '=', active_id)]</field>
+        </record>
+
+        <!-- Form view  of User -->
+        <record id="view_auto_user_form" model="ir.ui.view">
+            <field name="name">auto.user.form</field>
+            <field name="model">auto.user</field>
+            <field name="priority" eval="1"/>
+            <field name="arch" type="xml">
+                <form string="Users">
+                <header>
+                   <button name="set_active" string="Activate User" type="object"
+                           states="new,suspended" icon="fa-check" class="oe_highlight"/>
+                   <button name="set_suspend" string="Suspend User" type="object"
+                           states="expired,active" icon="fa-times-circle" class="oe_highlight"/>
+                   <field name="state" widget="statusbar" nolabel="1"/>
+               </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <group col="2">
+                            <group col="4">
+                                <button name="%(action_user_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                                <br/>
+                                <button name="%(action_user_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                                <br/>
+                                <button name="%(action_user_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                                <br/>
+                                <button name="%(action_user_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                            </group>
+                            <group col="2">
+                            </group>
+                        </group>
+                    </div>
+                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image", "size": [90, 90]}'/>
+                    <div class="oe_title">
+                        <field name="is_company" invisible="1"/>
+                        <field name="user_type" widget="radio"
+                            class="oe_edit_only"
+                            options="{'horizontal': true}"/>
+                        <h1>
+                            <field name="name" default_focus="1" placeholder="Full Name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group col="2" string="Basic Information">
+                            <field name="contact_person" attrs="{'invisible': [('is_company', '=', False)]}" placeholder="Company Representative"/>
+                            <field name="representative_role" attrs="{'invisible': [('is_company', '=', False)]}" placeholder="eg. Fleet Manager"/>
+                            <field name="representative_phone" attrs="{'invisible': [('is_company', '=', False)]}"/>
+                            <field name="company_address" attrs="{'invisible': [('is_company', '=', False)], 'required': [('is_company', '=', True)]}"/>
+                            <field name="company_website" attrs="{'invisible': [('is_company', '=', False)]}"/>
+                            <field name="gender" attrs="{'invisible': [('is_company', '=', True)], 'required': [('is_company', '=', False)]}"/>
+                            <field name="mobile" widget="mobile" />
+                            <field name="email" widget="email" />
+                        </group>
+                        <group col="2" string="Subscription Information">
+                            <field name="current_subscription_id"/>
+                            <field name="subscription_start_date"/>
+                            <field name="subscription_expiry_date"/>
+                            <field name="subscription_type_id"/>
+                        </group>
+                    </group>
+
+                    <notebook colspan="4">
+                        <page name='internal_notes' string="Internal Notes">
+                            <field name="comment" placeholder="Internal note..."/>
+                        </page>
+                    </notebook>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view  of auto User -->
+
+        <record id="view_auto_user_tree" model="ir.ui.view">
+            <field name="name">auto.user.tree</field>
+            <field name="model">auto.user</field>
+            <field name="arch" type="xml">
+                <tree string="User Information">
+                    <field name="name"/>
+                    <field name="gender"/>
+                    <field name="mobile"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search view  of auto User -->
+
+        <record id="view_auto_user_search" model="ir.ui.view">
+            <field name="name">auto.user.search</field>
+            <field name="model">auto.user</field>
+            <field name="arch" type="xml">
+                <search string="User Information">
+                    <group col="10" colspan="4">
+                        <field name="name"/>
+                        <field name="mobile"/>
+                        <field name="gender"/>
+                    </group>
+                    <newline/>
+                    <group expand="0" string="Group By..." colspan="12" col="10">
+                        <filter icon="terp-project" string="State" help="By On boarding State" context="{'group_by':'state'}"/>
+                        <filter icon="terp-project" string="Gender" help="By Gender" context="{'group_by':'gender'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Kanban view  of auto User -->
+
+        <record id="auto_user_kanban_view" model="ir.ui.view">
+            <field name="name">User Grid</field>
+            <field name="model">auto.user</field>
+            <field name="arch" type="xml">
+                <kanban create="0" edit="0">
+                    <field name="color"/>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <t t-set="color" t-value="kanban_color(record.color.raw_value)" />
+                            <div t-att-class="color + (record.color.raw_value == 1 ? ' oe_kanban_color_alert' : '')">
+                                <div class="oe_kanban_box oe_kanban_color_border">
+                                    <div class="oe_kanban_box_header oe_kanban_color_bgdark oe_kanban_color_border oe_kanban_draghandle">
+                                        <table class="oe_kanban_table">
+                                            <tr>
+                                                <td class="oe_kanban_title1" align="left" valign="middle" style="padding-left:10px;">
+                                                    <h4>
+                                                        <a type="open">
+                                                            <field name="name"/>
+                                                        </a>
+                                                    </h4>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="oe_kanban_box_content oe_kanban_color_bglight oe_kanban_box_show_onclick_trigger oe_kanban_color_border">
+                                        <table class="oe_kanban_table">
+                                            <tr width="300">
+                                                <td valign="top" width="64" align="left">
+                                                    <a type="open">
+                                                        <img heigh="120" width="110" t-att-src="kanban_image('auto.user', 'image_medium', record.id.value)"/>
+                                                    </a>
+                                                </td>
+                                                <td valign="top" align="left" style="padding-left:10px;">
+                                                    <table>
+                                                        <tr>
+                                                            <td>Subscription Type:</td>
+                                                            <td style="padding-left:10px;">
+                                                                <b>
+                                                                    <field name="subscription_type_id"/>
+                                                                </b>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Subscription Status:</td>
+                                                            <td style="padding-left:10px;">
+                                                                <b>
+                                                                    <field name="subscription_status"/>
+                                                                </b>
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <center>
+                                                        <b>
+                                                            <field name="user_type"/>
+                                                        </b>
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                    <div class="oe_kanban_buttons_set oe_kanban_color_border oe_kanban_color_bglight oe_kanban_box_show_onclick">
+                                        <div class="oe_kanban_left">
+                                            <a string="Change Color" icon="color-picker" type="color" name="color"/>
+                                        </div>
+                                        <br class="oe_kanban_clear"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+        <record id="action_auto_user_all" model="ir.actions.act_window">
+            <field name="name">All Users</field>
+            <field name="res_model">auto.user</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
+        <record id="action_auto_user_individual" model="ir.actions.act_window">
+            <field name="name">Individuals</field>
+            <field name="res_model">auto.user</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('is_company', '=', False)]</field>
+            <field name="context">{'default_company_type': 'person','default_is_company': 0}</field>
+        </record>
+
+        <record id="action_auto_user_company" model="ir.actions.act_window">
+            <field name="name">Companies</field>
+            <field name="res_model">auto.user</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('is_company', '=', True)]</field>
+            <field name="context">{'default_company_type': 'company','default_is_company': 1}</field>
+        </record>
+
+    </data>
+</odoo>

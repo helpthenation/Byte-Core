@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Form view  of auto Payment -->
+        <record id="view_auto_payment_form" model="ir.ui.view">
+            <field name="name">auto.payment.form</field>
+            <field name="model">auto.payment</field>
+            <field name="arch" type="xml">
+                <form string="Payments">
+                <header>
+                   <field name="state" widget="statusbar" nolabel="1"/>
+               </header>
+                <sheet>
+
+                    <field name="payment_reference"/>
+                    <field name="payment_type" invisible="1"/>
+                    <group col="3">
+                        <group string="Details">
+                            <field name="payment_type"/>
+                            <field name="payment_mode"/>
+                            <field name="payment_time"/>
+                            <field name="amount"/>
+                        </group>
+                        <group string="Payment">
+                            <field name="service_request_id" attrs="{'invisible': [('payment_type', '!=', 'repair')],
+                                                                     'required': [('payment_type', '=', 'repair')]}"/>
+                            <field name="towing_request_id" attrs="{'invisible': [('payment_type', '!=', 'towing')],
+                                                                    'required': [('payment_type', '=', 'towing')]}"/>
+                            <field name="related_user_id"/>
+                        </group>
+                        <group string="Beneficiary">
+                            <field name="auto_messiah_id" attrs="{'invisible': [('payment_type', '!=', 'subscription')]}"/>
+                            <field name="mechanic_id" attrs="{'invisible': [('payment_type', '!=', 'repair')],
+                                                                     'required': [('payment_type', '=', 'repair')]}"/>
+                            <field name="towing_resource_id" attrs="{'invisible': [('payment_type', '!=', 'towing')],
+                                                                    'required': [('payment_type', '=', 'towing')]}"/>
+                        </group>
+                    </group>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Tree view  of auto Payment -->
+
+        <record id="view_auto_payment_tree" model="ir.ui.view">
+            <field name="name">auto.payment.tree</field>
+            <field name="model">auto.payment</field>
+            <field name="arch" type="xml">
+                <tree string="Payment Information">
+                    <field name="payment_reference"/>
+                    <field name="related_user_id"/>
+                    <field name="payment_type"/>
+                    <field name="payment_mode"/>
+                    <field name="amount"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Search view  of auto Payment -->
+
+        <record id="view_auto_payment_search" model="ir.ui.view">
+            <field name="name">auto.payment.search</field>
+            <field name="model">auto.payment</field>
+            <field name="arch" type="xml">
+                <search string="Payment Information">
+                    <group col="10" colspan="4">
+                        <field name="payment_reference"/>
+                        <field name="mechanic_id"/>
+                        <field name="related_user_id"/>
+                    </group>
+                    <newline/>
+                    <group expand="0" string="Group By..." colspan="12" col="10">
+                        <filter icon="terp-project" string="Mechanic" help="By Mechanic" context="{'group_by':'mechanic_id'}" />
+                        <filter icon="terp-project" string="Towing Resource" help="By Towing Resource" context="{'group_by':'towing_resource_id'}" />
+                        <filter icon="terp-project" string="User" help="By User/Driver" context="{'group_by':'related_user_id'}"/>
+                        <filter icon="terp-project" string="State" help="By State" context="{'group_by':'state'}"/>
+                        <filter icon="terp-project" string="Type" help="By Type" context="{'group_by':'payment_type'}"/>
+                        <filter icon="terp-project" string="Mode" help="By Mode" context="{'group_by':'payment_mode'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <!-- Action view  of auto Payment -->
+
+        <record id="action_auto_payment" model="ir.actions.act_window">
+            <field name="name">Payments</field>
+            <field name="res_model">auto.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="action_auto_payment_successful" model="ir.actions.act_window">
+            <field name="name">Successful Transactions</field>
+            <field name="res_model">auto.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state', '=', 'paid'), ('payment_mode', '=', 'electronic')]</field>
+        </record>
+
+        <record id="action_auto_payment_failed" model="ir.actions.act_window">
+            <field name="name">Successful Transactions</field>
+            <field name="res_model">auto.payment</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state', '=', 'failed'), ('payment_mode', '=', 'electronic')]</field>
+
+        </record>
+    </data>
+</odoo>
