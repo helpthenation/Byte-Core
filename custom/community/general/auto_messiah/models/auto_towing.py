@@ -39,14 +39,13 @@ class AutoTowing (models.Model):
     attachment_ids = fields.One2many('ir.attachment', 'res_id', domain=lambda self: [('res_model', '=', self._name)],
                                      auto_join=True, string='Attachments')
     towing_reference = fields.Char(string='Towing Reference',
-                                   default=lambda obj: obj.env['ir.sequence'].get('auto.towing'),
+                                   default=lambda obj: obj.env['ir.sequence'].next_by_code('auto.towing'),
                                    readonly=True,
                                    index=True)
     vehicle_model_id = fields.Many2one(comodel_name='auto.vehicle.model',
                                        string='Vehicle Model',
                                        help='Model of the vehicle being towed')
     state = fields.Selection([('cancel', 'Cancelled'),
-                              ('new', 'New'),
                               ('awaiting', 'Awaiting Towing Partner'),
                               ('confirm', 'Towing Partner Confirmed'),
                               ('started', 'Job Started'),

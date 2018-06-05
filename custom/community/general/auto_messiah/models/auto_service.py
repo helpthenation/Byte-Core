@@ -35,7 +35,7 @@ class AutoService (models.Model):
     attachment_ids = fields.One2many('ir.attachment', 'res_id', domain=lambda self: [('res_model', '=', self._name)],
                                      auto_join=True, string='Attachments')
     service_reference = fields.Char(string='Service Reference',
-                                    default=lambda obj: obj.env['ir.sequence'].get('auto.service'),
+                                    default=lambda obj: obj.env['ir.sequence'].next_by_code('auto.service'),
                                     readonly=True,
                                     index=True)
     vehicle_model_id = fields.Many2one(comodel_name='auto.vehicle.model',

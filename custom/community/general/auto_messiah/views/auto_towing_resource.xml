@@ -185,7 +185,7 @@
                                                 <td valign="top" align="left" style="padding-left:10px;">
                                                     <table>
                                                         <tr>
-                                                            <td>Auto Messiah ID :</td>
+                                                            <td>Messiah ID :</td>
                                                             <td style="padding-left:10px;">
                                                                 <b>
                                                                     <field name="auto_messiah_id"/>

@@ -16,10 +16,10 @@ class AutoTowingResource(models.Model):
         'Date of Birth'
     )
 
-    auto_messiah_id = fields.Char(string='Auto Messiah ID',
+    auto_messiah_id = fields.Char(string='Messiah ID',
+                                  default=lambda obj: obj.env['ir.sequence'].next_by_code('auto.towing.resource'),
                                   readonly=True,
-                                  index=True,
-                                  store=True)
+                                  index=True)
     gender = fields.Selection(
         [
             ('male', 'Male'),

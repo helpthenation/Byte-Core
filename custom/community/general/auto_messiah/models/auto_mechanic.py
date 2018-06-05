@@ -3,18 +3,23 @@ import json
 from odoo.exceptions import ValidationError
 
 
-class StelmatMechanic(models.Model):
-    _inherit = ['ir.needaction_mixin', 'res.partner']
+class AutoMechanic(models.Model):
+    _inherit = ['ir.needaction_mixin']
     _name = 'auto.mechanic'
+    name = fields.Char(string='Name',
+                       required=True,
+                       index=True)
+    mobile = fields.Char(string='Mobile #',
+                         required=True)
+    email = fields.Char(string='Email')
     dob = fields.Date(
         'Date of Birth'
     )
 
-    identification_no = fields.Char(string='Mechanic ID',
-                                    readonly=True,
-                                    index=True,
-                                    store=True
-                                    )
+    auto_messiah_id = fields.Char(string='Messiah ID',
+                                  default=lambda obj: obj.env['ir.sequence'].next_by_code('auto.mechanic'),
+                                  readonly=True,
+                                  index=True)
     gender = fields.Selection(
         [
             ('male', 'Male'),
@@ -23,11 +28,12 @@ class StelmatMechanic(models.Model):
     )
     state = fields.Selection(
         [
+
+            ('terminate', 'Terminated'),
             ('draft', 'Draft'),
             ('confirm', 'Confirmed'),
             ('boarding', 'On Boarding'),
             ('active', 'Active'),
-            ('terminate', 'Terminated'),
         ],
         string='Internal State',
         default='draft',
@@ -44,7 +50,7 @@ class StelmatMechanic(models.Model):
         track_visibility='onchange'
     )
 
-    no_of_jobs = fields.Integer(string='NNumber of Jobs',
+    no_of_jobs = fields.Integer(string='Number of Jobs',
                                 help='No of Jobs Completed',
                                 readonly=True,
                                 compute='_compute_no_of_jobs',
@@ -56,6 +62,13 @@ class StelmatMechanic(models.Model):
     rating_score = fields.Integer(string='Rating Score',
                                   readonly=True)
 
+    service_request_ids = fields.One2many(comodel_name='auto.service',
+                                          inverse_name='mechanic_id',
+                                          name='Service Requests')
+    payment_ids = fields.One2many(comodel_name='auto.payment',
+                                  inverse_name='mechanic_id',
+                                  name='Payment History')
+
     gps_location = fields.Char(string='Location Coordinate',
                                compute='compute_gps_location',
                                store=True,
@@ -65,7 +78,58 @@ class StelmatMechanic(models.Model):
     gps_latitude = fields.Char(string='Location Latitude',
                                readonly=True)
 
-    commercial_partner_id = fields.Many2one('res.partner', string='Commercial Entity', store=True, index=True)
+    is_company = fields.Boolean(string='Is a Company?', default=False,
+                                help="Check if this is a company, otherwise it is a person")
+
+    partner_type = fields.Selection(string='Partner Type',
+                                    selection=[('person', 'Individual'), ('company', 'Company')],
+                                    compute='_compute_partner_type', inverse='_write_partner_type')
+    contact_person = fields.Char(string='Representative',
+                                 help='Company Representative')
+    representative_role = fields.Char(string="Rep's Role",
+                                      help="Representative's Function")
+    representative_phone = fields.Char(string="Rep's Contact #")
+    company_address = fields.Char(string="Company's Address")
+    company_website = fields.Char(string="Company's Website")
+    comment = fields.Text(string='Internal Note')
+    # image: all image fields are base64 encoded and PIL-supported
+    image = fields.Binary("Image", attachment=True,
+                          help="This field holds the image used as avatar for this contact, limited to 1024x1024px", )
+    image_medium = fields.Binary("Medium-sized image", attachment=True,
+                                 help="Medium-sized image of this User. It is automatically "
+                                      "resized as a 128x128px image, with aspect ratio preserved. "
+                                      "Use this field in form views or some kanban views.")
+    image_small = fields.Binary("Small-sized image", attachment=True,
+                                help="Small-sized image of this User. It is automatically "
+                                     "resized as a 64x64px image, with aspect ratio preserved. "
+                                     "Use this field anywhere a small image is required.")
+    color = fields.Integer(string='Color Index',
+                           compute='compute_color',
+                           store=True)
+    company_id = fields.Many2one(comodel_name='auto.mechanic',
+                                 string='Company')
+
+    @api.depends('partner_type')
+    @api.multi
+    def compute_color(self):
+        for rec in self:
+            if rec.is_company:
+                rec.color = 2
+            else:
+                rec.color = 0
+
+    @api.depends('is_company')
+    def _compute_partner_type(self):
+        for partner in self:
+            partner.partner_type = 'company' if partner.is_company else 'person'
+
+    def _write_partner_type(self):
+        for partner in self:
+            partner.is_company = partner.partner_type == 'company'
+
+    @api.onchange('partner_type')
+    def onchange_partner_type(self):
+        self.is_company = (self.partner_type == 'company')
 
     @api.multi
     def compute_gps_location(self):
@@ -78,7 +142,7 @@ class StelmatMechanic(models.Model):
     @api.model
     def name_search(self, name, args=None, operator='ilike', limit=80):
         """
-        Redefine the search to search by driver name and id.
+        Redefine the search to search by service partner name and id.
         """
         if not name:
             name = '%'
@@ -88,7 +152,7 @@ class StelmatMechanic(models.Model):
         records = self.search(
             [
                 '|',
-                ('identification_no', operator, name),
+                ('auto_messiah_id', operator, name),
                 ('name', operator, name),
             ] + args,
             limit=limit
@@ -100,7 +164,7 @@ class StelmatMechanic(models.Model):
         self.ensure_one()
         for rec in self:
             if rec.no_of_rating > 1:
-                raise ValidationError('Cannot set mechanic to draft as he already has completed jobs')
+                raise ValidationError('Cannot set Repair Partner to draft Partner already has completed jobs')
             else:
                 rec.write({'state': 'draft'})
 
@@ -122,12 +186,3 @@ class StelmatMechanic(models.Model):
     def set_terminate(self):
         for rec in self:
             rec.write({'state': 'terminate'})
-
-    # Let's override parent class methods that are not necessary in this context
-    @api.depends('is_company', 'parent_id.commercial_partner_id')
-    def _compute_commercial_partner(self):
-        pass
-
-    @api.depends('company_name', 'parent_id.is_company', 'commercial_partner_id.name')
-    def _compute_commercial_company_name(self):
-        pass

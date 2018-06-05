@@ -1,90 +1,103 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
+
+        <record id="action_mechanic_service_request_form_btn" model="ir.actions.act_window">
+            <field name="name">Service Requests</field>
+            <field name="res_model">auto.service</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('mechanic_id', '=', active_id)]</field>
+        </record>
+
         <!-- Form view  of auto Mechanic -->
         <record id="view_auto_mechanic_form" model="ir.ui.view">
             <field name="name">auto.mechanic.form</field>
             <field name="model">auto.mechanic</field>
-            <field name="priority" eval="1"/>
             <field name="arch" type="xml">
-                <form string="Mechanics">
+                <form string="Partner">
                 <header>
-                   <button name="set_terminate" string="Terminate Driver" type="object"
+                   <button name="set_terminate" string="Terminate " type="object"
                            states="active" icon="fa-times-circle" class="oe_highlight"/>
                    <button name="set_draft" string="Set to Draft" type="object"
                            states="confirm,boarding" icon="fa-times-circle" class="oe_highlight"/>
-                   <button name="set_confirm" string="Confirm Mechanic" type="object"
+                   <button name="set_confirm" string="Confirm" type="object"
                            states="draft" icon="fa-check" class="oe_highlight"/>
-                   <button name="set_on_board" string="On board Mechanic" type="object"
+                   <button name="set_on_board" string="Onboard " type="object"
                            icon="fa-certificate" class="oe_highlight" states="confirm,terminate"/>
-                   <button name="set_active" type="object" string="Activate Mechanic"
+                   <button name="set_active" type="object" string="Activate "
                            states="boarding" icon="fa-check"/>
                    <field name="state" widget="statusbar" nolabel="1"/>
                </header>
                 <sheet>
                     <div class="oe_button_box" name="button_box">
-                        <button name="toggle_active" type="object"
-                                class="oe_stat_button" icon="fa-archive">
-                            <field name="active" widget="boolean_button"
-                                options='{"terminology": "archive"}'/>
-                        </button>
+                        <group col="2">
+                            <group col="4">
+                                <button name="%(action_mechanic_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                                <br/>
+                                <button name="%(action_mechanic_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                                <br/>
+                                <button name="%(action_mechanic_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                                <br/>
+                                <button name="%(action_mechanic_service_request_form_btn)d"
+                                    type="action"
+                                    icon="fa-cogs"
+                                    class="oe_inline oe_stat_button">
+                                    <lable style="">Services</lable>
+                                </button>
+                            </group>
+                            <group col="2">
+                            </group>
+                        </group>
                     </div>
-                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image_medium", "size": [90, 90]}'/>
+                    <field name="image" widget='image' class="oe_avatar" options='{"preview_image": "image", "size": [90, 90]}'/>
                     <div class="oe_title">
                         <field name="is_company" invisible="1"/>
+                        <field name="partner_type" widget="radio"
+                            class="oe_edit_only"
+                            options="{'horizontal': true}"/>
                         <h1>
-                            <field name="name" default_focus="1" placeholder="Name" attrs="{'required' : [('type', '=', 'contact')]}"/>
+                            <field name="name" default_focus="1" placeholder="Name" />
                         </h1>
-                        <div class="o_row">
-                            <field name="parent_id"
-                                placeholder="Company"
-                                domain="[('is_company', '=', True)]" context="{'default_is_company': True, 'default_supplier': supplier, 'default_customer': customer}"
-                                attrs="{'invisible': ['|', '&amp;', ('is_company','=', True),('parent_id', '=', False),('company_name', '!=', False),('company_name', '!=', '')]}"/>
-                                <field name="company_name" attrs="{'invisible': ['|', '|', ('company_name', '=', False), ('company_name', '=', ''), ('is_company', '=', True)]}"/>
-                                <button name="create_company" type="object" string="Create company" class="btn btn-sm oe_edit_only fa fa-external-link btn btn-link " attrs="{'invisible': ['|', '|', ('is_company','=', True), ('company_name', '=', ''), ('company_name', '=', False)]}"/>
-                        </div>
                     </div>
 
                     <group>
-                        <group>
-                            <field name="type" attrs="{'invisible': [('parent_id','=', False)]}" groups="base.group_no_one"/>
-                            <label for="street" string="Address"/>
-                            <div class="o_address_format">
-                                <div class="oe_edit_only">
-                                    <button name="open_parent" type="object" string="(edit)" class="oe_link"
-                                        attrs="{'invisible': ['|', ('parent_id', '=', False), ('type', '!=', 'contact')]}"/>
-                                </div>
-                                <field name="street" placeholder="Street..." class="o_address_street"
-                                    attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
-                                <field name="street2" placeholder="Street 2..." class="o_address_street"
-                                    attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
-                                <field name="city" placeholder="City" class="o_address_city"
-                                    attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
-                                <field name="state_id" class="o_address_state" placeholder="State" options='{"no_open": True}'
-                                    attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}" context="{'country_id': country_id, 'zip': zip}"/>
-                                <field name="zip" placeholder="ZIP" class="o_address_zip"
-                                    attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
-                                <field name="country_id" placeholder="Country" class="o_address_country" options='{"no_open": True, "no_create": True}'
-                                    attrs="{'readonly': [('type', '=', 'contact'),('parent_id', '!=', False)]}"/>
-                            </div>
-                            <field name="website" widget="url" placeholder="e.g. www.odoo.com"/>
-                            <field name="category_id" widget="many2many_tags" placeholder="Tags..." options="{'no_create_edit': True}"/>
+                        <group col="2" string="Basic Information">
+                            <field name="contact_person" attrs="{'invisible': [('is_company', '=', False)]}" placeholder="Company Representative"/>
+                            <field name="representative_role" attrs="{'invisible': [('is_company', '=', False)]}" placeholder="eg. Fleet Manager"/>
+                            <field name="representative_phone" attrs="{'invisible': [('is_company', '=', False)]}"/>
+                            <field name="company_address" attrs="{'invisible': [('is_company', '=', False)], 'required': [('is_company', '=', True)]}"/>
+                            <field name="company_website" attrs="{'invisible': [('is_company', '=', False)]}"/>
+                            <field name="gender" attrs="{'invisible': [('is_company', '=', True)], 'required': [('is_company', '=', False)]}"/>
+                            <field name="mobile" widget="mobile" />
+                            <field name="email" widget="email" />
+                            <field name="company_id" domain="[('is_company', '=', True)]" attrs="{'invisible': [('is_company', '=', True)]}"/>
                         </group>
-                        <group>
-                            <field name="function" placeholder="e.g. Truck Mechanic"
-                                attrs="{'invisible': [('is_company','=', True)]}"/>
-                            <field name="phone" widget="phone"/>
-                            <field name="mobile" widget="phone"/>
-                            <field name="fax"/>
-                            <field name="user_ids" invisible="1"/>
-                            <field name="email" widget="email" attrs="{'required': [('user_ids','!=', [])]}"/>
-                            <field name="title" options='{"no_open": True}'
-                                attrs="{'invisible': [('is_company', '=', True)]}"/>
-                            <field name="lang"/>
+                        <group col="2" string="Other Information">
+                            <field name="rating_score" widget="progressbar"/>
                         </group>
                     </group>
-
                     <notebook colspan="4">
+                        <page name='internal_notes' string="Last Location" attrs="{'invisible': [('is_company', '=', True)]}">
+                            <!--
+                            <field name="gps_location"  widget="map"/>
+                            -->
+                        </page>
                         <page name='internal_notes' string="Internal Notes">
                             <field name="comment" placeholder="Internal note..."/>
                         </page>
@@ -100,11 +113,10 @@
             <field name="name">auto.mechanic.tree</field>
             <field name="model">auto.mechanic</field>
             <field name="arch" type="xml">
-                <tree string="Mechanic Information">
-                    <field name="identification_no"/>
+                <tree string="Partner Information">
+                    <field name="auto_messiah_id"/>
                     <field name="name"/>
-                    <field name="gender"/>
-                    <field name="phone"/>
+                    <field name="mobile"/>
                     <field name="service_state"/>
                     <field name="state"/>
                 </tree>
@@ -117,18 +129,16 @@
             <field name="name">auto.mechanic.search</field>
             <field name="model">auto.mechanic</field>
             <field name="arch" type="xml">
-                <search string="Mechanic Information">
+                <search string="Partner Information">
                     <group col="10" colspan="4">
-                        <field name="identification_no"/>
+                        <field name="auto_messiah_id"/>
                         <field name="name"/>
-                        <field name="phone"/>
-                        <field name="gender"/>
+                        <field name="mobile"/>
                     </group>
                     <newline/>
                     <group expand="0" string="Group By..." colspan="12" col="10">
                         <filter icon="terp-project" string="Availability" help="By Availability" context="{'group_by':'service_state'}" />
                         <filter icon="terp-project" string="Onboarding State" help="By On boarding State" context="{'group_by':'state'}"/>
-                        <filter icon="terp-project" string="Gender" help="By Gender" context="{'group_by':'gender'}"/>
                     </group>
                 </search>
             </field>
@@ -137,7 +147,7 @@
         <!-- Kanban view  of auto Mechanic -->
 
         <record id="auto_mechanic_kanban_view" model="ir.ui.view">
-            <field name="name">Mechanic Grid</field>
+            <field name="name">Grid View</field>
             <field name="model">auto.mechanic</field>
             <field name="arch" type="xml">
                 <kanban create="0" edit="0">
@@ -146,7 +156,7 @@
                     <field name="email"/>
                     <templates>
                         <t t-name="kanban-box">
-                            <t t-set="color" t-value="kanban_color(record.color.raw_value || record.name.raw_value)" />
+                            <t t-set="color" t-value="kanban_color(record.color.raw_value)" />
                             <div t-att-class="color + (record.color.raw_value == 1 ? ' oe_kanban_color_alert' : '')">
                                 <div class="oe_kanban_box oe_kanban_color_border">
                                     <div class="oe_kanban_box_header oe_kanban_color_bgdark oe_kanban_color_border oe_kanban_draghandle">
@@ -166,19 +176,19 @@
                                     </div>
                                     <div class="oe_kanban_box_content oe_kanban_color_bglight oe_kanban_box_show_onclick_trigger oe_kanban_color_border">
                                         <table class="oe_kanban_table">
-                                            <tr width="300">
+                                            <tr width="200" height="100">
                                                 <td valign="top" width="64" align="left">
                                                     <a type="open">
-                                                        <img heigh="120" width="110" t-att-src="kanban_image('auto.mechanic', 'image', record.id.value)"/>
+                                                        <img heigh="90" width="90" t-att-src="kanban_image('auto.mechanic', 'image', record.id.value)"/>
                                                     </a>
                                                 </td>
                                                 <td valign="top" align="left" style="padding-left:10px;">
                                                     <table>
                                                         <tr>
-                                                            <td>Mechanic ID :</td>
+                                                            <td>Messiah ID :</td>
                                                             <td style="padding-left:10px;">
                                                                 <b>
-                                                                    <field name="identification_no"/>
+                                                                    <field name="auto_messiah_id"/>
                                                                 </b>
                                                             </td>
                                                         </tr>
@@ -189,7 +199,7 @@
                                                 <td>
                                                     <center>
                                                         <b>
-                                                            <field name="gender"/>
+                                                            <field name="partner_type"/>
                                                         </b>
                                                     </center>
                                                 </td>
@@ -210,11 +220,27 @@
             </field>
         </record>
 
+        <record id="action_auto_all_partners" model="ir.actions.act_window">
+            <field name="name">All Partners</field>
+            <field name="res_model">auto.mechanic</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+        </record>
         <record id="action_auto_mechanic" model="ir.actions.act_window">
             <field name="name">Mechanics</field>
             <field name="res_model">auto.mechanic</field>
             <field name="view_type">form</field>
             <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('is_company', '=', False)]</field>
+            <field name="context">{'default_partner_type': 'person','default_is_company': 0}</field>
+        </record>
+        <record id="action_auto_company" model="ir.actions.act_window">
+            <field name="name">Companies</field>
+            <field name="res_model">auto.mechanic</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="domain">[('is_company', '=', True)]</field>
+            <field name="context">{'default_partner_type': 'company','default_is_company': 1}</field>
         </record>
     </data>
 </odoo>
