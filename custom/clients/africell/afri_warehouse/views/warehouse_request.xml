@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+        <!-- Warehouse Request Form View -->
+        <record id="view_warehouse_request_form" model="ir.ui.view">
+            <field name="name">warehouse.request.form</field>
+            <field name="model">warehouse.request</field>
+            <field name="arch" type="xml">
+                <form string="Warehouse Request">
+                    <header>
+                        <button name="set_approval" string="Make Request" type="object"
+                                states="draft" icon="fa-plus-circle" class="oe_highlight"
+                                groups="afri_warehouse.group_department_user"/>
+                        <button name="set_approved" string="Approve" type="object"
+                               states="approval" icon="fa-check-circle" class="oe_highlight"
+                               groups="afri_warehouse.group_department_manager"/>
+                        <button name="set_delivered" string="Delivered" type="object"
+                               icon="fa-truck" states="approved"
+                               groups="afri_warehouse.group_warehouse_keeper"/>
+                        <button name="set_confirmed" string="Delivery Confirmed" type="object"
+                               icon="fa-certificate" states="delivered"
+                               groups="afri_warehouse.group_warehouse_manager"/>
+                         <field name="state" widget="statusbar" nolabel="1"/>
+                    </header>
+                    <sheet>
+                        <group col="2">
+                            <group>
+                                <field name="reference"/>
+                                <field name="request_date"/>
+                                <field name="delivery_date" attrs="{'invisible': [('state','!=','delivered')]}"/>
+                                <field name="warehouse_id"/>
+                                <field name="department_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page sring="Requests">
+                                <field name="products_line_ids" context="{'default_warehouse_request_id': active_id}">
+                                    <tree string="Requests" editable="bottom">
+                                        <field name="product_id"/>
+                                        <field name="product_uom_qty"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Warehouse Request Tree View -->
+        <record id="view_warehouse_request_tree" model="ir.ui.view">
+            <field name="name">warehouse.request.tree</field>
+            <field name="model">warehouse.request</field>
+            <field name="arch" type="xml">
+                <tree string="Warehouse Request">
+                    <field name="reference"/>
+                    <field name="user_id"/>
+                    <field name="department_id"/>
+                    <field name="warehouse_id"/>
+                    <field name="request_date"/>
+                    <field name="delivery_date"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- All Warehouse Request Action -->
+        <record id="action_warehouse_request_all" model="ir.actions.act_window">
+            <field name="name">All Warehouse Request</field>
+            <field name="res_model">warehouse.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Pending Warehouse Request Action -->
+        <record id="action_warehouse_request_pending" model="ir.actions.act_window">
+            <field name="name">Pending Warehouse Request</field>
+            <field name="res_model">warehouse.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','!=','confirmed')]</field>
+        </record>
+
+        <!-- Delivered Warehouse Request Action -->
+        <record id="action_warehouse_request_delivered" model="ir.actions.act_window">
+            <field name="name">Delivered Warehouse Request</field>
+            <field name="res_model">warehouse.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','confirmed')]</field>
+        </record>
+</odoo>
