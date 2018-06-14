@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Warehouse Department Form View -->
+        <record id="view_warehouse_department_form" model="ir.ui.view">
+            <field name="name">warehouse.department.form</field>
+            <field name="model">warehouse.department</field>
+            <field name="arch" type="xml">
+                <form string="Departments">
+                    <sheet>
+                        <group col="2">
+                            <group>
+                                <field name="name"/>
+                                <field name="manager_id"/>
+                                <field name="picking_type_id"/>
+                                <field name="stock_location_id"/>
+                                <field name="description"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Warehouse Department Tree View -->
+        <record id="view_warehouse_department_tree" model="ir.ui.view">
+            <field name="name">warehouse.department.tree</field>
+            <field name="model">warehouse.department</field>
+            <field name="arch" type="xml">
+                <tree string="Departments">
+                    <field name="name"/>
+                    <field name="manager_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Department Action -->
+        <record id="action_warehouse_department" model="ir.actions.act_window">
+            <field name="name">Departments</field>
+            <field name="res_model">warehouse.department</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
