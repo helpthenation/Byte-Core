@@ -13,6 +13,9 @@ class RequestDepartment(models.Model):
     stock_location_id = fields.Many2one(comodel_name='stock.location',
                                         string='Consumption Location',
                                         required=True)
+    picking_type_id = fields.Many2one(comodel_name='stock.picking.type',
+                                      required=True,
+                                      store=True)
 
     @api.constrains
     @api.depends('stock_location_id')

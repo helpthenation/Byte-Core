@@ -29,6 +29,8 @@
                                 <field name="delivery_date" attrs="{'invisible': [('state','!=','delivered')]}"/>
                                 <field name="warehouse_id"/>
                                 <field name="department_id"/>
+                                <field name="picking_type_id"/>
+                                <field name="stock_location_id"/>
                             </group>
                         </group>
                         <notebook>
@@ -71,18 +73,38 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+
+        <!-- New Warehouse Request Action -->
+        <record id="action_warehouse_new_request" model="ir.actions.act_window">
+            <field name="name">New Warehouse Request</field>
+            <field name="res_model">warehouse.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','approval')]</field>
+        </record>
+
         <!-- Pending Warehouse Request Action -->
         <record id="action_warehouse_request_pending" model="ir.actions.act_window">
             <field name="name">Pending Warehouse Request</field>
             <field name="res_model">warehouse.request</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('state','!=','confirmed')]</field>
+            <field name="context">{'count_menu': 'pending_warehouse_request'}</field>
+            <field name="domain">[('state','=','approved')]</field>
         </record>
 
         <!-- Delivered Warehouse Request Action -->
         <record id="action_warehouse_request_delivered" model="ir.actions.act_window">
             <field name="name">Delivered Warehouse Request</field>
+            <field name="res_model">warehouse.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[('state','=','delivered')]</field>
+        </record>
+
+        <!-- Confirmed Warehouse Request Action -->
+        <record id="action_warehouse_request_confirmed" model="ir.actions.act_window">
+            <field name="name">Confirmed Delivery Requests</field>
             <field name="res_model">warehouse.request</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
