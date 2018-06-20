@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <!-- Warehouse Procurement Form View -->
+        <record id="view_warehouse_procurement_form" model="ir.ui.view">
+            <field name="name">warehouse.procurement.request.form</field>
+            <field name="model">warehouse.procurement.request</field>
+            <field name="arch" type="xml">
+                <form string="Procurement Request">
+                    <sheet>
+                        <group col="2">
+                            <group>
+                                <field name="reference"/>
+                                <field name="date"/>
+                                <field name="warehouse_request_id"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Requests">
+                                <field name="product_request_lines">
+                                    <tree editable="bottom">
+                                        <field name="product_id"/>
+                                        <field name="product_uom_qty"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- Warehouse Procurement Tree View -->
+        <record id="view_warehouse_procurement_tree" model="ir.ui.view">
+            <field name="name">warehouse.procurement.request.tree</field>
+            <field name="model">warehouse.procurement.request</field>
+            <field name="arch" type="xml">
+                <tree string="Procurement Request">
+                    <field name="reference"/>
+                    <field name="date"/>
+                    <field name="warehouse_request_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <!-- Procurement Action -->
+        <record id="action_warehouse_procurement" model="ir.actions.act_window">
+            <field name="name">Procurements</field>
+            <field name="res_model">warehouse.procurement.request</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>
