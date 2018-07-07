@@ -1,52 +1,90 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
-        <menuitem id="root_warehouse_department"
-                  name="Departments"
+        <!-- Inventory Menu -->
+        <menuitem name="Inventory" id="stock.menu_stock_root" sequence="30"
+        groups="stock.group_stock_manager,stock.group_stock_user,afri_warehouse.group_procurement_manager"
+        web_icon="stock,static/description/icon.png"/>
+
+        <!-- Warehouse Department Menus -->
+        <menuitem id="menu_root_warehouse_department"
+                  name="Procurement"
                   parent="stock.menu_stock_root"
-                  groups="afri_warehouse.group_logistics_manager"
-                  sequence="5"/>
-        <menuitem id="warehouse_department"
+                  groups="afri_warehouse.group_procurement_manager"
+                  sequence="2"/>
+        <menuitem id="menu_warehouse_department"
                   name="Departments"
-                  parent="root_warehouse_department"
+                  parent="menu_root_warehouse_department"
                   action="action_warehouse_department"
                   groups="afri_warehouse.group_logistics_manager"
+                  sequence="0"/>
+        
+        <menuitem id="menu_warehouse_procurement"
+                  name="Single Procurements"
+                  action="procurement.procurement_action"
+                  parent="menu_root_warehouse_department"
+                  groups="afri_warehouse.group_procurement_manager"
                   sequence="1"/>
 
+        <menuitem id="menu_warehouse_procurement_request"
+                  name="Procurement Requests"
+                  action="afri_warehouse.action_warehouse_procurement"
+                  parent="menu_root_warehouse_department"
+                  groups="afri_warehouse.group_procurement_manager"
+                  sequence="2"/>
+        <menuitem id="menu_warehouse_rfq"
+                  name="Request for Quotation"
+                  action="purchase.purchase_rfq"
+                  parent="menu_root_warehouse_department"
+                  groups="afri_warehouse.group_procurement_manager"
+                  sequence="3"/>
+        <menuitem id="menu_warehouse_purchase_order"
+                  name="Purchase Orders"
+                  action="purchase.purchase_form_action"
+                  parent="menu_root_warehouse_department"
+                  groups="afri_warehouse.group_procurement_manager"
+                  sequence="4"/>
+        <menuitem id="menu_warehouse_vendors"
+                  name="Vendors"
+                  action="base.action_partner_supplier_form"
+                  parent="menu_root_warehouse_department"
+                  groups="afri_warehouse.group_procurement_manager"
+                  sequence="5"/>
 
-        <menuitem id="root_warehouse_request"
+        <!-- Warehouse Requests Menus -->
+        <menuitem id="menu_root_warehouse_request"
                   name="Warehouse Requests"
                   parent="stock.menu_stock_root"
                   groups="afri_warehouse.group_warehouse_keeper,afri_warehouse.group_department_user"
                   sequence="1"/>
         <menuitem id="all_warehouse_request"
                   name="All Requests"
-                  parent="root_warehouse_request"
+                  parent="menu_root_warehouse_request"
                   action="action_warehouse_request_all"
-                  groups="afri_warehouse.group_warehouse_keeper,afri_warehouse.group_department_user"
+                  groups="afri_warehouse.group_logistics_manager"
                   sequence="1"/>
-        <menuitem id="new_warehouse_request"
+        <menuitem id="menu_new_warehouse_request"
                   name="New Requests"
-                  parent="root_warehouse_request"
+                  parent="menu_root_warehouse_request"
                   action="action_warehouse_new_request"
-                  groups="afri_warehouse.group_warehouse_keeper,afri_warehouse.group_department_user"
+                  groups="afri_warehouse.group_department_user"
                   sequence="2"/>
-        <menuitem id="pending_warehouse_request"
+        <menuitem id="menu_pending_warehouse_request"
                   name="Pending Requests"
-                  parent="root_warehouse_request"
+                  parent="menu_root_warehouse_request"
                   action="action_warehouse_request_pending"
                   groups="afri_warehouse.group_warehouse_keeper,afri_warehouse.group_department_user"
                   sequence="3"/>
-        <menuitem id="delivered_warehouse_request"
+        <menuitem id="menu_delivered_warehouse_request"
                   name="Delivered Requests"
-                  parent="root_warehouse_request"
+                  parent="menu_root_warehouse_request"
                   action="action_warehouse_request_delivered"
                   groups="afri_warehouse.group_warehouse_keeper,afri_warehouse.group_department_user"
                   sequence="4"/>
-        <menuitem id="confirmed_warehouse_request"
-                  name="Confirmed Delivery Requests"
-                  parent="root_warehouse_request"
-                  action="action_warehouse_request_confirmed"
+        <menuitem id="menu_warehouse_receipt_confirmed"
+                  name="Confirmed Receipt"
+                  parent="menu_root_warehouse_request"
+                  action="action_warehouse_receipt_confirmed"
                   groups="afri_warehouse.group_warehouse_keeper,afri_warehouse.group_department_user"
                   sequence="5"/>
 

@@ -12,6 +12,7 @@
                             <group>
                                 <field name="name"/>
                                 <field name="manager_id"/>
+                                <field name="warehouse_id"/>
                                 <field name="picking_type_id"/>
                                 <field name="stock_location_id"/>
                                 <field name="description"/>

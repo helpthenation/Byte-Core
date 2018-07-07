@@ -34,13 +34,16 @@
         <record id="group_procurement_manager" model="res.groups">
             <field name="name">Procurement Manager</field>
             <field name="category_id" ref="module_category_warehouse"/>
+            <field name="implied_ids" eval="[(4, ref('purchase.group_purchase_user'))]"/>
         </record>
 
 
         <record id="group_logistics_manager" model="res.groups">
             <field name="name">Logistics Manager</field>
             <field name="category_id" ref="module_category_warehouse"/>
-            <field name="implied_ids" eval="[(4, ref('afri_warehouse.group_department_manager')), (4, ref('afri_warehouse.group_warehouse_manager'))]"/>
+            <field name="implied_ids" eval="[(4, ref('afri_warehouse.group_department_manager')),
+                                             (4, ref('afri_warehouse.group_warehouse_manager')),
+                                             (4, ref('afri_warehouse.group_procurement_manager'))]"/>
 
 
         </record>

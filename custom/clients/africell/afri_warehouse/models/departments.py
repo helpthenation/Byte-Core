@@ -10,6 +10,9 @@ class RequestDepartment(models.Model):
     manager_id = fields.Many2one(comodel_name='res.users',
                                  required=True)
     description = fields.Text(string='Description')
+    warehouse_id = fields.Many2one(comodel_name='stock.warehouse',
+                                   required=True,
+                                   string='Warehouse')
     stock_location_id = fields.Many2one(comodel_name='stock.location',
                                         string='Consumption Location',
                                         required=True)

@@ -17,6 +17,7 @@
         'security/security.xml',
         'security/ir.model.access.csv',
         'views/warehouse_department.xml',
+        'views/warehouse_procurement.xml',
         'views/warehouse_request.xml',
         'views/product_product.xml',
         'views/res_users.xml',
