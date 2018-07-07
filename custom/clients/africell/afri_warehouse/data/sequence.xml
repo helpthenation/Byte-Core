@@ -4,10 +4,17 @@
 
         <!-- Sequences For auto.mechanic (Auto Mechanic) -->
 
-        <record id="seq_awarehouse_request" model="ir.sequence">
+        <record id="seq_warehouse_request" model="ir.sequence">
             <field name="name">Warehouse Request</field>
             <field name="code">warehouse.request</field>
             <field name="prefix">WH-REQ-%(year)s%(month)s</field>
+            <field name="padding">4</field>
+        </record>
+
+        <record id="seq_warehouse_procurement_request" model="ir.sequence">
+            <field name="name">Warehouse Procurement Request</field>
+            <field name="code">warehouse.procurement.request</field>
+            <field name="prefix">PRO-REQ-%(year)s%(month)s</field>
             <field name="padding">4</field>
         </record>
     </data>

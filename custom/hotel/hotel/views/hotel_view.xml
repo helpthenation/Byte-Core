@@ -2,7 +2,7 @@
 <!DOCTYPE xml>
 <odoo>
 
-    <menuitem id="hotel_management_menu" name="Hotel Management" />
+    <menuitem id="hotel_management_menu" name="Hotel Management" web_icon="hotel,static/description/icon.jpg"/>
 
     <menuitem id="hotel_configuration_menu" name="Configuration"
         sequence="20" parent="hotel_management_menu" />
@@ -82,10 +82,17 @@
             <form string=" Hotel Room Type">
                 <sheet>
                     <group>
-                        <field name="name" />
-                        <field name="categ_id" select="1" />
+                        <field name="name" select="1"/>
+                        <field name="capacity"/>
+                        <field name="list_price" />
+                        <field name="categ_id"/>
                         <field name="child_id" invisible="1" />
                     </group>
+                    <notebook>
+                        <page string="Description">
+                            <field name="description"/>
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
@@ -433,7 +440,7 @@
         <field name="name">hotel.room.kanban</field>
         <field name="model">hotel.room</field>
         <field name="arch" type="xml">
-            <kanban default_group_by="status">
+            <kanban>
                 <field name="name" />
                 <field name="status" />
                 <field name="color" />

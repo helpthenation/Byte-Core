@@ -77,6 +77,9 @@ class HotelRoomType(models.Model):
     categ_id = fields.Many2one('hotel.room.type', 'Category')
     child_id = fields.One2many('hotel.room.type', 'categ_id',
                                'Child Categories')
+    description = fields.Text(string='Description')
+    capacity = fields.Integer('Capacity', required=True)
+    list_price = fields.Float('Price', required=True)
 
     @api.multi
     def name_get(self):
@@ -236,10 +239,23 @@ class HotelRoom(models.Model):
     status = fields.Selection([('available', 'Available'),
                                ('occupied', 'Occupied')],
                               'Status', default='available')
-    capacity = fields.Integer('Capacity', required=True)
+    capacity = fields.Integer('Capacity',
+                              related='categ_id.capacity',
+                              store=True,
+                              required=True)
+    list_price = fields.Float(string='Price',
+                              related='categ_id.list_price',
+                              store=True,
+                              required=True)
+
     room_line_ids = fields.One2many('folio.room.line', 'room_id',
                                     string='Room Reservation Line')
     product_manager = fields.Many2one('res.users', string='Product Manager')
+
+    description = fields.Text(string='Description',
+                              related='categ_id.description',
+                              store=True,
+                              readonly=True)
 
     @api.constrains('capacity')
     def check_capacity(self):

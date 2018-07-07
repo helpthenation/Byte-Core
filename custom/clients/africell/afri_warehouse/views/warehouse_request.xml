@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
+    <delete id="afri_warehouse.action_warehouse_receipt_confirmed" model="ir.ui.menu"/>
         <!-- Warehouse Request Form View -->
         <record id="view_warehouse_request_form" model="ir.ui.view">
             <field name="name">warehouse.request.form</field>
@@ -7,18 +8,33 @@
             <field name="arch" type="xml">
                 <form string="Warehouse Request">
                     <header>
+                        <button name="set_cancelled" string="Cancel" type="object"
+                                states="approval,approved,availability" icon="fa-ban" class="oe_highlight"
+                                groups="afri_warehouse.group_logistics_manager"/>
+                        <button name="set_reactivate" string="Reactivate" type="object"
+                                states="cancel" icon="fa-bolt" class="oe_highlight"
+                                groups="afri_warehouse.group_logistics_manager"/>
                         <button name="set_approval" string="Make Request" type="object"
                                 states="draft" icon="fa-plus-circle" class="oe_highlight"
                                 groups="afri_warehouse.group_department_user"/>
                         <button name="set_approved" string="Approve" type="object"
                                states="approval" icon="fa-check-circle" class="oe_highlight"
                                groups="afri_warehouse.group_department_manager"/>
+                        <button name="set_available" string="Confirm Availability" type="object"
+                               states="approved" icon="fa-bars" class="oe_highlight"
+                               groups="afri_warehouse.group_warehouse_manager"/>
+                        <button name="request_for_products" string="Request Procurement" type="object"
+                               states="approved" icon="fa-align-center" class="oe_highlight"
+                               groups="afri_warehouse.group_warehouse_manager"/>
                         <button name="set_delivered" string="Delivered" type="object"
-                               icon="fa-truck" states="approved"
+                               icon="fa-truck" states="availability"
                                groups="afri_warehouse.group_warehouse_keeper"/>
-                        <button name="set_confirmed" string="Delivery Confirmed" type="object"
+                        <button name="set_delivery_confirmed" string="Delivery Confirmed" type="object"
                                icon="fa-certificate" states="delivered"
                                groups="afri_warehouse.group_warehouse_manager"/>
+                        <button name="set_receipt_confirmed" string="Received" type="object"
+                                states="confirmed" icon="fa-briefcase" class="oe_highlight"
+                                groups="afri_warehouse.group_department_user"/>
                          <field name="state" widget="statusbar" nolabel="1"/>
                     </header>
                     <sheet>
@@ -26,21 +42,36 @@
                             <group>
                                 <field name="reference"/>
                                 <field name="request_date"/>
-                                <field name="delivery_date" attrs="{'invisible': [('state','!=','delivered')]}"/>
-                                <field name="warehouse_id"/>
+                                <field name="approval_date" attrs="{'invisible': [('state','in',('draft', 'approval'))]}"/>
+                                <field name="availability_date" attrs="{'invisible': [('state','in',('draft', 'approval', 'approved'))]}"/>
+                                <field name="delivery_date" attrs="{'invisible': [('state','not in',('delivered', 'confirmed', 'receipt'))]}"/>
+                                <field name="delivery_confirm_date" attrs="{'invisible': [('state','not in',('confirmed', 'receipt'))]}"/>
+                                <field name="receipt_confirm_date" attrs="{'invisible': [('state','!=','confirmed')]}"/>
                                 <field name="department_id"/>
-                                <field name="picking_type_id"/>
-                                <field name="stock_location_id"/>
+                                <field name="procurement_request_id"/>
+                            </group>
+                            <group string="Time frame" groups="afri_warehouse.group_logistics_manager">
+                                <field name="approval_time"/>
+                                <field name="delivery_time"/>
+                                <field name="delivery_confirm_time"/>
+                                <field name="receipt_confirm_time"/>
+                                <field name="operation_time"/>
                             </group>
                         </group>
                         <notebook>
-                            <page sring="Requests">
+                            <page sring="Product Requests">
                                 <field name="products_line_ids" context="{'default_warehouse_request_id': active_id}">
                                     <tree string="Requests" editable="bottom">
                                         <field name="product_id"/>
                                         <field name="product_uom_qty"/>
                                     </tree>
                                 </field>
+                            </page>
+                            <page string="Extra Note">
+                                <group>
+                                    <field name="department_note" placeholder="Extra notes by requester" />
+                                    <field name="warehouse_note" placeholder="Extra notes by Warehouse" />
+                                </group>
                             </page>
                         </notebook>
                     </sheet>
@@ -90,7 +121,7 @@
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="context">{'count_menu': 'pending_warehouse_request'}</field>
-            <field name="domain">[('state','=','approved')]</field>
+            <field name="domain">[('state','in',('approved','availability', 'delivered'))]</field>
         </record>
 
         <!-- Delivered Warehouse Request Action -->
@@ -99,15 +130,15 @@
             <field name="res_model">warehouse.request</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('state','=','delivered')]</field>
+            <field name="domain">[('state','=','confirmed')]</field>
         </record>
 
         <!-- Confirmed Warehouse Request Action -->
-        <record id="action_warehouse_request_confirmed" model="ir.actions.act_window">
-            <field name="name">Confirmed Delivery Requests</field>
+        <record id="action_warehouse_receipt_confirmed" model="ir.actions.act_window">
+            <field name="name">Confirmed Receipt</field>
             <field name="res_model">warehouse.request</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="domain">[('state','=','confirmed')]</field>
+            <field name="domain">[('state','=','receipt')]</field>
         </record>
 </odoo>
