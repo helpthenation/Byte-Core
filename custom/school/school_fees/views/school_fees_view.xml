@@ -28,10 +28,8 @@
                         <group col="6" colspan="4">
                             <field name="name" placeholder="Name"/>
                             <field name="currency_id"/>
-                            <field name="school_type" invisible="1"/>
                             <field name="academic_year_id"/>
-                            <field name="related_classes" widget="many2many_tags"  attrs="{'invisible': [('school_type','=','secondary')], 'required': [('school_type','=','primary')]}"/>
-                            <field name="related_forms" widget="many2many_tags" attrs="{'invisible':[('school_type','=','primary')], 'required': [('school_type','=','secondary')]}"/>
+                            <field name="related_classes" widget="many2many_tags"/>
                         </group>
                         <notebook colspan="4">
                             <page string="Fees Structure">

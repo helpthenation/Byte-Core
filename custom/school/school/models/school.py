@@ -154,10 +154,12 @@ class SchoolClass(models.Model):
     @api.one
     @api.depends('sequence')
     def _compute_class_name(self):
-        if self.school_level == 'nursery':
+        if self.school_level == 'elementary' and self.is_nursery:
             self.class_name = "Nursery "+str(self.sequence)
-        elif self.school_level == 'class':
+        elif self.school_level == 'elementary' and not self.is_nursery:
             self.class_name = "Class " + str(self.sequence-3)
+        elif self.school_level == 'high':
+            self.class_name = "Form " + str(self.sequence-3)
 
     @api.one
     def _compute_neighbor_class(self):
@@ -166,6 +168,7 @@ class SchoolClass(models.Model):
         self.next_class_id = self.env['school.class'].search([('sequence', '=', next_seq)]).id
         self.previous_class_id = self.env['school.class'].search([('sequence', '=', pre_seq)]).id
 
+    is_nursery = fields.Boolean('Is Nursery', default=False)
     sequence = fields.Integer(string='Sequence',
                               required=True,
                               help='Sequence in which classes appear')
@@ -176,45 +179,42 @@ class SchoolClass(models.Model):
                                    string='Subjects',
                                    help="Subjects offered in this class")
     student_ids = fields.One2many('school.student', 'class_id',
-                                  string='Students In class',
-                                  help="Students Currently in this class")
+                                  string='Students In class/form',
+                                  help="Students Currently in this class/form")
     next_class_id = fields.Many2one('school.class',
-                                    string='Next class',
+                                    string='Next class/form',
                                     compute='_compute_neighbor_class',
                                     readonly=True,
-                                    help="Next class students will be promoted to")
+                                    help="Next class/form students will be promoted to")
     previous_class_id = fields.Many2one('school.class',
-                                        string='Previous class',
+                                        string='Previous class/form',
                                         compute='_compute_neighbor_class',
                                         readonly=True,
-                                        help="Previous class students got promoted from")
+                                        help="Previous class/form students got promoted from")
     teacher_id = fields.Many2one('hr.employee',
                                  string='Class Teacher',
                                  help="Class Teacher")
-    public_exam_class = fields.Boolean(string='Public Exam Class',
-                                       help='Check if this is a public exam class')
+    public_exam_class = fields.Boolean(string='Public Exam Class/Form',
+                                       help='Check if this is a public exam class/form')
     public_exam_type = fields.Many2one('public.exam',
                                        string='Public Exam',
-                                       help='Public Exam to be taken at this class')
+                                       help='Public Exam to be taken at this class/form')
     passing_mark = fields.Float(string='Passing Mark',
-                                help="Percentage that determines promotion to next class",
+                                help="Percentage that determines promotion to next class/form",
                                 required=True)
-    class_name = fields.Char(string='Class Name',
+    class_name = fields.Char(string='Class/Form Name',
                              compute='_compute_class_name',
                              readonly=True,
                              help="Class name")
-    school_level = fields.Selection([('class', 'Class'),
-                                     ('nursery', 'Nursery')],
-                                    default='nursery',
-                                    string='Level (Nursery/Class)',
+    school_level = fields.Selection([('elementary', 'Elementary'),
+                                     ('high', 'High School')],
+                                    default='elementary',
+                                    string='Level (Elementary/High School)',
                                     required=True,
-                                    help="Specify level (Nursery or Class)")
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
+                                    help="Specify level (Elementary/High School)")
+    stream_id = fields.Many2one('school.stream',
+                                string='Stream',
+                                help='Stream related to this form (If applicable)')
 
     _sql_constraints = [('class_name', 'unique(class_name)',
                          'Name must be unique!'),
@@ -222,114 +222,22 @@ class SchoolClass(models.Model):
                          'Sequence must be unique!'),
                         ]
 
-
-class SchoolForm(models.Model):
-    _name = 'school.form'
-    _description = 'School Forms'
-    _rec_name = "form_name"
-    _order = "sequence"
-
-    @api.one
-    @api.depends('sequence')
-    def _compute_form_name(self):
-        if self.school_level == 'jss':
-            self.form_name = "JSS "+str(self.sequence)
-        elif self.school_level == 'sss':
-            self.form_name = "SSS " + str(self.sequence-3)
-
-    @api.one
-    def _compute_neighbor_form(self):
-        next_seq = self.sequence + 1
-        pre_seq = self.sequence - 1
-        self.next_form_id = self.env['school.form'].search([('sequence', '=', next_seq)]).id
-        self.previous_form_id = self.env['school.form'].search([('sequence', '=', pre_seq)]).id
-
-    sequence = fields.Integer(string='Sequence',
-                              required=True,
-                              help="Sequence in which forms appear")
-    subject_ids = fields.Many2many('school.subject',
-                                   relation='subject_form_rel',
-                                   column1='subject_id',
-                                   column2='form_id',
-                                   string='Subjects',
-                                   help="Subjects offered in this form")
-    student_ids = fields.One2many('school.student', 'form_id',
-                                  string='Students In Form',
-                                  help="Students currently in this form")
-    next_form_id = fields.Many2one('school.form',
-                                   string='Next Form',
-                                   compute='_compute_neighbor_form',
-                                   readonly=True,
-                                   help="Next form Students will be promoted to")
-    previous_form_id = fields.Many2one('school.form',
-                                       string='Previous Form',
-                                       compute='_compute_neighbor_form',
-                                       readonly=True,
-                                       help="Previous form Student got promoted from")
-    teacher_id = fields.Many2one('hr.employee',
-                                 string='Form Teacher',
-                                 help="Form Teacher")
-    public_exam_form = fields.Boolean(string='Public Exam Form',
-                                      help='Check if this is a public exam Form')
-    public_exam_type = fields.Many2one('public.exam',
-                                       string='Public Exam',
-                                       help='Public Exam to be taken at this form')
-    passing_mark = fields.Float(string='Passing Mark',
-                                help="Percentage that determines promotion to next Form",
-                                required=True)
-    form_name = fields.Char(string='Form Name',
-                            compute='_compute_form_name',
-                            readonly=True,
-                            help="Form Name")
-    school_level = fields.Selection([('jss', 'Jss'),
-                                     ('sss', 'SSS')],
-                                    default='jss',
-                                    string='Form Level (JSS/SSS)',
-                                    help="Level (JSS or SSS)")
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
-    stream_id = fields.Many2one('school.stream',
-                                string='Stream',
-                                help='Stream related to this form (If applicable)')
-
-    _sql_constraints = [('form_name', 'unique(form_name)',
-                         'Name must be unique!'),
-                        ('sequence', 'unique(sequence)',
-                         'Sequence must be unique!'),
-                        ]
-
-
 class SchoolClassroom(models.Model):
     _name = 'school.classroom'
     _description = 'School Class Room'
     _rec_name = 'classroom_name'
 
     @api.one
-    @api.depends('form_id', 'code', 'class_id')
-    def _compute_name(self):
-        if self.form_id:
-            if self.form_id.school_level == 'jss':
-                self.classroom_name = "JSS "+str(self.form_id.sequence)+str(self.code)
-            elif self.form_id.school_level == 'sss':
-                if self.stream_id:
-                    self.classroom_name = "SSS " + str(self.form_id.sequence-3)+" "+str(self.stream_id.name)+" "+\
-                                          str(self.code)
-                else:
-                    self.classroom_name = "SSS " + str(self.form_id.sequence-3)+" "+str(self.code)
-        if self.class_id:
-            if self.class_id.school_level == 'nursery':
-                self.classroom_name = "Nursery " + str(self.class_id.sequence) + str(self.code)
-            elif self.class_id.school_level == 'class':
-                self.classroom_name = "Class " + str(self.class_id.sequence - 3) + str(self.code)
-
-    @api.one
     @api.depends('student_ids', 'seat_no')
     def _compute_available_seats(self):
         self.available_seats = self.seat_no - len(self.student_ids)
+
+    school_level = fields.Selection([('elementary', 'Elementary'),
+                                     ('high', 'High School')],
+                                    default='elementary',
+                                    string='Level (Elementary/High School)',
+                                    required=True,
+                                    help="Specify level (Elementary/High School)")
 
     seat_no = fields.Integer(string='Seat Number',
                              required=True,
@@ -342,12 +250,10 @@ class SchoolClassroom(models.Model):
     class_id = fields.Many2one('school.class',
                                string='Class',
                                help='Class allocated to this classroom')
-    form_id = fields.Many2one('school.form',
-                              string='Form',
-                              help='Form allocated to this classroom')
+
     stream_id = fields.Many2one('school.stream',
                                 string='Stream',
-                                related='form_id.stream_id',
+                                related='class_id.stream_id',
                                 help='Stream (If Applicable')
     code = fields.Char(string='Code',
                        required=True,
@@ -355,26 +261,10 @@ class SchoolClassroom(models.Model):
     description = fields.Text(string='Description',
                               help="Description of classroom")
     classroom_name = fields.Char(string='Name',
-                                 required=True,
-                                 compute='_compute_name',
-                                 store=True)
+                                 required=True)
     student_ids = fields.One2many('school.student', 'classroom_id',
                                   string="Students in Classroom",
                                   help="Students in this classroom")
-    school_level = fields.Selection([('jss', 'JSS'),
-                                     ('sss', 'SSS')],
-                                    default='jss',
-                                    string='Form Level (JSS/SSS)')
-    p_school_level = fields.Selection([('class', 'Class'),
-                                       ('nursery', 'Nursery')],
-                                      default='nursery',
-                                      string='Level (Nursery/Class)')
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
 
     @api.constrains
     @api.depends('student_ids', 'available_seats')
@@ -382,15 +272,6 @@ class SchoolClassroom(models.Model):
         if len(self.student_ids) > self.available_seats:
             raise Warning(_('Error ! The number of Students has exceeds the number of available seats'
                             ' in the classroom.'))
-
-    @api.onchange('school_type')
-    def onchange_school_type(self):
-        if self.school_type == 'primary':
-            self.form_id = False
-            self.school_level = False
-        if self.school_type == 'secondary':
-            self.class_id = False
-            self.p_school_level = False
 
 
 class PublicExam(models.Model):
@@ -457,12 +338,6 @@ class SubjectSubject(models.Model):
                                  column2='subject_id',
                                  string='Classes',
                                  help="Classes this subject is offered")
-    form_ids = fields.Many2many('school.form',
-                                relation='subject_form_rel',
-                                column1='form_id',
-                                column2='subject_id',
-                                string='Forms',
-                                help="Forms this subject is offered")
     student_ids = fields.Many2many('school.student',
                                    relation='subject_student_rel',
                                    column1='student_id',
@@ -478,20 +353,12 @@ class SubjectSubject(models.Model):
     syllabus_ids = fields.One2many('subject.syllabus', 'subject_id',
                                    string='Syllabus',
                                    help="Subject's syllabus")
-    school_level = fields.Selection([('jss', 'Jss'),
-                                     ('sss', 'SSS')],
-                                    string='Level Offered (JSS/SSS)',
-                                    help='Level this subject is offered (JSS/SSS)')
-    p_school_level = fields.Selection([('class', 'Class'),
-                                       ('nursery', 'Nursery')],
-                                      string='Level (Nursery/Class)',
-                                      help='Level this subject is offered (Nursery/Class)')
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
+    school_level = fields.Selection([('elementary', 'Elementary'),
+                                     ('high', 'High School')],
+                                    default='elementary',
+                                    string='Level (Elementary/High School)',
+                                    required=True,
+                                    help="Specify level (Elementary/High School)")
     stream_ids = fields.Many2many('school.stream',
                                   string="Stream(s)",
                                   help="Stream(s) this subject is related to")
@@ -506,32 +373,21 @@ class SubjectSubject(models.Model):
                          'Code must be unique!'),
                         ]
 
-    @api.onchange('school_level', 'p_school_level')
+    @api.onchange('school_level')
     def check0(self):
         self.student_ids = False
-        self.form_ids = False
         self.class_ids = False
 
     # TODO Fix Elective/General Switching
 
     @api.onchange('school_level', 'is_general',)
     def check1(self):
-        if self.school_level == 'jss':
+        if self.school_level == 'elementary':
             self.stream_ids = False
         if self.is_general:
             self.is_elective = False
         if not self.is_general:
             self.is_elective = True
-
-    @api.onchange('school_type')
-    def check2(self):
-        if self.school_type == 'primary':
-            self.form_ids = False
-            self.stream_ids = False
-            self.school_level = False
-        if self.school_type == 'secondary':
-            self.class_ids = False
-            self.p_school_level = False
 
     @api.onchange('is_elective')
     def check3(self):
@@ -540,39 +396,19 @@ class SubjectSubject(models.Model):
         if not self.is_elective:
             self.is_general = True
 
-    def compute_forms(self):
-        form_obj = self.env['school.form']
-        domain = ('school_level', '=', self.school_level)
-        self.form_ids = form_obj.search([domain])
-
     def compute_classes(self):
         form_obj = self.env['school.class']
-        domain = ('school_level', '=', self.p_school_level)
+        domain = ('school_level', '=', self.school_level)
         self.class_ids = form_obj.search([domain])
 
-    @api.depends('school_level', 'p_school_level')
+    @api.depends('school_level')
     def compute_students(self):
         """ This function will automatically computes the Students that
         offer this Subject."""
         student_obj = self.env['school.student']
-        # For Secondary Schools
-        if self.school_level == 'jss':
-            student_ids = student_obj.search([('form_id', 'in', [form.id for form in self.form_ids]),
-                                              ('status', '=', 'admitted')])
-            self.student_ids += student_ids
-        elif self.school_level == 'sss':
-            domain = [('stream_id', 'in', [stream.id for stream in self.stream_ids]), ('school_level', '=', 'sss'),
-                      ('status', '=', 'admitted')]
-            self.student_ids += student_obj.search(domain)
-        # For Primary Schools
-        if self.p_school_level == 'class':
-            student_ids = student_obj.search([('class_id', 'in', [clas.id for clas in self.class_ids]),
-                                              ('status', '=', 'admitted'), ('p_school_level', '=', 'class')])
-            self.student_ids += student_ids
-        if self.p_school_level == 'nursery':
-            student_ids = student_obj.search([('class_id', 'in', [clas.id for clas in self.class_ids]),
-                                              ('status', '=', 'admitted'), ('p_school_level', '=', 'nursery')])
-            self.student_ids += student_ids
+        student_ids = student_obj.search([('class_id', 'in', [clas.id for clas in self.class_ids]),
+                                          ('status', '=', 'admitted')])
+        self.student_ids += student_ids
 
     @api.constrains('is_general', 'stream_ids', 'student_ids')
     def constrain1(self):
@@ -748,27 +584,8 @@ class StudentStudent(models.Model):
 
     @api.onchange('school_level')
     def onchange_school_level(self):
-        if self.school_level == 'jss':
+        if self.school_level == 'elementary':
             self.stream_id = False
-            if self.form_id.school_level != 'jss':
-                self.form_id = False
-                self.classroom_id = False
-        if self.school_level == 'sss':
-            self.stream_id = False
-            if self.form_id.school_level != 'sss':
-                self.form_id = False
-                self.classroom_id = False
-
-    @api.onchange('school_type')
-    def onchange_school_type(self):
-        if self.school_type == 'primary':
-            self.form_id = False
-            self.school_level = False
-            self.classroom_id = False
-        if self.school_type == 'secondary':
-            self.class_id = False
-            self.classroom_id = False
-            self.p_school_level = False
 
     @api.one
     @api.depends('name', 'pid')
@@ -886,23 +703,13 @@ class StudentStudent(models.Model):
     award_ids = fields.One2many('student.award', 'award_list_id', 'Award List')
     parent_id = fields.Many2one('school.parent', "Parent/Guardian", help="Parent/Guardian allowed to login")
     classroom_id = fields.Many2one('school.classroom', 'Classroom', help='Student Classroom')
-    class_id = fields.Many2one('school.class', 'Class/Nursery')
-    form_id = fields.Many2one('school.form', 'Form', help='Student Form')
-    school_level = fields.Selection([('jss', 'JSS'),
-                                     ('sss', 'SSS')],
-                                    default='jss',
-                                    string='Level (JSS/SSS)')
-    p_school_level = fields.Selection([('class', 'Class'),
-                                       ('nursery', 'Nursery')],
-                                      default='nursery',
-                                      string='Level (Nursery/Class)',
-                                      required=True)
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
+    class_id = fields.Many2one('school.class', 'Class/Form')
+    school_level = fields.Selection([('elementary', 'Elementary'),
+                                     ('high', 'High School')],
+                                    default='elementary',
+                                    string='Level (Elementary/High School)',
+                                    required=True,
+                                    help="Specify level (Elementary/High School)")
     district = fields.Selection([
         ('bo', 'Bo'),
         ('kenema', 'Kenema'),
@@ -996,14 +803,9 @@ class StudentStudent(models.Model):
     def _constrains_classroom_detail(self):
         if self.classroom_id.available_seats <= -1:
             raise ValidationError('Warning This Classroom if Full. Please Try another Classroom.')
-        if self.onchange_school_type == 'secondary':
-            if self.classroom_id and self.classroom_id  .form_id.id != self.form_id.id:
-                raise ValidationError("Error You cant add this student to this classroom."
-                                      " Please check student's form.")
-        if self.onchange_school_type == 'primary':
-            if self.classroom_id and self.classroom_id.class_id.id != self.class_id.id:
+        if self.classroom_id and self.classroom_id.class_id.id != self.class_id.id:
                 raise ValidationError("Error You cant add this student to this classroom. "
-                                      "Please check student's Class.")
+                                      "Please check student's Class/Form.")
 
 
 class StudentGrn(models.Model):
@@ -1099,8 +901,7 @@ class StudentDiscipline(models.Model):
     student_id = fields.Many2one('school.student', 'Related Student')
     teacher_id = fields.Many2one('hr.employee', 'Teacher')
     date = fields.Date('Date')
-    form_id = fields.Many2one('school.form', 'Form', help='Form')
-    class_id = fields.Many2one('school.class', 'Class',help='Class')
+    class_id = fields.Many2one('school.class', 'Class/Form',help='Class/Form')
     note = fields.Text('Note')
     action_taken = fields.Text('Action Taken')
 
@@ -1117,8 +918,7 @@ class StudentHistory(models.Model):
     student_id = fields.Many2one('school.student', 'Related Student')
     academic_year_id = fields.Many2one('school.academic.year', 'Academic Year',
                                        required=True)
-    class_id = fields.Many2one('school.class', 'Class')
-    form_id = fields.Many2one('school.form', 'Form', help='Form')
+    class_id = fields.Many2one('school.class', 'Class/Form')
     percentage = fields.Float("Percentage", readonly=True)
     result = fields.Char('Result', readonly=True, store=True)
 

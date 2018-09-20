@@ -26,7 +26,6 @@
                    </header>
                     <sheet style="margin-left: auto; margin-right: auto; width: 1000px; ">
                         <separator string="Personal Information"/>
-                        <field name="school_type" invisible="1"/>
                         <div class="oe_button_box" name="button_box">
 
                         </div>
@@ -44,12 +43,9 @@
                             </div>
                         <group col="2" >
                            <group string="School Information">
-                                <field name="school_type" invisible="1"/>
-                                <field name="school_level" attrs="{'invisible': [('school_type','=','primary')]}"/>
-                                <field name="p_school_level" attrs="{'invisible': [('school_type','=','secondary')]}"/>
-                                <field name="stream_id" attrs="{'invisible': [('school_level','=','jss')], 'invisible': [('school_type','=','primary')]}"/>
-                                <field name="form_id" placeholder="Form" attrs="{'invisible': [('school_type','=','primary')]}" domain="[('school_level','=',school_level)]"/>
-                                <field name="class_id" placeholder="Class" attrs="{'invisible': [('school_type','=','secondary')]}" domain="[('school_level','=',p_school_level)]"/>
+                                <field name="school_level"/>
+                                <field name="stream_id" attrs="{'invisible': [('school_level','=','elementary')]}"/>
+                                <field name="class_id" placeholder="Class" />
                             </group>
                             <group string="Contact Information">
                                 <field name="street" placeholder="No and Street..." required="1"/>
@@ -138,11 +134,8 @@
             <field name="model">school.application</field>
             <field name="arch" type="xml">
                 <tree string="Student Application">
-                    <field name="school_type" invisible="1"/>
                     <field name="name"/>
                     <field name="school_level" groups="school.group_school_secondary"/>
-                    <field name="p_school_level" groups="school.group_school_primary"/>
-                    <field name="form_id" groups="school.group_school_secondary"/>
                     <field name="class_id" groups="school.group_school_primary"/>
                     <field name="gender"/>
                     <field name="application_ref"/>
@@ -160,14 +153,13 @@
                 <search string="Student Information">
                     <group col="10" colspan="4">
                         <field name="name"/>
-                        <field name="form_id"/>
+                        <field name="class_id"/>
                         <field name="gender"/>
                     </group>
                     <newline/>
                     <group expand="0" string="Group By..." colspan="12" col="10">
-                        <filter icon="terp-project" string="Form" help="By Form" context="{'group_by':'form_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Class" help="By Class" context="{'group_by':'class_id'}" groups="school.group_school_primary"/>
-                        <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'p_school_level'}" groups="school.group_school_primary"/>
+                        <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'school_level'}" groups="school.group_school_primary"/>
                         <filter icon="terp-project" string="Stream" help="By Stream" context="{'group_by':'stream_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Gender" help="By Gender" context="{'group_by':'gender'}"/>
                     </group>

@@ -16,7 +16,6 @@ class SchoolAttendance(models.Model):
     def create(self, vals):
         late_time = self.env.user.company_id.late_time
         student = self.env['school.student'].search([('id', '=', vals['student_id'])])
-        form_id = self.env['school.form'].search([('id', '=', student.form_id.id)]).id or False
         classroom_id = self.env['school.classroom'].search([('id', '=', student.classroom_id.id)]).id or False
         class_id = self.env['school.class'].search([('id', '=', student.class_id.id)]).id or False
         a, b = vals['check_in'].split(" ")
@@ -24,7 +23,6 @@ class SchoolAttendance(models.Model):
         time_in = float(x+"."+y)
         if time_in > late_time:
             vals['late'] = True
-        vals['form_id'] = form_id
         vals['classroom_id'] = classroom_id
         vals['class_id'] = class_id
         result = super(SchoolAttendance, self).create(vals)
@@ -86,7 +84,6 @@ class SchoolAttendance(models.Model):
         return self.env['school.student'].search([('user_id', '=', self.env.uid)], limit=1)
 
     student_id = fields.Many2one('school.student', string="Student", default=_default_student, required=True, ondelete='cascade', index=True)
-    form_id = fields.Many2one('school.form', string="Form")
     class_id = fields.Many2one('school.class', string="Class")
     classroom_id = fields.Many2one('school.classroom', string="Classroom")
     check_in = fields.Datetime(string="Check In", default=fields.Datetime.now, required=True)
@@ -97,12 +94,7 @@ class SchoolAttendance(models.Model):
     signin_reminder_sent = fields.Boolean('Sign in Reminder Sent', default=False)
     signout_reminder_sent = fields.Boolean('Sign out Reminder Sent', default=False)
     late = fields.Boolean('Late', default=False)
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
+
 
     _sql_constraints = [
         ('attendance_code_unique',

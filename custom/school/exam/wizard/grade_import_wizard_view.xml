@@ -20,8 +20,8 @@
                         <page string="By Students">
                             <field name="student_ids"/>
                         </page>
-                        <page string="By Form">
-                            <field name="form_ids"/>
+                        <page string="By Class/Form">
+                            <field name="class_ids"/>
                         </page>
                         <page string="By Classroom">
                             <field name="classroom_ids"/>

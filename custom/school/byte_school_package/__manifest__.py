@@ -10,7 +10,9 @@
     'license': "AGPL-3",
     'complexity': 'easy',
     'summary': 'Byte School Package',
-    'depends': ['school', 'exam', 'school_attendance', 'school_fees', 'timetable', 'assignment', 'school_settings', 'web_responsive'],
+    'depends': ['school', 'exam', 'school_attendance', 'school_fees', 'timetable', 'assignment', 'school_settings','school_application_process',
+                'html_form_builder',
+                'web_responsive'],
     'data': [
          ],
     'demo': [

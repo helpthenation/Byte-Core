@@ -31,7 +31,7 @@
                             <td style="width:67%" valign="center">
                                 <table style="width:155pt; height:85pt">
                                     <tr><th><div style="font-size:15pt; margin-bottom:0pt;margin-top:0pt;" align="center"><t t-esc="student.name"/></div></th></tr>
-                                    <tr><td><div align="center" style="font-size:10pt;margin-bottom:5pt;"><t t-esc="student.form_id.form_name"/></div></td></tr>
+                                    <tr><td><div align="center" style="font-size:10pt;margin-bottom:5pt;"><t t-esc="student.class_id.name"/></div></td></tr>
                                     <tr><td><img t-if="student.barcode" t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', student.barcode, 600, 120)" style="max-height:50pt;max-width:100%;" align="center"/></td></tr>
                                 </table>
                             </td>

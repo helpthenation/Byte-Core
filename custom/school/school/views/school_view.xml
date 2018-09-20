@@ -12,7 +12,6 @@
                 <form string="Student Information" create="0" edit="0">
                     <sheet style="margin-left: auto; margin-right: auto; width: 1000px; ">
                         <separator string="Personal Information"/>
-                        <field name="school_type" invisible="1"/>
                         <div class="oe_button_box" name="button_box">
 
                         </div>
@@ -29,16 +28,12 @@
                             </div>
                         <group col="2" >
                            <group string="School Information">
-                                <field name="school_type" invisible="1"/>
                                 <field name="admission_date"/>
                                 <field name="admitted_year_id" />
-                                <field name="school_level" attrs="{'invisible': [('school_type','=','primary')]}"/>
-                                <field name="p_school_level" attrs="{'invisible': [('school_type','=','secondary')]}"/>
-                                <field name="stream_id" attrs="{'invisible': [('school_level','=','jss')], 'invisible': [('school_type','=','primary')]}"/>
-                                <field name="form_id" placeholder="Form" attrs="{'invisible': [('school_type','=','primary')]}" domain="[('school_level','=',school_level)]"/>
-                                <field name="class_id" placeholder="Class" attrs="{'invisible': [('school_type','=','secondary')]}" domain="[('school_level','=',p_school_level)]"/>
-                                <field name="classroom_id" placeholder="Classroom" domain="[('form_id','=',form_id)]" attrs="{'invisible': [('school_type','=','primary')]}"/>
-                                <field name="classroom_id" placeholder="Classroom" attrs="{'invisible': [('school_type','=','secondary')]}" domain="[('class_id','=',class_id), ('school_level','=',p_school_level)]"/>
+                                <field name="school_level" />
+                                <field name="stream_id" attrs="{'invisible': [('school_level','=','elementary')]}"/>
+                                <field name="class_id" placeholder="Class/Form" />
+                                <field name="classroom_id" placeholder="Classroom" />
                             </group>
                             <group string="Student Contact Information">
                                 <field name="street" placeholder="No and Street..." required="1"/>
@@ -204,12 +199,9 @@
             <field name="arch" type="xml">
                 <tree string="Student Information" create="0" edit="0">
                     <field name="pid"/>
-                    <field name="school_type" invisible="1"/>
                     <field name="name"/>
                     <field name="admitted_year_id"/>
                     <field name="school_level" groups="school.group_school_secondary"/>
-                    <field name="p_school_level" groups="school.group_school_primary"/>
-                    <field name="form_id" groups="school.group_school_secondary"/>
                     <field name="class_id" groups="school.group_school_primary"/>
                     <field name="admission_date"/>
                     <field name="gender"/>
@@ -228,16 +220,15 @@
                     <group col="10" colspan="4">
                         <field name="pid"/>
                         <field name="name"/>
-                        <field name="form_id"/>
+                        <field name="class_id"/>
                         <field name="classroom_id"/>
                         <field name="gender"/>
                     </group>
                     <newline/>
                     <group expand="0" string="Group By..." colspan="12" col="10">
-                        <filter icon="terp-project" string="Form" help="By Form" context="{'group_by':'form_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Class" help="By Class" context="{'group_by':'class_id'}" groups="school.group_school_primary"/>
                         <filter icon="terp-project" string="Classroom" help="By Classroom" context="{'group_by':'classroom_id'}"/>
-                        <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'p_school_level'}" groups="school.group_school_primary"/>
+                        <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'school_level'}" groups="school.group_school_primary"/>
                         <filter icon="terp-project" string="Stream" help="By Stream" context="{'group_by':'stream_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Gender" help="By Gender" context="{'group_by':'gender'}"/>
                     </group>
@@ -290,14 +281,6 @@
                                                             <td style="padding-left:10px;">
                                                                 <b>
                                                                     <field name="pid"/>
-                                                                </b>
-                                                            </td>
-                                                        </tr>
-                                                        <tr groups="school.group_school_secondary" >
-                                                            <td>Form : </td>
-                                                            <td style="padding-left:10px;">
-                                                                <b>
-                                                                    <field name="form_id"/>
                                                                 </b>
                                                             </td>
                                                         </tr>
@@ -410,14 +393,11 @@
                        </div>
                        <group col="2" >
                            <group string="School Information">
-                                <field name="school_type" invisible="1"/>
                                 <field name="admission_date"/>
                                 <field name="admitted_year_id" />
-                                <field name="school_level" attrs="{'invisible': [('school_type','=','primary')], 'required': [('school_type','=','secondary')]}"/>
-                                <field name="p_school_level" attrs="{'invisible': [('school_type','=','secondary')]}"/>
-                                <field name="stream_id" attrs="{'invisible': ['|',('school_level','=','jss'),('school_type','=','primary')], 'required': [('school_level','=','sss')]}"/>
-                                <field name="form_id" placeholder="Form" attrs="{'invisible': [('school_type','=','primary')], 'required': [('school_type','=','secondary')]}" domain="[('school_level','=',school_level)]"/>
-                                <field name="class_id" placeholder="Class" attrs="{'invisible': [('school_type','=','secondary')]}" domain="[('school_level','=',p_school_level)]"/>
+                                <field name="school_level" />
+                                <field name="stream_id" attrs="{'invisible': [('school_level','=','elementary')]}"/>
+                                <field name="class_id" />
                                 <field name="classroom_id"/>
                             </group>
                             <group string="Contact Information">
@@ -593,12 +573,9 @@
             <field name="arch" type="xml">
                 <tree string="Admission Register">
                     <field name="pid"/>
-                    <field name="school_type" invisible="1"/>
                     <field name="name"/>
                     <field name="admitted_year_id"/>
                     <field name="school_level" groups="school.group_school_secondary"/>
-                    <field name="p_school_level" groups="school.group_school_primary"/>
-                    <field name="form_id" groups="school.group_school_secondary"/>
                     <field name="class_id" groups="school.group_school_primary"/>
                     <field name="admission_date"/>
                     <field name="gender"/>
@@ -621,14 +598,12 @@
                     <separator orientation="vertical"/>
                     <field name="name" />
                     <field name="class_id"/>
-                    <field name="form_id"/>
                     <field name="gender"/>
                     <newline/>
                     <group expand="0" string="Group By..." colspan="12" col="10">
-                        <filter icon="terp-project" string="Form" help="By Form" context="{'group_by':'form_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Class" help="By Class" context="{'group_by':'class_id'}" groups="school.group_school_primary"/>
                         <filter icon="terp-project" string="Classroom" help="By Classroom" context="{'group_by':'classroom_id'}"/>
-                        <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'p_school_level'}" groups="school.group_school_primary"/>
+                        <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'school_level'}" groups="school.group_school_primary"/>
                         <filter icon="terp-project" string="Stream" help="By Stream" context="{'group_by':'stream_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Gender" help="By Gender" context="{'group_by':'gender'}"/>
                     </group>
@@ -803,52 +778,6 @@
 
         <!-- Form View Of Student Form -->
 
-        <record id="view_student_form_form" model="ir.ui.view">
-            <field name="name">student.form.form</field>
-            <field name="model">school.form</field>
-            <field name="arch" type="xml">
-                <form string="Student Form" >
-                     <sheet style="margin-left: auto; margin-right: auto; width: 1000px; ">
-                        <group col="4" colspan="4">
-                            <field name="sequence" />
-                            <newline/>
-                            <field name="form_name"/>
-                            <newline/>
-                            <field name="public_exam_form" />
-                            <newline/>
-                            <field name="public_exam_type" attrs="{'invisible':[('public_exam_form','!=', True)]}"/>
-                            <newline/>
-                            <field name="passing_mark" placeholder="Passing Mark" />
-                            <notebook colspan="4">
-                            <page string="Subjects Offered">
-                                <field name="subject_ids" nolabel="1" colspan="4">
-                                    <tree string="Subjects">
-                                        <field name="name"/>
-                                        <field name="code"/>
-                                        <field name="maximum_marks"/>
-                                        <field name="minimum_marks"/>
-                                    </tree>
-                                </field>
-                            </page>
-                                <page string="Students" >
-                                <field name="student_ids" nolabel="1" colspan="4" >
-                                    <tree string="Students" edit="0" create="0">
-                                        <field name="state" invisible="1"/>
-                                        <field name="pid"/>
-                                        <field name="name"/>
-                                        <field name="form_id"/>
-                                        <field name="gender"/>
-
-                                    </tree>
-                                </field>
-                            </page>
-                        </notebook>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
-
 
 <!-- Form View Of Student Classroom -->
 
@@ -859,14 +788,11 @@
                 <form string="Student Classroom" >
                      <sheet style="margin-left: auto; margin-right: auto; width: 1000px; ">
                         <group col="4" colspan="4">
-                            <field name="school_type" invisible="1"/>
                             <field name="seat_no" />
                             <field name="available_seats" />
-                            <field name="p_school_level" attrs="{'invisible': [('school_type','=','secondary')], 'required': [('school_type','=','primary')]}"/>
-                            <field name="school_level" attrs="{'invisible': [('school_type','=','primary')], 'required': [('school_type','=','secondary')]}"/>
-                            <field name="form_id" attrs="{'invisible': [('school_type','=','primary')], 'required': [('school_type','=','secondary')]}" domain="[('school_level','=',school_level)]"/>
-                            <field name="stream_id" attrs="{'invisible': ['|',('school_level','=','jss'),('school_type','=','primary')]}"/>
-                            <field name="class_id" attrs="{'invisible': [('school_type','=','secondary')], 'required': [('school_type','=','primary')]}" domain="[('school_type','=',school_type),('school_level','=',p_school_level)]"/>
+                            <field name="school_level" />
+                            <field name="stream_id" attrs="{'invisible': ['|',('school_level','=','elementary')]}"/>
+                            <field name="class_id" />
                             <field name="code" placeholder="Code Eg. A"/>
                             <field name="description"/>
                             <notebook colspan="4">
@@ -876,7 +802,7 @@
                                         <field name="state" invisible="1"/>
                                         <field name="pid"/>
                                         <field name="name"/>
-                                        <field name="form_id"/>
+                                        <field name="class_id"/>
                                         <field name="gender"/>
 
                                     </tree>
@@ -1244,49 +1170,6 @@
 
         <!-- Form View Of School Form Information-->
 
-        <record id="view_school_form_form" model="ir.ui.view">
-            <field name="name">school.form.form</field>
-            <field name="model">school.form</field>
-            <field name="arch" type="xml">
-                <form string="Forms" >
-                     <sheet style="margin-left: auto; margin-right: auto; width: 1000px; ">
-                        <group col="4" colspan="4">
-                            <field name="sequence"/>
-                            <field name="next_form_id"/>
-                            <field name="previous_form_id"/>
-                            <field name="school_level"/>
-                            <field name="passing_mark"/>
-                            <field name="teacher_id"/>
-                            <field name="public_exam_form" placeholder="Public Exam Form"/>
-                            <field name="public_exam_type" placeholder="Public Exam Type" attrs="{'invisible': [('public_exam_form', '=', False)]}"/>
-                        </group>
-                        <notebook colspan="4">
-                                <page string="Sudents">
-                                    <field name="student_ids"/>
-                                </page>
-                                <page string="Subjects Offered">
-                                    <field name="subject_ids"/>
-                                </page>
-                        </notebook>
-                    </sheet>
-                </form>
-            </field>
-        </record>
-
-        <!-- Tree View Of School Form Information-->
-
-        <record id="view_school_form_tree" model="ir.ui.view">
-            <field name="name">school.form.tree</field>
-            <field name="model">school.form</field>
-            <field name="arch" type="xml">
-                <tree string="Forms">
-                    <field name="form_name"/>
-                    <field name="school_level"/>
-                    <field name="passing_mark"/>
-                    <field name="next_form_id"/>
-                </tree>
-            </field>
-        </record>
         <!-- Form View Of School Class Information-->
 
         <record id="view_school_class_form" model="ir.ui.view">
@@ -1343,12 +1226,10 @@
                      <sheet style="margin-left: auto; margin-right: auto; width: 1000px; ">
                         <group col="4" colspan="4">
                             <field name="name" placeholder="Name"/>
-                            <field name="school_type" invisible="1"/>
-                            <field name="school_level" attrs="{'invisible': [('school_type','=','primary')], 'required': [('school_type','=','secondary')]}"/>
-                            <field name="p_school_level" attrs="{'invisible': [('school_type','=','secondary')], 'required': [('school_type','=','primary')]}"/>
-                            <field name="is_general" attrs="{'invisible': [('school_type','=','primary')]}"/>
-                            <field name="is_elective" attrs="{'invisible': [('school_type','=','primary')]}"/>
-                            <field name="stream_ids" widget="many2many_tags" attrs="{'invisible': ['|',('school_level','=','jss'),('school_type','=','primary')], 'required': [('school_level','=','sss')]}"/>
+                            <field name="school_level" />
+                            <field name="is_general" />
+                            <field name="is_elective" />
+                            <field name="stream_ids" widget="many2many_tags" attrs="{'invisible': [('school_level','=','elementary')]}"/>
                             <field name="code" placeholder="Code"/>
                             <field name="maximum_marks"/>
                             <field name="minimum_marks"/>
@@ -1356,15 +1237,8 @@
                             <field name="no_exam"/>
                         </group>
                         <notebook colspan="4">
-                            <page string="Forms" attrs="{'invisible': [('school_type','=','primary')]}">
-                                <button name="compute_forms" type="object" string="Compute Forms"/>
-                                <field name="form_ids" nolabel="1" colspan="4" domain="[('school_level','=',school_level)]">
-                                    <tree string="Forms Taught">
-                                        <field name="form_name"  />
-                                    </tree>
-                                </field>
-                            </page>
-                            <page string="Classes" attrs="{'invisible': [('school_type','=','secondary')]}">
+
+                            <page string="Classes" >
                                 <button name="compute_classes" type="object" string="Compute Classes"/>
                                 <field name="class_ids" nolabel="1" colspan="4" domain="[('school_level','=',school_level)]">
                                     <tree string="Classes Taught">
@@ -1408,9 +1282,7 @@
             <field name="arch" type="xml">
                 <tree string="Subjects">
                     <field name="name"/>
-                    <field name="school_type" invisible="1"/>
-                    <field name="school_level" atrs="{'invisible': [('school_type','=','primary')]}"/>
-                    <field name="p_school_level" atrs="{'invisible': [('school_type','=','secondary')]}"/>
+                    <field name="school_level"/>
                     <field name="code"/>
                     <field name="maximum_marks"/>
                     <field name="minimum_marks"/>
@@ -1538,13 +1410,6 @@
 
 
         <!-- Action Of Form & Tree Views Of School Form -->
-
-        <record id="action_school_form_form" model="ir.actions.act_window">
-            <field name="name">Forms</field>
-            <field name="res_model">school.form</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
-        </record>
 
         <record id="action_school_class_form" model="ir.actions.act_window">
             <field name="name">Classes</field>
@@ -1816,10 +1681,6 @@
         <menuitem id="menu_sub_school_class_config" groups="school.group_school_primary" name="School Classes" parent="menu_school_class_config"
                   action="action_school_class_form"/>
         <!-- MenuItem For Configurations->Forms -->
-
-        <menuitem id="menu_school_form_config" groups="school.group_school_secondary" name="School Forms" parent="menu_configuration"/>
-        <menuitem id="menu_sub_school_form_config" groups="school.group_school_secondary" name="School Forms" parent="menu_school_form_config"
-                  action="action_school_form_form"/>
 
         <!-- MenuItem For Configurations->Classrooms -->
 

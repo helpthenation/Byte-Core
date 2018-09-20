@@ -9,9 +9,6 @@ class SchoolSettings(models.TransientModel):
     late_time = fields.Float('Consider Late after', default=9.00)
     minimum_age = fields.Integer('Minimum Student Age')
     maximum_age = fields.Integer('Maximum Student Age')
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default='primary', string='School Type')
 
     @api.model
     def get_default_company_values(self, fields):
@@ -23,7 +20,6 @@ class SchoolSettings(models.TransientModel):
             'late_time': company.late_time,
             'minimum_age': company.minimum_age,
             'maximum_age': company.maximum_age,
-            'school_type': company.school_type,
         }
 
     @api.one
@@ -35,4 +31,3 @@ class SchoolSettings(models.TransientModel):
         company.late_time = self.late_time
         company.minimum_age = self.minimum_age
         company.maximum_age = self.maximum_age
-        company.school_type = self.school_type

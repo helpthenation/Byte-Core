@@ -36,7 +36,7 @@
                                 </div>
                             </div>
                             <ul>
-                                <li t-if="record.form_id.raw_value"><field name="form_id"/></li>
+                                <li t-if="record.class_id.raw_value"><field name="class_id"/></li>
                                 <li t-if="record.classroom_id.raw_value"><field name="classroom_id"/></li>
                             </ul>
                         </div>

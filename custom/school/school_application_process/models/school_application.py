@@ -96,23 +96,9 @@ class SchoolApplication(models.Model):
 
     @api.onchange('school_level')
     def onchange_school_level(self):
-        if self.school_level == 'jss':
+        if self.school_level == 'elementary':
             self.stream_id = False
-            if self.form_id.school_level != 'jss':
-                self.form_id = False
-        if self.school_level == 'sss':
-            self.stream_id = False
-            if self.form_id.school_level != 'sss':
-                self.form_id = False
 
-    @api.onchange('school_type')
-    def onchange_school_type(self):
-        if self.school_type == 'primary':
-            self.form_id = False
-            self.school_level = False
-        if self.school_type == 'secondary':
-            self.class_id = False
-            self.p_school_level = False
 
     @api.one
     def create_admission(self):
@@ -130,9 +116,8 @@ class SchoolApplication(models.Model):
             'nationality_id': self.nationality.id,
             'date_of_birth': self.date_of_birth,
             'age': self.age,
-            'p_school_level': self.p_school_level,
+            'school_level': self.school_level,
             'class_id': self.class_id,
-            'form_id': self.form_id,
             'stream_id': self.stream_id,
             'street': self.street,
             'city': self.city,
@@ -166,11 +151,7 @@ class SchoolApplication(models.Model):
             'exit_date': self.p_school_exit_date,
         })
 
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   readonly=True
-                                   )
+
     name = fields.Char(string="Name", required=True)
     stream_id = fields.Many2one('school.stream', "Stream")
     application_ref = fields.Char('Application Reference',  default=lambda obj:
@@ -228,16 +209,15 @@ class SchoolApplication(models.Model):
     parent_email = fields.Char('Email')
     parent_address = fields.Char('Parent/Guardian Address')
     parent_name = fields.Char('Parent/Guardian Name')
-    class_id = fields.Many2one('school.class', 'Class/Nursery')
-    form_id = fields.Many2one('school.form', 'Form', help='Student Form')
-    school_level = fields.Selection([('jss', 'JSS'),
-                                     ('sss', 'SSS')],
+    class_id = fields.Many2one('school.class', 'Class/Form')
+    school_level = fields.Selection([('elementary', 'Elementary'),
+                                     ('high', 'High School')],
                                     default='jss',
                                     string='Level (JSS/SSS)')
-    p_school_level = fields.Selection([('class', 'Class'),
-                                       ('nursery', 'Nursery')],
-                                      default='nursery',
-                                      string='Level (Nursery/Class)',
+    school_level = fields.Selection([('elementary', 'Elementary'),
+                                       ('high', 'High School')],
+                                      default='elementary',
+                                      string='Level (Elementary/High School)',
                                       required=True)
     cmp_id = fields.Many2one('res.company', 'Company',
                              default=lambda self: self.env.user.company_id,

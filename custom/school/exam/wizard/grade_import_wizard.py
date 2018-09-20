@@ -6,7 +6,7 @@ class GradeImporter(models.TransientModel):
     _name = 'wiz.grade.importer'
 
     student_ids = fields.Many2many('school.student')
-    form_ids = fields.Many2many('school.form')
+    class_ids = fields.Many2many('school.class')
     classroom_ids = fields.Many2many('school.classroom')
     subject_ids = fields.Many2many('school.subject')
     exam_id = fields.Many2one('exam.exam', string='Examination',
@@ -15,11 +15,11 @@ class GradeImporter(models.TransientModel):
 
     @api.onchange('student_ids')
     def onchange_student(self):
-        self.form_ids = False
+        self.class_ids = False
         self.classroom_ids = False
         self.subject_ids = False
 
-    @api.onchange('form_ids')
+    @api.onchange('class_ids')
     def onchange_form(self):
         self.student_ids = False
         self.classroom_ids = False
@@ -28,13 +28,13 @@ class GradeImporter(models.TransientModel):
     @api.onchange('classroom_ids')
     def onchange_classroom(self):
         self.student_ids = False
-        self.form_ids = False
+        self.class_ids = False
         self.subject_ids = False
 
     @api.onchange('subject_ids')
     def onchange_subject(self):
         self.student_ids = False
-        self.form_ids = False
+        self.class_ids = False
         self.classroom_ids = False
 
     @api.multi
@@ -69,9 +69,9 @@ class GradeImporter(models.TransientModel):
 
                             })
                             grade.imported = True
-            if rec.form_ids:
+            if rec.class_ids:
                 student_ids = []
-                for form in rec.form_ids:
+                for form in rec.class_ids:
                     for student in form.student_ids:
                         student_ids.append(student)
                 for students in student_ids:

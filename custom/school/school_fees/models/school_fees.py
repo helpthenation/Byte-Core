@@ -56,7 +56,7 @@ class SchoolFeesRegister(models.Model):
 
     unique_reference = fields.Char('Unique Reference', readonly=True)
     student_id = fields.Many2one('school.student', 'Student', required=True)
-    form_id = fields.Many2one('school.form', 'Form', related='student_id.form_id')
+    class_id = fields.Many2one('school.class', 'Class/Form', related='student_id.class_id')
     date = fields.Date('Date', required=True,
                        help="Date of payment",
                        default=lambda * a: time.strftime('%Y-%m-%d'))
@@ -94,15 +94,11 @@ class SchoolFeesRegister(models.Model):
     def _compute_fee_structure(self):
         domain = ([('academic_year_id', '=', self.student_id.academic_year_id.id)])
         structures = self.env['student.fees.structure'].search(domain)
-        if self.student_id.school_type == 'primary':
-            for struc in structures:
-                if self.student_id.class_id.id in [clas.id for clas in struc.related_classes]:
-                    self.fees_structure_id = struc
+        for struc in structures:
+            if self.student_id.class_id.id in [clas.id for clas in struc.related_classes]:
+                self.fees_structure_id = struc
 
-        if self.student_id.school_type == 'secondary':
-            for struc in structures:
-                if self.student_id.form_id.id in [form.id for form in struc.related_classes]:
-                    self.fees_structure_id = struc
+
 
     @api.multi
     def fees_register_draft(self):
@@ -179,11 +175,6 @@ class SchoolClass(models.Model):
     structure_ids = fields.Many2many('student.fees.structure', string='Fees Structure')
 
 
-class SchoolForm(models.Model):
-    _inherit = 'school.form'
-    structure_ids = fields.Many2many('student.fees.structure', string='Fees Structure')
-
-
 class StudentFeesStructure(models.Model):
     # Fees structure# 
     _name = 'student.fees.structure'
@@ -206,13 +197,6 @@ class StudentFeesStructure(models.Model):
     structure_ids = fields.One2many('student.fees.structure.line', 'structure_id', 'Structures')
     total = fields.Float('Amount', digits=(16, 2), compute='_compute_total')
     related_classes = fields.Many2many('school.class', string='Classes')
-    related_forms = fields.Many2many('school.form', string='Forms')
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
 
     _sql_constraints = [('code_uniq', 'unique(code)',
                          'The code of the Fees Structure must'
@@ -221,7 +205,7 @@ class StudentFeesStructure(models.Model):
                                           'be unique !'),
                         ]
 
-    @api.depends('related_classes', 'related_forms')
+    @api.depends('related_classes')
     def _compute_name(self):
         for rec in self:
             if rec.related_classes:
@@ -229,10 +213,4 @@ class StudentFeesStructure(models.Model):
                 y = ''
                 for x in classes:
                     y += x.class_name+' '
-                    rec.name = "Fee Structure for "+y
-            if rec.related_forms:
-                forms = rec.related_forms.sorted(key='id')
-                y = ''
-                for x in forms:
-                    y += x.form_name+' '
                     rec.name = "Fee Structure for "+y

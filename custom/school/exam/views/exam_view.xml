@@ -244,7 +244,7 @@
             <field name="name">exam_result KANBAN</field>
             <field name="model">exam.result</field>
             <field name="arch" type="xml">
-                <kanban default_group_by="form_id">
+                <kanban default_group_by="class_id">
                     <field name="color"/>
                     <field name="student_id"/>
                     <field name="student_pid"/>
@@ -281,7 +281,7 @@
                                                                         </a>
                                                                     </div>
                                                                     <div>Form :
-                                                                        <field name="form_id"/>
+                                                                        <field name="class_id"/>
                                                                     </div>
                                                                 </div>
                                                             </td>
@@ -327,10 +327,8 @@
             <field name="arch" type="xml">
                 <search string="Search">
                     <group col="10" colspan="4">
-                        <field name="school_type" invisible="1"/>
                         <field name="student_id"  />
-                        <field name="form_id" attrs="{'invisible': [('school_type','=','primary')]}"/>
-                        <field name="class_id" attrs="{'invisible': [('school_type','=','secondary')]}"/>
+                        <field name="class_id"/>
                         <field name="academic_year_id"  />
                         <field name="academic_term_id"  />
                         <field name="classroom_id"  />
@@ -341,9 +339,7 @@
                                 context="{'group_by':'student_id'}" />
                         <separator orientation="vertical" />
                         <filter icon="terp-stock_symbol-selection" string="Class" help="By Class" domain="[]"
-                                context="{'group_by':'class_id'}"  attrs="{'invisible': [('school_type','=','secondary')]}"/>
-                        <filter icon="terp-stock_symbol-selection" string="Form" help="By Form" domain="[]"
-                                context="{'group_by':'form_id'}"  attrs="{'invisible': [('school_type','=','primary')]}"/>
+                                context="{'group_by':'class_id'}" />
                         <filter icon="terp-stock_symbol-selection" string="Academic Year" help="By Academic Year" domain="[]"
                                 context="{'group_by':'academic_year_id'}" />
                         <filter icon="terp-stock_symbol-selection" string="Academic Term" help="By Academic Term" domain="[]"

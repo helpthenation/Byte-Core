@@ -19,10 +19,6 @@
                         <br/>
                         <br/>
                         <div>
-                            <b><label for="school_type"/></b>
-                            <field name="school_type"/>
-                        </div>
-                        <div>
                             <b><label for="current_academic_year"/></b>
                             <field name="current_academic_year"/>
                         </div>

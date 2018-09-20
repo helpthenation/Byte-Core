@@ -183,7 +183,7 @@ class ExamResult(models.Model):
     def _compute_result(self):
         '''Method to compute result'''
         for rec in self:
-            if rec.percentage >= rec.student_id.form_id.passing_mark:
+            if rec.percentage >= rec.student_id.class_id.passing_mark:
                 rec.result = 'pass'
             else:
                 rec.result = 'fail'
@@ -193,7 +193,6 @@ class ExamResult(models.Model):
         if vals.get('student_id'):
             student = self.env['school.student'].browse(vals.get('student_id'))
             vals.update({'student_pid': student.pid,
-                         'form_id': student.form_id.id,
                          'class_id': student.class_id.id,
                          'classroom_id': student.classroom_id.id
                          })
@@ -205,7 +204,6 @@ class ExamResult(models.Model):
             student = self.env['school.student'].browse(vals.get('student_id'
                                                                   ))
             vals.update({'student_pid': student.pid,
-                         'form_id': student.form_id.id,
                          'class_id': student.class_id.id,
                          'classroom_id': student.classroom_id.id
                          })
@@ -214,7 +212,6 @@ class ExamResult(models.Model):
     @api.onchange('student_id')
     def onchange_student(self):
         if self.student_id:
-            self.form_id = self.student_id.form_id.id
             self.class_id = self.student_id.class_id.id
             self.student_pid = self.student_id.pid
 
@@ -245,19 +242,13 @@ class ExamResult(models.Model):
     color = fields.Integer('Color')
     grade_system = fields.Many2one('grade.master', "Grade System",
                                    help="Grade System selected")
-    form_id = fields.Many2one('school.form', 'Form')
     class_id = fields.Many2one('school.class', 'Class')
     classroom_id = fields.Many2one('school.classroom', 'Class')
     academic_year_id = fields.Many2one('school.academic.year', 'Academic Year',
                                     help="Select Academic Year", required=True)
     academic_term_id = fields.Many2one('school.academic.term', 'Academic Term',
                                     help="Select Academic Term", required=True)
-    school_type = fields.Selection([('primary', 'Primary'),
-                                    ('secondary', 'Secondary')],
-                                   default=lambda obj: obj.env.user.company_id.school_type,
-                                   required=True,
-                                   readonly=True
-                                   )
+
 
     @api.multi
     def result_confirm(self):
@@ -327,7 +318,7 @@ class ExamSubject(models.Model):
     student_id = fields.Many2one("school.student", "Student Name",
                                  required=True,
                                  help="Select Student")
-    form_id = fields.Many2one('school.form', related='student_id.form_id')
+    class_id = fields.Many2one('school.class', related='student_id.class_id')
     obtain_marks = fields.Float("Obtain Marks", group_operator="avg", required=True)
     minimum_marks = fields.Float("Minimum Marks",
                                  help="Minimum Marks of subject")
