@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+    	<record id="image_data" model="product.template">
+            <field name="name">white sports shoes</field>
+            <field name="display_360_image">True</field>
+        </record>
+
+        <!-- Displaying Image -->
+    	<record id="data_1" model="product.image.360">
+            <field name="name">image1</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_1.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_2" model="product.image.360">
+            <field name="name">image2</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_2.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_3" model="product.image.360">
+            <field name="name">image3</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_3.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_4" model="product.image.360">
+            <field name="name">image4</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_4.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_5" model="product.image.360">
+            <field name="name">image5</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_5.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_6" model="product.image.360">
+            <field name="name">image6</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_6.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_7" model="product.image.360">
+            <field name="name">image7</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_7.jpg"/>
+           	<field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_8" model="product.image.360">
+            <field name="name">image8</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_8.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_9" model="product.image.360">
+            <field name="name">image9</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_9.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_10" model="product.image.360">
+            <field name="name">image10</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_10.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_11" model="product.image.360">
+            <field name="name">image11</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_11.jpg"/>
+           	<field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_12" model="product.image.360">
+            <field name="name">image12</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_12.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_13" model="product.image.360">
+            <field name="name">image13</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_13.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_14" model="product.image.360">
+            <field name="name">image14</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_14.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_15" model="product.image.360">
+            <field name="name">image15</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_15.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        <record id="data_16" model="product.image.360">
+            <field name="name">image16</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_16.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+       	<record id="data_17" model="product.image.360">
+            <field name="name">image17</field>
+            <field name="image" type="base64" file="website_image_360/static/images/image1_17.jpg"/>
+            <field name="product_tmpl_id" ref="website_image_360.image_data"/>
+        </record>
+        
+    </data>
+</odoo>

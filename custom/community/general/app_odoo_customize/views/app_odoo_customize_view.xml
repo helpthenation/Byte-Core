@@ -11,8 +11,8 @@
         </template>
 
         <template id="replace_login" name="replace_login" inherit_id="web.login_layout">
-            <xpath expr="//a[@href='https://www.odoo.com']" position="replace">
-                <a href="https://www.sunpop.cn" target="_blank">Powered by <span>odooApp</span></a>
+            <xpath expr="//a[@href='https://www.byteltd.com']" position="replace">
+                <a href="https://www.byteltd.com" target="_blank">Powered by <span>Byte Limited</span></a>
             </xpath>
         </template>
     </data>

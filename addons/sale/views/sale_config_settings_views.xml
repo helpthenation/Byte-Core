@@ -45,7 +45,7 @@
                         <div>
                             <field name="module_sale_contract" class="oe_inline" widget="upgrade_boolean"/>
                             <label for="module_sale_contract"/>
-                            <a href="https://www.odoo.com/page/subscriptions" target="_blank"> More Info</a>
+                            <a href="https://www.byteltd.com/page/subscriptions" target="_blank"> More Info</a>
                         </div>
                     </group>
                     <group string="Customers" name="customers">

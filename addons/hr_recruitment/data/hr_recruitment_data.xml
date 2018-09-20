@@ -9,7 +9,7 @@
             <field name="subtype_id" ref="mail.mt_comment"/>
             <field name="subject">Recruitment Process application installed!</field>
             <field name="body"><![CDATA[<p>Manage job positions and your company's recruitment process. This application may be integrated with the Survey application to help you define interviews for different jobs.</p>
-<p>Job applications sent by email will automatically be integrated in Odoo.</p>]]></field>
+<p>Job applications sent by email will automatically be integrated in Byte.</p>]]></field>
         </record>
 
     <!-- Meeting Types (for interview meetings) -->

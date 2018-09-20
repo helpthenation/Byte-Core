@@ -39,7 +39,7 @@
                             The <strong class="text-info">PRODUCT CODE</strong> is optional and should be the
                             internal code of one of your expense product. This
                             will set the right product automatically on your
-                            expense Odoo.
+                            expense Byte.
                         </p><p>
                             You can set an optionnal <strong class="text-primary">PRICE</strong>
                             at the end of the subject of your email.
@@ -67,9 +67,9 @@
                 <div class="text-center">
                     <h1>Congratulations, you're done!</h1>
                     <h3>We hope this feature helped you manage your expenses efficiently.</h3>
-                    <h4>Don't hesitate to <a href="mailto:info@odoo.com?subject=HrExpense%20Planner" target="_blank">send us an email</a> to describe<br/> your experience or to suggest improvements!</h4>
+                    <h4>Don't hesitate to <a href="mailto:info@byteltd.com?subject=HrExpense%20Planner" target="_blank">send us an email</a> to describe<br/> your experience or to suggest improvements!</h4>
 
-                    <p>Have a wonderful day,<br/>- The Odoo Team</p>
+                    <p>Have a wonderful day,<br/>- The Byte Team</p>
                     <img src="/web_planner/static/src/img/odoo_logo.png"/>
                 </div>
             </t>

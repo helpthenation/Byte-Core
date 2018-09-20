@@ -261,7 +261,7 @@
             </field>
             <field name="help" type="html">
                 <p>
-                    The Odoo issues tracker allows you to efficiently manage things
+                    The Byte issues tracker allows you to efficiently manage things
                     like internal requests, software development bugs, customer
                     complaints, project troubles, material breakdowns, etc.
                 </p>
@@ -275,7 +275,7 @@
             <field name="view_mode">kanban,tree,form,calendar,graph</field>
             <field name="help" type="html">
                 <p>
-                    The Odoo issues tracker allows you to efficiently manage things
+                    The Byte issues tracker allows you to efficiently manage things
                     like internal requests, software development bugs, customer
                     complaints, project troubles, material breakdowns, etc.
                 </p>
@@ -301,7 +301,7 @@
                           ]"/>
             <field name="help" type="html">
                 <p>
-                    The Odoo issues tracker allows you to efficiently manage things
+                    The Byte issues tracker allows you to efficiently manage things
                     like internal requests, software development bugs, customer
                     complaints, project troubles, material breakdowns, etc.
                 </p>

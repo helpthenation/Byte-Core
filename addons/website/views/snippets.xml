@@ -30,7 +30,7 @@
                             <p><a href="/page/website.contactus" class="btn btn-warning btn-large">Contact us</a></p>
                         </div>
                         <div class="carousel-img col-md-6 col-md-offset-1 hidden-sm hidden-xs mt48">
-                            <img class="img-responsive" src="/web/image/website.s_banner_default_image" alt="Banner Odoo Image"/>
+                            <img class="img-responsive" src="/web/image/website.s_banner_default_image" alt="Banner Byte Image"/>
                         </div>
                     </div>
                 </div>
@@ -57,7 +57,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 mt32 mb32">
-                  <img class="img img-responsive pull-left mb16" src="/web/image/website.s_text_image_default_image" alt="Odoo text and image block"/>
+                  <img class="img img-responsive pull-left mb16" src="/web/image/website.s_text_image_default_image" alt="Byte text and image block"/>
                 </div>
             </div>
         </div>
@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 mt32 mb32">
-                  <img class="img img-responsive center-block mb16" src="/web/image/website.s_image_text_default_image"  alt="Odoo image and text block"/>
+                  <img class="img img-responsive center-block mb16" src="/web/image/website.s_image_text_default_image"  alt="Byte image and text block"/>
                 </div>
                 <div class="col-md-6 mt64 mb32">
                     <h3>A Section Subtitle</h3>
@@ -173,7 +173,7 @@
             <h2 class="text-center">A Punchy Headline</h2>
             <div class="row">
                 <div class="col-md-12">
-                  <img class="img img-responsive" src="/web/image/website.s_big_picture_default_image" style="margin: 0 auto;"  alt="Odoo CMS - a big picture"/>
+                  <img class="img img-responsive" src="/web/image/website.s_big_picture_default_image" style="margin: 0 auto;"  alt="Byte CMS - a big picture"/>
                 </div>
                 <div class="col-md-6 col-md-offset-3 mb16 mt16">
                     <p class="text-center">
@@ -198,7 +198,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 mt32 mb48">
-                    <img class="img img-responsive" src="/web/image/website.library_image_11" alt="Odoo - Sample 1 for three columns"/>
+                    <img class="img img-responsive" src="/web/image/website.library_image_11" alt="Byte - Sample 1 for three columns"/>
                     <h4 class="mt16">Feature One</h4>
                     <p>
                         Adapt these three columns to fit you design need.
@@ -207,7 +207,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 mt32 mb48">
-                    <img class="img img-responsive" src="/web/image/website.library_image_13" alt="Odoo - Sample 2 for three columns"/>
+                    <img class="img img-responsive" src="/web/image/website.library_image_13" alt="Byte - Sample 2 for three columns"/>
                     <h4 class="mt16">Feature Two</h4>
                     <p>
                         To add a fourth column, reduce the size of these
@@ -217,7 +217,7 @@
                     </p>
                 </div>
                 <div class="col-md-4 mt32 mb48">
-                    <img class="img img-responsive" src="/web/image/website.library_image_07" alt="Odoo - Sample 3 for three columns"/>
+                    <img class="img img-responsive" src="/web/image/website.library_image_07" alt="Byte - Sample 3 for three columns"/>
                     <h4 class="mt16">Feature Three</h4>
                     <p>
                         Delete the above image or replace it with a picture
@@ -256,7 +256,7 @@
 <template id="s_image_floating" name="Image Floating">
     <div class="o_image_floating o_margin_l pull-right s_image_floating">
         <div class="o_container">
-            <img class="img img-rounded img-responsive" src="/web/image/website.s_image_floating_default_image" alt="Odoo CMS- Sample image floating"/>
+            <img class="img img-rounded img-responsive" src="/web/image/website.s_image_floating_default_image" alt="Byte CMS- Sample image floating"/>
         </div>
         <div class="o_footer">
             <small class="text-muted">A great way to catch your reader's attention is to tell a story. Everything you consider writing can be told as a story.</small>
@@ -371,7 +371,7 @@
             <div class="row">
                 <div class="col-md-9">
                     <p class="mb0">
-                        <strong>50,000+ companies run Odoo to grow their businesses.</strong>
+                        <strong>50,000+ companies run Byte to grow their businesses.</strong>
                     </p><p class="mb0">
                         Join us and make your company a better place.
                     </p>
@@ -395,13 +395,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading" role="tab" data-toggle="collapse">
                         <h4 class="panel-title">
-                            Which hardware does Odoo POS support?
+                            Which hardware does Byte POS support?
                         </h4>
                     </div>
                     <div class="panel-collapse collapse" role="tabpanel">
                         <div class="panel-body">
                             <p>
-                                Odoo's POS is a web application that can run on any device that
+                                Byte's POS is a web application that can run on any device that
                                 can display websites with little to no setup required.
                             </p>
                             <p>
@@ -571,7 +571,7 @@
                                     <div class="row">
                                         <blockquote class="mt48 mb16 col-md-4 col-md-offset-4">
                                             <p>
-                                                Odoo provides essential platform for our project management.
+                                                Byte provides essential platform for our project management.
                                                 Things are better organized and more visible with it.
                                             </p>
                                             <small>John Doe, CEO</small>

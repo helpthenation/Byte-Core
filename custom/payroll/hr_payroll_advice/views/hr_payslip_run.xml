@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="hr_payslip_run_form_inherit" model="ir.ui.view">
+            <field name="name">hr.payslip.run.form.inherit</field>
+            <field name="model">hr.payslip.run</field>
+            <field name="inherit_id"
+                   ref="hr_payslip_run_button_box.hr_payslip_run_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <button name="draft_payslip_run" position="after">
+                        <button name="create_advice" string="Create Advice"
+                                type="object"
+                                attrs="{'invisible':['|', ('state','&lt;&gt;','close'), ('advice_count', '=', True)]}"/>
+                    </button>
+
+                    <div class="oe_right oe_button_box" position="inside">
+                        <button name="view_exempted_employees"
+                                class="oe_stat_button"
+                                icon="fa-tasks" type="object">
+                            <field name="no_advice_employee_count"
+                                   widget="statinfo" string="Advice Alerts"/>
+                        </button>
+
+                        <button name="%(action_view_hr_bank_advice_run)d"
+                                class="oe_stat_button" icon="fa-university"
+                                type="action">
+                            <field name="advice_count"
+                                   widget="statinfo" string="Advices"/>
+                        </button>
+                    </div>
+                </data>
+            </field>
+        </record>
+
+        <record id="hr_payslip_run_search_inherit" model="ir.ui.view">
+            <field name="name">hr.payslip.run.search.inherit</field>
+            <field name="model">hr.payslip.run</field>
+            <field name="inherit_id" ref="hr_payroll.hr_payslip_run_filter"/>
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='date_end']" position="after">
+                        <separator orientation="vertical"/>
+                        <filter icon="terp-gtk-go-back-rtl" string="To Advice"
+                                domain="[('available_advice','=', False)]"
+                                help="Payslip Batches ready to be Adviced"/>
+                    </xpath>
+                </data>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

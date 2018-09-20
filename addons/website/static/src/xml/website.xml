@@ -10,7 +10,7 @@
         </section>
         <section class="mt32" t-if="backend_url">
             <p>The web site has encountered an error.</p>
-            <p>It might be possible to edit the relevant items or fix the issue in <a t-attf-href="#{backend_url}"> the classic Odoo interface</a>.</p>
+            <p>It might be possible to edit the relevant items or fix the issue in <a t-attf-href="#{backend_url}"> the classic Byte interface</a>.</p>
         </section>
     </div>
 

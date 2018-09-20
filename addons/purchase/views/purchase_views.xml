@@ -417,7 +417,7 @@
                 quotation is converted into a purchase order.
               </p><p>
                 Most propositions of purchase orders are created automatically
-                by Odoo based on inventory needs.
+                by Byte based on inventory needs.
               </p>
             </field>
         </record>

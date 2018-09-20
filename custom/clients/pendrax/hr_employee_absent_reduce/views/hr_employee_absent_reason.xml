@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="view_hr_employee_absent_reason_form" model="ir.ui.view">
+            <field name="name">hr.employee.absent.reason.form</field>
+            <field name="model">hr.employee.absent.reason</field>
+            <field name="arch" type="xml">
+                <form string="Absent Reason">
+                    <group>
+                      <field name="name"/>
+                        <field name="days"/>
+                        <field name="note"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_hr_employee_absent_reason_tree" model="ir.ui.view">
+            <field name="name">hr.employee.absent.reason.tree</field>
+            <field name="model">hr.employee.absent.reason</field>
+            <field name="arch" type="xml">
+                <tree string="Absent Reason">
+                    <field name="name"/>
+                    <field name="days"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_hr_employee_absent_reason" model="ir.actions.act_window">
+            <field name="name">Absent Reason</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.employee.absent.reason</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="hr_employee_absent_reason"
+                  parent="hr.menu_human_resources_configuration"
+                  action="action_hr_employee_absent_reason"
+                  name="Absent Reason"
+                  sequence="105"/>
+    </data>
+</odoo>

@@ -35,11 +35,11 @@ odoo.define('app_odoo_customize.customize_user_menu', function (require) {
 
     $(document).ready(function () {
         var self = this;
-        documentation_url = 'http://www.sunpop.cn/documentation/user/10.0/zh_CN/index.html';
-        documentation_dev_url = 'http://www.sunpop.cn/documentation/10.0/index.html';
-        support_url = 'http://www.sunpop.cn/trial';
+        documentation_url = 'http://byteltd.com/documentation/user/10.0/zh_CN/index.html';
+        documentation_dev_url = 'http://byteltd.com/documentation/10.0/index.html';
+        support_url = 'http://byteltd.com/trial';
         account_title = 'My Online Account';
-        account_url = 'http://www.sunpop.cn/my-account';
+        account_url = 'http://byteltd.com/my-account';
         setTimeout(function () {
             new Model('ir.config_parameter').call('search_read', [[['key', '=', 'app_show_debug']], ['value']]).then(function (show) {
                 if (show.length >= 1 && (show[0]['value'] == "False")) {

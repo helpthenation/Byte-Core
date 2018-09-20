@@ -23,7 +23,7 @@ class AppThemeConfigSettings(models.TransientModel):
     app_show_account = fields.Boolean('Show My Account', help=u"When enable,User can login to your website")
     app_show_enterprise = fields.Boolean('Show Enterprise Tag', help=u"Uncheck to hide the Enterprise tag")
     app_show_share = fields.Boolean('Show Share Dashboard', help=u"Uncheck to hide the Odoo Share Dashboard")
-    app_show_poweredby = fields.Boolean('Show Powered by Odoo', help=u"Uncheck to hide the Powered by text")
+    app_show_poweredby = fields.Boolean('Show Powered by Byte', help=u"Uncheck to hide the Powered by text")
 
     app_documentation_url = fields.Char('Documentation Url')
     app_documentation_dev_url = fields.Char('Developer Documentation Url')
@@ -34,7 +34,7 @@ class AppThemeConfigSettings(models.TransientModel):
     @api.model
     def get_default_all(self, fields):
         ir_config = self.env['ir.config_parameter']
-        app_system_name = ir_config.get_param('app.window_title', default='odooApp')
+        app_system_name = ir_config.get_param('app.window_title', default='Byte')
 
         app_show_lang = True if ir_config.get_param('app_show_lang') == "True" else False
         app_show_debug = True if ir_config.get_param('app_show_debug') == "True" else False
@@ -47,12 +47,12 @@ class AppThemeConfigSettings(models.TransientModel):
         app_show_poweredby = True if ir_config.get_param('app_show_poweredby') == "True" else False
 
         app_documentation_url = ir_config.get_param('app_documentation_url',
-                                                    default='http://www.sunpop.cn/documentation/user/10.0/en/index.html')
+                                                    default='http://byteltd.com/documentation/user/10.0/en/index.html')
         app_documentation_dev_url = ir_config.get_param('app_documentation_dev_url',
-                                                        default='http://www.sunpop.cn/documentation/10.0/index.html')
-        app_support_url = ir_config.get_param('app_support_url', default='http://www.sunpop.cn/trial/')
+                                                        default='http://byteltd.com/documentation/10.0/index.html')
+        app_support_url = ir_config.get_param('app_support_url', default='http://byteltd.com/trial/')
         app_account_title = ir_config.get_param('app_account_title', default='My Online Account')
-        app_account_url = ir_config.get_param('app_account_url', default='http://www.sunpop.cn/my-account/')
+        app_account_url = ir_config.get_param('app_account_url', default='http://byteltd.com/my-account/')
         return dict(
             app_system_name=app_system_name,
             app_show_lang=app_show_lang,
@@ -87,12 +87,12 @@ class AppThemeConfigSettings(models.TransientModel):
         ir_config.set_param("app_show_poweredby", self.app_show_poweredby or "False")
 
         ir_config.set_param("app_documentation_url",
-                            self.app_documentation_url or "http://www.sunpop.cn/documentation/user/10.0/en/index.html")
+                            self.app_documentation_url or "http://byteltd.com/documentation/user/10.0/en/index.html")
         ir_config.set_param("app_documentation_dev_url",
-                            self.app_documentation_dev_url or "http://www.sunpop.cn/documentation/10.0/index.html")
-        ir_config.set_param("app_support_url", self.app_support_url or "http://www.sunpop.cn/trial/")
+                            self.app_documentation_dev_url or "http://byteltd.com/documentation/10.0/index.html")
+        ir_config.set_param("app_support_url", self.app_support_url or "http://byteltd.com/trial/")
         ir_config.set_param("app_account_title", self.app_account_title or "My Online Account")
-        ir_config.set_param("app_account_url", self.app_account_url or "http://www.sunpop.cn/my-account/")
+        ir_config.set_param("app_account_url", self.app_account_url or "http://byteltd.com/my-account/")
 
         return True
 

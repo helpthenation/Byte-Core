@@ -49,10 +49,10 @@ http://www.sunpop.cn
 
 ## 其它技术资源：
 #### odoo10-windows64位高性能最新绿色版下载及制作方法-提速50%
-http://www.sunpop.cn/odoo10_fast_x64_download/
+http://byteltd.com/odoo10_fast_x64_download/
 #### Odoo10离线中文用户手册下载
-http://www.sunpop.cn/odoo10_user_manual_document_offline/
+http://byteltd.com/odoo10_user_manual_document_offline/
 #### Odoo10离线开发手册下载-含python教程，jquery参考，Jinja2模板，PostgresSQL参考（odoo开发必备）
-http://www.sunpop.cn/odoo10_developer_document_offline/
+http://byteltd.com/odoo10_developer_document_offline/
 
 

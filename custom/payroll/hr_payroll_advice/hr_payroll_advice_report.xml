@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+
+        <report
+                auto="False"
+                id="payroll_advice"
+                model="hr.payroll.advice"
+                string="Print Advice"
+                report_type="qweb-pdf"
+                name="hr_payroll_advice.report_payrolladvice"
+                file="hr_payroll_advice.report_payrolladvice"/>
+
+
+    </data>
+</odoo>

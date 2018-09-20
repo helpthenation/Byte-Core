@@ -60,13 +60,13 @@
                             <label for="social_twitter"/>
                             <div name="social_twitter">
                                 <div class="oe_inline">
-                                    <field name="social_twitter" placeholder="https://twitter.com/Odoo"/>
+                                    <field name="social_twitter" placeholder="https://twitter.com/Byte"/>
                                 </div>
                             </div>
                             <label for="social_facebook"/>
                             <div name="social_facebook">
                                 <div class="oe_inline">
-                                    <field name="social_facebook" placeholder="https://www.facebook.com/Odoo"/>
+                                    <field name="social_facebook" placeholder="https://www.facebook.com/Byte"/>
                                 </div>
                             </div>
                             <label for="social_github"/>
@@ -90,7 +90,7 @@
                             <label for="social_googleplus"/>
                             <div name="social_googleplus">
                                 <div class="oe_inline">
-                                    <field name="social_googleplus" placeholder="https://plus.google.com/+Odooapps"/>
+                                    <field name="social_googleplus" placeholder="https://plus.google.com/+Byteapps"/>
                                 </div>
                             </div>
                         </group>
@@ -112,7 +112,7 @@
                             <label for="module_website_version"/>
                             <div>
                                 <field name="module_website_version" widget="upgrade_radio"/>
-                                <a href="https://www.odoo.com/slides/slide/how-a-b-testing-can-help-you-optimize-your-website-341" target="_blank"> More Info</a>
+                                <a href="https://www.byteltd.com/slides/slide/how-a-b-testing-can-help-you-optimize-your-website-341" target="_blank"> More Info</a>
                             </div>
                         </group>
                         <group string="Performance Optimization" name="optimization" groups="base.group_no_one">

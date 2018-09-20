@@ -1,10 +1,14 @@
 from odoo import fields, models, api
 from odoo.exceptions import ValidationError
 import time
+from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
+from datetime import date, datetime
 
 
 class HrEmployee(models.Model):
     _inherit = 'hr.employee'
+    _rec_name = 'name_and_id'
+    name_and_id = fields.Char(compute='compute_name_id', store=True)
     phone = fields.Char(string='Mobile #', required=True)
     nassit_no = fields.Char(string='Nassit Reg. #')
     labor_card_no = fields.Char(string='Labor Card #')
@@ -84,6 +88,20 @@ class HrEmployee(models.Model):
                              readonly=True)
     passport = fields.Char(string='Passport/Permit No.')
     qualification = fields.Char(string='Professional Qualification/Training')
+    staff_category = fields.Selection([('guard', 'Guard'),
+                                      ('admin', 'Admin')],
+                                      string='Staff Category',
+                                      required=True)
+    staff_location = fields.Selection([('freetown', 'Freetown'),
+                                      ('provincial', 'Provincial')],
+                                      string='Region')
+    age = fields.Integer('Age', compute='_compute_age', readonly=True, store=True)
+    incomplete_info = fields.Boolean(string='Incomplete Info', default=False)
+    deployment = fields.Char(string='Location')
+
+    _sql_constraints = [
+        ('unique_empid', 'unique (empid)', "Employee ID Already Exist !"),
+    ]
 
     @api.depends('name')
     @api.multi
@@ -97,3 +115,22 @@ class HrEmployee(models.Model):
         for rec in self:
             if rec.empid != rec.empid2:
                 raise ValidationError('ID not the Same Please Check')
+
+    @api.multi
+    @api.depends('date_of_birth')
+    def _compute_age(self):
+        for rec in self:
+            rec.age = 0
+            if rec.date_of_birth:
+                start = datetime.strptime(rec.date_of_birth,
+                                          DEFAULT_SERVER_DATE_FORMAT)
+                end = datetime.strptime(time.strftime(DEFAULT_SERVER_DATE_FORMAT),
+                                        DEFAULT_SERVER_DATE_FORMAT)
+                age = ((end - start).days / 365)
+                rec.age = age and age or 10
+
+    @api.multi
+    @api.depends('name', 'empid')
+    def compute_name_id(self):
+        for rec in self:
+            rec.name_and_id = str(rec.name+" ("+rec.empid+")")

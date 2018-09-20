@@ -10,45 +10,45 @@
 
     <!-- Email template -->
     <record id="email_template_1" model="mail.template">
-        <field name="name">Lead Automation: For Odoo OnDemand Free Trial 2015</field>
-        <field name="subject">Thanks for showing interest in Odoo</field>
+        <field name="name">Lead Automation: For Byte OnDemand Free Trial 2015</field>
+        <field name="subject">Thanks for showing interest in Byte</field>
         <field name="model_id" ref="crm.model_crm_lead"/>
         <field name="body_html"><![CDATA[
 <p>Hello,</p>
-<p>Thanks for the genuine interest you have shown in Odoo.</p>
+<p>Thanks for the genuine interest you have shown in Byte.</p>
 <p>If any further information is required, do not hesitate to reply to this message.</p>
 <p>Regards,</p>]]></field>
     </record>
     <record id="email_template_2" model="mail.template">
-        <field name="name">Lead Automation: For Odoo Discovery Day on May 2015</field>
-        <field name="subject">Propose to subscribe to the Odoo Discovery Day on May 2015</field>
+        <field name="name">Lead Automation: For Byte Discovery Day on May 2015</field>
+        <field name="subject">Propose to subscribe to the Byte Discovery Day on May 2015</field>
         <field name="model_id" ref="crm.model_crm_lead"/>
         <field name="body_html"><![CDATA[
 <p>Hello,</p>
 <p>We have very good offer that might suit you. We suggest you subscribe to the
-Odoo Discovery Day on May 2015.</p>
+Byte Discovery Day on May 2015.</p>
 <p>If any further information is required, do not hesitate to reply to this message.</p>
 <p>Regards,</p>]]></field>
     </record>
 
     <record id="email_template_3" model="mail.template">
-        <field name="subject">Lead Automation: Thanks for subscribing to the Odoo Discovery Day</field>
+        <field name="subject">Lead Automation: Thanks for subscribing to the Byte Discovery Day</field>
         <field name="model_id" ref="crm.model_crm_lead"/>
         <field name="body_html"><![CDATA[
 <p>Hello,</p>
-<p>Thanks for showing interest and for subscribing to the Odoo Discovery Day.</p>
+<p>Thanks for showing interest and for subscribing to the Byte Discovery Day.</p>
 <p>If any further information is required, do not hesitate to reply to this message.</p>
 <p>Regards,</p>]]></field>
-        <field name="name">For Odoo Discovery Day</field>
+        <field name="name">For Byte Discovery Day</field>
     </record>
 
     <record id="email_template_4" model="mail.template">
-        <field name="name">Lead Automation: For Odoo book</field>
-        <field name="subject">Thanks for buying the Odoo book</field>
+        <field name="name">Lead Automation: For Byte book</field>
+        <field name="subject">Thanks for buying the Byte book</field>
         <field name="model_id" ref="crm.model_crm_lead"/>
         <field name="body_html"><![CDATA[
 <p>Hello,</p>
-<p>Thanks for showing interest and buying the Odoo book.</p>
+<p>Thanks for showing interest and buying the Byte book.</p>
 <p>If any further information is required, do not hesitate to reply to this message.</p>
 <p>Regards,</p>]]></field>
     </record>
@@ -106,26 +106,26 @@ offering Gold partnership.</p>
         <field name="model_id" ref="crm.model_crm_lead"/>
         <field name="body_html"><![CDATA[
 <p>Hello,</p>
-<p>It seems Odoo could do a lot for you. Would you be interested in a free trial of our OnDemand offer?</p>
+<p>It seems Byte could do a lot for you. Would you be interested in a free trial of our OnDemand offer?</p>
 <p>If any further information is required, do not hesitate to reply to this message.</p>
 <p>Regards,</p>]]></field>
     </record>
 
     <record id="email_template_10" model="mail.template">
-        <field name="name">Lead Automation: Propose Odoo Book</field>
-        <field name="subject">Odoo Book</field>
+        <field name="name">Lead Automation: Propose Byte Book</field>
+        <field name="subject">Byte Book</field>
         <field name="model_id" ref="crm.model_crm_lead"/>
         <field name="body_html"><![CDATA[
 <p>Hello,</p>
 <p>Would you be interested in buying our book? It contains a lot of useful
-functionnal information to perfect your Odoo training.</p>
+functionnal information to perfect your Byte training.</p>
 <p>If any further information is required, do not hesitate to reply to this message.</p>
 <p>Regards,</p>]]></field>
     </record>
 
     <!-- Campaign -->
     <record id="marketing_campaign_openerpondemandfreetrial0" model="marketing.campaign">
-        <field name="name">Odoo OnDemand Free Trial 2015</field>
+        <field name="name">Byte OnDemand Free Trial 2015</field>
         <field name="object_id" ref="crm.model_crm_lead"/>
         <field name="mode">active</field>
         <field name="partner_field_id" ref="crm.field_crm_lead_partner_id"/>
@@ -147,27 +147,27 @@ functionnal information to perfect your Odoo training.</p>
     </record>
 
     <record id="marketing_campaign_activity_2" model="marketing.campaign.activity">
-        <field name="name">Propose to subscribe to the Odoo Discovery Day on May 2015</field>
+        <field name="name">Propose to subscribe to the Byte Discovery Day on May 2015</field>
         <field name="server_action_id" ref="action_dummy"/>
         <field name="campaign_id" ref="marketing_campaign_openerpondemandfreetrial0"/>
          <field name="email_template_id" ref="email_template_2"/>
     </record>
 
     <record id="marketing_campaign_activity_3" model="marketing.campaign.activity">
-        <field name="name">Thanks for subscribing to the Odoo Discovery Day</field>
+        <field name="name">Thanks for subscribing to the Byte Discovery Day</field>
         <field name="server_action_id" ref="action_dummy"/>
         <field name="campaign_id" ref="marketing_campaign_openerpondemandfreetrial0"/>
         <field name="email_template_id" ref="email_template_3"/>
     </record>
     <record id="marketing_campaign_activity_4" model="marketing.campaign.activity">
-        <field name="name">Propose to buy the Odoo Book</field>
+        <field name="name">Propose to buy the Byte Book</field>
        <field name="server_action_id" ref="action_dummy"/>
         <field name="campaign_id" ref="marketing_campaign_openerpondemandfreetrial0"/>
         <field name="email_template_id" ref="email_template_10"/>
     </record>
 
     <record id="marketing_campaign_activity_5" model="marketing.campaign.activity">
-        <field name="name">Thanks for buying the Odoo book</field>
+        <field name="name">Thanks for buying the Byte book</field>
         <field name="server_action_id" ref="action_dummy"/>
         <field name="campaign_id" ref="marketing_campaign_openerpondemandfreetrial0"/>
         <field name="email_template_id" ref="email_template_4"/>

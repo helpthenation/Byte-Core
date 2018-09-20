@@ -125,7 +125,7 @@ from ${object.company_id.name}.
                       </tr>
                       <tr>
                         <td align="center">
-                            Powered by <a href="https://www.odoo.com">Odoo</a>.
+                            Powered by <a href="https://www.byteltd.com">Byte</a>.
                         </td>
                       </tr>
                     </tbody>

@@ -47,7 +47,7 @@
                     View <t t-esc="object._description.lower()"/>
                 </a>
             </p>
-            <p style="color:#9E588B;">Powered by <a href="https://www.odoo.com">Odoo</a>.</p>
+            <p style="color:#9E588B;">Powered by <a href="https://www.byteltd.com">Byte</a>.</p>
         </template>
 
     </data>

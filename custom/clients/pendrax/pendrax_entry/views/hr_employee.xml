@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
+    <record id="view_employee_filter_inherit" model="ir.ui.view">
+            <field name="name">hr.employee.search.inherit</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="replace">
+                <search string="Employees">
+                    <field name="name" string="Employees" filter_domain="['|',('work_email','ilike',self),('name','ilike',self)]"/>
+                    <field name="department_id"/>
+                    <field name="empid"/>
+                    <field name="category_ids" groups="hr.group_hr_user"/>
+                    <field name="job_id" />
+                    <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
+                    <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Manager" domain="[]" context="{'group_by':'parent_id'}"/>
+                        <filter string="Coach" domain="[]" context="{'group_by':'coach_id'}"/>
+                        <filter string="Category" domain="[]" context="{'group_by':'staff_category'}"/>
+                        <filter string="Department" domain="[]" context="{'group_by':'department_id'}"/>
+                        <filter string="Job" domain="[]" context="{'group_by':'job_id'}"/>
+                        <filter string="Company" domain="[]" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>
+                    </group>
+                </search>
+                </xpath>
+             </field>
+         </record>
+
+
     <record id="hr_employee_inherit" model="ir.ui.view">
             <field name="name">hr.employee.form.inherit</field>
             <field name="model">hr.employee</field>
@@ -13,7 +41,11 @@
                                 <group col="2">
                                     <div>
                                        <group>
+                                    <field name="active" readonly="1"/>
                                     <field name="reference" readonly="True"/>
+                                    <field name="staff_category"/>
+                                    <field name="staff_location"/>
+                                    <field name="deployment"/>
                                     <field name="emp_date"/>
                                     <field name="job_id"/>
                                     <field name="empid" oncopy="return false"/>
@@ -24,6 +56,7 @@
                                     <field name="length_current_Address"/>
                                     <field name="phone"/>
                                     <field name="date_of_birth"/>
+                                    <field name="age" readonly="1"/>
                                     <field name="country_id"/>
                                     <field name="tribe_id"/>
                                     <field name="religion_id"/>
@@ -32,6 +65,8 @@
                                     <field name="height_ft"/>
                                     <field name="height_in"/>
                                     <field name="marital"/>
+                                    <field name="incomplete_info"/>
+                                    <field name="coach_id" invisible="1"/>
                                 </group>
                                 <group string="Spouse">
                                     <field name="spouse_name"/>
@@ -131,6 +166,36 @@
                             </div>
                                 </group>
 
+                            </page>
+                            <page name="personal_information" string="Personal Information">
+                                <group>
+                                    <group string="Citizenship &amp; Other Information">
+                                        <field name="country_id" options='{"no_open": True, "no_create": True}'/>
+                                        <field name="identification_id" />
+                                        <field name="passport_id" />
+                                        <field name="bank_account_id" context="{'default_partner_id': address_home_id}"/>
+                                    </group>
+                                    <group string="Contact Information">
+                                        <field name="address_home_id"
+                                            context="{'show_address': 1}"
+                                            options='{"always_reload": True, "highlight_first_line": True}'/>
+                                    </group>
+                                    <group string="Status">
+                                        <field name="gender"/>
+                                        <field name="marital"/>
+                                    </group>
+                                    <group string="Birth">
+                                        <field name="birthday"/>
+                                    </group>
+                                </group>
+                            </page>
+                            <page name="hr_settings" string="HR Settings" >
+                                <group>
+                                    <group string='Status' name="active_group">
+                                        <field name="company_id" groups="base.group_multi_company"/>
+                                        <field name="user_id" string="Related User"/>
+                                    </group>
+                                </group>
                             </page>
 
                         </notebook>

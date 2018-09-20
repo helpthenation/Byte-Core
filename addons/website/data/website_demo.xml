@@ -3,9 +3,9 @@
     <data>
 
         <record id="default_website" model="website">
-            <field name="social_twitter">https://twitter.com/Odoo</field>
-            <field name="social_facebook">https://www.facebook.com/Odoo</field>
-            <field name="social_googleplus">https://plus.google.com/+Odooapps</field>
+            <field name="social_twitter">https://twitter.com/Byte</field>
+            <field name="social_facebook">https://www.facebook.com/Byte</field>
+            <field name="social_googleplus">https://plus.google.com/+Byteapps</field>
             <field name="social_linkedin">https://www.linkedin.com/company/odoo</field>
         </record>
 
@@ -134,9 +134,9 @@ response = request.render("website.template_partner_comment", {
         <record id="website2" model="website">
             <field name="name">Website 0.0.0.0</field>
             <field name="domain">0.0.0.0</field>
-            <field name="social_twitter">https://twitter.com/Odoo</field>
-            <field name="social_facebook">https://www.facebook.com/Odoo</field>
-            <field name="social_googleplus">https://plus.google.com/+Odooapps</field>
+            <field name="social_twitter">https://twitter.com/Byte</field>
+            <field name="social_facebook">https://www.facebook.com/Byte</field>
+            <field name="social_googleplus">https://plus.google.com/+Byteapps</field>
             <field name="social_linkedin">https://www.linkedin.com/company/odoo</field>
         </record>
 

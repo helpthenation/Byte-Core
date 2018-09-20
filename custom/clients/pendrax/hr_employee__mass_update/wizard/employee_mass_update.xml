@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<openerp>
+<odoo>
 	<data>
 	
 	<record id="wizard_update_employee" model="ir.ui.view">
@@ -8,7 +8,9 @@
             <field name="arch" type="xml">
                 <form>
                 	<header>
-                        <button name="update_employees" type="object" string="Submit" class="oe_highlight"/>
+                        <button name="update_admin_employees" type="object" string="Update Admin Staff" class="oe_highlight"/>
+                        <button name="update_guard_employees" type="object" string="Update Guard Staff" class="oe_highlight"/>
+                        <button name="create_employees" type="object" string="Create Employees" class="oe_highlight"/>
                     </header>
                     <newline/>
                     <div>
@@ -18,8 +20,21 @@
                         </b>
                     </div>
                     <group>
+                        <field name="dest_dir"/>
+                        <field name="date"/>
                         <field name="file"/>
                     </group>
+
+                    <footer>
+                        <button name="purgebankacc" type="object" string="Purge Payslips" class="oe_highlight"/>
+                        <button name="update_bank_accounts" type="object" string="Update Bank Account" class="oe_highlight"/>
+                        <button name="purgedupcon" type="object" string="Delete Duplicate Contract" class="oe_highlight"/>
+                        <button name="inactivate" type="object" string="Deactivate Employees" class="oe_highlight"/>
+                        <button name="create_location_date" type="object" string="Update Date n Location" class="oe_highlight"/>
+                        <button name="update_abs" type="object" string="Update ABS" class="oe_highlight"/>
+                        <button name="create_paye_adjustment" type="object" string="PAYE ADJ" class="oe_highlight"/>
+                        <button name="add_photos" type="object" string="ADD PHOTOS" class="oe_highlight"/>
+                    </footer>
                </form>
             </field>
         </record>
@@ -36,15 +51,15 @@
         <menuitem
                 id="menu_hr_employee_tools"
                 parent="hr.menu_hr_root"
-                string="Tools"
-                sequence="6"/>
+                name="Tools"
+                sequence="5"/>
         <menuitem
                 action="action_wizard_update_employee"
                 id="menu_employee_mass_update_wizard"
                 parent="menu_hr_employee_tools"
-                string="Update Employee from CSV"
+                name="Update Employee from CSV"
                 sequence="1"/>
 
 
 	</data>
-</openerp>
+</odoo>

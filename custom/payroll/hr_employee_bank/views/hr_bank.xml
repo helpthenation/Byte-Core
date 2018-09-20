@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+
+        <record id="action_partner_bank" model="ir.actions.act_window">
+            <field name="name">Bank Accounts</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.partner.bank</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="hr_bank_form" model="ir.ui.view">
+            <field name="name">res.partner.bank.form.inherit</field>
+            <field name="model">res.partner.bank</field>
+            <field name="inherit_id" ref="base.view_partner_bank_form"/>
+            <field name="arch" type="xml">
+                <data>
+                    <field name="partner_id" position="replace"/>
+                </data>
+            </field>
+        </record>
+
+        <menuitem id="menu_banks" name="Banks" action="base.action_res_bank_form" parent="hr.menu_human_resources_configuration"
+        sequence="106"/>
+        <menuitem id="menu_bank_accounts" name="Bank Accounts" action="action_partner_bank" parent="hr.menu_human_resources_configuration"
+        sequence="107"/>
+    </data>
+</odoo>

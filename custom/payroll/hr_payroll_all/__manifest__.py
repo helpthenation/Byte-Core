@@ -1,0 +1,22 @@
+{
+    "name": "Payroll Package",
+    'version': '10.0',
+    "category": "Human Resources",
+    "author": 'Francis Bangura, francisbnagura@gmail.com ',
+    "website": "http://byteltd.com",
+    "license": "AGPL-3",
+    "depends": ['hr_employee_bank',
+                'hr_employee_config_setting',
+                'hr_employee_endofservice_benefit',
+                'hr_employee_service_length',
+                'hr_payroll_advice',
+                'hr_payroll_allowance',
+                'hr_payroll_loan',
+                'hr_payslip_amendment',
+                'hr_payslip_run_button_box',
+                'hr_payslip_run_confirm_slips',
+                'hr_period'],
+    "data": [
+    ],
+    'installable': True,
+}

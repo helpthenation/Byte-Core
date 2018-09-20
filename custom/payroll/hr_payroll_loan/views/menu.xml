@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Menu Parent -->
+
+        <menuitem id="hr_payroll_loan_root" name="Loans"
+
+                  web_icon="hr_payroll_loan,static/description/icon.png"
+                  sequence="100"/>
+
+        <menuitem id="menu_hr_payroll_root_configuration" name="Configuration"
+                  parent='hr_payroll_loan_root'
+                   sequence="500"/>
+    </data>
+</odoo>
