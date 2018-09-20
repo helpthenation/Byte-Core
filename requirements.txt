@@ -42,5 +42,5 @@ xlwt==1.1.2
 xlrd==1.0.0
 cryptography==2.2.2
 paramiko==2.4.1
-pysftp
+pysftp==0.2.9
 
