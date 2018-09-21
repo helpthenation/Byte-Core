@@ -838,6 +838,15 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        <!-- Actions Of Form & Tree Views Of Student Class-->
+
+        <record id="action_student_class" model="ir.actions.act_window">
+            <field name="name">Class/Form</field>
+            <field name="res_model">school.class</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
         <!-- Tree View Of Student Cast -->
 
         <record id="view_student_cast_tree" model="ir.ui.view">
@@ -1688,6 +1697,11 @@
 
         <menuitem id="menu_sub_school_classroom" name="School Classrooms" parent="menu_school_classroom"
                   action="action_student_classroom_form"/>
+
+        <menuitem id="menu_school_class" name="School Class/Form" parent="menu_configuration"/>
+
+        <menuitem id="menu_sub_school_class" name="School Class/Form" parent="menu_school_class"
+                  action="action_student_class"/>
 
         <!-- MenuItem For Configurations->Subject -->
 
