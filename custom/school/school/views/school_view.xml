@@ -1189,9 +1189,10 @@
                      <sheet style="margin-left: auto; margin-right: auto; width: 1000px; ">
                         <group col="4" colspan="4">
                             <field name="sequence"/>
+                            <field name="school_level"/>
+                            <field name="is_nursery" attrs="{'invisible':[('school_level','=','high')]}"/>
                             <field name="next_class_id"/>
                             <field name="previous_class_id"/>
-                            <field name="school_level"/>
                             <field name="passing_mark"/>
                             <field name="teacher_id"/>
                             <field name="public_exam_class" placeholder="Public Exam Class"/>

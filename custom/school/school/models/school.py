@@ -159,7 +159,15 @@ class SchoolClass(models.Model):
         elif self.school_level == 'elementary' and not self.is_nursery:
             self.class_name = "Class " + str(self.sequence-3)
         elif self.school_level == 'high':
-            self.class_name = "Form " + str(self.sequence-3)
+            self.class_name = "Form " + str(self.sequence-9)
+
+    @api.multi
+    @api.onchange('school_level')
+    def set_nursery(self):
+        self.ensure_one()
+        for rec in self:
+            if rec.school_level=='high':
+                rec.is_nursery=False
 
     @api.one
     def _compute_neighbor_class(self):
@@ -526,15 +534,16 @@ class StudentStudent(models.Model):
     @api.multi
     @api.depends('date_of_birth')
     def _compute_age(self):
-        for rec in self:
-            rec.age = 0
-            if rec.date_of_birth:
-                start = datetime.strptime(rec.date_of_birth,
-                                          DEFAULT_SERVER_DATE_FORMAT)
-                end = datetime.strptime(time.strftime(DEFAULT_SERVER_DATE_FORMAT),
-                                        DEFAULT_SERVER_DATE_FORMAT)
-                age = ((end - start).days / 365)
-                rec.age = age
+        if self.env.user.company_id.enforce_age:
+            for rec in self:
+                rec.age = 0
+                if rec.date_of_birth:
+                    start = datetime.strptime(rec.date_of_birth,
+                                              DEFAULT_SERVER_DATE_FORMAT)
+                    end = datetime.strptime(time.strftime(DEFAULT_SERVER_DATE_FORMAT),
+                                            DEFAULT_SERVER_DATE_FORMAT)
+                    age = ((end - start).days / 365)
+                    rec.age = age
 
     @api.model
     def create(self, vals):
