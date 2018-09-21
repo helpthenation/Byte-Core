@@ -46,22 +46,23 @@ class SchoolApplication(models.Model):
     @api.multi
     @api.depends('date_of_birth')
     def _compute_age(self):
-        minimum_age = self.env.user.company_id.minimum_age
-        maximum_age = self.env.user.company_id.maximum_age
-        for rec in self:
-            rec.age = 0
-            if rec.date_of_birth:
-                start = datetime.strptime(rec.date_of_birth,
-                                          DEFAULT_SERVER_DATE_FORMAT)
-                end = datetime.strptime(time.strftime(DEFAULT_SERVER_DATE_FORMAT),
-                                        DEFAULT_SERVER_DATE_FORMAT)
-                age = ((end - start).days / 365)
-                if age >= minimum_age and (age <= maximum_age):
-                    rec.age = age
-                else:
-                    raise ValidationError('The minimum age for enrolling student is %s and the maximum age is %s' %
-                                          (self.env.user.company_id.minimum_age, self.env.user.company_id.maximum_age))
-                    return True
+        if self.env.user.company_id.enforce_age:
+            minimum_age = self.env.user.company_id.minimum_age
+            maximum_age = self.env.user.company_id.maximum_age
+            for rec in self:
+                rec.age = 0
+                if rec.date_of_birth:
+                    start = datetime.strptime(rec.date_of_birth,
+                                              DEFAULT_SERVER_DATE_FORMAT)
+                    end = datetime.strptime(time.strftime(DEFAULT_SERVER_DATE_FORMAT),
+                                            DEFAULT_SERVER_DATE_FORMAT)
+                    age = ((end - start).days / 365)
+                    if age >= minimum_age and (age <= maximum_age):
+                        rec.age = age
+                    else:
+                        raise ValidationError('The minimum age for enrolling student is %s and the maximum age is %s' %
+                                              (self.env.user.company_id.minimum_age, self.env.user.company_id.maximum_age))
+                        return True
 
     @api.constrains('parent_phone')
     def _check_phone(self):

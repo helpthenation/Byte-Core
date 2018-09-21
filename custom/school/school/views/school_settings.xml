@@ -35,12 +35,16 @@
                             <field name="late_time" widget="float_time"/>
                         </div>
                         <div>
-                            <b><label for="minimum_age"/></b>
-                            <field name="minimum_age"/>
+                            <b><label for="enforce_age"/></b>
+                            <field name="enforce_age"/>
+                        </div>
+                        <div >
+                            <b><label for="minimum_age" attrs="{'invisible':[('enforce_age','=',False)]}"/></b>
+                            <field name="minimum_age" attrs="{'invisible':[('enforce_age','=',False)]}"/>
                         </div>
                         <div>
-                            <b><label for="maximum_age"/></b>
-                            <field name="maximum_age"/>
+                            <b><label for="maximum_age" attrs="{'invisible':[('enforce_age','=',False)]}"/></b>
+                            <field name="maximum_age" attrs="{'invisible':[('enforce_age','=',False)]}"/>
                         </div>
                     </div>
                     </group>

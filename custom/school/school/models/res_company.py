@@ -9,4 +9,5 @@ class ResCompany(models.Model):
     late_time = fields.Float('Consider Late after', default=9.00)
     minimum_age = fields.Integer('Minimum Student Age')
     maximum_age = fields.Integer('Maximum Student Age')
+    enforce_age = fields.Boolean(string="Enforce Age Check", default=False)
 
