@@ -513,6 +513,11 @@ class SchoolParent(models.Model):
                     self.user_id.related_parent_id = self.id
                     self.login_access = True
 
+class SchoolCampus(models.Model):
+    _name = 'school.campus'
+    name = fields.Char(string='Name', required=True)
+    head_teacher_id = fields.Many2one(comodel_name='hr.employee', string='Principal')
+
 
 class StudentStudent(models.Model):
     _name = 'school.student'
@@ -743,6 +748,9 @@ class StudentStudent(models.Model):
         ('northern', 'Northern'),
         ('eastern', 'Eastern'),
     ], 'Province', default='westernarea')
+    campus_id = fields.Many2one(comodel_name='school.campus',
+                                required=True,
+                                string='Campus')
 
     login_access = fields.Boolean(string='Can Login', default=False)
     _sql_constraints = [('grn_unique', 'unique(grn_number)',

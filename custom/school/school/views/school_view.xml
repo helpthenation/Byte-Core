@@ -28,6 +28,7 @@
                             </div>
                         <group col="2" >
                            <group string="School Information">
+                                <field name="campus_id"/>
                                 <field name="admission_date"/>
                                 <field name="admitted_year_id" />
                                 <field name="school_level" />
@@ -205,6 +206,7 @@
                     <field name="class_id" groups="school.group_school_primary"/>
                     <field name="admission_date"/>
                     <field name="gender"/>
+                    <field name="campus_id"/>
                     <field name="state"/>
                 </tree>
             </field>
@@ -222,6 +224,7 @@
                         <field name="name"/>
                         <field name="class_id"/>
                         <field name="classroom_id"/>
+                        <field name="campus_id"/>
                         <field name="gender"/>
                     </group>
                     <newline/>
@@ -231,6 +234,7 @@
                         <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'school_level'}" groups="school.group_school_primary"/>
                         <filter icon="terp-project" string="Stream" help="By Stream" context="{'group_by':'stream_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Gender" help="By Gender" context="{'group_by':'gender'}"/>
+                        <filter icon="terp-project" string="Campus" help="By Campys" context="{'group_by':'campus_id'}"/>
                     </group>
                 </search>
             </field>
@@ -393,6 +397,7 @@
                        </div>
                        <group col="2" >
                            <group string="School Information">
+                                <field name="campus_id"/>
                                 <field name="admission_date"/>
                                 <field name="admitted_year_id" />
                                 <field name="school_level" />
@@ -579,6 +584,7 @@
                     <field name="class_id" groups="school.group_school_primary"/>
                     <field name="admission_date"/>
                     <field name="gender"/>
+                    <field name="campus_id"/>
                     <field name="state"/>
                 </tree>
             </field>
@@ -606,6 +612,7 @@
                         <filter icon="terp-project" string="Level" help="By Level" context="{'group_by':'school_level'}" groups="school.group_school_primary"/>
                         <filter icon="terp-project" string="Stream" help="By Stream" context="{'group_by':'stream_id'}" groups="school.group_school_secondary"/>
                         <filter icon="terp-project" string="Gender" help="By Gender" context="{'group_by':'gender'}"/>
+                        <filter icon="terp-project" string="Campus" help="By Campus" context="{'group_by':'campus_id'}"/>
                     </group>
                 </search>
             </field>
