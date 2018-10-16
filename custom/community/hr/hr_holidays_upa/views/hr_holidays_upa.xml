@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_hr_holidays_upa_tree" model="ir.ui.view">
+            <field name="name">hr.holidays.upa.tree</field>
+            <field name="model">hr.holidays.upa</field>
+            <field name="arch" type="xml">
+                <tree string="Leave Deduction" create="0" edit="0">
+                    <field name="holiday_id"/>
+                    <field name="employee_id"/>
+                    <field name="active_from"/>
+                    <field name="active_to"/>
+                    <field name="days"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_hr_holidays_upa_search" model="ir.ui.view">
+            <field name="name">hr.holidays.upa.search</field>
+            <field name="model">hr.holidays.upa</field>
+            <field name="arch" type="xml">
+                <search string="Leave Deduction">
+                    <field name="holiday_id"/>
+                    <field name="employee_id"/>
+                    <group expand="1" string="Filter By">
+                        <filter icon="terp-check" string="Active"
+                                name="active"
+                                domain="[('active_to','&gt;=', current_date), ('state', '=', 'validate')]"
+                        />
+                    </group>
+
+                    <group expand="0" string="Group By...">
+                        <filter string="Status"
+                                icon="terp-stock_effects-object-colorize"
+                                context="{'group_by':'state'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_hr_holidays_upa_form" model="ir.actions.act_window">
+            <field name="name">Leave Deductions</field>
+            <field name="res_model">hr.holidays.upa</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree</field>
+            <field name="view_id" ref="view_hr_holidays_upa_tree"/>
+            <field name="context">{'search_default_active': 1}</field>
+            <field name="search_view_id" ref="view_hr_holidays_upa_search"/>
+        </record>
+
+        <!--
+                <menuitem id="menu_action_hr_holidays_upa_form" action="action_hr_holidays_upa_form" parent="hr_holidays.menu_open_ask_holidays" sequence="600"
+                    groups="base.group_no_one"/>
+        -->
+
+    </data>
+</odoo>

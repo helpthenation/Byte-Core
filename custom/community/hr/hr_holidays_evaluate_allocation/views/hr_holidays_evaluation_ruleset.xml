@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="edit_holidays_evaluation_ruleset_form">
+            <field name="name">hr.holidays.evaluation.ruleset.form
+            </field>
+            <field name="model">hr.holidays.evaluation.ruleset</field>
+            <field name="arch" type="xml">
+                <form string="Leave Evaluation Ruleset">
+                    <sheet string="Leave Evaluation Ruleset">
+                        <group col="4">
+                            <field name="name"/>
+                            <field name="mode"/>
+                            <field name="method"/>
+                            <field name="period"/>
+                            <field name="period_year_granular" attrs="{'invisible':[('period','!=','year')],}"/>
+                            <field name="active"/>
+                        </group>
+                        <notebook>
+                            <page string="Rules">
+                                <field name="rule_ids" nolabel="1"
+                                       context="{'default_ruleset_id' : active_id}"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="view_holidays_evaluation_ruleset_tree">
+            <field name="name">hr.holidays.evaluation.ruleset.tree
+            </field>
+            <field name="model">hr.holidays.evaluation.ruleset</field>
+            <field name="arch" type="xml">
+                <tree string="Leave Evaluation Ruleset">
+                    <field name="name"/>
+                    <field name="mode"/>
+                    <field name="method"/>
+                    <field name="period"/>
+                </tree>
+            </field>
+        </record>
+        <record id="open_view_holidays_evaluation_ruleset"
+                model="ir.actions.act_window">
+            <field name="name">Leave Evaluation Rulesets</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hr.holidays.evaluation.ruleset</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem name="Evaluation Ruleset"
+                  action="open_view_holidays_evaluation_ruleset"
+                  id="menu_open_view_holidays_evaluation_ruleset"
+                  parent="hr_holidays.menu_hr_holidays_configuration"
+                  sequence="11"/>
+    </data>
+</odoo>
