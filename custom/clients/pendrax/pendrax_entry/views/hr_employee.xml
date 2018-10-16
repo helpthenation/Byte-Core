@@ -194,6 +194,7 @@
                                     <group string='Status' name="active_group">
                                         <field name="company_id" groups="base.group_multi_company"/>
                                         <field name="user_id" string="Related User"/>
+                                        <field name="work_email"/>
                                     </group>
                                 </group>
                             </page>

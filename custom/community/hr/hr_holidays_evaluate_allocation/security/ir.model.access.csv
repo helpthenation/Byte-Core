@@ -1,5 +1,5 @@
-id,name,model+AF8-id:id,group+AF8-id:id,perm+AF8-read,perm+AF8-write,perm+AF8-create,perm+AF8-unlink
-access+AF8-hr+AF8-holidays+AF8-evaluation+AF8-rule+AF8-user,hr+AF8-holidays+AF8-evaluation+AF8-rules.user,model+AF8-hr+AF8-holidays+AF8-evaluation+AF8-rule,hr.group+AF8-hr+AF8-user,1,0,0,0
-access+AF8-hr+AF8-holidays+AF8-evaluation+AF8-rule+AF8-manager,hr+AF8-holidays+AF8-evaluation+AF8-rule manager,model+AF8-hr+AF8-holidays+AF8-evaluation+AF8-rule,hr.group+AF8-hr+AF8-manager,1,1,1,1
-access+AF8-hr+AF8-holidays+AF8-evaluation+AF8-ruleset+AF8-user,hr+AF8-holidays+AF8-evaluation+AF8-rulesets.user,model+AF8-hr+AF8-holidays+AF8-evaluation+AF8-ruleset,hr.group+AF8-hr+AF8-user,1,0,0,0
-access+AF8-hr+AF8-holidays+AF8-evaluation+AF8-ruleset+AF8-manager,hr+AF8-holidays+AF8-evaluation+AF8-ruleset manager,model+AF8-hr+AF8-holidays+AF8-evaluation+AF8-ruleset,hr.group+AF8-hr+AF8-manager,1,1,1,1
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hr_holidays_evaluation_rule_user,hr_holidays_evaluation_rules.user,model_hr_holidays_evaluation_rule,hr.group_hr_user,1,0,0,0
+access_hr_holidays_evaluation_rule_manager,hr_holidays_evaluation_rule manager,model_hr_holidays_evaluation_rule,hr.group_hr_manager,1,1,1,1
+access_hr_holidays_evaluation_ruleset_user,hr_holidays_evaluation_rulesets.user,model_hr_holidays_evaluation_ruleset,base.group_user,1,0,0,0
+access_hr_holidays_evaluation_ruleset_manager,hr_holidays_evaluation_ruleset manager,model_hr_holidays_evaluation_ruleset,hr.group_hr_manager,1,1,1,1

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record id="employee_id_type_view" model="ir.actions.act_window">
+            <field name="name">Employee ID Type</field>
+            <field name="res_model">hr.employee.personal.id.type</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="menu_hr_employee_id_type"
+                  name="Employee ID Type"
+                  action="employee_id_type_view"
+                  parent="hr.menu_human_resources_configuration"
+                  sequence="6"/>
+
+    </data>
+</odoo>

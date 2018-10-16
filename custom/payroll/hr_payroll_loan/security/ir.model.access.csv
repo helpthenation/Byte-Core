@@ -1,7 +1,7 @@
 "id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
 "access_hr_payroll_loan_user_employee","hr.payroll.loan.user","model_hr_payroll_loan",,1,0,0,0
-"access_hr_payroll_loan_user_manager","hr.payroll.loan.manager","model_hr_payroll_loan","base.group_hr_user",1,1,1,1
+"access_hr_payroll_loan_user_manager","hr.payroll.loan.manager","model_hr_payroll_loan","hr.group_hr_user",1,1,1,1
 "access_hr_payroll_loan_payment_user_employee","hr.payroll.loan.payment.user","model_hr_payroll_loan_payment",,1,0,0,0
-"access_hr_payroll_loan_payment_manager","hr.payroll.loan.payment.manger","model_hr_payroll_loan_payment","base.group_hr_manager",1,1,1,1
+"access_hr_payroll_loan_payment_manager","hr.payroll.loan.payment.manger","model_hr_payroll_loan_payment","hr.group_hr_manager",1,1,1,1
 "access_hr_payroll_loan_type_user_employee","hr.payroll.loan.type.user","model_hr_payroll_loan_type",,1,0,0,0
-"access_hr_payroll_loan_type_manager","hr.payroll.loan.type.manager","model_hr_payroll_loan_type","base.group_hr_manager",1,1,1,1
+"access_hr_payroll_loan_type_manager","hr.payroll.loan.type.manager","model_hr_payroll_loan_type","hr.group_hr_manager",1,1,1,1

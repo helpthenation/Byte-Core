@@ -20,7 +20,7 @@
                                         string="Update Allocation"
                                         class="oe-inline"
                                         attrs="{'invisible': [('ruleset_method','!=','manual')]}"
-                                        groups="base.group_hr_user"/>
+                                        groups="hr.group_hr_user"/>
                             </div>
                             <div>
                             </div>

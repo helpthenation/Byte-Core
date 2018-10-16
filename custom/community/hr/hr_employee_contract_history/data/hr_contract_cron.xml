@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.cron" id="hr_employee_recompute_contract">
+            <field name="name">Recompute Contract</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="(DateTime.now() + timedelta(hours= +(24-DateTime.now().hour))).strftime('%Y-%m-%d 00:01:00')"
+                   name="nextcall"/>
+            <field eval="True" name="doall"/>
+            <field eval="'hr.employee'" name="model"/>
+            <field eval="'try_recomputing_contract'" name="function"/>
+            <field eval="'()'" name="args"/>
+        </record>
+
+    </data>
+</odoo>

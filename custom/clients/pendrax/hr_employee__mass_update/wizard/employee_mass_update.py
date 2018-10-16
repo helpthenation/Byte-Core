@@ -5,6 +5,9 @@ from odoo.exceptions import ValidationError
 import logging
 import os
 import base64
+from datetime import date
+from dateutil.relativedelta import relativedelta
+
 
 _logger = logging.getLogger(__name__)
 
@@ -23,6 +26,30 @@ class WizardGetRecord(models.TransientModel):
         for con in payslip_obj.search([('id','=',1)]):
             for slip in con.slip_ids:
                 slip.write({'state': 'draft'})
+        return True
+
+    @api.multi
+    def empEmpDate(self):
+        contract_obj = self.env['hr.contract']
+        eontracts = contract_obj.search([])
+        a = 0
+        b = 50
+        for counter in range(1, (len(eontracts) / 50) + 1):
+            for contract in eontracts[a:b]:
+                contract.date_start = contract.employee_id.emp_date and contract.employee_id.emp_date or "2001-01-01"
+                contract.employee_id.initial_employment_date = contract.employee_id.emp_date and contract.employee_id.emp_date or "2001-01-01"
+
+                if contract.date_start>contract.employee_id.initial_employment_date:
+                    contract.date_start = contract.employee_id.emp_date or "2001-01-01"
+                    contract.initial_employment_date = contract.employee_id.emp_date or "2001-01-01"
+
+                else:
+                    contract.employee_id.initial_employment_date = contract.employee_id.emp_date or "2001-01-01"
+                    pass
+                contract.trial_date_end = fields.Date.from_string(contract.employee_id.emp_date and contract.employee_id.emp_date or "2001-01-01") + relativedelta(months=+6)
+                #trial_date_start, trial_date_end
+            a += 50
+            b += 50
         return True
 
     @api.multi

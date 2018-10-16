@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
+##############################################################################
 #
-#
-#    Copyright (C) 2013 Michael Telahun Makonnen <mmakonnen@gmail.com>.
+#    Copyright (C) 2011,2013 Michael Telahun Makonnen <mmakonnen@gmail.com>.
 #    All Rights Reserved.
 #
 #    This program is free software: you can redistribute it and/or modify
@@ -17,37 +17,23 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
-#
-
+##############################################################################
 {
-    'name': 'Manage Employee Contracts',
-    'version': '1.0',
-    'category': 'Generic Modules/Human Resources',
-    'description': """
-Employee Contract Workflow and Notifications
-============================================
-
-Easily find and keep track of employees who are nearing the end of their
-contracts and trial periods.
-    """,
-    'author': "Michael Telahun Makonnen <mmakonnen@gmail.com>,Odoo Community Association (OCA)",
-    'website': 'http://miketelahun.wordpress.com',
-    'license': 'AGPL-3',
-    'depends': [
-        'hr_contract',
-        'hr_contract_init',
+    "name": "HR Contract State",
+    'version': '10.0.1.0.0',
+    "category": "Generic Modules/Human Resources",
+    "author": 'Michael Telahun Makonnen, '
+              'Odoo Community Association (OCA)',
+    "website": "http://byteltd.com",
+    "license": "AGPL-3",
+    "summary": "Manages contract states",
+    "depends": ["hr_contract",],
+    "data": [
+        'views/hr_contract_view.xml',
+        'data/cron.xml',
+        'data/email_template.xml',
+        #'security/ir_rule.xml',
+        'views/access_rule_buttons.xml'
     ],
-    "external_dependencies": {
-        'python': ['dateutil'],
-    },
-    'data': [
-        'security/ir.model.access.csv',
-        'hr_contract_cron.xml',
-        'hr_contract_data.xml',
-        'hr_contract_workflow.xml',
-        'hr_contract_view.xml',
-    ],
-    'test': [
-    ],
-    'installable': False,
+    'installable': True,
 }

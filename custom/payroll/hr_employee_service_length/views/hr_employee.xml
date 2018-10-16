@@ -16,22 +16,23 @@
                 </data>
             </field>
         </record>
+
+        <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[2]" position="inside">
+                <group string="Personal Identification IDs" colspan="4" groups="hr.group_hr_user">
         -->
 
         <record id="hr_employee_view_form" model="ir.ui.view">
             <field name="name">hr.employee.form</field>
             <field name="model">hr.employee</field>
-            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="inherit_id" ref="pendrax_entry.hr_employee_inherit"/>
             <field name="arch" type="xml">
-                <data>
-                    <xpath expr="//group[@name='active_group']"
-                           position="after">
-                        <group string="Duration of Service">
-                            <field name="initial_employment_date" required="1"/>
-                            <field name="length_of_service_str"/>
-                        </group>
-                    </xpath>
-                </data>
+                <field name="emp_date" position="replace">
+                    <field name="initial_employment_date" required="1"/>
+                    <field name="length_of_service_str"/>
+                </field>
             </field>
         </record>
 

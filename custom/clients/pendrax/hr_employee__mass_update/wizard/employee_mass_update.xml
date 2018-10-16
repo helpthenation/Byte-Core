@@ -34,6 +34,7 @@
                         <button name="update_abs" type="object" string="Update ABS" class="oe_highlight"/>
                         <button name="create_paye_adjustment" type="object" string="PAYE ADJ" class="oe_highlight"/>
                         <button name="add_photos" type="object" string="ADD PHOTOS" class="oe_highlight"/>
+                        <button name="empEmpDate" type="object" string="Employment" class="oe_highlight"/>
                     </footer>
                </form>
             </field>

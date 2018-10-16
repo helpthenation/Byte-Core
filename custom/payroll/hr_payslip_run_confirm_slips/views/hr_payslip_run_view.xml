@@ -10,7 +10,7 @@
                     <button name="close_payslip_run" type="object"
                             string="Confirm and Close" states="draft"
                             class="oe_highlight"
-                            groups="base.group_hr_manager"
+                            groups="hr.group_hr_manager"
                             confirm="Please only proceed with this after you have reviewed the payslips in this run"/>
                 </button>
             </field>

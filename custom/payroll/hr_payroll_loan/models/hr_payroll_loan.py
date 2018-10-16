@@ -383,7 +383,7 @@ class HrPayrollLoan(models.Model):
     @api.model
     def _needaction_domain_get(self):
         domain = []
-        if self.env['res.users'].has_group('base.group_hr_manager'):
+        if self.env['res.users'].has_group('hr.group_hr_manager'):
             domain = [('state', '=', 'draft')]
         return domain
 
