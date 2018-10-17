@@ -40,7 +40,7 @@ wsgiref==0.1.2
 XlsxWriter==0.9.3
 xlwt==1.1.2
 xlrd==1.0.0
-cryptography==2.2.2
-paramiko==2.4.1
+cryptography==2.3
+paramiko==2.4.2
 pysftp
 
