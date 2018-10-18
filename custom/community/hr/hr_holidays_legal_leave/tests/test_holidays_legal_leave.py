@@ -1,5 +1,24 @@
-from odoo.tests import common
-from odoo.exceptions import Warning as UserError
+# -*- coding: utf-8 -*-
+###############################################################################
+#
+#    Copyright (C) 2015 Salton Massally (<smassally@idtlabs.sl>).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###############################################################################
+from openerp.exceptions import Warning as UserWarning
+from openerp.tests import common
 
 
 class TestHolidaysLegalLeave(common.TransactionCase):
@@ -33,11 +52,12 @@ class TestHolidaysLegalLeave(common.TransactionCase):
             'holiday_status_id': self.holiday_status.id,
             'number_of_days_temp': 10
         })
-        self.holiday.action_approve()
+        for sig in ('confirm', 'validate', 'second_validate'):
+            self.holiday.signal_workflow(sig)
 
     def test_try_reduce_allocation(self):
         # let's sattempt to reduce allocation here... it should not let us
-        with self.assertRaises(UserError):
+        with self.assertRaises(UserWarning):
             self.employee.write({'remaining_leaves': 5})
 
     def test_getting_remaining(self):
@@ -48,11 +68,3 @@ class TestHolidaysLegalLeave(common.TransactionCase):
         # let's attempt setting remaining leave
         self.employee.write({'remaining_leaves': 20})
         self.assertEqual(self.employee.remaining_leaves, 20)
-
-    def test_create_employee(self):
-        """Check that we are able to create new employee
-        and that _inverse_remaining_days doesn't raise error"""
-        self.employee_model.create({
-            'name': 'Employee 1',
-            'remaining_leaves': 0,
-        })

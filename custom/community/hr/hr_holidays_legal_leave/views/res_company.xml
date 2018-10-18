@@ -6,11 +6,12 @@
             <field name="model">res.company</field>
             <field name="inherit_id" ref="base.view_company_form"/>
             <field name="arch" type="xml">
-                <xpath expr="//field[@id='company_currency']" position="before">
+                <field name="currency_id"
+                       position="after">
                     <group name="hr_holidays_grp" string="Employee Holidays">
                         <field name="legal_holidays_status_id"/>
                     </group>
-                </xpath>
+                </field>
             </field>
         </record>
     </data>
