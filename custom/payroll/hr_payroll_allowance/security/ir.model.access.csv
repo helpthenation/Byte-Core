@@ -1,5 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_hr_payroll_allowance_user,hr_payroll_allowance,model_hr_payroll_allowance,hr.group_hr_manager,1,1,1,1
-access_hr_payroll_allowance_read,hr_payroll_allowance_read,model_hr_payroll_allowance,base.group_user,1,0,0,0
-access_hr_payroll_allowance_line_read,hr_payroll_allowance_line_read,model_hr_payroll_allowance_line,base.group_user,1,0,0,0
-access_hr_payroll_allowance_line_write,hr_payroll_allowance_line_write,model_hr_payroll_allowance_line,hr.group_hr_user,1,1,1,1

@@ -3,7 +3,9 @@
     <data>
 
         <!-- Top menu item -->
+        <!--parent="base.menu_custom"-->
         <menuitem name="Invoicing"
+
             id="menu_finance"
             groups="group_account_user,group_account_manager,group_account_invoice"
             web_icon="account,static/description/icon.png"
