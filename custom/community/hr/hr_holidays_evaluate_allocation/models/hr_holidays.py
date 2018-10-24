@@ -6,12 +6,12 @@ from odoo import models, fields, api
 class HrHolidays(models.Model):
     _inherit = 'hr.holidays'
 
-    def _check_date(self, cr, uid, ids, context=None):
+    def _check_date(self):
         """
         we are overriding here because seting intervals on allocation affects
         this
         """
-        for holiday in self.browse(cr, uid, ids, context=context):
+        for holiday in self.search([]):
             if holiday.type == 'add':
                 continue
             domain = [
@@ -22,7 +22,7 @@ class HrHolidays(models.Model):
                 ('id', '!=', holiday.id),
                 ('state', 'not in', ['cancel', 'refuse']),
             ]
-            nholidays = self.search_count(cr, uid, domain, context=context)
+            nholidays = self.search_count(domain)
             if nholidays:
                 return False
         return True

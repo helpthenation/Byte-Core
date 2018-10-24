@@ -1,17 +1,36 @@
-from odoo import models, api, fields, _
-from odoo.exceptions import UserError
+# -*- coding: utf-8 -*-
+###############################################################################
+#
+#    Copyright (C) 2015 Salton Massally (<smassally@idtlabs.sl>).
+#
+#    This program is free software: you can redistribute it and/or modify
+#    it under the terms of the GNU Affero General Public License as
+#    published by the Free Software Foundation, either version 3 of the
+#    License, or (at your option) any later version.
+#
+#    This program is distributed in the hope that it will be useful,
+#    but WITHOUT ANY WARRANTY; without even the implied warranty of
+#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+#    GNU Affero General Public License for more details.
+#
+#    You should have received a copy of the GNU Affero General Public License
+#    along with this program. If not, see <http://www.gnu.org/licenses/>.
+#
+###############################################################################
+
+from odoo import models, api, fields
+from odoo.exceptions import Warning as UserWarning
 
 
 class HrEmployee(models.Model):
     _inherit = 'hr.employee'
 
-    @api.multi
+    @api.one
     def _inverse_remaining_days(self):
-        self.ensure_one()
         legal_leave = self.company_id.legal_holidays_status_id
         if not legal_leave:
-            raise UserError(_('Legal/annual leave type is not defined for '
-                              'your company.'))
+            raise UserWarning('Legal/annual leave type is not defined for '
+                              'your company')
         diff = self.remaining_leaves - legal_leave.get_days(
             self.id)[legal_leave.id]['remaining_leaves']
         if diff > 0:
@@ -25,28 +44,35 @@ class HrEmployee(models.Model):
                     'number_of_days_temp': diff
                 }
             )
-            leave.action_approve()
-            if leave.double_validation:
-                leave.action_validate()
         elif diff < 0:
-            raise UserError(_('You cannot reduce validated allocation '
-                              'requests.'))
+            raise UserWarning(
+                'You cannot reduce validated allocation requests')
 
-    @api.multi
+        for sig in ('confirm', 'validate', 'second_validate'):
+            leave.signal_workflow(sig)
+
+    @api.one
     def _compute_remaining_days(self):
-        for r in self:
-            legal_leave = r.company_id.legal_holidays_status_id
-            if not legal_leave:
-                raise UserError(_('Legal/annual leave type is not defined for '
-                                  'your company.'))
-            r.remaining_leaves = legal_leave.get_days(
-                r.id)[legal_leave.id]['remaining_leaves']
+        legal_leave = self.sudo().company_id.legal_holidays_status_id
+        if not legal_leave:
+            return 0.0
+        self.remaining_leaves = legal_leave.get_days(
+            self.id)[legal_leave.id]['remaining_leaves']
 
     remaining_leaves = fields.Integer(
         'Remaining Legal Leaves',
         compute='_compute_remaining_days',
         inverse='_inverse_remaining_days',
-        help='Total number of legal leaves allocated to this employee. '
-             'Change this value to create allocation/leave request. '
+        help='Total number of legal leaves allocated to this employee, '
+             'change this value to create allocation/leave request. '
              'Total based on all the leave types without overriding limit.'
     )
+
+    leaves_count = fields.Integer(
+        compute='_compute_leaves_count',
+    )
+
+    @api.one
+    @api.depends('remaining_leaves')
+    def _compute_leaves_count(self):
+        self.leaves_count = self.remaining_leaves

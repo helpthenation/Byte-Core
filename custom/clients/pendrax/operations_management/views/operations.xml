@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <!-- Root Menus -->
+    <delete id="operations_management.menu_clients" model="ir.ui.menu"/>
+
+        <menuitem id="menu_operations_root" name="Operations" sequence="45" web_icon="operations_management,static/description/icon.png"/>
+
+
+
+        <!-- Salary structure -->
+        <record id="view_operations_zones_list_view" model="ir.ui.view">
+            <field name="name">operations.zone.tree</field>
+            <field name="model">operations.zone</field>
+            <field name="arch" type="xml">
+                <tree string="Operation Zones">
+                    <field name="name"/>
+                    <field name="description"/>
+                    <field name="no_of_guards"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_operations_client_list_view" model="ir.ui.view">
+            <field name="name">operations.client.tree</field>
+            <field name="model">operations.client</field>
+            <field name="arch" type="xml">
+                <tree string="Clients">
+                    <field name="name"/>
+                    <field name="address"/>
+                    <field name="zone_id"/>
+                    <field name="category"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_operations_zones_form_view" model="ir.ui.view">
+            <field name="name">operations.zone.form</field>
+            <field name="model">operations.zone</field>
+            <field name="arch" type="xml">
+                <form string="Operation Zones">
+                    <group>
+                        <field name="name"/>
+                    <field name="description"/>
+                    <field name="no_of_guards"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_operations_client_form" model="ir.ui.view">
+            <field name="name">operations.client.form</field>
+            <field name="model">operations.client</field>
+            <field name="arch" type="xml">
+                <form string="Clients">
+                    <header>
+                            <button name="start_survey" string="Start Survey" type="object"
+                                    icon="fa-briefcase" class="oe_highlight" states="new"/>
+                            <button name="start_quote" string="Send Quotation" type="object"
+                                    icon="fa-briefcase" class="oe_highlight" states="survey"/>
+                            <button name="start_onboard" string="Start Onboarding" type="object"
+                                    icon="fa-briefcase" class="oe_highlight" states="quotation"/>
+                            <button name="activate" string="Activate" type="object"
+                                    icon="fa-briefcase" class="oe_highlight" states="onboard"/>
+
+                             <field name="state" widget="statusbar" nolabel="1"/>
+                        </header>
+                    <sheet>
+                        <!--<div class="oe_button_box" name="button_box">
+                            <button name="toggle_active" type="object" groups="hr.group_hr_user"
+                                    class="oe_stat_button" icon="fa-money">
+                                <field name="invoices" widget="boolean_button"/>
+                            </button>
+                        </div>-->
+                        <field name="image" widget='image' class="oe_avatar" />
+                        <div class="oe_title">
+                            <label for="name" class="oe_edit_only"/>
+                            <h1>
+                                <field name="name" placeholder="Client's Name"/>
+                            </h1>
+                        </div>
+                        <notebook>
+                            <page name="public" string="Client's Information">
+                                <group>
+                                    <group string="Contact Information">
+                                        <field name="zone_id"/>
+                                        <field name="address"/>
+                                        <field name="mobile"/>
+                                        <field name="category"/>
+                                        <field name="email" widget="email"/>
+                                    </group>
+                                </group>
+                                <field name="notes" placeholder="Other Information ..." colspan="4"/>
+                            </page>
+                            <page name="personal_information" string="Assigned Guards" groups="hr.group_hr_user" attrs="{'invisible'}">
+                                <field name="guard_assignment_lines">
+                                    <tree editable="top">
+                                        <field name="guard_id"/>
+                                        <field name="date_assigned"/>
+                                        <field name="status"/>
+                                    </tree>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_view_clients_list_form" model="ir.actions.act_window">
+            <field name="name">Clients</field>
+            <field name="res_model">operations.client</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_clients" name="Clients" parent="menu_operations_root" action="action_view_clients_list_form" sequence="1"/>
+
+        <record id="action_view_zones_list_form" model="ir.actions.act_window">
+            <field name="name">Zones</field>
+            <field name="res_model">operations.zone</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_zones" name="Zones" parent="menu_operations_root" action="action_view_zones_list_form" sequence="2"/>
+        <menuitem id="menu_schedule" name="Scheduling" parent="menu_operations_root" action="action_view_zones_list_form" sequence="3"/>
+</odoo>
