@@ -6,6 +6,7 @@ from . import product_product
 from . import stock_location
 from . import procurement_request
 from . import procurement_request_line
+from . import product_category
 #from . import ir_ui_menu
 
 
