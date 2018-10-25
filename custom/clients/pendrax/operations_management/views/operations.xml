@@ -93,7 +93,7 @@
                                 </group>
                                 <field name="notes" placeholder="Other Information ..." colspan="4"/>
                             </page>
-                            <page name="personal_information" string="Assigned Guards" groups="hr.group_hr_user" attrs="{'invisible'}">
+                            <page name="personal_information" string="Assigned Guards" groups="hr.group_hr_user">
                                 <field name="guard_assignment_lines">
                                     <tree editable="top">
                                         <field name="guard_id"/>

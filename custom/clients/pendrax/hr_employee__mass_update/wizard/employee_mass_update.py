@@ -23,8 +23,8 @@ class WizardGetRecord(models.TransientModel):
     @api.multi
     def purgebankacc(self):
         payslip_obj = self.env['hr.payslip.run']
-        for con in payslip_obj.search([('id','=',1)]):
-            for slip in con.slip_ids:
+        for run in payslip_obj.search([]):
+            for slip in run.slip_ids:
                 slip.write({'state': 'draft'})
         return True
 
