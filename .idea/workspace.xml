@@ -4,20 +4,8 @@
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/description/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/css/job_position.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/css/job_position.sass" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/img/down1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/job_position.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/tour.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" afterDir="false" />
     </list>
@@ -80,7 +68,7 @@
           <entry key="sh" value="3" />
           <entry key="txt" value="5" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="255" />
+          <entry key="xml" value="256" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -95,7 +83,7 @@
           <entry key="Properties" value="1" />
           <entry key="Python" value="430" />
           <entry key="ReST" value="8" />
-          <entry key="XML" value="255" />
+          <entry key="XML" value="256" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -109,10 +97,10 @@
           <entry key="js" value="46" />
           <entry key="less" value="5" />
           <entry key="log" value="32" />
-          <entry key="py" value="11416" />
+          <entry key="py" value="11461" />
           <entry key="txt" value="17" />
           <entry key="vmoptions" value="3" />
-          <entry key="xml" value="5375" />
+          <entry key="xml" value="5383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -120,8 +108,8 @@
           <entry key="JavaScript" value="46" />
           <entry key="Log" value="32" />
           <entry key="PLAIN_TEXT" value="281" />
-          <entry key="Python" value="12610" />
-          <entry key="XML" value="5375" />
+          <entry key="Python" value="12655" />
+          <entry key="XML" value="5383" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -137,11 +125,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="153" column="113" selection-start-line="153" selection-start-column="113" selection-end-line="153" selection-end-column="113" />
+              <folding>
+                <element signature="n#page#0;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+                <element signature="n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+                <element signature="n#group#0;n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+                <element signature="n#page#2;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+                <element signature="n#record#4;n#odoo#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="10" column="19" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
+            <state relative-caret-position="84">
+              <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -149,8 +153,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="204" column="109" selection-start-line="204" selection-start-column="72" selection-end-line="204" selection-end-column="109" />
+            <state relative-caret-position="244">
+              <caret line="207" column="60" selection-start-line="207" selection-start-column="60" selection-end-line="207" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -190,11 +194,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+            <state relative-caret-position="140">
+              <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -225,7 +229,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>operations.zone</find>
       <find>def write(self, vals):</find>
       <find>res = super(</find>
       <find>_compute_age</find>
@@ -255,6 +258,7 @@
       <find>hr_attendance_form_presence_indicator</find>
       <find>oe_hr_attendance_status_green</find>
       <find>FormPresenceIndicator</find>
+      <find>domain=&quot;[(</find>
     </findStrings>
     <replaceStrings>
       <replace>reservation_line_ids</replace>
@@ -345,7 +349,6 @@
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_lines.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote_templates.xml" />
         <option value="$PROJECT_DIR$/addons/hr_attendance/models/hr_attendance.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/web_asset_backend_template.xml" />
@@ -354,9 +357,10 @@
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/xml/guard_status.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" />
       </list>
     </option>
   </component>
@@ -640,6 +644,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23082651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -649,10 +654,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.92715234" />
+      <window_info active="true" anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" visible="true" weight="0.28476822" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.442053" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" weight="0.442053" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -987,21 +992,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
-          <folding>
-            <element signature="n#page#0;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
-            <element signature="n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
-            <element signature="n#group#0;n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
-            <element signature="n#page#2;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
-            <element signature="n#page#3;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
-            <element signature="n#record#4;n#odoo#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/hr_employee_view.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1064,22 +1054,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="204" column="109" selection-start-line="204" selection-start-column="72" selection-end-line="204" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="21" column="85" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="85" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1088,13 +1068,6 @@
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1108,12 +1081,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+        <state relative-caret-position="140">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="11" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="207" column="60" selection-start-line="207" selection-start-column="60" selection-end-line="207" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="153" column="113" selection-start-line="153" selection-start-column="113" selection-end-line="153" selection-end-column="113" />
+          <folding>
+            <element signature="n#page#0;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#group#0;n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#page#2;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#record#4;n#odoo#0;n#!!top" />
           </folding>
         </state>
       </provider>

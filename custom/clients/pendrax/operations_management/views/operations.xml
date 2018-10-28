@@ -153,6 +153,7 @@
                         <page name="assigned_guards" string="Guards" attrs="{'invisible':[('state','not in',['onboard','active'])]}">
                             <field name="guard_assignment_lines" context="{'default_related_client_id': active_id}">
                                 <tree editable="top">
+                                    <field name="zone_id"/>
                                     <field name="guard_id"/>
                                     <field name="date_assigned"/>
                                     <field name="status"/>

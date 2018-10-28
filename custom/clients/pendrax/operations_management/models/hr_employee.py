@@ -6,7 +6,7 @@ from odoo import api, fields, models
 class HrEmployee(models.Model):
     _inherit = "hr.employee"
 
-    zone = fields.Many2one(comodel_name='operation.zone', string="Zone")
+    zone_id = fields.Many2one(comodel_name='operation.zone', string="Zone")
     is_guard = fields.Boolean(string="Is Guard", default=False)
     available_guard = fields.Boolean(string="Available Guard", default=False, )
     available = fields.Selection([('available', 'Available'),

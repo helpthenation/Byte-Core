@@ -14,7 +14,7 @@ class GuardAssignmentLine(models.Model):
                            store=True)
     guard_id = fields.Many2one(comodel_name='hr.employee',
                                string="Guard",
-                               domain="[('available_guard', '=', True), ('zone_id', '=', zone_id)]",
+                               domain="[('zone_id', '=', zone_id), ('available_guard', '=', True)]",
                                required=True)
     status = fields.Selection([('active','Active'),
                                ('inactive', 'Inactive')],
