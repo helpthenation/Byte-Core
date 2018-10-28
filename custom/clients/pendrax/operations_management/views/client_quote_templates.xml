@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="client_quote">
+    <t t-foreach="docs" t-as="doc">
+    <t t-call="report.external_layout">
+        <div class="page">
+            <div class="oe_structure"/>
+            <p>
+                <h1>
+                   <strong>Quotation for: </strong> <span t-field="doc.client_id.name"/>
+                </h1></p>
+            <br/>
+            <div class="row">
+                <div class="col-xs-6">
+                    <h4><strong>Adress: </strong> <span t-field="doc.client_id.address"/> </h4>
+
+                </div>
+            </div>
+
+            <h3>
+                <span >Quotation # </span>
+                <span t-field="doc.ref"/>
+            </h3>
+
+            <div class="row mt32 mb32" id="informations">
+                <div t-if="doc.date" class="col-xs-3">
+                    <strong>Date Requested:</strong>
+                    <p t-field="doc.date"/>
+                </div>
+            </div>
+
+            <!-- Is there a discount on at least one line? -->
+
+            <table class="table table-condensed table-bordered">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th class="text-right">Unit</th>
+                        <th class="text-right">Unit Cost</th>
+                        <th class="text-right">Total</th>
+                    </tr>
+               </thead>
+               <tbody class="sale_tbody">
+                    <t t-foreach="doc.quotation_line_ids" t-as="l">
+                        <tr>
+                            <td><span t-field="l.guard_type"/></td>
+                            <td class="text-right">
+                                <span t-field="l.total"/>
+                            </td>
+                            <td class="text-right">
+                                <span t-field="l.cost" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                            </td>
+                            <td class="text-right">
+                                <span t-field="l.price_subtotal" t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                            </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+
+            <div class="row" name="total">
+                <div class="col-xs-7 pull-right">
+                    <table class="table table-condensed">
+                        <tr class="border-black">
+                            <td><strong>SUB TOTAL</strong></td>
+                            <td class="text-right">
+                                <span t-field="doc.total"
+                                    t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                            </td>
+                        </tr>
+                        <tr class="border-black">
+                            <td><strong>GST</strong></td>
+                            <td class="text-right">
+                                <span t-field="doc.gst"
+                                    t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                            </td>
+                        </tr>
+                        <tr class="border-black">
+                            <td><strong>TOTAL AMOUNT PAYABLE(Including GST)</strong></td>
+                            <td class="text-right">
+                                <span t-field="doc.grand_total"
+                                    t-options='{"widget": "monetary", "display_currency": doc.currency_id}'/>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+            <p class="text-left"><h3><strong>Please note the following</strong></h3></p>
+            <div class="col-xs-6 pull-left">
+                    <table class="table">
+                        <tr>
+                            <td><strong>1. Validity of offer</strong></td>
+                            <td class="text-right">
+                                <span >30 Days upon bla</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>2. Delivery date</strong></td>
+                            <td class="text-right">
+                                <span >Upon approval of quote</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Place of delivery</strong></td>
+                            <td class="text-right">
+                                <span t-field="doc.client_id.address"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>3. Warranty</strong></td>
+                            <td class="text-right">
+                                <span >Foo Bar Warranty</span>
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <br/>
+                <p class="text-left"><h4><strong>Prepared By</strong></h4></p>
+                <span t-field="doc.client_id.name"/>
+                </div>
+            <!--
+            <p>Prepared by:</p>
+            <span t-field="doc.client_id.name"/>-->
+            <div class="oe_structure"/>
+        </div>
+    </t>
+    </t>
+</template>
+</odoo>

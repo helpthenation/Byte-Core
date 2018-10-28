@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+        <report
+            id="action_client_quote"
+            model="client.quotation"
+            string="Client Quotation"
+            report_type="qweb-pdf"
+            name="operations_management.client_quote"
+            file="operations_management.client_quote"
+        />
+</odoo>

@@ -29,6 +29,13 @@ class WizardGetRecord(models.TransientModel):
         return True
 
     @api.multi
+    def fix_employee_job(self):
+        cos=self.env['hr.contract'].search([])
+        for con in cos:
+            con.employee_id.job_id = con.job_id
+
+
+    @api.multi
     def empEmpDate(self):
         contract_obj = self.env['hr.contract']
         eontracts = contract_obj.search([])

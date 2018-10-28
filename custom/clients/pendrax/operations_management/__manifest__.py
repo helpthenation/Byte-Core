@@ -6,17 +6,10 @@
     'version': '1.0',
     'category': 'Operations',
     'sequence': 91,
-    'summary': 'Jobs, Recruitment, Applications, Job Interviews',
-    'description': """
-Manage job positions and the recruitment process
-================================================
-
-This application allows you to easily keep track of jobs, vacancies, applications, interviews...
-
-It is integrated with the mail gateway to automatically fetch email sent to <jobs@yourcompany.com> in the list of applications. It's also integrated with the document management system to store and search in the CV base and find the candidate that you are looking for. Similarly, it may integrated with the survey module to allow you to define interviews for different jobs.		
-You can define the different phases of interviews and easily rate the applicant from the kanban view.
-""",
-    'website': 'https://www.odoo.com/page/recruitment',
+    'summary': 'Pendrax Operations Process',
+    'description': """Manage Pendrax Operations pipeline""",
+    'website': 'https://www.byteltd.com',
+    'author': 'Francis Bangura [Byte Limited]',
     'depends': [
         'pendrax_entry',
     ],
@@ -30,7 +23,10 @@ You can define the different phases of interviews and easily rate the applicant 
         #'views/hr_recruitment_templates.xml',
         #'views/hr_department_views.xml',
         #'views/hr_job_views.xml',
+        'views/web_asset_backend_template.xml',
         'views/hr_employee.xml',
+        'views/client_quote.xml',
+        'views/client_quote_templates.xml',
         'views/operations.xml',
         #'views/tour_views.xml',
     ],
@@ -39,4 +35,7 @@ You can define the different phases of interviews and easily rate the applicant 
     'installable': True,
     #'auto_install': False,
     'application': True,
+    'qweb': [
+        "static/src/xml/guard_status.xml",
+    ],
 }

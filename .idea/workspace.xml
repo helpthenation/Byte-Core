@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="" />
+    <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/description/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/css/job_position.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/css/job_position.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/img/down1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/job_position.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/tour.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +44,7 @@
           <entry key="project.open.time.17" value="7" />
           <entry key="project.open.time.18" value="4" />
           <entry key="project.open.time.2" value="7" />
-          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.25" value="1" />
@@ -38,66 +57,71 @@
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="11" />
           <entry key="project.open.time.9" value="10" />
-          <entry key="project.opened" value="110" />
+          <entry key="project.opened" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="conf" value="24" />
+          <entry key="conf" value="25" />
           <entry key="css" value="9" />
           <entry key="csv" value="11" />
           <entry key="gitignore" value="4" />
-          <entry key="js" value="9" />
-          <entry key="less" value="2" />
+          <entry key="js" value="17" />
+          <entry key="less" value="5" />
           <entry key="log" value="6" />
           <entry key="mailmap" value="1" />
           <entry key="md" value="3" />
           <entry key="pendrax" value="4" />
-          <entry key="png" value="5" />
+          <entry key="png" value="6" />
           <entry key="po" value="2" />
           <entry key="properties" value="1" />
-          <entry key="py" value="382" />
+          <entry key="py" value="430" />
           <entry key="rst" value="8" />
           <entry key="sh" value="3" />
           <entry key="txt" value="5" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="230" />
+          <entry key="xml" value="255" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="9" />
-          <entry key="Image" value="5" />
-          <entry key="JavaScript" value="9" />
+          <entry key="Image" value="6" />
+          <entry key="JavaScript" value="17" />
           <entry key="Log" value="3" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="60" />
+          <entry key="PLAIN_TEXT" value="64" />
           <entry key="Properties" value="1" />
-          <entry key="Python" value="382" />
+          <entry key="Python" value="430" />
           <entry key="ReST" value="8" />
-          <entry key="XML" value="230" />
+          <entry key="XML" value="255" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="837" />
+          <entry key="Python Console" value="1194" />
           <entry key="conf" value="122" />
           <entry key="csv" value="22" />
-          <entry key="dummy" value="82" />
+          <entry key="dummy" value="88" />
           <entry key="gitignore" value="24" />
+          <entry key="js" value="46" />
+          <entry key="less" value="5" />
           <entry key="log" value="32" />
-          <entry key="py" value="7925" />
+          <entry key="py" value="11416" />
           <entry key="txt" value="17" />
           <entry key="vmoptions" value="3" />
-          <entry key="xml" value="3810" />
+          <entry key="xml" value="5375" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+          <entry key="JavaScript" value="46" />
           <entry key="Log" value="32" />
-          <entry key="PLAIN_TEXT" value="270" />
-          <entry key="Python" value="8762" />
-          <entry key="XML" value="3810" />
+          <entry key="PLAIN_TEXT" value="281" />
+          <entry key="Python" value="12610" />
+          <entry key="XML" value="5375" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -114,9 +138,51 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="112">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="204" column="109" selection-start-line="204" selection-start-column="72" selection-end-line="204" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/xml/guard_status.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="42">
+              <caret line="3" column="43" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="21" column="85" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="85" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="18" column="15" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="15" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -125,72 +191,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.conf/conf.conf">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="70">
-              <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_webcam/hr_webcam_view.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/odoo/addons/base/ir/ir_http.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2044">
-              <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/product/models/product.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="58" column="79" selection-start-line="48" selection-start-column="4" selection-end-line="58" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/product/models/product_template.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2212">
-              <caret line="164" column="66" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/addons/product/views/product_views.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5796">
-              <caret line="414" column="45" selection-start-line="414" selection-start-column="33" selection-end-line="414" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_request.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="910">
-              <caret line="65" column="68" selection-start-line="65" selection-start-column="68" selection-end-line="65" selection-end-column="68" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="224">
+              <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -199,12 +203,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_lines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+            <state relative-caret-position="462">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
-                <element signature="e#0#25#0" expanded="true" />
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -221,36 +225,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ir.ac</find>
-      <find>product_product_menu</find>
-      <find>product.product</find>
-      <find>Product Categories</find>
-      <find>Product C</find>
-      <find>Attribute Values</find>
-      <find>menu_product_in_config_stock</find>
-      <find>S</find>
-      <find>Stock Accounting</find>
-      <find>Settings</find>
-      <find>view_stock_config_settings</find>
-      <find>stock.config.settings</find>
-      <find>parent=&quot;base.</find>
-      <find>variants_action</find>
-      <find>variant</find>
-      <find>product_category_action_form</find>
-      <find>menuite</find>
-      <find>operations.client</find>
-      <find>id_number</find>
-      <find>purgebankacc</find>
-      <find>&quot;Warehouse Management</find>
-      <find>menu_stock_config_settings</find>
-      <find>domain=</find>
-      <find>sub_category_id</find>
-      <find>&quot;[('parent_id', '=', category_id)]&quot;</find>
-      <find>domain=[</find>
-      <find>= &quot;product.category&quot;</find>
-      <find>display_name</find>
-      <find>product.cate</find>
-      <find>hr.view_employee_form</find>
+      <find>operations.zone</find>
+      <find>def write(self, vals):</find>
+      <find>res = super(</find>
+      <find>_compute_age</find>
+      <find>store=</find>
+      <find>price_sub_total</find>
+      <find>price_subtotal = fi</find>
+      <find>_compute_amount</find>
+      <find>currency</find>
+      <find>currency_id =</find>
+      <find>fields.Monetary(compute='_compute_amount',</find>
+      <find>price_subtotal</find>
+      <find>currency_field</find>
+      <find>number</find>
+      <find>numner</find>
+      <find>readonly</find>
+      <find>presence_widgets</find>
+      <find>_compute_worked_hours</find>
+      <find>web.form_common</find>
+      <find>hr_attendance</find>
+      <find>hr_attendance_status</find>
+      <find>odoo.define('hr_attendance.presence_widgets', function (require) {</find>
+      <find>availa</find>
+      <find>PresenceIndicator</find>
+      <find>oe_hr_attendance_status</find>
+      <find>checked_in</find>
+      <find>_compute_attendance_state</find>
+      <find>hr_attendance_form_presence_indicator</find>
+      <find>oe_hr_attendance_status_green</find>
+      <find>FormPresenceIndicator</find>
     </findStrings>
     <replaceStrings>
       <replace>reservation_line_ids</replace>
@@ -270,11 +274,13 @@
       <replace>byteltd.com</replace>
       <replace>http://byteltd.com/</replace>
       <replace>#285498</replace>
-      <replace>self</replace>
       <replace>school_subject</replace>
       <replace>from odoo</replace>
       <replace>hr.group_hr_manager</replace>
       <replace>hr.group_hr_user</replace>
+      <replace>self</replace>
+      <replace>operation.client</replace>
+      <replace>operation.zone</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/addons/</dir>
@@ -300,35 +306,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_employee.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays_evaluation_rule.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays_evaluation_ruleset.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays_status.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/tests/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/tests/test_holidays_evaluate_allocation.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/__manifest__.py" />
-        <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request.py" />
-        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/menus/menus.xml" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/res_config.py" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/res_company.py" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/hr_employee.py" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/views/res_company.xml" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/views/res_config.xml" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_job.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/report/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/__manifest__.py" />
         <option value="$PROJECT_DIR$/addons/stock/views/stock_warehouse_views.xml" />
         <option value="$PROJECT_DIR$/addons/stock/views/stock_scrap_views.xml" />
@@ -340,25 +327,44 @@
         <option value="$PROJECT_DIR$/addons/account/views/account_menuitem.xml" />
         <option value="$PROJECT_DIR$/addons/sale/views/sale_views.xml" />
         <option value="$PROJECT_DIR$/addons/purchase/views/purchase_views.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee.py" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee_personal_identification.py" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/views/hr_employee_views.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" />
         <option value="$PROJECT_DIR$/addons/stock/views/stock_config_settings_views.xml" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_request.xml" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py" />
         <option value="$PROJECT_DIR$/.conf/conf.conf" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_quotation.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/report_client_quote.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_lines.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote_templates.xml" />
+        <option value="$PROJECT_DIR$/addons/hr_attendance/models/hr_attendance.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/web_asset_backend_template.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/less/guard_status.less" />
+        <option value="$PROJECT_DIR$/addons/hr_attendance/static/src/js/presence_widgets.js" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/xml/guard_status.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-18" />
+    <option name="x" value="362" />
     <option name="y" value="27" />
-    <option name="width" value="1279" />
-    <option name="height" value="576" />
+    <option name="width" value="994" />
+    <option name="height" value="741" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -368,6 +374,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -378,31 +385,75 @@
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name=".conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="product" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_attendance" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -421,13 +472,6 @@
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
               <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="africell" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
               <item name="pendrax" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -436,7 +480,7 @@
               <item name="custom" type="462c0819:PsiDirectoryNode" />
               <item name="clients" type="462c0819:PsiDirectoryNode" />
               <item name="pendrax" type="462c0819:PsiDirectoryNode" />
-              <item name="pendrax_entry" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
@@ -444,82 +488,79 @@
               <item name="custom" type="462c0819:PsiDirectoryNode" />
               <item name="clients" type="462c0819:PsiDirectoryNode" />
               <item name="pendrax" type="462c0819:PsiDirectoryNode" />
-              <item name="pendrax_entry" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
-              <item name="hr" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
-              <item name="hr" type="462c0819:PsiDirectoryNode" />
-              <item name="hr_employee_onboarding" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
-              <item name="hr" type="462c0819:PsiDirectoryNode" />
-              <item name="hr_webcam" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="less" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
-              <item name="hr" type="462c0819:PsiDirectoryNode" />
-              <item name="mail_cc_group" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="xml" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="odoo" type="462c0819:PsiDirectoryNode" />
-              <item name="addons" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
-              <item name="ir" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="operations_management" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="mailcc&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/mail_cc_group&#10;onboard&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_employee_onboarding&#10;hr_contract_default_trial_length&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_contract_default_trial_length&#10;cron&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_employment_termination/data/cron.xml&#10;hr_contract_state&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_contract_state&#10;hr_holidays_legal_leave&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_holidays_legal_leave&#10;)&#9;null&#9;null&#10;ogone_icon.png&#9;FILE&#9;file:///srv/Byte-Core/addons/payment_ogone/static/src/img/ogone_icon.png&#10;report&#9;FILE&#9;file:///srv/Byte-Core/addons/hr_payroll/report/report_contribution_register.py" />
+    <property name="SearchEverywhereHistoryKey" value="report_xlsx_helpers&#9;FILE&#9;file:///srv/Byte-Core/custom/community/noviat/report_xlsx_helpers&#10;mailcc&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/mail_cc_group&#10;onboard&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_employee_onboarding&#10;hr_contract_default_trial_length&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_contract_default_trial_length&#10;cron&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_employment_termination/data/cron.xml&#10;hr_contract_state&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_contract_state&#10;hr_holidays_legal_leave&#9;FILE&#9;file:///srv/Byte-Core/custom/community/hr/hr_holidays_legal_leave&#10;)&#9;null&#9;null&#10;ogone_icon.png&#9;FILE&#9;file:///srv/Byte-Core/addons/payment_ogone/static/src/img/ogone_icon.png&#10;report&#9;FILE&#9;file:///srv/Byte-Core/addons/hr_payroll/report/report_contribution_register.py" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/custom/school" />
     <property name="settings.editor.selected.configurable" value="pyconsole" />
@@ -533,11 +574,11 @@
       <recent name="$PROJECT_DIR$/custom/hotel" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models" />
-      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/description" />
+      <recent name="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -566,7 +607,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odoo-bin" />
-      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=pend" />
+      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=pend -u operations_management -d pendraxOct" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -599,9 +640,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29858527" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23082651" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -609,10 +649,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.25331125" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32616487" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.92715234" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.2831126" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.442053" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -733,6 +773,16 @@
           <line>184</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/odoo/addons/base/ir/ir_actions.py</url>
+          <line>352</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/odoo/addons/base/ir/ir_actions.py</url>
+          <line>353</line>
+          <option name="timeStamp" value="80" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -744,322 +794,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="61" selection-start-line="12" selection-start-column="54" selection-end-line="12" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/menus/menus.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_production_lot_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1088" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_picking_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="116" column="15" selection-start-line="116" selection-start-column="9" selection-end-line="116" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_pack_operation_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1396" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_warehouse_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="95" column="17" selection-start-line="95" selection-start-column="9" selection-end-line="95" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_scrap_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="136" column="13" selection-start-line="136" selection-start-column="5" selection-end-line="136" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_quant_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="250" column="14" selection-start-line="250" selection-start-column="14" selection-end-line="250" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_move_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="348" selection-start-line="348" selection-end-line="348" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/procurement/wizard/procurement_order_compute_all_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="22" column="46" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/procurement_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="95" column="8" selection-start-line="95" selection-start-column="8" selection-end-line="95" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/product_product.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="74" selection-start-line="5" selection-start-column="42" selection-end-line="5" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/product/views/product_attribute_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="85" column="35" selection-start-line="85" selection-start-column="20" selection-end-line="85" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/product_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="432" selection-start-line="432" selection-end-line="432" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/account/views/account.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="49" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/account/views/account_menuitem.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/sale/views/sale_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/purchase/views/purchase_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" lean-forward="true" selection-start-column="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1736">
-          <caret line="181" selection-start-line="181" selection-end-line="379" selection-end-column="17" />
-          <folding>
-            <element signature="e#5466#6376#0" />
-            <element signature="e#6385#7515#0" />
-            <element signature="e#7525#8661#0" />
-            <element signature="e#8698#9546#0" />
-            <element signature="e#9556#9803#0" />
-            <element signature="e#9813#18142#0" />
-            <element signature="e#18152#19483#0" />
-            <element signature="e#19492#19877#0" />
-            <element signature="e#20043#20459#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/school/school/models/school.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9296">
-          <caret line="671" selection-start-line="671" selection-end-line="671" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/school/school/views/school_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8862">
-          <caret line="633" column="28" selection-start-line="633" selection-start-column="28" selection-end-line="633" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/general/html_form_builder/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee_personal_identification.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/views/hr_employee_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="50" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="50" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_run_confirm_slips/models/hr_payslip_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_menu_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/stock/views/stock_config_settings_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="106" column="91" selection-start-line="106" selection-start-column="91" selection-end-line="106" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/procurement_request_line.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py" />
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="79" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/addons/base/ir/ir_http.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2044">
-          <caret line="167" column="12" selection-start-line="167" selection-start-column="12" selection-end-line="167" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/product/models/product.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="58" column="79" selection-start-line="48" selection-start-column="4" selection-end-line="58" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/product/models/product_template.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2212">
-          <caret line="164" column="66" selection-start-line="164" selection-start-column="54" selection-end-line="164" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/product/views/product_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5796">
-          <caret line="414" column="45" selection-start-line="414" selection-start-column="33" selection-end-line="414" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_request.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="910">
@@ -1068,35 +802,319 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
           <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_webcam/hr_webcam_view.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_job.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="28" column="54" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.conf/conf.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="5" column="19" lean-forward="true" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="112">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/noviat/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="52" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/addons/base/res/res_partner_demo.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-336" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/sale/report/sale_report.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/sale/report/sale_report_templates.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" selection-start-line="2" selection-end-line="168" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/sale/report/invoice_report_templates.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-252" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/sale/report/sale_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1379" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/sale/report/invoice_report.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/description/icon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3443">
+          <caret line="3838" selection-start-line="3838" selection-end-line="3838" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/addons/base/ir/ir_attachment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="437" selection-start-line="437" selection-end-line="437" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/school/school/models/school.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="338" column="43" selection-start-line="338" selection-start-column="37" selection-end-line="338" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/sale/models/sale.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="762" column="27" selection-start-line="762" selection-start-column="27" selection-end-line="762" selection-end-column="27" />
+          <folding>
+            <element signature="e#28191#28755#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/odoo/fields.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="1261" column="68" selection-start-line="1261" selection-start-column="54" selection-end-line="1261" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="21" column="17" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+            <marker date="1540739295027" expanded="true" signature="3107:3205" ph="..." />
+            <marker date="1540739295027" expanded="true" signature="3639:3643" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote_templates.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/employee_kanban_view_handler.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/greeting_message.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-563" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/my_attendances.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/res_config_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/models/hr_attendance.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/data/hr_attendance_demo.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/less/hr_attendance.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/models/hr_employee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="27" column="95" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="658">
+          <caret line="71" column="61" selection-start-line="71" selection-start-column="61" selection-end-line="71" selection-end-column="61" />
+          <folding>
+            <element signature="n#page#0;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#group#0;n#page#1;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#page#2;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#page#3;n#notebook#0;n#sheet#0;n#form#0;n#field#2;n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#record#4;n#odoo#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/hr_employee_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="18" selection-start-line="10" selection-start-column="12" selection-end-line="13" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/presence_widgets.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/web_asset_backend_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/hr_attendance_view.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/xml/attendance.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/web_asset_backend_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" column="93" selection-start-line="10" selection-start-column="93" selection-end-line="10" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="36" column="6" selection-start-line="34" selection-start-column="4" selection-end-line="36" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/less/guard_status.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2041">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/xml/guard_status.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="43" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="204" column="109" selection-start-line="204" selection-start-column="72" selection-end-line="204" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="21" column="85" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="15" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_lines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

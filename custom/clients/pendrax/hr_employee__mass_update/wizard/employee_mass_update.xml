@@ -26,6 +26,7 @@
                     </group>
 
                     <footer>
+                        <button name="fix_employee_job" type="object" string="Fix Job" class="oe_highlight"/>
                         <button name="purgebankacc" type="object" string="Purge Payslips" class="oe_highlight"/>
                         <button name="update_bank_accounts" type="object" string="Update Bank Account" class="oe_highlight"/>
                         <button name="purgedupcon" type="object" string="Delete Duplicate Contract" class="oe_highlight"/>

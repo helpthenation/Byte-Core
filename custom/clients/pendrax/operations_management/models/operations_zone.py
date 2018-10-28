@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
 class OperationsZone(models.Model):
-    _name = "operations.zone"
+    _name = "operation.zone"
     _description = "Zone"
     name = fields.Char(string='Name',
                        required=True,

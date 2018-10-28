@@ -202,11 +202,14 @@
                             <page name="hr_settings" string="Operations Settings" >
                                 <group>
                                     <group string='Operations Details' name="active_group">
+                                        <field name="available" widget="hr_attendance_form_presence_indicator"/>
                                         <field name="available_guard"/>
+                                        <field name="available"/>
                                         <field name="zone"/>
                                         <field name="guard_type"/>
                                         <field name="current_deployment"/>
                                     </group>
+
                                 </group>
                             </page>
 

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="assets_backend" name="hr_attendance assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/operations_management/static/src/js/presence_widgets.js"></script>
+            <link rel="stylesheet" href="/operations_management/static/src/less/guard_status.less"/>
+        </xpath>
+    </template>
+</odoo>
