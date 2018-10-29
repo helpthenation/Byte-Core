@@ -26,6 +26,7 @@
                     </group>
 
                     <footer>
+                        <button name="set_guard" type="object" string="Set Guard" class="oe_highlight"/>
                         <button name="fix_employee_job" type="object" string="Fix Job" class="oe_highlight"/>
                         <button name="purgebankacc" type="object" string="Purge Payslips" class="oe_highlight"/>
                         <button name="update_bank_accounts" type="object" string="Update Bank Account" class="oe_highlight"/>

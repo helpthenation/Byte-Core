@@ -15,7 +15,6 @@
                 <field name="name"/>
                 <field name="description"/>
                 <field name="no_of_guards"/>
-
             </tree>
         </field>
     </record>
@@ -39,11 +38,15 @@
         <field name="model">operation.zone</field>
         <field name="arch" type="xml">
             <form string="Operation Zones">
-                <group>
-                    <field name="name"/>
-                <field name="description"/>
-                <field name="no_of_guards"/>
-                </group>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                            <field name="no_of_guards"/>
+                        </group>
+                    </group>
+                </sheet>
             </form>
         </field>
     </record>
@@ -55,7 +58,9 @@
             <form string="Clients">
                 <header>
                         <button name="cancel" string="Cancel" type="object"
-                                icon="fa-thumbs-o-down" class="oe_highlight" states="new,survey,survey_complete,process_quote,quotation_sent"/>
+                                icon="fa-thumbs-o-down" class="oe_highlight"
+                                confirm="Are you sure you want to cancel this Client Request?"
+                                states="new,survey,survey_complete,process_quote,quotation_sent"/>
 
                         <button name="start_survey" string="Start Survey" type="object"
                                 icon="fa-briefcase" class="oe_highlight" states="new"/>
@@ -76,6 +81,7 @@
                                 icon="fa-sign-in" class="oe_highlight" states="onboard"/>
 
                         <button name="inactivate" string="Deactivate" type="object"
+                                confirm="Are you sure you want to Deactivate this Client?"
                                 icon="fa-sign-out" class="oe_highlight" states="active"/>
 
                         <button name="renew" string="Renew" type="object"
@@ -156,8 +162,20 @@
                                     <field name="zone_id"/>
                                     <field name="guard_id"/>
                                     <field name="date_assigned"/>
-                                    <field name="status"/>
+                                    <field name="status" readonly="1"/>
+                                    <button name="confirm_assignment" type="object" string="Confirm Assignment" icon="fa-star" attrs="{'invisible':[('status','=','active')]}"/>
+                                    <button name="unassign" type="object" string="Unassign" icon="fa-star-o" attrs="{'invisible':[('status','in',('inactive', 'draft'))]}"/>
                                 </tree>
+                                <form>
+                                    <group>
+                                        <group>
+                                            <field name="status" readonly="1"/>
+                                            <field name="guard_id"/>
+                                            <field name="zone_id"/>
+                                            <field name="date_assigned"/>
+                                        </group>
+                                    </group>
+                                </form>
                             </field>
                         </page>
                     </notebook>
@@ -195,8 +213,6 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_clients" name="Clients" parent="menu_operations_root" action="action_view_clients_list_form" sequence="1"/>
-
     <record id="action_view_zones_list_form" model="ir.actions.act_window">
         <field name="name">Zones</field>
         <field name="res_model">operation.zone</field>
@@ -204,6 +220,21 @@
         <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem id="menu_zones" name="Zones" parent="menu_operations_root" action="action_view_zones_list_form" sequence="2"/>
-    <menuitem id="menu_schedule" name="Scheduling" parent="menu_operations_root" action="action_view_zones_list_form" sequence="3"/>
+    <record id="action_operations_guards" model="ir.actions.act_window">
+        <field name="name">Guards</field>
+        <field name="res_model">hr.employee</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_guard', '=', True)]</field>
+    </record>
+
+    <!-- Top Menu Items -->
+    <menuitem id="menu_clients" name="Clients" parent="menu_operations_root" action="action_view_clients_list_form" sequence="1"/>
+    <menuitem id="menu_guards_root" name="Manage Guards" parent="menu_operations_root"  sequence="2"/>
+    <menuitem id="menu_zones" name="Zones" parent="menu_operations_root" action="action_view_zones_list_form" sequence="3"/>
+    <menuitem id="menu_schedule" name="Scheduling" parent="menu_operations_root" action="action_view_zones_list_form" sequence="4"/>
+
+
+    <!-- Child Menu Items -->
+    <menuitem id="menu_guards" name="Guards" parent="menu_guards_root" action="action_operations_guards" sequence="1"/>
 </odoo>

@@ -54,10 +54,6 @@ class HrPayslipRun(models.Model):
         'Scheduled Pay',
         states={'close': [('readonly', True)]}
     )
-    staff_category = fields.Selection([('guard', 'Guard'),
-                                       ('admin', 'Admin')],
-                                      string='Staff Category',
-                                      required=True)
 
     @api.multi
     @api.constrains('hr_period_id', 'company_id')
@@ -141,7 +137,6 @@ class HrPayslipRun(models.Model):
 
         employee_ids = employee_obj.search(
             [('company_id', '=', company.id),
-             ('staff_category', '=', self.staff_category),
              ('contract_id.schedule_pay', '=', self.schedule_pay)]).ids
 
         return {

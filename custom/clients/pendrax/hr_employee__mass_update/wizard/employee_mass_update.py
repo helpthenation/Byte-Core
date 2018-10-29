@@ -20,6 +20,18 @@ class WizardGetRecord(models.TransientModel):
     date = fields.Date(string='Date')
     dest_dir = fields.Char("Image Directory")
 
+
+    @api.multi
+    def set_guard(self):
+        employee_object = self.env['hr.employee'].search([])
+        self.ensure_one()
+        for employee in employee_object:
+            if employee.job_id.guard_position:
+                employee.is_guard=True
+
+
+
+
     @api.multi
     def purgebankacc(self):
         payslip_obj = self.env['hr.payslip.run']

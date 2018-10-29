@@ -48,6 +48,12 @@ class OperationsClient(models.Model):
                                         inverse_name='client_id',
                                         string='Quotation Lines')
 
+    @api.multi
+    def copy(self):
+        """ stop users from making copies
+        """
+        raise ValidationError('Operation not allowed! Cannot duplicate a client')
+
     # Domestic and Commercial and Cooperate and Events
 
     @api.constrains('email')
