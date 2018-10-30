@@ -20,8 +20,16 @@ class GuardAssignmentLine(models.Model):
                                ('inactive', 'Inactive')],
                               default="draft",
                               string="Status")
-    date_assigned = fields.Date(string='Date Assigned',
-                                defult=date.today())
+    start_date = fields.Date(string='Start Date',
+                                default=date.today(),
+                             required=True)
+    end_date = fields.Date(string='End Date')
+
+    shift = fields.Selection([('day', 'Day'),
+                              ('night', 'Night'),
+                              ('both', 'Both')],
+                             string='Shift',
+                             required=True)
 
     @api.multi
     def confirm_assignment(self):

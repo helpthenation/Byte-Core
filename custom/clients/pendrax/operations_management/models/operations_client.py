@@ -25,7 +25,8 @@ class OperationsClient(models.Model):
         default='new',
         string='Client Status')
     address = fields.Char(string="Address", required=True)
-    zone_id = fields.Many2one(comodel_name='operation.zone', string="Zone")
+    zone_id = fields.Many2one(comodel_name='operation.zone', string="Zone", required=True)
+    district_id = fields.Many2one(comodel_name='hr.district', string='District', required=True)
     category = fields.Selection([('individual', 'Individual'),
                                  ('company', 'Company')],
                                 string="Category",

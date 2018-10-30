@@ -12,7 +12,13 @@
     ],
     'data': [
         'views/hr_employee.xml',
-        'data/sequence.xml'
+        'views/occupation.xml',
+        'views/qualification.xml',
+        'views/district.xml',
+        'views/province.xml',
+        'views/tribe.xml',
+        'views/religion.xml',
+        'data/sequence.xml',
     ],
     'installable': True
 }

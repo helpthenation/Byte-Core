@@ -26,7 +26,8 @@
             <tree string="Clients">
                 <field name="name"/>
                 <field name="address"/>
-                <field name="zone_id"/>
+                <field name="zone_id" options='{"no_open": True, "no_create": True}'/>
+                <field name="district_id" options='{"no_open": True, "no_create": True}'/>
                 <field name="category"/>
                 <field name="state"/>
             </tree>
@@ -161,7 +162,9 @@
                                 <tree editable="top">
                                     <field name="zone_id"/>
                                     <field name="guard_id"/>
-                                    <field name="date_assigned"/>
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                    <field name="shift"/>
                                     <field name="status" readonly="1"/>
                                     <button name="confirm_assignment" type="object" string="Confirm Assignment" icon="fa-star" attrs="{'invisible':[('status','=','active')]}"/>
                                     <button name="unassign" type="object" string="Unassign" icon="fa-star-o" attrs="{'invisible':[('status','in',('inactive', 'draft'))]}"/>
@@ -172,7 +175,9 @@
                                             <field name="status" readonly="1"/>
                                             <field name="guard_id"/>
                                             <field name="zone_id"/>
-                                            <field name="date_assigned"/>
+                                            <field name="start_date"/>
+                                            <field name="end_date"/>
+                                            <field name="shift"/>
                                         </group>
                                     </group>
                                 </form>

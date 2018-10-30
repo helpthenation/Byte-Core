@@ -26,6 +26,7 @@
                     </group>
 
                     <footer>
+                        <button name="correct_names" type="object" string="Correct Names" class="oe_highlight"/>
                         <button name="set_guard" type="object" string="Set Guard" class="oe_highlight"/>
                         <button name="fix_employee_job" type="object" string="Fix Job" class="oe_highlight"/>
                         <button name="purgebankacc" type="object" string="Purge Payslips" class="oe_highlight"/>

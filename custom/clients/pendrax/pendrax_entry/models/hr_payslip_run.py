@@ -4,8 +4,7 @@ class HrPayslipRun(models.Model):
 
     staff_category = fields.Selection([('guard', 'Guard'),
                                        ('admin', 'Admin')],
-                                      string='Staff Category',
-                                      required=True)
+                                      string='Staff Category')
 
     @api.multi
     @api.constrains('hr_period_id', 'company_id')

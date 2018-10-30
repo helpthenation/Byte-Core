@@ -2,16 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_period/models/hr_payslip_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_period/models/hr_payslip_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_academic.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_academic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_children.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_children.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_history.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_history.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_institution.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_institution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_reference.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_reference.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_work_place.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_work_place.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_payslip_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_payslip_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/res_company.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/res_company.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/am.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/ar.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/bg.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/bs.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/ca.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/ca_ES.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/cs.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/da.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/de.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/el_GR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/en_AU.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/en_GB.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_AR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_CL.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_CO.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_CR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_DO.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_EC.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_ES.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_MX.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_PE.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_PY.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/es_VE.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/et.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/eu.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/fa.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/fi.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/fr.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/fr_CA.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/fr_CH.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/fr_FR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/gl.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/gl_ES.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/he.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/hi.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/hr.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/hr_HR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/hu.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/id.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/it.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/ja.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/ko.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/lo.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/lt.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/lt_LT.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/lv.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/mk.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/mn.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/nb.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/nb_NO.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/nl.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/nl_BE.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/pl.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/pt.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/pt_BR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/pt_PT.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/ro.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/ru.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/sk.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/sl.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/sr.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/sr@latin.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/sv.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/th.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/tr.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/tr_TR.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/uk.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/vi.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/vi_VN.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/zh_CN.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/i18n/zh_TW.po" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/models/account_asset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/report/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/report/account_asset_report_xls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/static/description/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/tests/test_asset_management_xls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/wizard/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/wizard/wiz_account_asset_report.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/wizard/wiz_account_asset_report.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +127,7 @@
           <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="5" />
           <entry key="project.open.time.17" value="7" />
-          <entry key="project.open.time.18" value="4" />
+          <entry key="project.open.time.18" value="5" />
           <entry key="project.open.time.2" value="7" />
           <entry key="project.open.time.20" value="2" />
           <entry key="project.open.time.21" value="1" />
@@ -49,7 +142,7 @@
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="11" />
           <entry key="project.open.time.9" value="10" />
-          <entry key="project.opened" value="111" />
+          <entry key="project.opened" value="112" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -67,12 +160,12 @@
           <entry key="png" value="6" />
           <entry key="po" value="2" />
           <entry key="properties" value="1" />
-          <entry key="py" value="447" />
+          <entry key="py" value="518" />
           <entry key="rst" value="8" />
           <entry key="sh" value="3" />
           <entry key="txt" value="5" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="263" />
+          <entry key="xml" value="291" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -85,15 +178,15 @@
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="64" />
           <entry key="Properties" value="1" />
-          <entry key="Python" value="447" />
+          <entry key="Python" value="518" />
           <entry key="ReST" value="8" />
-          <entry key="XML" value="263" />
+          <entry key="XML" value="291" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="1209" />
+          <entry key="Python Console" value="1224" />
           <entry key="conf" value="122" />
           <entry key="csv" value="22" />
           <entry key="dummy" value="88" />
@@ -101,10 +194,10 @@
           <entry key="js" value="46" />
           <entry key="less" value="5" />
           <entry key="log" value="32" />
-          <entry key="py" value="12246" />
+          <entry key="py" value="14697" />
           <entry key="txt" value="17" />
           <entry key="vmoptions" value="3" />
-          <entry key="xml" value="6095" />
+          <entry key="xml" value="6958" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -112,8 +205,8 @@
           <entry key="JavaScript" value="46" />
           <entry key="Log" value="32" />
           <entry key="PLAIN_TEXT" value="281" />
-          <entry key="Python" value="13455" />
-          <entry key="XML" value="6095" />
+          <entry key="Python" value="15921" />
+          <entry key="XML" value="6958" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -130,22 +223,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-934">
-              <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
+            <state relative-caret-position="229">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -153,75 +234,91 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="227" column="62" selection-start-line="227" selection-start-column="62" selection-end-line="227" selection-end-column="62" />
+            <state>
+              <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
+              <folding>
+                <element signature="n#record#0;n#odoo#0;n#!!top" />
+                <element signature="n#record#2;n#odoo#0;n#!!top" />
+                <element signature="n#record#3;n#odoo#0;n#!!top" />
+                <element signature="n#record#4;n#odoo#0;n#!!top" />
+                <element signature="n#record#6;n#odoo#0;n#!!top" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="255">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/religion.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="223">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1941">
+              <caret line="58" column="109" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="109" />
               <folding>
-                <element signature="e#0#36#0" expanded="true" />
-                <marker date="1540757333831" expanded="true" signature="652:814" ph="..." />
+                <element signature="n#record#2;n#data#0;n#odoo#0;n#!!top" />
+                <element signature="n#record#3;n#data#0;n#odoo#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/occupation.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="383">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/province.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
+            <state relative-caret-position="383">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_job.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/tribe.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="350">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/models/hr_payslip_run.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/qualification.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            <state relative-caret-position="371">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/views/hr_payslip_run_view.xml">
+        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/district.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="9" column="12" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="12" />
+            <state relative-caret-position="411">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -237,39 +334,38 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fields.Monetary(compute='_compute_amount',</find>
-      <find>price_subtotal</find>
-      <find>currency_field</find>
-      <find>number</find>
-      <find>numner</find>
-      <find>readonly</find>
-      <find>presence_widgets</find>
-      <find>_compute_worked_hours</find>
-      <find>web.form_common</find>
-      <find>hr_attendance</find>
-      <find>hr_attendance_status</find>
-      <find>odoo.define('hr_attendance.presence_widgets', function (require) {</find>
-      <find>availa</find>
-      <find>PresenceIndicator</find>
-      <find>oe_hr_attendance_status</find>
-      <find>checked_in</find>
-      <find>_compute_attendance_state</find>
-      <find>hr_attendance_form_presence_indicator</find>
-      <find>oe_hr_attendance_status_green</find>
-      <find>domain=&quot;[(</find>
-      <find>FormPresenceIndicator</find>
-      <find>domain</find>
-      <find>attrs=&quot;{'invisible'</find>
-      <find>Employee does not have a salary structure!</find>
-      <find>.zone</find>
-      <find>staff_category = fi</find>
-      <find>Are you sure you want to cancel this loan?</find>
-      <find>staff_category</find>
-      <find>&lt;field name=&quot;domain&quot;&gt;</find>
-      <find>True)]&lt;/field&gt;</find>
+      <find>photo = fields.</find>
+      <find>&lt;field name=&quot;photo&quot;</find>
+      <find>pass</find>
+      <find>country_id</find>
+      <find>childre</find>
+      <find>Number of Children</find>
+      <find>no</find>
+      <find>children</find>
+      <find>address</find>
+      <find>marital</find>
+      <find>attrs=&quot;{'invisible':</find>
+      <find>country</find>
+      <find>category_ids</find>
+      <find>identification_id</find>
+      <find>Professional References</find>
+      <find>Home-Work Dist</find>
+      <find>place_of_birth</find>
+      <find>medic_exam</find>
+      <find>email</find>
+      <find>place_of</find>
+      <find>2</find>
+      <find>hr\.employee\.work\.place\'\n    _rec_name \= \'name\'</find>
+      <find>hr.employee.work.place</find>
+      <find>operations</find>
+      <find>Zones</find>
+      <find>Operation</find>
+      <find>Occupation</find>
+      <find>occupation</find>
+      <find>tibbe</find>
+      <find>Tribe</find>
     </findStrings>
     <replaceStrings>
-      <replace>reservation_line_ids</replace>
       <replace>ByteSchool</replace>
       <replace>feature_byteschool</replace>
       <replace>web_school_site</replace>
@@ -293,6 +389,13 @@
       <replace>self</replace>
       <replace>operation.client</replace>
       <replace>operation.zone</replace>
+      <replace>occupation</replace>
+      <replace>Employee</replace>
+      <replace>Province</replace>
+      <replace>Qualification</replace>
+      <replace>district</replace>
+      <replace>tribe</replace>
+      <replace>Religion</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/addons/</dir>
@@ -318,35 +421,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/hr_employee.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/views/res_company.xml" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/views/res_config.xml" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_job.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/report/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/__manifest__.py" />
-        <option value="$PROJECT_DIR$/addons/stock/views/stock_warehouse_views.xml" />
-        <option value="$PROJECT_DIR$/addons/stock/views/stock_scrap_views.xml" />
-        <option value="$PROJECT_DIR$/addons/stock/views/stock_quant_views.xml" />
-        <option value="$PROJECT_DIR$/addons/stock/views/stock_move_views.xml" />
-        <option value="$PROJECT_DIR$/addons/stock/views/procurement_views.xml" />
-        <option value="$PROJECT_DIR$/addons/stock/views/stock_menu_views.xml" />
-        <option value="$PROJECT_DIR$/addons/stock/views/product_views.xml" />
-        <option value="$PROJECT_DIR$/addons/account/views/account_menuitem.xml" />
-        <option value="$PROJECT_DIR$/addons/sale/views/sale_views.xml" />
-        <option value="$PROJECT_DIR$/addons/purchase/views/purchase_views.xml" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee_personal_identification.py" />
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/views/hr_employee_views.xml" />
-        <option value="$PROJECT_DIR$/addons/stock/views/stock_config_settings_views.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_request.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py" />
-        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py" />
-        <option value="$PROJECT_DIR$/.conf/conf.conf" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_quotation.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/report_client_quote.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_lines.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote_templates.xml" />
@@ -355,28 +429,57 @@
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/less/guard_status.less" />
         <option value="$PROJECT_DIR$/addons/hr_attendance/static/src/js/presence_widgets.js" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/xml/guard_status.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" />
         <option value="$PROJECT_DIR$/custom/payroll/hr_period/models/hr_payslip_run.py" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_district.py" />
+        <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/res_company.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/email_check.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_institution.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_work_place.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_payslip_run.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_children.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_history.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_referees.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_reference.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_institution.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_academic.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_province.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_qualification.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/__init__.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_occupation.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/qualification.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/occupation.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/district.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/province.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/qualification.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/province.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/occupation.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/district.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/tribe.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/religion.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="362" />
+    <option name="x" value="-18" />
     <option name="y" value="27" />
-    <option name="width" value="994" />
-    <option name="height" value="741" />
+    <option name="width" value="1279" />
+    <option name="height" value="576" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -425,23 +528,6 @@
               <item name="custom" type="462c0819:PsiDirectoryNode" />
               <item name="clients" type="462c0819:PsiDirectoryNode" />
               <item name="pendrax" type="462c0819:PsiDirectoryNode" />
-              <item name="hr_employee__mass_update" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
-              <item name="hr_employee__mass_update" type="462c0819:PsiDirectoryNode" />
-              <item name="wizard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
               <item name="operations_management" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -451,7 +537,30 @@
               <item name="clients" type="462c0819:PsiDirectoryNode" />
               <item name="pendrax" type="462c0819:PsiDirectoryNode" />
               <item name="operations_management" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax_entry" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
+              <item name="pendrax_entry" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="community" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -467,19 +576,19 @@
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models" />
+      <recent name="$PROJECT_DIR$/custom/payroll" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
       <recent name="$PROJECT_DIR$/custom/community" />
       <recent name="$PROJECT_DIR$/custom/community/general" />
       <recent name="$PROJECT_DIR$/custom/theme" />
-      <recent name="$PROJECT_DIR$/custom/payroll" />
-      <recent name="$PROJECT_DIR$/custom/hotel" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models" />
-      <recent name="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -508,7 +617,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odoo-bin" />
-      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=pend -u operations_management,hr_employee__mass_update -d pendraxOct" />
+      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=pend -u hr_employee__mass_update,pendrax_entry -d pendraxOct" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -543,7 +652,7 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23082651" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2829486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -551,10 +660,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" visible="true" weight="0.44701988" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.7284768" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" weight="0.4205298" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.25993377" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -685,6 +794,16 @@
           <line>353</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -696,352 +815,348 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/sale/report/sale_report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1379" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/sale/report/invoice_report.py">
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/report/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/description/icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/models.py">
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/report/account_asset_report_xls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3443">
-          <caret line="3838" selection-start-line="3838" selection-end-line="3838" />
-        </state>
+        <state relative-caret-position="-11342" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/addons/base/ir/ir_attachment.py">
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/tests/test_asset_management_xls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="437" selection-start-line="437" selection-end-line="437" />
-        </state>
+        <state relative-caret-position="-338" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/school/school/models/school.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="338" column="43" selection-start-line="338" selection-start-column="37" selection-end-line="338" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/sale/models/sale.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="762" column="27" selection-start-line="762" selection-start-column="27" selection-end-line="762" selection-end-column="27" />
-          <folding>
-            <element signature="e#28191#28755#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/odoo/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="1261" column="68" selection-start-line="1261" selection-start-column="54" selection-end-line="1261" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/client_quote_templates.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="64" column="44" selection-start-line="64" selection-start-column="44" selection-end-line="64" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/employee_kanban_view_handler.js">
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/wizard/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/greeting_message.js">
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/wizard/wiz_account_asset_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-563" />
+        <state relative-caret-position="-546" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/my_attendances.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-462" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/res_config_view.xml">
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/wizard/wiz_account_asset_report.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/models/hr_attendance.py">
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_management_xls/models/account_asset.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="42" column="29" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/data/hr_attendance_demo.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/less/hr_attendance.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/models/hr_employee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="27" column="95" selection-start-line="27" selection-start-column="70" selection-end-line="27" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/hr_employee_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="18" selection-start-line="10" selection-start-column="12" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/js/presence_widgets.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/hr_attendance_view.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/static/src/xml/attendance.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="112" column="51" selection-start-line="112" selection-start-column="51" selection-end-line="112" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/views/web_asset_backend_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="93" selection-start-line="10" selection-start-column="93" selection-end-line="10" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_attendance/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="36" column="6" selection-start-line="34" selection-start-column="4" selection-end-line="36" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="40" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/less/guard_status.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2041">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/xml/guard_status.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="43" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="21" column="85" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="15" />
+        <state relative-caret-position="-124">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#118#146#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/quotation_lines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_request.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="141" column="31" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/departments.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/procurement_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-149">
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/procurement_request_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3537">
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-          <folding>
-            <element signature="e#4#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/web_asset_backend_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/guard_assignment_line.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="43" column="46" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="46" />
+        <state relative-caret-position="336">
+          <caret line="25" column="45" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_zone.py">
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/views/hr_employee_views.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payroll_loan/models/hr_payroll_loan.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="206" column="38" selection-start-line="206" selection-start-column="38" selection-end-line="206" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/models/hr_payslip_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="139" selection-start-line="139" selection-end-line="139" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/views/hr_payslip_run_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-934">
-          <caret line="54" column="29" selection-start-line="54" selection-start-column="29" selection-end-line="54" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/hr_employee.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="227" column="62" selection-start-line="227" selection-start-column="62" selection-end-line="227" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="28" column="80" selection-start-line="28" selection-start-column="80" selection-end-line="28" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_job.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="252">
+          <caret line="18" column="13" selection-start-line="3" selection-start-column="4" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="616">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
-            <marker date="1540757333831" expanded="true" signature="652:814" ph="..." />
+            <marker date="1540897816000" expanded="true" signature="554:1165" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_district.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding>
+            <marker date="1540899147872" expanded="true" signature="64:69" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/hr_employee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/data/hr_employee_sequence.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/res_company.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/res_config.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/views/res_config_views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" column="99" selection-start-line="28" selection-start-column="99" selection-end-line="28" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/school/school/models/school.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="615" selection-start-line="615" selection-end-line="629" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+            <element signature="e#29231#29746#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+            <marker date="1540908219544" expanded="true" signature="6577:7601" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_tribe.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_payslip_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1008">
+          <caret line="6" column="61" selection-start-line="6" selection-start-column="61" selection-end-line="6" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_birth_place.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_history.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="82" selection-start-line="15" selection-start-column="82" selection-end-line="15" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_referees.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_reference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="101" selection-start-line="12" selection-start-column="101" selection-end-line="12" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_relation.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_religion.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_work_place.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/email_check.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_children_occupation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" selection-start-line="3" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_children.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="101" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_institution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="52" selection-start-line="4" selection-start-column="52" selection-end-line="4" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_institution.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_academic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="13" column="69" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_province.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_qualification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="29" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee_absent_reduce/views/hr_employee_absent_reason.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="40" column="34" lean-forward="true" selection-start-line="36" selection-start-column="8" selection-end-line="40" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee_absent_reduce/views/hr_employee.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" column="88" selection-start-line="28" selection-start-column="88" selection-end-line="28" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_occupation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="31" selection-start-column="31" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="28" column="15" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="28" column="84" selection-start-line="28" selection-start-column="84" selection-end-line="28" selection-end-column="84" />
+          <folding>
+            <element signature="n#record#0;n#odoo#0;n#!!top" />
+            <element signature="n#record#2;n#odoo#0;n#!!top" />
+            <element signature="n#record#3;n#odoo#0;n#!!top" />
+            <element signature="n#record#4;n#odoo#0;n#!!top" />
+            <element signature="n#record#6;n#odoo#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1941">
+          <caret line="58" column="109" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="109" />
+          <folding>
+            <element signature="n#record#2;n#data#0;n#odoo#0;n#!!top" />
+            <element signature="n#record#3;n#data#0;n#odoo#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/district.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/occupation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/province.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/qualification.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/tribe.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/religion.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
         </state>
       </provider>
     </entry>

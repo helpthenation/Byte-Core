@@ -5,7 +5,6 @@ from odoo.exceptions import ValidationError
 import logging
 import os
 import base64
-from datetime import date
 from dateutil.relativedelta import relativedelta
 
 
@@ -16,9 +15,36 @@ class WizardGetRecord(models.TransientModel):
     
     _name = 'wizard.employee.update'
     _description = 'Update Employees'
-    file = fields.Binary('CSV File', required=True)
+    file = fields.Binary('CSV File')
     date = fields.Date(string='Date')
     dest_dir = fields.Char("Image Directory")
+
+
+    @api.multi
+    def correct_names(self):
+        self.ensure_one()
+        employee_object = self.env['hr.employee'].search([])
+        for employee in employee_object:
+            f = '';
+            m = '';
+            l = '';
+            name=employee.name.split(' ')
+            f=name[0]
+            l=name[-1]
+            try:
+                name.pop(0)
+            except Exception:
+                pass
+            try:
+                name.pop(-1)
+            except Exception:
+                pass
+            for n in name:
+                m+=n
+            employee.fname=f
+            employee.mname=m
+            employee.lname=l
+
 
 
     @api.multi

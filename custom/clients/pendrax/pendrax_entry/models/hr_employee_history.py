@@ -6,10 +6,11 @@ class HrEmployeeHistory(models.Model):
     _rec_name = 'employee_id'
     employee_id = fields.Many2one(comodel_name='hr.employee',
                                   string='Employee')
-    date_from = fields.Char(string='Date From')
-    date_to = fields.Char(string='Date To')
-    name = fields.Char(string='Name')
+    date_from = fields.Char(string='Date From', required=True)
+    date_to = fields.Char(string='Date To', required=True)
+    name = fields.Char(string='Name', required=True)
     place_id = fields.Many2one(comodel_name='hr.employee.work.place',
-                               string='Work Place')
-    position = fields.Char(string='Position')
-    salary = fields.Float(string='Salary')
+                               string='Work Place', required=True)
+    position = fields.Char(string='Legacy Position', readonly=True)
+    salary = fields.Float(string='Salary', required=True)
+    occupation_id = fields.Many2one(comodel_name='hr.occupation', string='Position', required=True)

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_occupation_form_view" model="ir.ui.view">
+        <field name="name">hr.occupation.form</field>
+        <field name="model">hr.occupation</field>
+        <field name="arch" type="xml">
+            <form string="Employee Occupation">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_occupation_list_view" model="ir.ui.view">
+    <field name="name">hr.occupation.tree</field>
+    <field name="model">hr.occupation</field>
+    <field name="arch" type="xml">
+        <tree string="Employee Occupation">
+            <field name="name"/>
+        </tree>
+    </field>
+</record>
+    <record id="action_view_occupation_list_form" model="ir.actions.act_window">
+    <field name="name">Occupation</field>
+    <field name="res_model">hr.occupation</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+    <menuitem id="menu_occupation" name="Occupations" parent="hr.menu_human_resources_configuration" action="action_view_occupation_list_form" sequence="1"/>
+</odoo>

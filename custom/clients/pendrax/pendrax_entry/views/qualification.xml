@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_qualification_form_view" model="ir.ui.view">
+        <field name="name">hr.qualification.form</field>
+        <field name="model">hr.qualification</field>
+        <field name="arch" type="xml">
+            <form string="Employee Qualification">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_qualification_list_view" model="ir.ui.view">
+    <field name="name">hr.qualification.tree</field>
+    <field name="model">hr.qualification</field>
+    <field name="arch" type="xml">
+        <tree string="Employee Qualification">
+            <field name="name"/>
+        </tree>
+    </field>
+</record>
+    <record id="action_view_qualification_list_form" model="ir.actions.act_window">
+    <field name="name">Qualification</field>
+    <field name="res_model">hr.qualification</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+    <menuitem id="menu_qualification" name="Qualifications" parent="hr.menu_human_resources_configuration" action="action_view_qualification_list_form" sequence="1"/>
+</odoo>

@@ -1,208 +1,257 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <data>
-    <record id="view_employee_filter_inherit" model="ir.ui.view">
-            <field name="name">hr.employee.search.inherit</field>
-            <field name="model">hr.employee</field>
-            <field name="inherit_id" ref="hr.view_employee_filter"/>
-            <field name="arch" type="xml">
-                <xpath expr="//search" position="replace">
-                <search string="Employees">
-                    <field name="name" string="Employees" filter_domain="['|',('work_email','ilike',self),('name','ilike',self)]"/>
-                    <field name="department_id"/>
-                    <field name="empid"/>
-                    <field name="category_ids" groups="hr.group_hr_user"/>
-                    <field name="job_id" />
-                    <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
-                    <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
-                    <group expand="0" string="Group By">
-                        <filter string="Manager" domain="[]" context="{'group_by':'parent_id'}"/>
-                        <filter string="Coach" domain="[]" context="{'group_by':'coach_id'}"/>
-                        <filter string="Category" domain="[]" context="{'group_by':'staff_category'}"/>
-                        <filter string="Department" domain="[]" context="{'group_by':'department_id'}"/>
-                        <filter string="Job" domain="[]" context="{'group_by':'job_id'}"/>
-                        <filter string="Company" domain="[]" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>
-                    </group>
-                </search>
-                </xpath>
-             </field>
-         </record>
 
-
-    <record id="hr_employee_inherit" model="ir.ui.view">
-            <field name="name">hr.employee.form.inherit</field>
-            <field name="model">hr.employee</field>
-            <field name="inherit_id" ref="hr.view_employee_form"/>
-            <field name="arch" type="xml">
-                <data>
-                    <xpath expr="//notebook" position="replace">
-                        <notebook>
-                            <page string="Employee Details">
-                                <group col="2">
-                                    <div>
-                                       <group>
-                                    <field name="active" readonly="1"/>
-                                    <field name="reference" readonly="True"/>
-                                    <field name="staff_category"/>
-                                    <field name="staff_location"/>
-                                    <field name="deployment"/>
-                                    <field name="emp_date"/>
-                                    <field name="job_id"/>
-                                    <field name="empid" oncopy="return false"/>
-                                    <field name="empid2" onpaste="return false"/>
-                                    <field name="nassit_no"/>
-                                    <field name="labor_card_no"/>
-                                    <field name="p_address"/>
-                                    <field name="length_current_Address"/>
-                                    <field name="phone"/>
-                                    <field name="date_of_birth"/>
-                                    <field name="age" readonly="1"/>
-                                    <field name="country_id"/>
-                                    <field name="tribe_id"/>
-                                    <field name="religion_id"/>
-                                    <field name="passport"/>
-                                    <field name="place_of_birth_id"/>
-                                    <field name="height_ft"/>
-                                    <field name="height_in"/>
-                                    <field name="marital"/>
-                                    <field name="incomplete_info"/>
-                                    <field name="coach_id" invisible="1"/>
-                                </group>
-                                <group string="Spouse">
-                                    <field name="spouse_name"/>
-                                    <field name="spouse_address"/>
-                                    <field name="spouse_phone"/>
-                                    <field name="spouse_job"/>
-                                </group>
-                                <group string="Emergency Contact">
-                                    <field name="emergency_name"/>
-                                    <field name="emergency_address"/>
-                                    <field name="emergency_phone"/>
-                                    <field name="emergency_job"/>
-                                </group>
-                                <group string="Children">
-                                    <field name="children_ids" context="{'default_employee_id': active_id}">
-                                    <tree editable="bottom">
-                                        <field name="name"/>
-                                        <field name="age"/>
-                                        <field name="occupation"/>
-
-                                    </tree>
-                                </field>
-                                </group>
-
-                                <group string="Mother's Info">
-                                    <field name="mother_name"/>
-                                    <field name="mother_address"/>
-                                    <field name="mother_phone"/>
-                                    <field name="mother_job"/>
-                                </group>
-
-                                <group string="Father's Info">
-                                    <field name="father_name"/>
-                                    <field name="father_address"/>
-                                    <field name="father_phone"/>
-                                    <field name="father_job"/>
-                                </group>
-
-
-                                <group string="Friend/Relative">
-                                    <field name="friend_name"/>
-                                    <field name="friend_address"/>
-                                    <field name="friend_phone"/>
-                                    <field name="friend_job"/>
-                                </group>
-
-
-                                <group string="Next of Kin">
-                                    <field name="nextofkin_name"/>
-                                    <field name="nextofkin_address"/>
-                                    <field name="nextofkin_phone"/>
-                                    <field name="nextofkin_relation"/>
-                                </group>
-                                    </div>
-                                    <div string="Academic and Professional Info">
-                                <h2>
-                                <seperator>Academic History</seperator>
-                                </h2>
-                                <field name="academic_ids" string="Academic History" context="{'default_employee_id': active_id}">
-                                    <tree editable="bottom">
-                                        <field name="date_from"/>
-                                        <field name="date_to"/>
-                                        <field name="institution"/>
-                                        <field name="qualification"/>
-                                    </tree>
-                                </field>
-                                <h2>
-                                   <seperator>Employment History</seperator>
-                                </h2>
-                                <field name="history_ids" string="Employment History" context="{'default_employee_id': active_id}">
-                                    <tree editable="bottom">
-                                        <field name="date_from"/>
-					                    <field name="date_to"/>
-                                        <field name="place_id"/>
-                                        <field name="position"/>
-                                        <field name="salary"/>
-                                    </tree>
-                                </field>
-                                <group>
-                                    <field name="qualification"/>
-                                    <field name="criminal"/>
-                                    <field name="illness"/>
-                                    <field name="commitment"/>
-                                    <field name="support"/>
-                                </group>
-
-                                <h2>
-                                <seperator>Professional References</seperator>
-                                </h2>
-                                <field name="reference_ids" string="Professional References" context="{'default_employee_id': active_id}">
-                                    <tree editable="bottom">
-                                        <field name="name"/>
-                                        <field name="address"/>
-                                        <field name="phone"/>
-                                    </tree>
-                                </field>
-                            </div>
-                                </group>
-
-                            </page>
-                            <page name="personal_information" string="Personal Information">
-                                <group>
-                                    <group string="Citizenship &amp; Other Information">
-                                        <field name="country_id" options='{"no_open": True, "no_create": True}'/>
-                                        <field name="identification_id" />
-                                        <field name="passport_id" />
-                                        <field name="bank_account_id" context="{'default_partner_id': address_home_id}"/>
-                                    </group>
-                                    <group string="Contact Information">
-                                        <field name="address_home_id"
-                                            context="{'show_address': 1}"
-                                            options='{"always_reload": True, "highlight_first_line": True}'/>
-                                    </group>
-                                    <group string="Status">
-                                        <field name="gender"/>
-                                        <field name="marital"/>
-                                    </group>
-                                    <group string="Birth">
-                                        <field name="birthday"/>
-                                    </group>
-                                </group>
-                            </page>
-                            <page name="hr_settings" string="HR Settings" >
-                                <group>
-                                    <group string='Status' name="active_group">
-                                        <field name="company_id" groups="base.group_multi_company"/>
-                                        <field name="user_id" string="Related User"/>
-                                        <field name="work_email"/>
-                                    </group>
-                                </group>
-                            </page>
-
-                        </notebook>
+        <record id="view_employee_filter_inherit" model="ir.ui.view">
+                <field name="name">hr.employee.search.inherit</field>
+                <field name="model">hr.employee</field>
+                <field name="inherit_id" ref="hr.view_employee_filter"/>
+                <field name="arch" type="xml">
+                    <xpath expr="//search" position="replace">
+                    <search string="Employees">
+                        <field name="name" string="Employees" filter_domain="['|',('work_email','ilike',self),('name','ilike',self)]"/>
+                        <field name="department_id"/>
+                        <field name="empid"/>
+                        <field name="category_ids" groups="hr.group_hr_user"/>
+                        <field name="job_id" />
+                        <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
+                        <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
+                        <group expand="0" string="Group By">
+                            <filter string="Manager" domain="[]" context="{'group_by':'parent_id'}"/>
+                            <filter string="Category" domain="[]" context="{'group_by':'staff_category'}"/>
+                            <filter string="Department" domain="[]" context="{'group_by':'department_id'}"/>
+                            <filter string="Job" domain="[]" context="{'group_by':'job_id'}"/>
+                        </group>
+                    </search>
                     </xpath>
-                </data>
-            </field>
+                 </field>
+             </record>
+
+        <record id="hr_employee_inherit" model="ir.ui.view">
+                <field name="name">hr.employee.form.inherit</field>
+                <field name="model">hr.employee</field>
+                <field name="inherit_id" ref="hr.view_employee_form"/>
+                <field name="arch" type="xml">
+                    <data>
+                        <xpath expr="//notebook" position="replace">
+                            <notebook>
+                                <page string="Employee Details">
+                                    <group col="2">
+                                        <div>
+                                           <group>
+                                        <field name="active" readonly="1"/>
+                                        <field name="reference" readonly="True"/>
+                                        <field name="gender"/>
+                                        <field name="phone"/>
+                                        <field name="empid" oncopy="return false"/>
+                                        <field name="identification_id" invisible="1"/>
+                                        <field name="birthday" invisible="1"/>
+                                        <field name="country_id" options='{"no_open": True, "no_create": True}' required="1"/>
+                                        <field name="staff_category"/>
+                                        <field name="district_id" options='{"no_open": True, "no_create": True}'/>
+                                        <field name="emp_date"/>
+                                        <field name="job_id"/>
+                                        <field name="nassit_no"/>
+                                        <field name="labor_card_no"/>
+                                        <field name="age" readonly="1"/>
+                                        <field name="date_of_birth"/>
+                                        <field name="place_of_birth_id"/>
+                                        <field name="tribe_id" options='{"no_open": True, "no_create": True}'/>
+                                        <field name="religion_id" options='{"no_open": True, "no_create": True}'/>
+                                        <field name="height_ft"/>
+                                        <field name="height_in"/>
+                                        <field name="incomplete_info"/>
+                                        <field name="coach_id" invisible="1"/>
+                                    </group>
+                                    <group string="Marital">
+                                        <field name="marital"/>
+                                        <field name="spouse_name" attrs="{'invisible': [('marital', '!=', 'married')], 'required':[('marital','=','married')]}"/>
+                                        <field name="spouse_address" attrs="{'invisible': [('marital', '!=', 'married')], 'required':[('marital','=','married')]}"/>
+                                        <field name="spouse_phone" attrs="{'invisible': [('marital', '!=', 'married')], 'required':[('marital','=','married')]}"/>
+                                        <field name="spouse_job" attrs="{'invisible': [('marital', '!=', 'married')], 'required':[('marital','=','married')]}"/>
+                                    </group>
+                                    <group string="Emergency Contact">
+                                        <field name="emergency_name"/>
+                                        <field name="emergency_address"/>
+                                        <field name="emergency_phone"/>
+                                        <field name="emergency_job"/>
+                                    </group>
+                                    <group string="Children">
+                                        <field name="children_ids" context="{'default_employee_id': active_id}">
+                                        <tree editable="bottom">
+                                            <field name="name"/>
+                                            <field name="date_of_birth"/>
+                                            <field name="age"/>
+                                            <field name="occupation_id" options='{"no_open": True, "no_create": True}'/>
+                                            <field name="occupation"/>
+                                        </tree>
+                                    </field>
+                                    </group>
+
+                                    <group string="Mother's Info">
+                                        <field name="mother_deceased"/>
+                                        <field name="mother_name" attrs="{'invisible': [('mother_deceased', '=', True)], 'required':[('mother_deceased','=',False)]}"/>
+                                        <field name="mother_address" attrs="{'invisible': [('mother_deceased', '=', True)], 'required':[('mother_deceased','=',False)]}"/>
+                                        <field name="mother_phone" attrs="{'invisible': [('mother_deceased', '=', True)], 'required':[('mother_deceased','=',False)]}"/>
+                                        <field name="mother_job" attrs="{'invisible': [('mother_deceased', '=', True)], 'required':[('mother_deceased','=',False)]}"/>
+                                    </group>
+
+                                    <group string="Father's Info">
+                                        <field name="father_deceased"/>
+                                        <field name="father_name" attrs="{'invisible': [('father_deceased', '=', True)], 'required':[('father_deceased','=',False)]}"/>
+                                        <field name="father_address" attrs="{'invisible': [('father_deceased', '=', True)], 'required':[('father_deceased','=',False)]}"/>
+                                        <field name="father_phone" attrs="{'invisible': [('father_deceased', '=', True)], 'required':[('father_deceased','=',False)]}"/>
+                                        <field name="father_job" attrs="{'invisible': [('father_deceased', '=', True)], 'required':[('father_deceased','=',False)]}"/>
+                                    </group>
+
+
+                                    <group string="Friend/Relative">
+                                        <field name="friend_name"/>
+                                        <field name="friend_address"/>
+                                        <field name="friend_phone"/>
+                                        <field name="friend_job"/>
+                                    </group>
+
+
+                                    <group string="Next of Kin">
+                                        <field name="nextofkin_name"/>
+                                        <field name="nextofkin_address"/>
+                                        <field name="nextofkin_phone"/>
+                                        <field name="nextofkin_relation"/>
+                                    </group>
+                                        </div>
+                                        <div string="Academic and Professional Info">
+                                            <h2>
+                                            <seperator>Academic History</seperator>
+                                            </h2>
+                                            <field name="academic_ids" string="Academic History" context="{'default_employee_id': active_id}">
+                                                <tree editable="bottom">
+                                                    <field name="date_from"/>
+                                                    <field name="date_to"/>
+                                                    <field name="institution" options='{"no_open": True, "no_create": True}'/>
+                                                    <field name="qualification"/>
+                                                    <field name="qualification_id" options='{"no_open": True, "no_create": True}'/>
+                                                </tree>
+                                            </field>
+                                            <h2>
+                                               <seperator>Employment History</seperator>
+                                            </h2>
+                                            <field name="history_ids" string="Employment History" context="{'default_employee_id': active_id}">
+                                                <tree editable="bottom">
+                                                    <field name="date_from"/>
+                                                    <field name="date_to"/>
+                                                    <field name="place_id"/>
+                                                    <field name="position"/>
+                                                    <field name="occupation_id" options='{"no_open": True, "no_create": True}'/>
+                                                    <field name="salary"/>
+                                                </tree>
+                                            </field>
+                                            <group>
+                                                <field name="qualification"/>
+                                                <field name="criminal"/>
+                                                <field name="illness"/>
+                                                <field name="commitment"/>
+                                                <field name="support"/>
+                                            </group>
+
+                                            <h2>
+                                            <seperator>Professional References</seperator>
+                                            </h2>
+                                            <field name="reference_ids" string="Professional References" context="{'default_employee_id': active_id}">
+                                                <tree editable="bottom">
+                                                    <field name="name"/>
+                                                    <field name="occupation_id" options='{"no_open": True, "no_create": True}'/>
+                                                    <field name="address"/>
+                                                    <field name="phone"/>
+                                                    <field name="email"/>
+                                                </tree>
+                                            </field>
+                                            <h2>
+                                            <seperator>Refrees</seperator>
+                                            </h2>
+                                            <field name="refree_ids" string="Refrees" context="{'default_employee_id': active_id}">
+                                                <form string="Refrees">
+                                                    <field name="photo" widget='image' class="oe_avatar oe_left" options='{"size": [150, 150]}'/>
+                                                    <group>
+                                                        <group>
+                                                            <field name="name"/>
+                                                            <field name="occupation_id" options='{"no_open": True, "no_create": True}'/>
+                                                            <field name="address"/>
+                                                            <field name="address0"/>
+                                                            <field name="phone"/>
+                                                            <field name="email"/>
+                                                        </group>
+                                                    </group>
+
+                                                </form>
+                                                <tree>
+                                                    <field name="name"/>
+                                                    <field name="occupation_id" options='{"no_open": True, "no_create": True}'/>
+                                                    <field name="address"/>
+                                                    <field name="address0"/>
+                                                    <field name="phone"/>
+                                                    <field name="email"/>
+                                                </tree>
+                                            </field>
+                                        </div>
+                                    </group>
+
+                                </page>
+                                <page name="personal_information" string="Other Information">
+                                    <group>
+                                        <group string="Bank Information">
+                                            <field name="bank_account_id"/>
+                                        </group>
+                                    </group>
+                                </page>
+                                <page name="hr_settings" string="HR Settings" >
+                                    <group>
+                                        <group string='Status' name="active_group">
+                                            <field name="company_id" groups="base.group_multi_company"/>
+                                            <field name="user_id" string="Related User"/>
+                                            <field name="work_email"/>
+                                        </group>
+                                    </group>
+                                </page>
+
+                            </notebook>
+                        </xpath>
+                    </data>
+                </field>
+            </record>
+        <record id="view_employee_form_inherit" model="ir.ui.view">
+                <field name="name">hr.employee.form.inherit.1</field>
+                <field name="model">hr.employee</field>
+                <field name="inherit_id" ref="hr.view_employee_form"/>
+                <field name="arch" type="xml">
+                    <data>
+                        <field name="category_ids" position="replace"/>
+                        <field name="name" position="after">
+                            <label for="name" class="oe_edit_only"/>
+                            <h2><table>
+                                <tr>
+                                <td><field name="fname" placeholder="First" style="padding-right:15px" /></td>
+                                <td><field name="mname" placeholder="Middle" style="padding-right:15px" /></td>
+                                <td><field name="lname" placeholder="Last" style="padding-right:15px" /></td>
+                                </tr>
+                                </table>
+                            </h2>
+                        </field>
+                    </data>
+                </field>
         </record>
+        <record id="view_employee_form_inherit_0" model="ir.ui.view">
+                <field name="name">hr.employee.form.inherit.2</field>
+                <field name="model">hr.employee</field>
+                <field name="inherit_id" ref="hr_contract.hr_hr_employee_view_form2"/>
+                <field name="arch" type="xml">
+                    <data>
+                        <field name="place_of_birth" position="replace"/>
+                        <field name="vehicle" position="replace"/>
+                        <field name="vehicle_distance" position="replace"/>
+                    </data>
+                </field>
+        </record>
+
     </data>
 </odoo>

@@ -10,5 +10,10 @@ from . import hr_employee_children
 from . import hr_employee_relation
 from . import hr_employee_children_occupation
 from . import hr_employee_work_place
-
+from . import hr_district
+from . import hr_province
+from . import hr_employee_referees
+from . import email_check
+from . import hr_occupation
+from . import hr_qualification
 

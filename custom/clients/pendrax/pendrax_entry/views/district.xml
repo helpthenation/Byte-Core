@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_district_form_view" model="ir.ui.view">
+        <field name="name">hr.district.form</field>
+        <field name="model">hr.district</field>
+        <field name="arch" type="xml">
+            <form string="Employee district">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="province_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_district_list_view" model="ir.ui.view">
+    <field name="name">hr.district.tree</field>
+    <field name="model">hr.district</field>
+    <field name="arch" type="xml">
+        <tree string="Employee district">
+            <field name="name"/>
+            <field name="province_id"/>
+        </tree>
+    </field>
+</record>
+    <record id="action_view_district_list_form" model="ir.actions.act_window">
+    <field name="name">district</field>
+    <field name="res_model">hr.district</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+    <menuitem id="menu_district" name="Districts" parent="hr.menu_human_resources_configuration" action="action_view_district_list_form" sequence="1"/>
+</odoo>

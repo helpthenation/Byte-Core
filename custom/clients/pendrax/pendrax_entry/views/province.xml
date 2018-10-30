@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_province_form_view" model="ir.ui.view">
+        <field name="name">hr.province.form</field>
+        <field name="model">hr.province</field>
+        <field name="arch" type="xml">
+            <form string="Employee Province">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="district_ids" readonly="1">
+                                <tree>
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_province_list_view" model="ir.ui.view">
+    <field name="name">hr.province.tree</field>
+    <field name="model">hr.province</field>
+    <field name="arch" type="xml">
+        <tree string="Employee Province">
+            <field name="name"/>
+        </tree>
+    </field>
+</record>
+    <record id="action_view_province_list_form" model="ir.actions.act_window">
+    <field name="name">Province</field>
+    <field name="res_model">hr.province</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+    <menuitem id="menu_province" name="Provinces" parent="hr.menu_human_resources_configuration" action="action_view_province_list_form" sequence="1"/>
+</odoo>
