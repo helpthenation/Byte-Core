@@ -33,6 +33,5 @@ install/win32/meta.py
 /share/
 /src/
 
-# Conf
-.conf
+# Log
 byte.log

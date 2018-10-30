@@ -8,6 +8,7 @@
                 <field name="name" position="after">
                     <br/>
                     <field name="department_ids" widget="many2many_tags" placeholder="Applicable Departments"/>
+                    <button name="get_parent" type="object" string="Get Parent"/>
                 </field>
             </field>
         </record>
