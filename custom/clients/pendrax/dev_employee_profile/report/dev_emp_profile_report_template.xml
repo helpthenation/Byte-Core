@@ -28,37 +28,37 @@
 										</td>
 									</tr>
 									<tr>
+										<td width="25%">
+											<strong>Gender</strong>
+										</td>
+										<td width="3%">
+										:
+										</td>
+										<td width="72%">
+										<t t-esc="o.gender" />
+										</td>
+									</tr>
+									<tr>
 										<td>
-											<strong>Tags</strong>
+											<strong>ID</strong>
 										</td>
 										<td > 
 											<strong>:</strong>
 										</td>
 										<td > 
 											
-											<t t-esc="get_cat_id(o.category_ids)"/>
+											<t t-esc="o.empid"/>
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Work Email</strong>
+											<strong>Length of Service</strong>
 										</td>
 										<td > 
 											<strong>:</strong>
 										</td>
 										<td > 
-											<t t-esc="o.work_email"/>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<strong>Work Phone</strong>
-										</td>
-										<td > 
-											<strong>:</strong>
-										</td>
-										<td > 
-											<t t-esc="o.work_phone"/>
+											<t t-esc="o.length_of_service_str"/>
 										</td>
 									</tr>
 									<tr>
@@ -69,18 +69,18 @@
 											<strong>:</strong>
 										</td>
 										<td > 
-											<span t-field="o.birthday" t-field-options="{&quot;format&quot;: &quot;dd-MM-yyyy&quot;}" />
+											<span t-field="o.date_of_birth" t-field-options="{&quot;format&quot;: &quot;dd-MM-yyyy&quot;}" />
 										</td>
 									</tr>
 									<tr>
 										<td>
-											<strong>Active</strong>
+											<strong>Last Deployment</strong>
 										</td>
 										<td > 
 											<strong>:</strong>
 										</td>
 										<td > 
-										<t t-esc="o.active" />
+										<t t-esc="o.current_deployment.name" />
 										</td>
 									</tr>
 									<tr>
@@ -122,40 +122,25 @@
 								<table width="100%" style="empty-cells: hide;">
 									<tr>
 										<td width="40%"> 
-											<strong>Working Address</strong>
+											<strong>Address</strong>
 										</td>
 										<td width="10%"> 
 											:
 										</td>
 										<td width="50%"> 
-										    <span t-if="o.address_id.street"><span t-field="o.address_id.street"/></span><br/>
-											<span t-if="o.address_id.city"><span t-field="o.address_id.city"/>,</span><span t-if="o.address_id.state_id"><span t-field="o.address_id.state_id.name"/>,</span><span t-field="o.address_id.zip"/>
+										    <span t-if="o.address"><span t-field="o.address"/></span><br/>
+											<span t-if="o.area_id"><span t-field="o.area_id.name"/>,</span><span t-if="o.district_id"><span t-field="o.district_id.name"/></span>
 										</td>
 									</tr>
 									<tr>
-										<td> 
-											<strong>Work Mobile</strong>
+										<td>
+											<strong>Phone #</strong>
 										</td>
-										<td> 
-											:
+										<td >
+											<strong>:</strong>
 										</td>
-										<td> 
-										   <span t-if="o.mobile_phone">
-											    <span t-field="o.mobile_phone" />
-										    </span>
-										</td>
-									</tr>
-									<tr>
-										<td> 
-											<strong>Office Location</strong>
-										</td>
-										<td> 
-											:
-										</td>
-										<td> 
-										   <span t-if="o.work_location">
-											    <span t-field="o.work_location" />
-										    </span>
+										<td >
+											<t t-esc="o.phone"/>
 										</td>
 									</tr>
 									<tr>
@@ -210,17 +195,6 @@
 											<t t-esc="o.parent_id.name" />
 										</td>
 									</tr>
-									<tr>
-										<td>
-											<strong>Coach</strong>
-										</td>
-										<td> 
-											:
-										</td>
-										<td> 
-											<t t-esc="o.coach_id.name" />
-										</td>
-									</tr>
 								</table>
 						</div>
 				</div>
@@ -244,42 +218,21 @@
 									</tr>
 									<tr>
 										<td>
-											<strong>Identification No</strong>
+											<strong>Remaining Leaves</strong>
 										</td>
 										<td> 
 										    :
 										</td>
 										<td> 
-										    <t t-esc="o.identification_id" />
+										    <t t-esc="o.remaining_leaves" />
 										</td>
 									</tr>
-									<tr>
-										<td>
-											<strong>Passport No</strong>
-										</td>
-										<td> 
-										    :
-										</td>
-										<td> 
-										    <t t-esc="o.passport_id" />
-										</td>
-									</tr>
+
 								</table>
 					</div>
 					<div class="col-xs-7">
 					<h4><strong>Status</strong></h4>
 							<table width="100%">
-								<tr>
-									<td width="25%"> 
-										<strong>Gender</strong>
-									</td>
-									<td width="3%"> 
-									:
-									</td>
-									<td width="72%"> 
-									<t t-esc="o.gender" />
-									</td>
-								</tr>
 								<tr>
 									<td>
 										<strong>Marital Status</strong>

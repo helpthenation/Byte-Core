@@ -113,6 +113,7 @@
                                     <field name="zone_id" options='{"no_open": True, "no_create": True}'/>
                                     <field name="district_id" options='{"no_open": True, "no_create": True}'/>
                                     <field name="mobile"/>
+                                    <field name="phone"/>
                                     <field name="category"/>
                                     <field name="email" widget="email"/>
                                 </group>

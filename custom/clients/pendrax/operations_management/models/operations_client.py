@@ -10,6 +10,7 @@ class OperationsClient(models.Model):
                        index=True)
     mobile = fields.Char(string='Contact #',
                          required=True)
+    phone = fields.Char(string='Second Contact # ')
     email = fields.Char(string='Email')
     invoices = fields.Boolean(string='Payments')
     state = fields.Selection([
@@ -28,11 +29,10 @@ class OperationsClient(models.Model):
     zone_id = fields.Many2one(comodel_name='operation.zone', string="Zone", required=True)
     area_id = fields.Many2one(comodel_name='hr.area', string='Area', required=True)
     district_id = fields.Many2one(comodel_name='hr.district', string='District', required=True)
-    category = fields.Selection([('individual', 'Individual'),
-                                 ('company', 'Company')],
+    category = fields.Selection([('domestic', 'Domestic'),
+                                 ('commercial', 'Commercial')],
                                 string="Category",
-                                required=True,
-                                default="individual")
+                                required=True)
     guard_assignment_lines = fields.One2many(comodel_name='guards.assignment.line',
                                              inverse_name='related_client_id',
                                              name="Guards Assignment")
