@@ -4,7 +4,7 @@
 	<template id="dev_emp_detail_report">    
 	         <t t-call="report.external_layout">	
 	         <t t-set="o" t-value="o.with_context({'name':o.name})" />
-			<div class="page" style="font-size:13px">
+			<div class="page" style="font-size:15px">
 				
 				<br/><br/>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~1st ROW~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->				
@@ -14,8 +14,8 @@
 							<div class="col-xs-12" style="margin-top:20px;">
 								<table width="100%">
 									<tr>
-									    <td width="42%" rowspan="8"> 
-											<img t-if="o.image" t-att-src="'data:image/png;base64,%s' % o.image" style="height: 140px;width: 250px;border-radius: 50px;"/>
+									    <td width="42%" rowspan="10">
+											<img t-if="o.image" t-att-src="'data:image/png;base64,%s' % o.image" style="height: 250px;width: 250px;border-radius: 10px;"/>
 										</td>
 										<td width="15%" > 
 											<strong>Name</strong>
@@ -128,7 +128,7 @@
 											:
 										</td>
 										<td width="50%"> 
-										    <span t-if="o.address"><span t-field="o.address"/></span><br/>
+										    <span t-if="o.p_address"><span t-field="o.p_address"/></span><br/>
 											<span t-if="o.area_id"><span t-field="o.area_id.name"/>,</span><span t-if="o.district_id"><span t-field="o.district_id.name"/></span>
 										</td>
 									</tr>

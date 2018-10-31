@@ -10,7 +10,7 @@ class OperationsClient(models.Model):
                        index=True)
     mobile = fields.Char(string='Contact #',
                          required=True)
-    phone = fields.Char(string='Second Contact # ')
+    mobile0 = fields.Char(string='Second Contact # ')
     email = fields.Char(string='Email')
     invoices = fields.Boolean(string='Payments')
     state = fields.Selection([
