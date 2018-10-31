@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee_absent_reduce/models/hr_employee_absent.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/hr_employee_absent_reduce/models/hr_employee_absent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/client_quotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/operations_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/security/hr_recruitment_security.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/security/ir.model.access.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/operations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_children.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_children.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_reference.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_employee_reference.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee_personal_identification.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee_personal_identification.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -147,7 +132,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/custom/community/hr/dev_employee_profile/report/dev_emp_profile_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3634">
+            <state relative-caret-position="-3578">
               <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
             </state>
           </provider>
@@ -486,7 +471,7 @@
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2829486" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2829486" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -494,10 +479,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" visible="true" weight="0.16225165" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.62086093" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" weight="0.35927153" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.35927153" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -977,7 +962,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/community/hr/dev_employee_profile/report/dev_emp_profile_report_template.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3634">
+        <state relative-caret-position="-3578">
           <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
         </state>
       </provider>
