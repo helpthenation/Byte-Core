@@ -6,7 +6,7 @@ class ProductProduct(models.Model):
     department_ids = fields.Many2many(comodel_name='warehouse.department',
                                       rrequired=True,
                                       string='Applicable Departments')
-    product_code = fields.Char(string='Spare Part Code', copy=False)
+    product_code = fields.Char(string='Part #', copy=False)
     sub_category_code = fields.Char(string='Sub Category Code')
 
 
