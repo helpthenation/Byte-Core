@@ -26,6 +26,7 @@
             <tree string="Clients">
                 <field name="name"/>
                 <field name="address"/>
+                <field name="area_id" options='{"no_open": True, "no_create": True}'/>
                 <field name="zone_id" options='{"no_open": True, "no_create": True}'/>
                 <field name="district_id" options='{"no_open": True, "no_create": True}'/>
                 <field name="category"/>
@@ -107,8 +108,10 @@
                         <page name="public" string="Client's Information">
                             <group>
                                 <group string="Contact Information">
-                                    <field name="zone_id"/>
                                     <field name="address"/>
+                                    <field name="area_id" options='{"no_open": True, "no_create": True}'/>
+                                    <field name="zone_id" options='{"no_open": True, "no_create": True}'/>
+                                    <field name="district_id" options='{"no_open": True, "no_create": True}'/>
                                     <field name="mobile"/>
                                     <field name="category"/>
                                     <field name="email" widget="email"/>

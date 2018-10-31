@@ -26,6 +26,7 @@ class OperationsClient(models.Model):
         string='Client Status')
     address = fields.Char(string="Address", required=True)
     zone_id = fields.Many2one(comodel_name='operation.zone', string="Zone", required=True)
+    area_id = fields.Many2one(comodel_name='hr.area', string='Area', required=True)
     district_id = fields.Many2one(comodel_name='hr.district', string='District', required=True)
     category = fields.Selection([('individual', 'Individual'),
                                  ('company', 'Company')],
@@ -102,7 +103,7 @@ class OperationsClient(models.Model):
         if not self.email:
             raise ValidationError('Client does not have an email address, cannot send Quote')
         for line in self.quotaton_line_ids:
-            pdf = self.env['report'].get_pdf([line.id], 'operations_management.client_quote')
+            pdf = line.env['report'].get_pdf([line.id], 'operations_management.client_quote')
             attachment = self.env['ir.attachment'].create({
                 'name': self.name,
                 'type': 'binary',
@@ -124,12 +125,16 @@ class OperationsClient(models.Model):
             self.write({'state':'quotation_sent'})
 
     def onboard(self):
+        for rec in self.quotaton_line_ids:
+            rec.is_acknowledged=True
         self.write({'state':'onboard'})
 
     def activate(self):
         self.write({'state':'active'})
 
     def cancel(self):
+        for rec in self.quotaton_line_ids:
+            rec.is_acknowledged=False
         self.write({'state':'cancel'})
 
     def inactivate(self):

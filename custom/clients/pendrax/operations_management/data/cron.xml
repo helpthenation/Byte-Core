@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.cron" id="operations_client_followup">
+            <field name="name">Follow Up Client Quotation</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="(DateTime.now() + timedelta(days= +1)).strftime('%Y-%m-%d 3:30:00')"
+                   name="nextcall"/>
+            <field eval="'client.quotation'" name="model"/>
+            <field eval="'folow_up_call'" name="function"/>
+            <field eval="'()'" name="args"/>
+        </record>
+    </data>
+</odoo>

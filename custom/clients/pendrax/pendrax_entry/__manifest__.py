@@ -17,6 +17,7 @@
         'views/district.xml',
         'views/province.xml',
         'views/tribe.xml',
+        'views/area.xml',
         'views/religion.xml',
         'data/sequence.xml',
     ],

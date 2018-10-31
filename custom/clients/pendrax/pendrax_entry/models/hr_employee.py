@@ -1,8 +1,8 @@
 from odoo import fields, models, api
-from odoo.exceptions import ValidationError
+from odoo.exceptions import ValidationError, Warning as UserError
 import time
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
-from datetime import date, datetime
+from datetime import datetime
 from . import email_check
 
 
@@ -10,20 +10,20 @@ class HrEmployee(models.Model):
     _inherit = 'hr.employee'
     _rec_name = 'name_and_id'
     name_and_id = fields.Char(compute='compute_name_id', store=True)
-    phone = fields.Char(string='Mobile #', required=True)
+    phone = fields.Char(string='Mobile #')
     nassit_no = fields.Char(string='Nassit Reg. #')
     labor_card_no = fields.Char(string='Labor Card #')
-    p_address = fields.Char(string='Address', required=True)
-    empid = fields.Char(string='ID', required=True)
-    length_current_Address = fields.Char(string='Length of Time at current address', required=True)
-    date_of_birth = fields.Date(string='Date of Birth', required=True)
-    emp_date = fields.Date(string='Employment Date', required=True)
+    p_address = fields.Char(string='Address')
+    empid = fields.Char(string='ID')
+    length_current_Address = fields.Char(string='Length of Time at current address')
+    date_of_birth = fields.Date(string='Date of Birth')
+    emp_date = fields.Date(string='Employment Date')
     tribe_id = fields.Many2one(comodel_name='hr.employee.tribe',
-                               string='Tribe', required=True)
+                               string='Tribe')
     religion_id = fields.Many2one(comodel_name='hr.employee.religion',
-                                  string='Religion', required=True)
+                                  string='Religion')
     place_of_birth_id = fields.Many2one(comodel_name='hr.employee.birthplace',
-                                        string='Place of birth', required=True)
+                                        string='Place of birth')
     height_ft = fields.Float(string='Height ft')
     height_in = fields.Float(string='Height Inches')
 
@@ -32,10 +32,10 @@ class HrEmployee(models.Model):
     spouse_phone = fields.Char(string='Spouse Phone')
     spouse_job = fields.Char(string='Spouse Occupation')
 
-    emergency_name = fields.Char(string='Emergency Contact Name', required=True)
-    emergency_address = fields.Char(string='Emergency Contact Address', required=True)
-    emergency_phone = fields.Char(string='Emergency Contact Phone', required=True)
-    emergency_job = fields.Char(string='Emergency Contact Occupation', required=True)
+    emergency_name = fields.Char(string='Emergency Contact Name')
+    emergency_address = fields.Char(string='Emergency Contact Address')
+    emergency_phone = fields.Char(string='Emergency Contact Phone')
+    emergency_job = fields.Char(string='Emergency Contact Occupation')
 
     mother_name = fields.Char(string="Mother's Name")
     mother_address = fields.Char(string="Mother's Address")
@@ -47,32 +47,32 @@ class HrEmployee(models.Model):
     father_phone = fields.Char(string="Father's Phone")
     father_job = fields.Char(string="Father's Occupation")
     
-    friend_name = fields.Char(string="Friend/Relative's Name", required=True)
-    friend_address = fields.Char(string="Friend/Relative's Address", required=True)
-    friend_phone = fields.Char(string="Friend/Relative's Phone", required=True)
-    friend_job = fields.Char(string="Friend/Relative's Occupation", required=True)
+    friend_name = fields.Char(string="Friend/Relative's Name")
+    friend_address = fields.Char(string="Friend/Relative's Address")
+    friend_phone = fields.Char(string="Friend/Relative's Phone")
+    friend_job = fields.Char(string="Friend/Relative's Occupation")
     
-    nextofkin_name = fields.Char(string="Next of Kin's Name", required=True)
-    nextofkin_address = fields.Char(string="Next of Kin's Address", required=True)
-    nextofkin_phone = fields.Char(string="Next of Kin's Phone", required=True)
-    nextofkin_relation = fields.Many2one(comodel_name='hr.employee.relation', string="Relation", required=True)
+    nextofkin_name = fields.Char(string="Next of Kin's Name")
+    nextofkin_address = fields.Char(string="Next of Kin's Address")
+    nextofkin_phone = fields.Char(string="Next of Kin's Phone")
+    nextofkin_relation = fields.Many2one(comodel_name='hr.employee.relation', string="Relation")
 
     history_ids = fields.One2many(comodel_name='hr.employee.history',
                                   inverse_name='employee_id',
-                                  string='Employment History', required=True)
+                                  string='Employment History')
     academic_ids = fields.One2many(comodel_name='hr.employee.academic',
                                    inverse_name='employee_id',
-                                   string='Academic History', required=True)
+                                   string='Academic History')
     reference_ids = fields.One2many(comodel_name='hr.employee.reference',
                                     inverse_name='employee_id',
-                                    string='Professional References', required=True)
+                                    string='Professional References')
 
     criminal = fields.Selection([('yes', 'Yes'),
                                  ('no', 'No')],
                                 string='Criminal Conviction',
                                 default='no')
-    illness = fields.Text(string='Illness/Disability that may affect Work', required=True)
-    commitment = fields.Text(string='Commitment(s) that may affect Work', required=True)
+    illness = fields.Text(string='Illness/Disability that may affect Work')
+    commitment = fields.Text(string='Commitment(s) that may affect Work')
     support = fields.Text(string='Support Info. for application')
     reference = fields.Char(string='Pendrax ID',
                             default=lambda obj: obj.env['ir.sequence'].next_by_code('hr.employee'),
@@ -92,15 +92,17 @@ class HrEmployee(models.Model):
                                       required=True)
     staff_location = fields.Selection([('freetown', 'Freetown'),
                                       ('provincial', 'Provincial')],
-                                      string='Region', required=True)
+                                      string='Region')
     age = fields.Integer('Age', compute='_compute_age', readonly=True, store=True)
     incomplete_info = fields.Boolean(string='Incomplete Info', default=False)
     deployment = fields.Char(string='Location')
-    district_id = fields.Many2one(comodel_name='hr.district', string='District')
+    e_district_id = fields.Many2one(comodel_name='hr.district', string='District (Address)')
+    district_id = fields.Many2one(comodel_name='hr.district', string='District (Current Deployment)')
+    area_id = fields.Many2one(comodel_name='hr.area', string='Area', required=True)
     fname = fields.Char(string='First Name', required=True)
     mname = fields.Char(string='Middle Name')
     lname = fields.Char(string='Last Name', required=True)
-    refree_ids = fields.One2many(comodel_name='hr.employee.referee', inverse_name='employee_id', string='Refrees', required=True)
+    refree_ids = fields.One2many(comodel_name='hr.employee.referee', inverse_name='employee_id', string='Refrees')
     mother_deceased = fields.Boolean(string="Mother Deceased", default=False)
     father_deceased = fields.Boolean(string="Father Deceased", default=False)
     gender = fields.Selection([('male', 'Male'),
@@ -114,14 +116,14 @@ class HrEmployee(models.Model):
     ]
 
     @api.multi
-    @api.constrains('refree_ids', 'children_ids', 'reference_ids' 'academic_ids', 'spouse_name', 'work_email')
+    @api.constrains('refree_ids', 'refree_ids.email', 'children_ids', 'reference_ids', 'reference_ids.email', 'academic_ids', 'spouse_name', 'work_email')
     def check_for_anomalies(self):
         for rec in self:
-            if len(rec.refree_ids)<2:
+            if len(rec.refree_ids)<2 and rec.incomplete_info==False:
                 raise ValidationError("You must enter at least 2 Referees")
-            if len(rec.reference_ids)<2:
+            if len(rec.reference_ids)<2 and rec.incomplete_info==False:
                 raise ValidationError("You must enter at least 2 Professional References")
-            if len(rec.academic_ids)<1:
+            if len(rec.academic_ids)<1 and rec.incomplete_info==False:
                 raise ValidationError("You must enter at least 1 Academic History")
             if len(rec.children_ids)!=rec.children:
                 raise ValidationError("Error!! You indicated "+str(rec.children)
@@ -131,6 +133,15 @@ class HrEmployee(models.Model):
                 raise ValidationError("Please indicte your spouse info or change marital status")
             if rec.work_email and email_check.check_email(rec.work_email)==False:
                 raise ValidationError("Invalid Work Email Address")
+            if len(rec.reference_ids)>0:
+                for ref in rec.reference_ids:
+                    if ref.email and email_check.check_email(ref.email) == False:
+                        raise ValidationError("Invalid Email Address for Professional Reference "+str(ref.name))
+            if len(rec.refree_ids)>0:
+                for ref in rec.refree_ids:
+                    if ref.email and email_check.check_email(ref.email) == False:
+                        raise ValidationError("Invalid Email Address for Referee "+str(ref.name))
+
 
 
 
@@ -161,4 +172,16 @@ class HrEmployee(models.Model):
     @api.depends('name', 'empid')
     def compute_name_id(self):
         for rec in self:
-            rec.name_and_id = str(rec.name+" ("+rec.empid+")")
+            rec.name_and_id = str(rec.name+" ("+rec.empid and rec.empid or ""+")")
+
+    @api.multi
+    def state_onboarding(self):
+        # lets ensure that all have a complete info
+        if self.incomplete_info:
+            raise UserError(
+                'You cannot confirm an employee that does not yet have Complete Information.')
+        # lets ensure that all have a contract set
+        if self.filtered(lambda r: not r.contract_ids):
+            raise UserError(
+                'You cannot confirm an employee that does not yet have an employment contract')
+        self.write({'status': 'onboarding'})

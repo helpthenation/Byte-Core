@@ -1,6 +1,7 @@
 from odoo import models, fields,api
 import time
 from odoo.tools import DEFAULT_SERVER_DATE_FORMAT
+from datetime import datetime
 
 class HrEmployeeChildren(models.Model):
 
@@ -9,7 +10,7 @@ class HrEmployeeChildren(models.Model):
     name = fields.Char(string='Name', required=True)
     age = fields.Integer(string='Age', compute='_compute_age', readonly=True, store=True)
     date_of_birth = fields.Date(string='Date of birth', required=True)
-    occupation = fields.Many2one(comodel_name='hr.children.occupation', readonly=True, string='Legacy Occupation',)
+    occupation = fields.Many2one(comodel_name='hr.children.occupation', readonly=True, string='Legacy Occupation')
     occupation_id = fields.Many2one(comodel_name='hr.occupation', string='Occupation', required=True)
 
     @api.multi

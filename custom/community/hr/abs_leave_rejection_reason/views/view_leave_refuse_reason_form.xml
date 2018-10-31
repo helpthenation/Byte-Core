@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_leave_refuse_reason_form" model="ir.ui.view">
+        <field name="name">hr.holidays.form</field>
+        <field name="model">hr.holidays</field>
+        <field name="inherit_id" ref = "hr_holidays.edit_holiday_new"/>	
+        <field name="arch" type="xml">
+            <xpath expr ="//field[@name='report_note']" position="after">
+                <group string="Rejection Reason" attrs="{'invisible': [('state', '!=', 'refuse')]}">
+                    <field name="leave_refuse_reason" nolabel='1' attrs="{'invisible': [('state', '!=', 'refuse')]}" />
+                </group>
+            </xpath>
+            <xpath expr ="//button[@name='action_refuse']" position="replace">
+                <button string="Refuse" name="reason_wizard" states="confirm,validate,validate1" type="object" groups="hr_holidays.group_hr_holidays_user"/>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
+

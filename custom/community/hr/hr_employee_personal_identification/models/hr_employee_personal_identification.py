@@ -20,12 +20,12 @@ class HrEmployeePersonalId(models.Model):
     expiry_date = fields.Date('Expiry Date', required=True)
 
     status = fields.Selection([('valid', 'Valid'),
-                               ('expired', 'Expired')],
+                               ('expired', 'Expired'),],
                               string="Validity",
                               default='valid')
-    expired_alert = fields.Boolean(string='Expired Alert', default=True)
+    expired_alert = fields.Boolean(string='Expired Alert', default=True, readonly=True)
 
-    expiry_notification_days = fields.Integer(string='Expiry Notification Days')
+    expiry_notification_days = fields.Integer(string='Expiry Notification Days', default=30)
 
     _sql_constraints = [('id_number', 'UNIQUE(id_number, id_type)', 'Identification type and number already Exist'),
                         ('employee_id', 'UNIQUE(employee_id, id_type)', 'Identification type already Exist')]
@@ -73,7 +73,7 @@ class HrEmployeePersonalId(models.Model):
                 days = relativedelta(
                     fields.Date.from_string(rec.expiry_date),
                     fields.Date.from_string(fields.Date.today())).days
-                if rec.expiry_notification_days >= days:
+                if rec.expiry_notification_days >= days and days>=0:
                     rec.send_expiry_notification(days)
                 if days<1:
                     rec.status='expired'

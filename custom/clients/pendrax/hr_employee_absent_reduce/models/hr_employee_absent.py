@@ -12,7 +12,7 @@ class HrEmployeeAbsentLine(models.Model):
     reference = fields.Char(sring='Reference',
                             compute='compute_reference')
 
-    @api.depends('employee_id', 'employee_id')
+    @api.depends('employee_id')
     @api.multi
     def compute_reference(self):
         for rec in self:

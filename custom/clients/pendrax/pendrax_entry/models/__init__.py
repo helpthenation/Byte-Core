@@ -16,4 +16,6 @@ from . import hr_employee_referees
 from . import email_check
 from . import hr_occupation
 from . import hr_qualification
+from . import hr_area
+#from . import hr_contract
 

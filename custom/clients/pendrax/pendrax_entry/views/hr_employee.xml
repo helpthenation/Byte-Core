@@ -39,28 +39,31 @@
                                     <group col="2">
                                         <div>
                                            <group>
-                                        <field name="active" readonly="1"/>
+                                        <field name="active" invisible="1"/>
+                                        <field name="incomplete_info"/>
                                         <field name="reference" readonly="True"/>
-                                        <field name="gender"/>
-                                        <field name="phone"/>
-                                        <field name="empid" oncopy="return false"/>
+                                        <field name="gender" />
+                                        <field name="phone" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="empid" oncopy="return false" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="identification_id" invisible="1"/>
                                         <field name="birthday" invisible="1"/>
-                                        <field name="country_id" options='{"no_open": True, "no_create": True}' required="1"/>
-                                        <field name="staff_category"/>
-                                        <field name="district_id" options='{"no_open": True, "no_create": True}'/>
-                                        <field name="emp_date"/>
-                                        <field name="job_id"/>
-                                        <field name="nassit_no"/>
-                                        <field name="labor_card_no"/>
+                                        <field name="country_id" options='{"no_open": True, "no_create": True}'  attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="staff_category" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="district_id" readonly="1" options='{"no_open": True, "no_create": True}' attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="emp_date" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="job_id" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="nassit_no" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="labor_card_no" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="age" readonly="1"/>
-                                        <field name="date_of_birth"/>
-                                        <field name="place_of_birth_id"/>
-                                        <field name="tribe_id" options='{"no_open": True, "no_create": True}'/>
-                                        <field name="religion_id" options='{"no_open": True, "no_create": True}'/>
-                                        <field name="height_ft"/>
-                                        <field name="height_in"/>
-                                        <field name="incomplete_info"/>
+                                        <field name="date_of_birth" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="place_of_birth_id" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="tribe_id" options='{"no_open": True, "no_create": True}' attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="religion_id" options='{"no_open": True, "no_create": True}' attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="height_ft" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="height_in" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="p_address" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="area_id" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="e_district_id" options='{"no_open": True, "no_create": True}' attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="coach_id" invisible="1"/>
                                     </group>
                                     <group string="Marital">
@@ -71,10 +74,10 @@
                                         <field name="spouse_job" attrs="{'invisible': [('marital', '!=', 'married')], 'required':[('marital','=','married')]}"/>
                                     </group>
                                     <group string="Emergency Contact">
-                                        <field name="emergency_name"/>
-                                        <field name="emergency_address"/>
-                                        <field name="emergency_phone"/>
-                                        <field name="emergency_job"/>
+                                        <field name="emergency_name" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="emergency_address" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="emergency_phone" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="emergency_job" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                     </group>
                                     <group string="Children">
                                         <field name="children_ids" context="{'default_employee_id': active_id}">
@@ -106,18 +109,18 @@
 
 
                                     <group string="Friend/Relative">
-                                        <field name="friend_name"/>
-                                        <field name="friend_address"/>
-                                        <field name="friend_phone"/>
-                                        <field name="friend_job"/>
+                                        <field name="friend_name" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="friend_address" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="friend_phone" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="friend_job" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                     </group>
 
 
                                     <group string="Next of Kin">
-                                        <field name="nextofkin_name"/>
-                                        <field name="nextofkin_address"/>
-                                        <field name="nextofkin_phone"/>
-                                        <field name="nextofkin_relation"/>
+                                        <field name="nextofkin_name" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="nextofkin_address" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="nextofkin_phone" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="nextofkin_relation" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                     </group>
                                         </div>
                                         <div string="Academic and Professional Info">
@@ -149,8 +152,8 @@
                                             <group>
                                                 <field name="qualification"/>
                                                 <field name="criminal"/>
-                                                <field name="illness"/>
-                                                <field name="commitment"/>
+                                                <field name="illness" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                                <field name="commitment" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                                 <field name="support"/>
                                             </group>
 
@@ -200,7 +203,7 @@
                                 <page name="personal_information" string="Other Information">
                                     <group>
                                         <group string="Bank Information">
-                                            <field name="bank_account_id"/>
+                                            <field name="bank_account_id" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         </group>
                                     </group>
                                 </page>
