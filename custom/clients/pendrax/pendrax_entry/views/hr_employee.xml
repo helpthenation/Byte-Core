@@ -45,6 +45,7 @@
                                         <field name="gender" />
                                         <field name="phone" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="empid" oncopy="return false" attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="department_id" oncopy="return false" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="identification_id" invisible="1"/>
                                         <field name="birthday" invisible="1"/>
                                         <field name="country_id" options='{"no_open": True, "no_create": True}'  attrs="{'required':[('incomplete_info','=',False)]}"/>
@@ -170,10 +171,10 @@
                                                 </tree>
                                             </field>
                                             <h2>
-                                            <seperator>Refrees</seperator>
+                                            <seperator>Guarantors</seperator>
                                             </h2>
-                                            <field name="refree_ids" string="Refrees" context="{'default_employee_id': active_id}">
-                                                <form string="Refrees">
+                                            <field name="refree_ids" string="Guarantors" context="{'default_employee_id': active_id}">
+                                                <form string="Guarantors">
                                                     <field name="photo" widget='image' class="oe_avatar oe_left" options='{"size": [150, 150]}'/>
                                                     <group>
                                                         <group>
@@ -181,6 +182,8 @@
                                                             <field name="occupation_id" options='{"no_open": True, "no_create": True}'/>
                                                             <field name="address"/>
                                                             <field name="address0"/>
+                                                            <field name="district_id"/>
+                                                            <field name="area_id"/>
                                                             <field name="phone"/>
                                                             <field name="email"/>
                                                         </group>
@@ -192,6 +195,8 @@
                                                     <field name="occupation_id" options='{"no_open": True, "no_create": True}'/>
                                                     <field name="address"/>
                                                     <field name="address0"/>
+                                                    <field name="district_id"/>
+                                                    <field name="area_id"/>
                                                     <field name="phone"/>
                                                     <field name="email"/>
                                                 </tree>

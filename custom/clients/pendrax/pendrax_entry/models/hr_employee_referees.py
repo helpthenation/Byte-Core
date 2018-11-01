@@ -14,3 +14,5 @@ class HrEmployeeReferee(models.Model):
     occupation_id = fields.Many2one(comodel_name='hr.occupation', string='Occupation', required=True)
     phone = fields.Char(string='Phone', required=True)
     email = fields.Char(string='Email')
+    district_id = fields.Many2one('hr.district')
+    area_id = fields.Many2one('hr.area')
