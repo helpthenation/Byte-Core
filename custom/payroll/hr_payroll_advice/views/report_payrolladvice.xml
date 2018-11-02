@@ -74,7 +74,9 @@
                                     <tr style="border-top: 1px solid black">
                                         <th>SI No.</th>
                                         <th>Name Of Employee</th>
+<!--
                                         <th>Identification No.</th>
+-->
                                         <th>Bank Account No.</th>
                                         <th>By salary (Le)</th>
                                         <th>C/D</th>
@@ -88,10 +90,10 @@
                                         </td>
                                         <td>
                                             <span t-esc="l['name']"/>
-                                        </td>
+                                        </td><!--
                                         <td>
                                             <span t-esc="l['empid']"/>
-                                        </td>
+                                        </td>-->
                                         <td>
                                             <span t-esc="l['acc_no']"/>
                                         </td>

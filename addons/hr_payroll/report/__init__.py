@@ -4,3 +4,4 @@
 
 import report_payslip_details
 import report_contribution_register
+import report_payroll

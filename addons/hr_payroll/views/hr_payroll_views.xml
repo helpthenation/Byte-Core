@@ -217,13 +217,13 @@
                     <field name="state" widget="statusbar" statusbar_visible="draft,confirm"/>
                 </header>
                 <sheet>
-                    <div class="oe_button_box" name="button_box">
+                    <div class="oe_button_box" name="button_box"><!--
                         <button name="%(act_payslip_lines)d"
                             class="oe_stat_button"
                             icon="fa-money"
                             type="action">
                             <field name="payslip_count" widget="statinfo" string="Payslip" help="Payslip Computation Details"/>
-                        </button>
+                        </button>-->
                     </div>
                     <div class="oe_title">
                         <label for="employee_id" class="oe_edit_only"/>
@@ -238,10 +238,12 @@
                         <field name="number"/>
                         <field name="struct_id" attrs="{'required':[('contract_id','&lt;&gt;',False)]}"/>
                         <field name="name"/>
+<!--
                         <field name="credit_note"/>
+-->
                     </group>
                     <notebook>
-                        <page string="Worked Days &amp; Inputs">
+<!--                        <page string="Worked Days &amp; Inputs">
                             <separator string="Worked Days"/>
                             <field name="worked_days_line_ids">
                                 <tree string="Worked Days" editable="bottom">
@@ -282,36 +284,38 @@
                                     </group>
                                 </form>
                             </field>
-                        </page>
+                        </page>-->
                         <page string="Salary Computation" >
                             <field name="line_ids" colspan="4" nolabel="1">
                                 <tree string="Salary Structure" editable="bottom" decoration-info="total == 0">
                                     <field name="name"/>
-                                    <field name="code"/>
+                                    <field name="total"/>
+                                    <!--<field name="code"/>
                                     <field name="category_id"/>
                                     <field name="sequence" invisible="1"/>
                                     <field name="quantity"/>
                                     <field name="rate"/>
                                     <field name="salary_rule_id"/>
-                                    <field name="amount"/>
-                                    <field name="total"/>
+                                    <field name="amount"/>-->
+
                                 </tree>
                                 <form string="Payslip Line">
                                     <group col="4">
                                         <field name="name"/>
-                                        <field name="code"/>
+                                        <field name="total"/>
+                                        <!--<field name="code"/>
                                         <field name="category_id"/>
                                         <field name="sequence"/>
                                         <field name="quantity"/>
                                         <field name="rate"/>
                                         <field name="amount"/>
-                                        <field name="total"/>
                                         <field name="salary_rule_id"/>
+                                        -->
                                     </group>
                                 </form>
                             </field>
                         </page>
-                        <page string="Details By Salary Rule Category">
+<!--                        <page string="Details By Salary Rule Category">
                             <field name="details_by_salary_rule_category" context="{'group_by':'category_id'}" domain="[('appears_on_payslip', '=', True)]">
                                 <tree string="Payslip Lines" decoration-info="total == 0">
                                     <field name="category_id"/>
@@ -334,7 +338,7 @@
                             <div colspan="4">
                                 <field name="note" placeholder="Add an internal note..."/>
                             </div>
-                       </page>
+                       </page>-->
                     </notebook>
                     </sheet>
                 </form>
@@ -355,7 +359,9 @@
                     <group expand="0" string="Group By">
                         <filter string="Employees" name="employee_id" context="{'group_by':'employee_id'}"/>
                         <filter string="PaySlip Batch" name="payslip_run_id" context="{'group_by':'payslip_run_id'}"/>
+<!--
                         <filter string="Companies" name="company_id" groups="base.group_multi_company" context="{'group_by':'company_id'}"/>
+-->
                         <filter string="States" name="state" context="{'group_by':'state'}"/>
                     </group>
                 </search>
@@ -685,7 +691,9 @@
                     <field name="name"/>
                     <field name="date_start"/>
                     <field name="date_end"/>
+<!--
                     <field name="credit_note"/>
+-->
                     <field name="state"/>
                 </tree>
             </field>
@@ -697,9 +705,12 @@
             <field name="arch" type="xml">
                 <form string="Payslips Batches">
                 <header>
-                    <button name="close_payslip_run" type="object" string="Close" states="draft" class="oe_highlight"/>
                     <button name="%(action_hr_payslip_by_employees)d" type="action" states="draft" string="Generate Payslips" class="oe_highlight"/>
-                    <button string="Set to Draft" name="draft_payslip_run" type="object" states="close" />
+                    <button string="Set to Draft" name="draft_payslip_run" type="object" states="reject" />
+                    <button string="Request Approval" name="set_to_request" type="object" states="draft" class="oe_highlight"/>
+                    <button string="Reject" name="set_to_request" type="object" states="reject" />
+                    <button string="Approve" name="close_payslip_run" type="object" states="request" class="oe_highlight"/>
+                    <button string="Notify via SMS" name="send_payment_notification" type="object" states="close" class="oe_highlight"/>
                     <field name="state" widget="statusbar"/>
                 </header>
                 <sheet>
@@ -712,7 +723,9 @@
                          <div>
                                <field name="date_start" class="oe_inline"/> - <field name="date_end" class="oe_inline"/>
                          </div>
+<!--
                         <field name="credit_note"/>
+-->
                     </group>
                     <separator string="Payslips"/>
                     <field name="slip_ids"/>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+
+        <report
+                auto="False"
+                id="hr_payroll"
+                model="hr.payslip.run"
+                string="Payroll Report"
+                report_type="qweb-pdf"
+                name="hr_payroll.report_payroll"
+                file="hr_payroll.report_payroll"/>
+    </data>
+</odoo>

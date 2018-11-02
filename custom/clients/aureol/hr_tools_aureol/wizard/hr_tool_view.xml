@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+	
+	<record id="wizard_update_employee" model="ir.ui.view">
+            <field name="name">wizard.employee.update</field>
+            <field name="model">wizard.employee.update</field>
+            <field name="arch" type="xml">
+                <form>
+                	<header>
+                    </header>
+                    <newline/>
+                    <div>
+                        <b>
+                        Update Employees in a given CSV file.
+                            Note: Make sure the you add the DB ID, NEW ID and OLD ID Columns Respectively
+                        </b>
+                    </div>
+                    <group>
+                        <field name="date"/>
+                        <field name="file"/>
+                    </group>
+
+                    <footer>
+                        <button name="create_employees" type="object" string="Create Employee" class="oe_highlight"/>
+                        <button name="confirm_ammend" type="object" string="Confirm Ammend" class="oe_highlight"/>
+                    </footer>
+               </form>
+            </field>
+        </record>
+        
+        <record id="action_wizard_update_employee" model="ir.actions.act_window">
+            <field name="name">Update Employees</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">wizard.employee.update</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        
+        <menuitem
+                id="menu_hr_employee_tools"
+                parent="hr.menu_hr_root"
+                name="Tools"
+                sequence="5"/>
+        <menuitem
+                action="action_wizard_update_employee"
+                id="menu_employee_mass_update_wizard"
+                parent="menu_hr_employee_tools"
+                name="HR Tools"
+                sequence="1"/>
+
+
+	</data>
+</odoo>

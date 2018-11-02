@@ -4,6 +4,8 @@
 import time
 from datetime import datetime, timedelta
 from dateutil import relativedelta
+import requests
+
 
 import babel
 
@@ -134,7 +136,9 @@ class HrPayslipRun(models.Model):
         states={'draft': [('readonly', False)]})
     state = fields.Selection([
         ('draft', 'Draft'),
-        ('close', 'Close'),
+        ('request', 'Pending Approval'),
+        ('close', 'Approved'),
+        ('reject', 'Rejected'),
     ], string='Status', index=True, readonly=True, copy=False, default='draft')
     date_start = fields.Date(string='Date From', required=True, readonly=True,
         states={'draft': [('readonly', False)]}, default=time.strftime('%Y-%m-01'))
@@ -144,13 +148,83 @@ class HrPayslipRun(models.Model):
     credit_note = fields.Boolean(string='Credit Note', readonly=True,
         states={'draft': [('readonly', False)]},
         help="If its checked, indicates that all payslips generated from here are refund payslips.")
+    company_id = fields.Many2one('res.company', string='Company',
+                                 default=lambda self: self.env.user.company_id)
+    currency_id = fields.Many2one('res.currency',related='company_id.currency_id', store=True, string='Currency')
+
 
     @api.multi
     def draft_payslip_run(self):
         return self.write({'state': 'draft'})
 
     @api.multi
+    def set_to_reject(self):
+        return self.write({'state': 'close'})
+
+    @api.multi
+    def set_to_request(self):
+        self.write({'state': 'request'})
+        '''
+        This function opens a window to compose an email, with email template
+        message loaded by default
+        '''
+        self.ensure_one()
+
+        template = self.env.ref('hr_payroll.email_template_payroll')
+        compose_form = self.env.ref(
+            'mail.email_compose_message_wizard_form')
+        self = self.with_context(
+            default_model='hr.payslip.run',
+            default_res_id=self.id,
+            default_use_template=bool(template),
+            default_template_id=template.id,
+            default_composition_mode='mass_mail',
+            default_email_from=self.company_id.email,
+            mark_so_as_sent=True,
+        )
+        return {
+            'type': 'ir.actions.act_window',
+            'view_type': 'form',
+            'view_mode': 'form',
+            'res_model': 'mail.compose.message',
+            'views': [(compose_form.id, 'form')],
+            'view_id': compose_form.id,
+            'target': 'new',
+            'context': self.env.context,
+        }
+
+    @api.multi
+    def send_payment_notification(self):
+        for slip in self.slip_ids:
+            if slip.employee_id.work_phone:
+                api_key = "c792df8e"
+                api_secret = "3aa3d7631723d42a"
+                to = str(slip.employee_id.work_phone)
+                sender = str(self.env.user.company_id.name)
+                message = "Salary Payment for October has been transferren to your account AMOUNT: "+str(slip.line_ids.filtered(lambda r:r.code=="NET").total)
+                post_data = {'api_key': api_key, 'api_secret': api_secret, 'to': to, 'from': sender,
+                             'text': message
+                             }
+                requests.post('https://rest.nexmo.com/sms/json', data=post_data)
+        return True
+
+    @api.multi
+    def confirm_payslip_run(self):
+        for run in self:
+            for slip in run.slip_ids:
+                slip.write({'state': 'done'})
+
+    @api.multi
     def close_payslip_run(self):
+        for run in self:
+            run.confirm_payslip_run()
+            if next((p for p in run.slip_ids if p.state == 'draft'), False):
+                raise UserError(_("The payslip batch %s still has unconfirmed "
+                                  "pay slips." % run.name))
+            if next((p for p in run.slip_ids if p.state == 'draft'), False):
+                raise UserError(_("The payslip batch %s still has unconfirmed "
+                                  "pay slips." % run.name))
+        self.update_periods()
         return self.write({'state': 'close'})
 
 

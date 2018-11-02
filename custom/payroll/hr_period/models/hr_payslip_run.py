@@ -157,6 +157,7 @@ class HrPayslipRun(models.Model):
     @api.multi
     def close_payslip_run(self):
         for run in self:
+            run.confirm_payslip_run()
             if next((p for p in run.slip_ids if p.state == 'draft'), False):
                 raise UserError("The payslip batch %s still has unconfirmed "
                                 "pay slips." % (run.name))

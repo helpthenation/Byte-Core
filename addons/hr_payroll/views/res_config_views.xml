@@ -20,13 +20,15 @@
                     <group string="Payroll">
                         <label for="id" string="Settings"/>
                         <div>
-                            <field name="module_hr_payroll_account" class="oe_inline"/>
+                            <label for="first_approver_id" class="oe_edit_only"/>
+                            <field name="first_approver_id" class="oe_inline" string="Payroll Approval by:"/>
+                            <!--<field name="module_hr_payroll_account" class="oe_inline"/>
                             <label for="module_hr_payroll_account"/>
                             <div name="hr_payroll">
                                 <button name="%(open_payroll_modules)d" type="action"
                                     string="Install your country's payroll" icon="fa-arrow-right text-success"
                                     class="oe_link"/>
-                            </div>
+                            </div>-->
                         </div>
                     </group>
                 </form>

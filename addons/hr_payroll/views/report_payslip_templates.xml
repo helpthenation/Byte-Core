@@ -45,22 +45,32 @@
                     <table class="table table-condensed">
                         <thead>
                             <tr>
+<!--
                                 <th>Code</th>
+-->
                                 <th>Name</th>
+<!--
                                 <th>Quantity/rate</th>
+-->
                                 <th>Amount</th>
+<!--
                                 <th>Total</th>
+-->
                             </tr>
                         </thead>
                         <tbody>
                                 <tr t-foreach="o.line_ids.filtered(lambda line: line.appears_on_payslip)" t-as="line">
+<!--
                                 <td><span t-field="line.code"/></td>
+-->
                                 <td><span t-field="line.name"/></td>
+<!--
                                 <td><span t-field="line.quantity"/></td>
+-->
                                 <td><span t-esc="line.amount"
                                           t-esc-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/></td>
-                                <td><span t-esc="line.total"
-                                          t-esc-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/></td>
+<!--                                <td><span t-esc="line.total"
+                                          t-esc-options='{"widget": "monetary", "display_currency": o.company_id.currency_id}'/></td>-->
 
                             </tr>
                         </tbody>
