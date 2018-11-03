@@ -60,7 +60,6 @@ class payroll_advice_report(models.AbstractModel):
             res = {}
             res.update({
                 'name': l.employee_id.name,
-                'empid': l.employee_id.empid,
                 'acc_no': l.name,
                 'bysal': l.bysal,
                 'debit_credit': l.debit_credit,

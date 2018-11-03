@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <data>
+
+        <record id="view_employee_form_inherit" model="ir.ui.view">
+                <field name="name">hr.employee.form.inherit</field>
+                <field name="model">hr.employee</field>
+                <field name="inherit_id" ref="hr.view_employee_form"/>
+                <field name="arch" type="xml">
+                    <data>
+                        <field name="category_ids" position="replace"/>
+                        <field name="name" position="replace">
+                            <label for="name" class="oe_edit_only"/>
+                            <h4>
+                                <field name="fname" placeholder="First" />
+                                <br/>
+                                <field name="mname" placeholder="Middle"/>
+                                <br/>
+                                <field name="lname" placeholder="Last" />
+                                <!--<table>
+                                <tr>
+                                <td><field name="fname" placeholder="First" style="padding-right:15px" /></td>
+                                <td><field name="mname" placeholder="Middle" style="padding-right:15px" /></td>
+                                <td><field name="lname" placeholder="Last" style="padding-right:15px" /></td>
+                                </tr>
+                                </table>-->
+                            </h4>
+                        </field>
+                    </data>
+                </field>
+        </record>
+
+    </data>
+</odoo>

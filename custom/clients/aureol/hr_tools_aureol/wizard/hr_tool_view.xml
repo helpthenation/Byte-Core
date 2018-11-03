@@ -24,6 +24,7 @@
                     <footer>
                         <button name="create_employees" type="object" string="Create Employee" class="oe_highlight"/>
                         <button name="confirm_ammend" type="object" string="Confirm Ammend" class="oe_highlight"/>
+                        <button name="correct_names" type="object" string="Correct Name" class="oe_highlight"/>
                     </footer>
                </form>
             </field>

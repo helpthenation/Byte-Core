@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="nassit_report_template">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <t t-foreach="objects" t-as="o">
+                        <div class="page">
+
+                            <table class="table table-bordered mb64">
+                                <thead>
+                                    <tr>
+                                        <td colspan="10" align="middle">
+                                            <span t-esc="get_header_text(o)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>ER Number</th>
+                                        <th>Est. Name</th>
+                                        <th>Social Security No.</th>
+                                        <th>Surename</th>
+                                        <th>FirstName</th>
+                                        <th>Middle Name</th>
+                                        <th>Month</th>
+                                        <th>Monthly Salary</th>
+                                        <th>Total Cont(15%)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="get_detail(o.slip_ids)"
+                                        t-as="s">
+                                        <td>
+                                            <span t-esc="s['er']"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="s['est_name']"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="s['ssnid']"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="s['lname']"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="s['fname']"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="s['mname']"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="get_month(o)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['salary'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['total'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                            <strong><h4> Prepared By: .................................................</h4></strong>
+                            <br/>
+                            <br/>
+                            <strong><h4> Checked By: ...................................................</h4></strong>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

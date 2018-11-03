@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="payroll_report_template">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <t t-foreach="objects" t-as="o">
+                        <div class="page">
+                            <table>
+                                <tr>
+                                    <td>
+                                        <br/>
+                                        <p>
+                                            <strong><span t-esc="o.company_id.name"/></strong>
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            <span t-esc="o.company_id.street"/>
+                                        </strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <br/>
+                                        <br/>
+                                        <strong>
+                                            <span t-esc="get_month(o)"/>
+                                        </strong>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="table table-condensed">
+                                <thead>
+                                    <tr style="border-top: 1px solid black">
+                                        <th>Name of Employee</th>
+                                        <th>BASIC</th>
+                                        <th>GROSS</th>
+                                        <th>NASSIT (5%)</th>
+                                        <th>NASSIT (10%)</th>
+                                        <th>PAYE</th>
+                                        <th>TOTAL DED</th>
+                                        <th>NET</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="get_detail(o.slip_ids)"
+                                        t-as="s">
+                                        <td>
+                                            <span t-esc="s['name']"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['basic'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['gross'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['nassit'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['nassitte'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['paye'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['ded'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['net'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                    </tr>
+<!--                                    <tr class="border-black"
+                                        style="border-bottom: 1px solid black">
+                                        <td>
+                                            <strong>Total Taxable Income of Employees</strong>
+                                        </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td>
+                                            <strong>
+                                                <span t-esc="formatLang(round(get_txtble_income_total()), currency_obj = o.currency_id)"/>
+                                            </strong>
+                                        </td>
+                                        <td/>
+                                    </tr>
+                                    <tr class="border-black"
+                                        style="border-bottom: 1px solid black">
+                                        <td>
+                                            <strong>Total Monthly PAYE</strong>
+                                        </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td>
+                                            <strong>
+                                                <span t-esc="formatLang(round(get_txtble_income_total()), currency_obj = o.currency_id)"/>
+                                            </strong>
+                                        </td>
+                                    </tr>
+                                    <tr class="border-black"
+                                        style="border-bottom: 1px solid black">
+                                        <td>
+                                            <strong>Total NASSIT</strong>
+                                        </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td>
+                                            <strong>
+                                                <span t-esc="formatLang(round(get_txtble_income_total()), currency_obj = o.currency_id)"/>
+                                            </strong>
+                                        </td>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                        <td/>
+                                    </tr>-->
+                                </tbody>
+                            </table>
+                            <br/>
+                            <br/>
+                            <strong><h4> Prepared By: .................................................</h4></strong>
+                            <strong><h4> Checked By: ...................................................</h4></strong>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

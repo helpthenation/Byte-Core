@@ -301,7 +301,7 @@
                         <page name='internal_notes' string="Internal Notes">
                             <field name="comment" placeholder="Internal note..."/>
                         </page>
-                        <page name='sales_purchases' string="Sales &amp; Purchases">
+                        <page name='sales_purchases' string="Sales &amp; Purchases" invisible="1">
                             <group name="container_row_2">
                                 <group string="Sale" name="sale">
                                     <field name="customer"/>

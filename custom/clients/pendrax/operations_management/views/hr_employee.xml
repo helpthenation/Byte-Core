@@ -17,7 +17,6 @@
                     <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
                     <group expand="0" string="Group By">
                         <filter string="Manager" domain="[]" context="{'group_by':'parent_id'}"/>
-                        <filter string="Coach" domain="[]" context="{'group_by':'coach_id'}"/>
                         <filter string="Category" domain="[]" context="{'group_by':'staff_category'}"/>
                         <filter string="Department" domain="[]" context="{'group_by':'department_id'}"/>
                         <filter string="Job" domain="[]" context="{'group_by':'job_id'}"/>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<odoo>
+    <data>
+        <report
+                auto="False"
+                id="action_aureol_payroll_report"
+                model="hr.payslip.run"
+                string="Aureol Payroll Report"
+                report_type="qweb-pdf"
+                paperformat="hr_payroll.paperformat_landscape"
+                name="aureol.payroll_report_template"
+                file="aureol.payroll_report_template"/>
+
+        <report
+                auto="False"
+                id="action_aureol_nassit_report"
+                model="hr.payslip.run"
+                string="Contribution Schedule"
+                report_type="qweb-pdf"
+                paperformat="hr_payroll.paperformat_landscape"
+                name="aureol.nassit_report_template"
+                file="aureol.nassit_report_template"/>
+
+    </data>
+</odoo>

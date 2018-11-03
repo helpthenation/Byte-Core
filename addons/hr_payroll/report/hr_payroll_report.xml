@@ -2,13 +2,29 @@
 <odoo>
     <data>
 
+        <record id="paperformat_landscape" model="report.paperformat">
+            <field name="name">Landscape Paper Format</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">40.00</field>
+            <field name="margin_bottom">23.00</field>
+            <field name="margin_left">7</field>
+            <field name="margin_right">7</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">35</field>
+            <field name="dpi">90</field>
+        </record>
+
         <report
                 auto="False"
-                id="hr_payroll"
+                id="action_hr_payroll"
                 model="hr.payslip.run"
                 string="Payroll Report"
                 report_type="qweb-pdf"
-                name="hr_payroll.report_payroll"
-                file="hr_payroll.report_payroll"/>
+                paperformat="hr_payroll.paperformat_landscape"
+                name="hr_payroll.payroll_report_template"
+                file="hr_payroll.payroll_report_template"/>
+
     </data>
 </odoo>

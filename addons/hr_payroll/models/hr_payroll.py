@@ -151,6 +151,7 @@ class HrPayslipRun(models.Model):
     company_id = fields.Many2one('res.company', string='Company',
                                  default=lambda self: self.env.user.company_id)
     currency_id = fields.Many2one('res.currency',related='company_id.currency_id', store=True, string='Currency')
+    first_approver_id = fields.Many2one(comodel_name='hr.employee', string='Payroll Aproval by: ')
 
 
     @api.multi
@@ -193,6 +194,8 @@ class HrPayslipRun(models.Model):
             'context': self.env.context,
         }
 
+
+
     @api.multi
     def send_payment_notification(self):
         for slip in self.slip_ids:
@@ -206,6 +209,7 @@ class HrPayslipRun(models.Model):
                              'text': message
                              }
                 requests.post('https://rest.nexmo.com/sms/json', data=post_data)
+                print requests
         return True
 
     @api.multi

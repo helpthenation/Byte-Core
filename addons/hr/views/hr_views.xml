@@ -68,8 +68,9 @@
                                         <field name="department_id"/>
                                         <field name="job_id"/>
                                         <field name="parent_id"/>
-                                        <field name="coach_id"/>
-                                        <field name="calendar_id"/>
+                                        <field name="coach_id" invisible="1"/>
+                                        <!--
+                                        <field name="calendar_id"/>-->
                                     </group>
                                 </group>
                                 <field name="notes" placeholder="Other Information ..." colspan="4"/>
@@ -126,7 +127,9 @@
                     <field name="department_id"/>
                     <field name="job_id"/>
                     <field name="parent_id"/>
+<!--
                     <field name="coach_id" invisible="1"/>
+-->
                     <field name="message_needaction" invisible="1"/>
                 </tree>
             </field>
@@ -145,7 +148,9 @@
                     <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
                     <group expand="0" string="Group By">
                         <filter string="Manager" domain="[]" context="{'group_by':'parent_id'}"/>
+<!--
                         <filter string="Coach" domain="[]" context="{'group_by':'coach_id'}"/>
+-->
                         <filter string="Department" domain="[]" context="{'group_by':'department_id'}"/>
                         <filter string="Job" domain="[]" context="{'group_by':'job_id'}"/>
                         <filter string="Company" domain="[]" context="{'group_by':'company_id'}" groups="base.group_multi_company"/>

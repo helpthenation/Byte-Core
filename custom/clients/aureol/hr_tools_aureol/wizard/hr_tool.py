@@ -25,6 +25,7 @@ class WizardGetRecord(models.TransientModel):
         self.ensure_one()
         employee_object = self.env['hr.employee'].search([])
         for employee in employee_object:
+            employee.name=employee.contract_id.name
             f = '';
             m = '';
             l = '';
