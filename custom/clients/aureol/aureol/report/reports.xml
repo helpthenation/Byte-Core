@@ -20,6 +20,15 @@
                 paperformat="hr_payroll.paperformat_landscape"
                 name="aureol.nassit_report_template"
                 file="aureol.nassit_report_template"/>
+        <report
+                auto="False"
+                id="action_aureol_nra_report"
+                model="hr.payslip.run"
+                string="Income Tax Deductions"
+                report_type="qweb-pdf"
+                paperformat="hr_payroll.paperformat_landscape"
+                name="aureol.nra_report_template"
+                file="aureol.nra_report_template"/>
 
     </data>
 </odoo>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="nra_report_template">
+            <t t-call="report.html_container">
+                <t t-call="report.external_layout">
+                    <t t-foreach="objects" t-as="o">
+                        <div class="page">
+
+                            <table class="table table-bordered mb64">
+                                <thead>
+                                    <tr>
+                                        <td colspan="10" align="middle">
+                                            <span t-esc="get_header_text(o)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>Employee's Name</th>
+                                        <th>Gross Emolument for the month</th>
+                                        <th>Monthly Tax Deduction</th>
+                                        <th>Cummiltive Gross Emolument up to end of month</th>
+                                        <th>Cummiltive Tax Deduction up to end of month</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr t-foreach="get_detail(o.slip_ids)"
+                                        t-as="s">
+                                        <th>
+                                            <span t-esc="s['name']"/>
+                                        </th>
+                                        <td>
+                                            <span t-esc="formatLang(s['gross'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['paye'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['cumm_gross'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['cumm_paye'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                    </tr>
+                                    <tfoot class="bg-gray-lighter">
+                                        <tr>
+                                        <th>
+                                            <span t-esc="get_totals(o.slip_ids)['name']"/>
+                                        </th>
+                                        <th>
+                                            <span t-esc="formatLang(get_totals(o.slip_ids)['total_gross'], currency_obj = o.currency_id)"/>
+                                        </th>
+                                        <th>
+                                            <span t-esc="formatLang(get_totals(o.slip_ids)['total_paye'], currency_obj = o.currency_id)"/>
+                                        </th>
+                                        <th>
+                                            <span t-esc="formatLang(get_totals(o.slip_ids)['total_cumm_gross'], currency_obj = o.currency_id)"/>
+                                        </th>
+                                        <th>
+                                            <span t-esc="formatLang(get_totals(o.slip_ids)['total_cumm_paye'], currency_obj = o.currency_id)"/>
+                                        </th>
+                                    </tr>
+                                    </tfoot>
+                                </tbody>
+                            </table>
+                            <br/>
+                            <strong><h4> <span t-esc="get_footer_text(o)"/> <span t-esc="formatLang(get_totals(o.slip_ids)['total_paye'], currency_obj = o.currency_id)"/></h4></strong>
+                            <br/>
+                            <table class="table " border="0">
+                                <tr>
+                                <td align="left"><span><strong><h4> Date:....................</h4></strong></span></td>
+                                <td></td>
+                                <td  align="right"><span><strong><h4> Signature:.............................................</h4></strong></span></td>
+                                </tr>
+                                <tr>
+                                <td></td>
+                                <td></td>
+                                <td align="right"><span><strong><h4> Designation:..........................................</h4></strong></span></td>
+                                </tr>
+                            </table>
+
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

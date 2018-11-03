@@ -10,6 +10,7 @@
             'views/hr_employee.xml',
             'report/reports.xml',
             'report/nassit_report_template.xml',
+            'report/nra_report_template.xml',
             ],
     'installable': True,
 }
