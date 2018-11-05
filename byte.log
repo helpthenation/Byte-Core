@@ -3130,3 +3130,1010 @@ ALTER TABLE hr_employee ALTER COLUMN gender SET NOT NULL
 2018-11-05 11:51:26,518 11532 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
 2018-11-05 11:51:59,403 11532 INFO aureoll odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
 2018-11-05 11:51:59,419 11532 INFO aureoll odoo.addons.base.ir.ir_cron: Starting job `Run Event Reminder`.
+2018-11-05 11:52:16,522 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:52:16] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 11:53:06,558 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:06] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 11:53:21,691 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:21] "POST /web/dataset/call_kw/hr.payslip.run/fields_get HTTP/1.1" 200 -
+2018-11-05 11:53:21,729 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:21] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:53:23,815 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:23] "POST /web/action/load HTTP/1.1" 200 -
+2018-11-05 11:53:24,089 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:24] "POST /web/dataset/call_kw/hr.payslip/load_views HTTP/1.1" 200 -
+2018-11-05 11:53:24,210 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:24] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:53:28,662 11532 INFO aureoll odoo.models.unlink: User #1 deleted mail.message records with IDs: [1116, 1115, 1114, 1113, 1112, 1111, 1110, 1109, 1108, 1107]
+2018-11-05 11:53:28,671 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip records with IDs: [185, 184, 183, 182, 181]
+2018-11-05 11:53:28,686 11532 INFO aureoll odoo.models.unlink: User #1 deleted mail.followers records with IDs: [420, 421, 422, 423, 424]
+2018-11-05 11:53:28,689 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:28] "POST /web/dataset/call_kw/hr.payslip/unlink HTTP/1.1" 200 -
+2018-11-05 11:53:29,822 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:29] "POST /web/dataset/call_kw/hr.payslip.run/load_views HTTP/1.1" 200 -
+2018-11-05 11:53:29,882 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:29] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:53:35,296 11532 INFO aureoll odoo.models.unlink: User #1 deleted mail.message records with IDs: [1106, 1105]
+2018-11-05 11:53:35,337 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.run records with IDs: [6]
+2018-11-05 11:53:35,344 11532 INFO aureoll odoo.models.unlink: User #1 deleted mail.followers records with IDs: [419]
+2018-11-05 11:53:35,347 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:35] "POST /web/dataset/call_kw/hr.payslip.run/unlink HTTP/1.1" 200 -
+2018-11-05 11:53:39,346 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:39] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-05 11:53:39,368 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:39] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:53:41,898 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:41] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:53:47,317 11532 WARNING aureoll odoo.addons.base.ir.ir_sequence: ir_sequence.get() and ir_sequence.get_id() are deprecated. Please use ir_sequence.next_by_code() or ir_sequence.next_by_id().
+2018-11-05 11:53:47,323 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:47] "POST /web/dataset/call_kw/hr.payslip.run/default_get HTTP/1.1" 200 -
+2018-11-05 11:53:47,362 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:47] "POST /web/dataset/call_kw/res.company/name_get HTTP/1.1" 200 -
+2018-11-05 11:53:47,482 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:47] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:53:47,592 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:47] "POST /web/dataset/call_kw/hr.payslip/load_views HTTP/1.1" 200 -
+2018-11-05 11:53:47,666 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:47] "POST /web/dataset/call_kw/hr.payslip.run/onchange HTTP/1.1" 200 -
+2018-11-05 11:53:56,604 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:53:56] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 11:54:02,032 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:02] "POST /web/dataset/call_kw/hr.period/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:03,369 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:03] "POST /web/dataset/call_kw/hr.period/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:03,395 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:03] "POST /web/dataset/call_kw/hr.payslip.run/onchange HTTP/1.1" 200 -
+2018-11-05 11:54:03,467 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:03] "POST /web/dataset/call_kw/hr.period/load_views HTTP/1.1" 200 -
+2018-11-05 11:54:03,488 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:03] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2018-11-05 11:54:03,519 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:03] "POST /web/dataset/call_kw/hr.period/fields_get HTTP/1.1" 200 -
+2018-11-05 11:54:03,574 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:03] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:05,805 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:05] "POST /web/dataset/call_kw/hr.payslip.run/onchange HTTP/1.1" 200 -
+2018-11-05 11:54:05,819 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:05] "POST /web/dataset/call_kw/hr.period/name_get HTTP/1.1" 200 -
+2018-11-05 11:54:08,366 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:08] "POST /web/dataset/call_kw/hr.period/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:13,013 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:13] "POST /web/dataset/call_kw/hr.employee/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:21,898 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:21] "POST /web/dataset/call_kw/hr.employee/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:22,322 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:22] "POST /web/dataset/call_kw/hr.employee/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:24,181 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:24] "POST /web/dataset/call_kw/hr.employee/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:24,551 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:24] "POST /web/dataset/call_kw/hr.employee/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:25,003 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:25] "POST /web/dataset/call_kw/hr.employee/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:25,271 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:25] "POST /web/dataset/call_kw/hr.employee/name_search HTTP/1.1" 200 -
+2018-11-05 11:54:31,757 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "POST /web/dataset/call_kw/hr.payslip.run/create HTTP/1.1" 200 -
+2018-11-05 11:54:31,780 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:31,823 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "POST /web/dataset/call_kw/hr.payslip.run/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:31,890 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:54:31,908 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:31,986 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "GET /web/image/res.partner/3/image_small HTTP/1.1" 200 -
+2018-11-05 11:54:31,987 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "POST /web/dataset/call_kw/hr.payslip.run/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:31,995 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:31] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-11-05 11:54:32,085 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:32] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:32,086 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:32] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:54:32,155 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:32] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-05 11:54:32,179 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:32] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-11-05 11:54:32,206 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:32] "POST /web/dataset/call_kw/hr.payslip/load_views HTTP/1.1" 200 -
+2018-11-05 11:54:34,269 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-11-05 11:54:34,329 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/hr.payslip.employees/load_views HTTP/1.1" 200 -
+2018-11-05 11:54:34,357 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/hr.payslip.employees/default_get HTTP/1.1" 200 -
+2018-11-05 11:54:34,395 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/res.company/name_get HTTP/1.1" 200 -
+2018-11-05 11:54:34,430 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/res.users/check_access_rights HTTP/1.1" 200 -
+2018-11-05 11:54:34,449 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 -
+2018-11-05 11:54:34,451 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/ir.model.data/xmlid_to_res_id HTTP/1.1" 200 -
+2018-11-05 11:54:34,463 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-05 11:54:34,668 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/hr.employee/load_views HTTP/1.1" 200 -
+2018-11-05 11:54:34,698 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:34] "POST /web/dataset/call_kw/hr.payslip.employees/onchange HTTP/1.1" 200 -
+2018-11-05 11:54:37,020 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:37] "POST /web/dataset/call_kw/hr.payslip.employees/create HTTP/1.1" 200 -
+2018-11-05 11:54:37,051 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:37] "POST /web/dataset/call_kw/hr.payslip.employees/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:37,096 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:37] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-11-05 11:54:37,121 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:37] "POST /web/dataset/call_kw/hr.payslip.employees/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:39,047 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:39] "POST /web/dataset/call_kw/hr.employee/load_views HTTP/1.1" 200 -
+2018-11-05 11:54:39,070 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:39] "POST /web/dataset/call_kw/ir.filters/get_filters HTTP/1.1" 200 -
+2018-11-05 11:54:39,556 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:39] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:46,661 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:46] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 11:54:52,656 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:52] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:55,229 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:55] "POST /web/dataset/call_kw/hr.employee/read HTTP/1.1" 200 -
+2018-11-05 11:54:55,966 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:55] "POST /web/dataset/call_kw/hr.payslip.employees/write HTTP/1.1" 200 -
+2018-11-05 11:54:57,463 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3319, 3323, 3317, 3318, 3316, 3321, 3320, 3322]
+2018-11-05 11:54:57,602 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3311, 3315, 3310, 3309, 3308, 3313, 3312, 3314]
+2018-11-05 11:54:57,735 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3302, 3301, 3305, 3303, 3300, 3306, 3304, 3307]
+2018-11-05 11:54:57,871 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3294, 3292, 3299, 3293, 3297, 3298, 3295, 3296]
+2018-11-05 11:54:58,017 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3287, 3290, 3291, 3284, 3285, 3286, 3288, 3289]
+2018-11-05 11:54:58,146 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:58] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-11-05 11:54:58,198 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:58] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-05 11:54:58,210 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:58] "POST /web/dataset/call_kw/hr.payslip.run/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:58,246 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:58] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:54:58,253 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:58] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:54:58,306 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:54:58] "POST /web/dataset/call_kw/hr.payslip/read HTTP/1.1" 200 -
+2018-11-05 11:55:04,765 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3327, 3331, 3325, 3326, 3324, 3329, 3328, 3330]
+2018-11-05 11:55:04,910 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3335, 3334, 3339, 3333, 3332, 3337, 3336, 3338]
+2018-11-05 11:55:05,052 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3342, 3341, 3345, 3343, 3340, 3346, 3344, 3347]
+2018-11-05 11:55:05,263 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3350, 3348, 3355, 3349, 3353, 3354, 3351, 3352]
+2018-11-05 11:55:05,428 11532 INFO aureoll odoo.models.unlink: User #1 deleted hr.payslip.line records with IDs: [3359, 3362, 3363, 3356, 3357, 3358, 3360, 3361]
+2018-11-05 11:55:05,605 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:05] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-11-05 11:55:05,651 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:05] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-05 11:55:05,673 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:05] "POST /web/dataset/call_kw/hr.payslip.run/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:05,715 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:05] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:55:05,741 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:05] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:05,777 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:05] "POST /web/dataset/call_kw/hr.payslip/read HTTP/1.1" 200 -
+2018-11-05 11:55:08,646 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:08] "POST /web/action/load HTTP/1.1" 200 -
+2018-11-05 11:55:10,294 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:10] "GET /web/content/387-e2ade0f/report.assets_pdf.0.css HTTP/1.1" 200 -
+2018-11-05 11:55:10,302 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:10] "GET /web/content/384-b7c9381/report.assets_common.0.css HTTP/1.1" 200 -
+2018-11-05 11:55:10,883 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:10] "POST /report/download HTTP/1.1" 200 -
+2018-11-05 11:55:11,711 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:11] "POST /web/dataset/call_kw/hr.payslip.run/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:11,799 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:11] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:11,815 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:11] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:55:11,881 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:11] "POST /web/dataset/call_kw/hr.payslip/read HTTP/1.1" 200 -
+2018-11-05 11:55:25,839 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:25] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:27,317 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:27] "POST /web/dataset/call_kw/hr.payslip.run/read HTTP/1.1" 200 -
+2018-11-05 11:55:27,399 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:27] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:55:27,400 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:27] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:27,489 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:27] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-11-05 11:55:27,514 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:27] "POST /web/dataset/call_kw/hr.payslip/load_views HTTP/1.1" 200 -
+2018-11-05 11:55:27,567 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:27] "POST /web/dataset/call_kw/hr.payslip/read HTTP/1.1" 200 -
+2018-11-05 11:55:32,418 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:32] "POST /web/dataset/call_button HTTP/1.1" 200 -
+2018-11-05 11:55:32,463 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:32] "POST /web/dataset/call_kw/hr.payslip.run/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:32,527 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:32] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 11:55:32,529 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:32] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:32,569 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:32] "POST /web/dataset/call_kw/hr.payslip/read HTTP/1.1" 200 -
+2018-11-05 11:55:36,701 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:36] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 11:55:39,454 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:39] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 11:55:43,414 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:43] "POST /web/dataset/call_kw/res.users/read HTTP/1.1" 200 -
+2018-11-05 11:55:43,516 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:43] "POST /web/action/load HTTP/1.1" 200 -
+2018-11-05 11:55:43,570 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:43] "POST /web/dataset/call_kw/res.company/load_views HTTP/1.1" 200 -
+2018-11-05 11:55:43,643 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:43] "POST /web/dataset/call_kw/res.company/read HTTP/1.1" 200 -
+2018-11-05 11:55:43,734 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:43] "POST /web/dataset/call_kw/res.users/check_access_rights HTTP/1.1" 200 -
+2018-11-05 11:55:43,738 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:43] "POST /web/dataset/call_kw/ir.ui.view/check_access_rights HTTP/1.1" 200 -
+2018-11-05 11:55:43,746 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:43] "POST /web/dataset/call_kw/ir.model.data/xmlid_to_res_id HTTP/1.1" 200 -
+2018-11-05 11:55:56,130 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:56] "GET /web/database/manager HTTP/1.1" 200 -
+2018-11-05 11:55:56,167 11532 INFO ? werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:56] "GET /web/static/lib/bootstrap/css/bootstrap.css HTTP/1.1" 200 -
+2018-11-05 11:55:56,176 11532 INFO ? werkzeug: 127.0.0.1 - - [05/Nov/2018 11:55:56] "GET /web/static/lib/jquery/jquery.js HTTP/1.1" 200 -
+2018-11-05 11:56:07,027 11532 INFO aureoll odoo.service.db: DUMP DB: aureoll format zip
+2018-11-05 11:56:09,509 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:56:09] "POST /web/database/backup HTTP/1.1" 200 -
+2018-11-05 11:56:26,739 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 11:56:26] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:09:25,774 11532 INFO ? odoo.http: Generating nondb routing
+2018-11-05 12:09:25,798 11532 INFO ? werkzeug: 192.168.1.115 - - [05/Nov/2018 12:09:25] "GET /web/payroll/approve?token=R7Z4KsDtSc5aTxHbzEFn&db=aureoll HTTP/1.1" 404 -
+2018-11-05 12:09:26,077 11532 INFO ? werkzeug: 192.168.1.115 - - [05/Nov/2018 12:09:26] "GET /favicon.ico HTTP/1.1" 404 -
+2018-11-05 12:10:01,211 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:01] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:10:03,258 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:03] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:10:03,296 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:03] "GET /web/image?model=hr.employee&field=image_medium&id=115&unique=20181105111202 HTTP/1.1" 200 -
+2018-11-05 12:10:05,375 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:05] "POST /web/dataset/call_kw/hr.employee/read HTTP/1.1" 200 -
+2018-11-05 12:10:05,419 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:05] "POST /web/dataset/call_kw/res.partner/name_get HTTP/1.1" 200 -
+2018-11-05 12:10:05,512 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:05] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:10:05,515 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:05] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 12:10:05,552 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:05] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-11-05 12:10:40,570 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:40] "POST /web/dataset/call_kw/res.partner/name_get HTTP/1.1" 200 -
+2018-11-05 12:10:40,602 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:40] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:10:59,103 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:10:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:11:49,142 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:11:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:12:39,177 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:12:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:13:29,215 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:13:29] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:14:19,252 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:14:19] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:15:09,309 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:15:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:15:59,342 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:15:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:16:49,380 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:16:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:17:39,415 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:17:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:18:29,449 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:18:29] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:19:19,486 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:19:19] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:20:09,523 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:20:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:20:59,553 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:20:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:21:31,069 11532 INFO aureoll odoo.addons.base.ir.ir_cron: Starting job `Run Event Reminder`.
+2018-11-05 12:21:49,583 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:21:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:22:39,612 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:22:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:23:29,644 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:23:29] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:24:19,686 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:24:19] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:25:09,724 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:25:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:25:59,763 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:25:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:26:49,806 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:26:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:27:39,847 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:27:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:28:29,892 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:28:29] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:29:19,928 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:29:19] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:30:09,963 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:30:27,753 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:27] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-05 12:30:27,820 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:27] "POST /web/action/load HTTP/1.1" 200 -
+2018-11-05 12:30:27,986 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:27] "POST /web/dataset/call_kw/ir.module.module/load_views HTTP/1.1" 200 -
+2018-11-05 12:30:28,038 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:28] "POST /web/dataset/call_kw/ir.module.module/fields_get HTTP/1.1" 200 -
+2018-11-05 12:30:28,110 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:28] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:29,375 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:29] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:30,728 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:30] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:31,888 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:31] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:34,072 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:34] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:34,104 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:34] "GET /hr_payslip_move_date/static/description/icon.png HTTP/1.1" 404 -
+2018-11-05 12:30:40,353 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:40] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:41,561 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:41] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:42,675 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:42] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:44,294 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:44] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:46,037 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:46] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:48,893 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:48] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:51,249 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:51] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:52,439 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:52] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:30:53,035 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:30:53] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:31:00,007 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:31:00] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:31:50,036 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:31:50] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:32:40,067 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:32:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:33:30,104 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:33:30] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:34:20,162 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:34:20] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:35:10,197 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:35:10] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:36:00,233 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:36:00] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:36:50,276 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:36:50] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:37:40,320 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:37:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:38:30,354 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:38:30] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:39:20,399 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:39:20] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:40:10,445 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:40:10] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:41:00,483 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:41:00] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:41:50,516 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:41:50] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:42:40,547 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:42:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:43:30,586 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:43:30] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:44:20,625 11532 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:44:20] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:44:56,260 11532 INFO aureoll odoo.service.server: Initiating shutdown
+2018-11-05 12:44:56,261 11532 INFO aureoll odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-11-05 12:44:58,135 18692 INFO ? odoo: Odoo version 10.0
+2018-11-05 12:44:58,136 18692 INFO ? odoo: Using configuration file at /srv/Byte-Core/.conf/conf.conf
+2018-11-05 12:44:58,136 18692 INFO ? odoo: addons paths: ['/home/nebula/.local/share/Odoo/addons/10.0', u'/srv/Byte-Core/odoo/addons', u'/srv/Byte-Core/addons', u'/srv/Byte-Core/custom/school', u'/srv/Byte-Core/custom/theme', u'/srv/Byte-Core/custom/hotel', u'/srv/Byte-Core/custom/payroll', u'/srv/Byte-Core/custom/community/noviat', u'/srv/Byte-Core/custom/misc', u'/srv/Byte-Core/custom/community/general', u'/srv/Byte-Core/custom/clients/africell', u'/srv/Byte-Core/custom/clients/pendrax', u'/srv/Byte-Core/custom/clients/aureol']
+2018-11-05 12:44:58,137 18692 INFO ? odoo: database: default@default:5432
+2018-11-05 12:44:58,160 18692 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-11-05 12:44:58,177 18692 INFO aureoll odoo.modules.loading: loading 1 modules...
+2018-11-05 12:44:58,536 18692 INFO aureoll odoo.modules.registry: module base: creating or updating database tables
+2018-11-05 12:44:59,977 18692 INFO aureoll odoo.modules.loading: loading base/res/res.lang.csv
+2018-11-05 12:45:00,947 18692 INFO aureoll odoo.modules.loading: loading base/base_data.xml
+2018-11-05 12:45:00,981 18692 INFO aureoll odoo.modules.loading: loading base/res/res_currency_data.xml
+2018-11-05 12:45:01,352 18692 INFO aureoll odoo.modules.loading: loading base/res/res_country_data.xml
+2018-11-05 12:45:01,902 18692 INFO aureoll odoo.modules.loading: loading base/security/base_security.xml
+2018-11-05 12:45:03,632 18692 INFO aureoll odoo.modules.loading: loading base/base_menu.xml
+2018-11-05 12:45:03,879 18692 INFO aureoll odoo.modules.loading: loading base/res/res_config.xml
+2018-11-05 12:45:03,967 18692 INFO aureoll odoo.modules.loading: loading base/res/res.country.state.csv
+2018-11-05 12:45:06,852 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_actions.xml
+2018-11-05 12:45:07,908 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_config_parameter_view.xml
+2018-11-05 12:45:08,063 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_cron_view.xml
+2018-11-05 12:45:08,247 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_filters.xml
+2018-11-05 12:45:08,398 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_mail_server_view.xml
+2018-11-05 12:45:08,546 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_model_view.xml
+2018-11-05 12:45:09,411 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_attachment_view.xml
+2018-11-05 12:45:09,584 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_rule_view.xml
+2018-11-05 12:45:09,747 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_sequence_view.xml
+2018-11-05 12:45:09,905 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_translation_view.xml
+2018-11-05 12:45:10,128 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_ui_menu_view.xml
+2018-11-05 12:45:10,302 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_ui_view_view.xml
+2018-11-05 12:45:10,612 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_values_view.xml
+2018-11-05 12:45:10,840 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_autovacuum.xml
+2018-11-05 12:45:10,853 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_model_report.xml
+2018-11-05 12:45:10,874 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2306]
+2018-11-05 12:45:10,883 18692 INFO aureoll odoo.modules.loading: loading base/ir/report_ir_model.xml
+2018-11-05 12:45:10,929 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_logging_view.xml
+2018-11-05 12:45:11,078 18692 INFO aureoll odoo.modules.loading: loading base/ir/ir_qweb.xml
+2018-11-05 12:45:11,118 18692 INFO aureoll odoo.modules.loading: loading base/workflow/workflow_view.xml
+2018-11-05 12:45:11,877 18692 INFO aureoll odoo.modules.loading: loading base/module/module_view.xml
+2018-11-05 12:45:12,266 18692 INFO aureoll odoo.modules.loading: loading base/module/module_data.xml
+2018-11-05 12:45:14,008 18692 INFO aureoll odoo.modules.loading: loading base/module/module_report.xml
+2018-11-05 12:45:14,033 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2307]
+2018-11-05 12:45:14,041 18692 INFO aureoll odoo.modules.loading: loading base/module/report/report_ir_module_reference.xml
+2018-11-05 12:45:14,083 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_update_view.xml
+2018-11-05 12:45:14,152 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_language_install_view.xml
+2018-11-05 12:45:14,261 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_import_language_view.xml
+2018-11-05 12:45:14,325 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_upgrade_view.xml
+2018-11-05 12:45:14,442 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_configuration_view.xml
+2018-11-05 12:45:14,490 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_export_language_view.xml
+2018-11-05 12:45:14,569 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_update_translations_view.xml
+2018-11-05 12:45:14,638 18692 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_immediate_install.xml
+2018-11-05 12:45:14,666 18692 INFO aureoll odoo.modules.loading: loading base/res/res_company_view.xml
+2018-11-05 12:45:14,829 18692 INFO aureoll odoo.modules.loading: loading base/res/res_request_view.xml
+2018-11-05 12:45:14,974 18692 INFO aureoll odoo.modules.loading: loading base/res/res_lang_view.xml
+2018-11-05 12:45:15,147 18692 INFO aureoll odoo.modules.loading: loading base/res/res_partner_view.xml
+2018-11-05 12:45:15,745 18692 INFO aureoll odoo.modules.loading: loading base/res/res_bank_view.xml
+2018-11-05 12:45:15,991 18692 INFO aureoll odoo.modules.loading: loading base/res/res_country_view.xml
+2018-11-05 12:45:16,291 18692 INFO aureoll odoo.modules.loading: loading base/res/res_currency_view.xml
+2018-11-05 12:45:16,806 18692 INFO aureoll odoo.modules.loading: loading base/res/res_users_view.xml
+2018-11-05 12:45:16,915 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2308]
+2018-11-05 12:45:17,898 18692 INFO aureoll odoo.modules.loading: loading base/res/res_partner_data.xml
+2018-11-05 12:45:17,913 18692 INFO aureoll odoo.modules.loading: loading base/res/ir_property_view.xml
+2018-11-05 12:45:18,069 18692 INFO aureoll odoo.modules.loading: loading base/res/res_security.xml
+2018-11-05 12:45:18,081 18692 INFO aureoll odoo.modules.loading: loading base/security/ir.model.access.csv
+2018-11-05 12:45:23,370 18692 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-11-05 12:45:23,858 18692 WARNING ? odoo.addons.hr_payroll_management_xls: report_xlsx_helpers not available in addons path
+2018-11-05 12:45:23,903 18692 ERROR ? root: Failed to import fintech
+2018-11-05 12:45:23,905 18692 ERROR ? root: Failed to import fintech
+2018-11-05 12:45:23,908 18692 ERROR ? root: Failed to import fintech
+2018-11-05 12:45:23,910 18692 ERROR ? root: Failed to import fintech
+2018-11-05 12:45:24,372 18692 INFO ? odoo.http: HTTP Configuring static files
+2018-11-05 12:45:24,969 18692 INFO aureoll odoo.modules.loading: 1 modules loaded in 26.79s, 0 queries
+2018-11-05 12:45:25,039 18692 INFO aureoll odoo.modules.loading: updating modules list
+2018-11-05 12:45:29,398 18692 WARNING aureoll odoo.modules.graph: module mail_cc_group: not installable, skipped
+2018-11-05 12:45:29,404 18692 WARNING aureoll odoo.modules.graph: module hr_employee_contract_history: not installable, skipped
+2018-11-05 12:45:29,409 18692 WARNING aureoll odoo.modules.graph: module hr_employment_termination: not installable, skipped
+2018-11-05 12:45:29,430 18692 WARNING aureoll odoo.modules.graph: module hr_employee_onboarding: not installable, skipped
+2018-11-05 12:45:29,455 18692 ERROR aureoll odoo.modules.graph: module aureol: Unmet dependencies: hr_employee_onboarding
+2018-11-05 12:45:29,490 18692 INFO aureoll odoo.modules.loading: loading 47 modules...
+2018-11-05 12:45:29,569 18692 INFO aureoll odoo.modules.registry: module hr_tools_aureol: creating or updating database tables
+2018-11-05 12:45:29,600 18692 WARNING aureoll odoo.addons.base.module.module: module hr_tools_aureol: description is empty !
+2018-11-05 12:45:29,601 18692 INFO aureoll odoo.modules.loading: loading hr_tools_aureol/wizard/hr_tool_view.xml
+2018-11-05 12:45:29,821 18692 INFO aureoll odoo.modules.registry: module auth_crypt: creating or updating database tables
+2018-11-05 12:45:29,847 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:29,964 18692 INFO aureoll odoo.modules.registry: module decimal_precision: creating or updating database tables
+2018-11-05 12:45:30,015 18692 INFO aureoll odoo.modules.loading: loading decimal_precision/views/decimal_precision_views.xml
+2018-11-05 12:45:30,133 18692 INFO aureoll odoo.modules.loading: loading decimal_precision/security/ir.model.access.csv
+2018-11-05 12:45:30,349 18692 INFO aureoll odoo.modules.registry: module resource: creating or updating database tables
+2018-11-05 12:45:30,391 18692 WARNING aureoll odoo.models.schema: Table 'resource_resource': unable to set a NOT NULL constraint on column 'name' !
+If you want to have it, you should update the records and execute manually:
+ALTER TABLE resource_resource ALTER COLUMN name SET NOT NULL
+2018-11-05 12:45:30,439 18692 INFO aureoll odoo.modules.loading: loading resource/security/ir.model.access.csv
+2018-11-05 12:45:30,583 18692 INFO aureoll odoo.modules.loading: loading resource/security/resource_security.xml
+2018-11-05 12:45:30,588 18692 INFO aureoll odoo.modules.loading: loading resource/views/resource_views.xml
+2018-11-05 12:45:30,934 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2309]
+2018-11-05 12:45:30,963 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2310]
+2018-11-05 12:45:31,487 18692 INFO aureoll odoo.modules.registry: module utm: creating or updating database tables
+2018-11-05 12:45:31,570 18692 INFO aureoll odoo.modules.loading: loading utm/security/ir.model.access.csv
+2018-11-05 12:45:31,715 18692 INFO aureoll odoo.modules.loading: loading utm/views/utm.xml
+2018-11-05 12:45:32,127 18692 INFO aureoll odoo.modules.loading: loading utm/data/utm_data.xml
+2018-11-05 12:45:32,380 18692 INFO aureoll odoo.modules.registry: module web: creating or updating database tables
+2018-11-05 12:45:32,403 18692 INFO aureoll odoo.modules.loading: loading web/views/webclient_templates.xml
+2018-11-05 12:45:33,230 18692 INFO aureoll odoo.modules.registry: module bus: creating or updating database tables
+2018-11-05 12:45:33,279 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:33,344 18692 INFO aureoll odoo.modules.loading: loading bus/views/bus.xml
+2018-11-05 12:45:33,416 18692 INFO aureoll odoo.modules.loading: loading bus/security/ir.model.access.csv
+2018-11-05 12:45:33,605 18692 INFO aureoll odoo.modules.registry: module document: creating or updating database tables
+2018-11-05 12:45:33,654 18692 INFO aureoll odoo.modules.loading: loading document/views/document_templates.xml
+2018-11-05 12:45:33,837 18692 INFO aureoll odoo.modules.registry: module web_calendar: creating or updating database tables
+2018-11-05 12:45:33,860 18692 INFO aureoll odoo.modules.loading: loading web_calendar/views/web_calendar_templates.xml
+2018-11-05 12:45:34,070 18692 INFO aureoll odoo.modules.registry: module web_diagram: creating or updating database tables
+2018-11-05 12:45:34,104 18692 INFO aureoll odoo.modules.loading: loading web_diagram/views/web_diagram_templates.xml
+2018-11-05 12:45:34,363 18692 INFO aureoll odoo.modules.registry: module web_editor: creating or updating database tables
+2018-11-05 12:45:34,558 18692 INFO aureoll odoo.modules.loading: loading web_editor/security/ir.model.access.csv
+2018-11-05 12:45:34,612 18692 INFO aureoll odoo.modules.loading: loading web_editor/views/editor.xml
+2018-11-05 12:45:35,026 18692 INFO aureoll odoo.modules.loading: loading web_editor/views/iframe.xml
+2018-11-05 12:45:35,113 18692 INFO aureoll odoo.modules.loading: loading web_editor/views/snippets.xml
+2018-11-05 12:45:35,466 18692 INFO aureoll odoo.modules.registry: module web_kanban: creating or updating database tables
+2018-11-05 12:45:35,486 18692 INFO aureoll odoo.modules.loading: loading web_kanban/views/web_kanban_templates.xml
+2018-11-05 12:45:35,729 18692 INFO aureoll odoo.modules.registry: module web_planner: creating or updating database tables
+2018-11-05 12:45:35,767 18692 INFO aureoll odoo.modules.loading: loading web_planner/security/ir.model.access.csv
+2018-11-05 12:45:35,849 18692 INFO aureoll odoo.modules.loading: loading web_planner/security/web_planner_security.xml
+2018-11-05 12:45:35,903 18692 INFO aureoll odoo.modules.loading: loading web_planner/views/web_planner_templates.xml
+2018-11-05 12:45:36,170 18692 INFO aureoll odoo.modules.loading: loading web_planner/views/web_planner_views.xml
+2018-11-05 12:45:36,509 18692 INFO aureoll odoo.modules.registry: module web_responsive: creating or updating database tables
+2018-11-05 12:45:36,529 18692 INFO aureoll odoo.modules.loading: loading web_responsive/views/assets.xml
+2018-11-05 12:45:36,684 18692 INFO aureoll odoo.modules.loading: loading web_responsive/views/web.xml
+2018-11-05 12:45:37,195 18692 INFO aureoll odoo.modules.registry: module web_tour: creating or updating database tables
+2018-11-05 12:45:37,251 18692 INFO aureoll odoo.modules.loading: loading web_tour/security/ir.model.access.csv
+2018-11-05 12:45:37,290 18692 INFO aureoll odoo.modules.loading: loading web_tour/views/tour_templates.xml
+2018-11-05 12:45:37,445 18692 INFO aureoll odoo.modules.loading: loading web_tour/views/tour_views.xml
+2018-11-05 12:45:37,793 18692 INFO aureoll odoo.modules.registry: module base_import: creating or updating database tables
+2018-11-05 12:45:37,963 18692 INFO aureoll odoo.modules.loading: loading base_import/security/ir.model.access.csv
+2018-11-05 12:45:38,279 18692 INFO aureoll odoo.modules.loading: loading base_import/views/base_import_templates.xml
+2018-11-05 12:45:38,558 18692 INFO aureoll odoo.modules.registry: module base_setup: creating or updating database tables
+2018-11-05 12:45:38,604 18692 INFO aureoll odoo.modules.loading: loading base_setup/views/res_config_views.xml
+2018-11-05 12:45:38,704 18692 INFO aureoll odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2018-11-05 12:45:38,987 18692 INFO aureoll odoo.modules.registry: module web_kanban_gauge: creating or updating database tables
+2018-11-05 12:45:39,017 18692 INFO aureoll odoo.modules.loading: loading web_kanban_gauge/views/web_kanban_gauge_templates.xml
+2018-11-05 12:45:39,300 18692 INFO aureoll odoo.modules.registry: module web_settings_dashboard: creating or updating database tables
+2018-11-05 12:45:39,331 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:39,356 18692 INFO aureoll odoo.modules.loading: loading web_settings_dashboard/views/dashboard_views.xml
+2018-11-05 12:45:39,384 18692 INFO aureoll odoo.modules.loading: loading web_settings_dashboard/views/dashboard_templates.xml
+2018-11-05 12:45:39,764 18692 INFO aureoll odoo.modules.registry: module mail: creating or updating database tables
+2018-11-05 12:45:40,059 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:40,283 18692 INFO aureoll odoo.modules.loading: loading mail/wizard/invite_view.xml
+2018-11-05 12:45:40,350 18692 INFO aureoll odoo.modules.loading: loading mail/wizard/mail_compose_message_view.xml
+2018-11-05 12:45:40,436 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2344]
+2018-11-05 12:45:40,439 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2018-11-05 12:45:40,545 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_tracking_views.xml
+2018-11-05 12:45:40,652 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_message_views.xml
+2018-11-05 12:45:40,851 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2018-11-05 12:45:41,003 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2018-11-05 12:45:41,119 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_channel_views.xml
+2018-11-05 12:45:41,461 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_shortcode_views.xml
+2018-11-05 12:45:41,563 18692 INFO aureoll odoo.modules.loading: loading mail/views/res_config_views.xml
+2018-11-05 12:45:41,627 18692 INFO aureoll odoo.modules.loading: loading mail/data/mail_data.xml
+2018-11-05 12:45:41,664 18692 INFO aureoll odoo.modules.loading: loading mail/data/mail_channel_data.xml
+2018-11-05 12:45:41,673 18692 INFO aureoll odoo.modules.loading: loading mail/data/mail_shortcode_data.xml
+2018-11-05 12:45:41,764 18692 INFO aureoll odoo.modules.loading: loading mail/security/mail_security.xml
+2018-11-05 12:45:41,775 18692 INFO aureoll odoo.modules.loading: loading mail/security/ir.model.access.csv
+2018-11-05 12:45:42,574 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2018-11-05 12:45:42,725 18692 INFO aureoll odoo.modules.loading: loading mail/views/res_users_views.xml
+2018-11-05 12:45:42,963 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_templates.xml
+2018-11-05 12:45:43,162 18692 INFO aureoll odoo.modules.loading: loading mail/wizard/email_template_preview_view.xml
+2018-11-05 12:45:43,224 18692 INFO aureoll odoo.modules.loading: loading mail/views/mail_template_views.xml
+2018-11-05 12:45:43,380 18692 INFO aureoll odoo.modules.loading: loading mail/views/ir_actions_views.xml
+2018-11-05 12:45:43,560 18692 INFO aureoll odoo.modules.loading: loading mail/views/res_partner_views.xml
+2018-11-05 12:45:43,706 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2602]
+2018-11-05 12:45:44,847 18692 INFO aureoll odoo.modules.registry: module report: creating or updating database tables
+2018-11-05 12:45:44,988 18692 INFO aureoll odoo.modules.loading: loading report/data/report_paperformat_data.xml
+2018-11-05 12:45:45,008 18692 INFO aureoll odoo.modules.loading: loading report/security/ir.model.access.csv
+2018-11-05 12:45:45,094 18692 INFO aureoll odoo.modules.loading: loading report/views/layout_templates.xml
+2018-11-05 12:45:45,489 18692 INFO aureoll odoo.modules.loading: loading report/views/report_paperformat_views.xml
+2018-11-05 12:45:45,719 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2345]
+2018-11-05 12:45:45,747 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2346]
+2018-11-05 12:45:45,755 18692 INFO aureoll odoo.modules.loading: loading report/views/report_templates.xml
+2018-11-05 12:45:45,864 18692 INFO aureoll odoo.modules.loading: loading report/views/base_config_settings_views.xml
+2018-11-05 12:45:45,930 18692 INFO aureoll odoo.modules.loading: loading report/views/ir_actions_report_views.xml
+2018-11-05 12:45:46,510 18692 INFO aureoll odoo.modules.registry: module auth_signup: creating or updating database tables
+2018-11-05 12:45:46,613 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:46,639 18692 INFO aureoll odoo.modules.loading: loading auth_signup/data/auth_signup_data.xml
+2018-11-05 12:45:46,656 18692 INFO aureoll odoo.modules.loading: loading auth_signup/views/res_config_views.xml
+2018-11-05 12:45:46,768 18692 INFO aureoll odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2018-11-05 12:45:46,895 18692 INFO aureoll odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2018-11-05 12:45:47,414 18692 INFO aureoll odoo.modules.registry: module base_action_rule: creating or updating database tables
+2018-11-05 12:45:47,516 18692 INFO aureoll odoo.modules.loading: loading base_action_rule/security/ir.model.access.csv
+2018-11-05 12:45:47,615 18692 INFO aureoll odoo.modules.loading: loading base_action_rule/data/base_action_rule_data.xml
+2018-11-05 12:45:47,619 18692 INFO aureoll odoo.modules.loading: loading base_action_rule/views/base_action_rule_view.xml
+2018-11-05 12:45:48,231 18692 INFO aureoll odoo.modules.registry: module fetchmail: creating or updating database tables
+2018-11-05 12:45:48,300 18692 INFO aureoll odoo.modules.loading: loading fetchmail/data/fetchmail_data.xml
+2018-11-05 12:45:48,305 18692 INFO aureoll odoo.modules.loading: loading fetchmail/security/ir.model.access.csv
+2018-11-05 12:45:48,340 18692 INFO aureoll odoo.modules.loading: loading fetchmail/views/fetchmail_views.xml
+2018-11-05 12:45:48,579 18692 INFO aureoll odoo.modules.loading: loading fetchmail/views/mail_mail_views.xml
+2018-11-05 12:45:48,659 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2347]
+2018-11-05 12:45:49,052 18692 INFO aureoll odoo.modules.registry: module hr: creating or updating database tables
+2018-11-05 12:45:49,242 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:49,311 18692 INFO aureoll odoo.modules.loading: loading hr/security/hr_security.xml
+2018-11-05 12:45:50,052 18692 INFO aureoll odoo.modules.loading: loading hr/security/ir.model.access.csv
+2018-11-05 12:45:50,272 18692 INFO aureoll odoo.modules.loading: loading hr/views/hr_views.xml
+2018-11-05 12:45:51,094 18692 INFO aureoll odoo.modules.loading: loading hr/views/hr_templates.xml
+2018-11-05 12:45:51,209 18692 INFO aureoll odoo.modules.loading: loading hr/data/hr_data.xml
+2018-11-05 12:45:51,782 18692 INFO aureoll odoo.modules.registry: module product: creating or updating database tables
+2018-11-05 12:45:52,201 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:52,242 18692 INFO aureoll odoo.modules.loading: loading product/data/product_data.xml
+2018-11-05 12:45:52,311 18692 INFO aureoll odoo.modules.loading: loading product/security/product_security.xml
+2018-11-05 12:45:53,767 18692 INFO aureoll odoo.modules.loading: loading product/security/ir.model.access.csv
+2018-11-05 12:45:54,143 18692 INFO aureoll odoo.modules.loading: loading product/wizard/product_price_list_views.xml
+2018-11-05 12:45:54,212 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2348]
+2018-11-05 12:45:54,216 18692 INFO aureoll odoo.modules.loading: loading product/views/base_config_settings_views.xml
+2018-11-05 12:45:54,303 18692 INFO aureoll odoo.modules.loading: loading product/views/product_attribute_views.xml
+2018-11-05 12:45:54,551 18692 INFO aureoll odoo.modules.loading: loading product/views/product_uom_views.xml
+2018-11-05 12:45:54,700 18692 INFO aureoll odoo.modules.loading: loading product/views/product_views.xml
+2018-11-05 12:45:54,981 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [108, 109, 110]
+2018-11-05 12:45:55,533 18692 INFO aureoll odoo.modules.loading: loading product/views/product_template_views.xml
+2018-11-05 12:45:55,715 18692 INFO aureoll odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2018-11-05 12:45:56,024 18692 INFO aureoll odoo.modules.loading: loading product/views/res_partner_views.xml
+2018-11-05 12:45:56,118 18692 INFO aureoll odoo.modules.loading: loading product/report/product_reports.xml
+2018-11-05 12:45:56,143 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2349]
+2018-11-05 12:45:56,178 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2350]
+2018-11-05 12:45:56,205 18692 INFO aureoll odoo.modules.loading: loading product/report/product_pricelist_templates.xml
+2018-11-05 12:45:56,256 18692 INFO aureoll odoo.modules.loading: loading product/report/product_product_templates.xml
+2018-11-05 12:45:56,336 18692 INFO aureoll odoo.modules.loading: loading product/report/product_template_templates.xml
+2018-11-05 12:45:57,277 18692 INFO aureoll odoo.modules.registry: module calendar: creating or updating database tables
+2018-11-05 12:45:57,504 18692 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:45:57,603 18692 INFO aureoll odoo.modules.loading: loading calendar/security/ir.model.access.csv
+2018-11-05 12:45:57,883 18692 INFO aureoll odoo.modules.loading: loading calendar/security/calendar_security.xml
+2018-11-05 12:45:57,894 18692 INFO aureoll odoo.modules.loading: loading calendar/data/calendar_cron.xml
+2018-11-05 12:45:57,898 18692 INFO aureoll odoo.modules.loading: loading calendar/data/calendar_data.xml
+2018-11-05 12:45:57,953 18692 INFO aureoll odoo.modules.loading: loading calendar/views/calendar_templates.xml
+2018-11-05 12:45:58,145 18692 INFO aureoll odoo.modules.loading: loading calendar/views/calendar_views.xml
+2018-11-05 12:45:59,081 18692 INFO aureoll odoo.modules.registry: module hr_contract: creating or updating database tables
+2018-11-05 12:45:59,231 18692 INFO aureoll odoo.modules.loading: loading hr_contract/security/ir.model.access.csv
+2018-11-05 12:45:59,408 18692 INFO aureoll odoo.modules.loading: loading hr_contract/data/hr_contract_data.xml
+2018-11-05 12:45:59,437 18692 INFO aureoll odoo.modules.loading: loading hr_contract/views/base_action_rule_views.xml
+2018-11-05 12:45:59,691 18692 INFO aureoll odoo.modules.loading: loading hr_contract/views/hr_contract_views.xml
+2018-11-05 12:46:00,518 18692 INFO aureoll odoo.modules.registry: module hr_employee_config_setting: creating or updating database tables
+2018-11-05 12:46:00,564 18692 INFO aureoll odoo.modules.loading: loading hr_employee_config_setting/res_config_view.xml
+2018-11-05 12:46:00,868 18692 INFO aureoll odoo.modules.registry: module portal: creating or updating database tables
+2018-11-05 12:46:00,948 18692 INFO aureoll odoo.modules.loading: loading portal/data/portal_data.xml
+2018-11-05 12:46:00,956 18692 INFO aureoll odoo.modules.loading: loading portal/views/portal_views.xml
+2018-11-05 12:46:01,094 18692 INFO aureoll odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2018-11-05 12:46:01,118 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2351]
+2018-11-05 12:46:01,172 18692 INFO aureoll odoo.modules.loading: loading portal/security/ir.model.access.csv
+2018-11-05 12:46:01,502 18692 INFO aureoll odoo.modules.registry: module procurement: creating or updating database tables
+2018-11-05 12:46:01,598 18692 INFO aureoll odoo.modules.loading: loading procurement/security/ir.model.access.csv
+2018-11-05 12:46:01,677 18692 INFO aureoll odoo.modules.loading: loading procurement/security/procurement_security.xml
+2018-11-05 12:46:01,685 18692 INFO aureoll odoo.modules.loading: loading procurement/data/procurement_data.xml
+2018-11-05 12:46:01,692 18692 INFO aureoll odoo.modules.loading: loading procurement/wizard/procurement_order_compute_all_views.xml
+2018-11-05 12:46:01,769 18692 INFO aureoll odoo.modules.loading: loading procurement/views/procurement_views.xml
+2018-11-05 12:46:02,176 18692 INFO aureoll odoo.modules.loading: loading procurement/views/product_views.xml
+2018-11-05 12:46:02,739 18692 INFO aureoll odoo.modules.registry: module hr_contract_reference: creating or updating database tables
+2018-11-05 12:46:02,798 18692 WARNING aureoll odoo.addons.base.module.module: module hr_contract_reference: description is empty !
+2018-11-05 12:46:02,801 18692 INFO aureoll odoo.modules.loading: loading hr_contract_reference/data/hr_contract_sequence.xml
+2018-11-05 12:46:03,037 18692 INFO aureoll odoo.modules.registry: module hr_employee_service_length: creating or updating database tables
+2018-11-05 12:46:03,153 18692 WARNING aureoll odoo.addons.base.module.module: module hr_employee_service_length: description is empty !
+2018-11-05 12:46:03,157 18692 INFO aureoll odoo.modules.loading: loading hr_employee_service_length/views/hr_employee.xml
+2018-11-05 12:46:03,308 18692 INFO aureoll odoo.modules.loading: loading hr_employee_service_length/views/res_company.xml
+2018-11-05 12:46:03,378 18692 INFO aureoll odoo.modules.loading: loading hr_employee_service_length/views/res_config_views.xml
+2018-11-05 12:46:03,781 18692 INFO aureoll odoo.modules.registry: module hr_holidays: creating or updating database tables
+2018-11-05 12:46:03,996 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/data/report_paperformat.xml
+2018-11-05 12:46:04,008 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/data/hr_holidays_data.xml
+2018-11-05 12:46:04,046 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/security/hr_holidays_security.xml
+2018-11-05 12:46:04,733 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/security/ir.model.access.csv
+2018-11-05 12:46:04,958 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/views/resource_views.xml
+2018-11-05 12:46:05,069 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/views/hr_holidays_views.xml
+2018-11-05 12:46:06,078 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2352]
+2018-11-05 12:46:06,149 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/views/hr_views.xml
+2018-11-05 12:46:06,394 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/wizard/hr_holidays_summary_department_views.xml
+2018-11-05 12:46:06,461 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/wizard/hr_holidays_summary_employees_views.xml
+2018-11-05 12:46:06,525 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_templates.xml
+2018-11-05 12:46:06,572 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_reports.xml
+2018-11-05 12:46:06,602 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_leaves_report_views.xml
+2018-11-05 12:46:06,687 18692 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_views.xml
+2018-11-05 12:46:07,592 18692 INFO aureoll odoo.modules.registry: module hr_payroll: creating or updating database tables
+2018-11-05 12:46:07,952 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/security/hr_payroll_security.xml
+2018-11-05 12:46:07,968 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/security/ir.model.access.csv
+2018-11-05 12:46:08,239 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/wizard/hr_payroll_payslips_by_employees_views.xml
+2018-11-05 12:46:08,316 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/views/hr_payroll_views.xml
+2018-11-05 12:46:08,801 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2586]
+2018-11-05 12:46:09,599 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2587]
+2018-11-05 12:46:09,765 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2588]
+2018-11-05 12:46:09,768 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/data/hr_payroll_sequence.xml
+2018-11-05 12:46:09,774 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/views/hr_payroll_report.xml
+2018-11-05 12:46:09,818 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2589]
+2018-11-05 12:46:09,847 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2590]
+2018-11-05 12:46:09,856 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/data/hr_payroll_data.xml
+2018-11-05 12:46:09,890 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/wizard/hr_payroll_contribution_register_report_views.xml
+2018-11-05 12:46:09,953 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/views/res_config_views.xml
+2018-11-05 12:46:10,041 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/views/report_contributionregister_templates.xml
+2018-11-05 12:46:10,089 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/views/report_payslip_templates.xml
+2018-11-05 12:46:10,135 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/views/report_payslipdetails_templates.xml
+2018-11-05 12:46:10,181 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/views/payroll_approval_templates.xml
+2018-11-05 12:46:10,362 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/report/hr_payroll_report.xml
+2018-11-05 12:46:10,395 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2591]
+2018-11-05 12:46:10,402 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/report/payroll_report_template.xml
+2018-11-05 12:46:10,452 18692 INFO aureoll odoo.modules.loading: loading hr_payroll/data/payroll_emailtemplate.xml
+2018-11-05 12:46:11,283 18692 INFO aureoll odoo.modules.registry: module hr_employee_bank: creating or updating database tables
+2018-11-05 12:46:11,317 18692 WARNING aureoll odoo.addons.base.module.module: module hr_employee_bank: description is empty !
+2018-11-05 12:46:11,321 18692 INFO aureoll odoo.modules.loading: loading hr_employee_bank/views/hr_bank.xml
+2018-11-05 12:46:11,711 18692 INFO aureoll odoo.modules.registry: module hr_employee_endofservice_benefit: creating or updating database tables
+2018-11-05 12:46:11,817 18692 WARNING aureoll odoo.addons.base.module.module: module hr_employee_endofservice_benefit: description is empty !
+2018-11-05 12:46:11,823 18692 INFO aureoll odoo.modules.loading: loading hr_employee_endofservice_benefit/views/hr_contract_type.xml
+2018-11-05 12:46:12,150 18692 INFO aureoll odoo.modules.registry: module hr_employee_name_split: creating or updating database tables
+2018-11-05 12:46:12,257 18692 WARNING aureoll odoo.addons.base.module.module: module hr_employee_name_split: description is empty !
+2018-11-05 12:46:12,260 18692 INFO aureoll odoo.modules.loading: loading hr_employee_name_split/views/hr_employee.xml
+2018-11-05 12:46:12,677 18692 INFO aureoll odoo.modules.registry: module hr_payroll_allowance: creating or updating database tables
+2018-11-05 12:46:12,777 18692 WARNING aureoll odoo.addons.base.module.module: module hr_payroll_allowance: description is empty !
+2018-11-05 12:46:12,780 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/views/hr_payroll_allowance.xml
+2018-11-05 12:46:12,999 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/views/hr_contract.xml
+2018-11-05 12:46:13,071 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/security/ir.model.access.csv
+2018-11-05 12:46:13,231 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/security/ir_rule.xml
+2018-11-05 12:46:13,520 18692 INFO aureoll odoo.modules.registry: module hr_payroll_chatter: creating or updating database tables
+2018-11-05 12:46:13,607 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_chatter/payslip_view.xml
+2018-11-05 12:46:14,020 18692 INFO aureoll odoo.modules.registry: module hr_payslip_run_button_box: creating or updating database tables
+2018-11-05 12:46:14,061 18692 WARNING aureoll odoo.addons.base.module.module: module hr_payslip_run_button_box: description is empty !
+2018-11-05 12:46:14,064 18692 INFO aureoll odoo.modules.loading: loading hr_payslip_run_button_box/views/hr_payslip_run.xml
+2018-11-05 12:46:14,426 18692 INFO aureoll odoo.modules.registry: module hr_period: creating or updating database tables
+2018-11-05 12:46:14,599 18692 WARNING aureoll odoo.addons.base.module.module: module hr_period: description is empty !
+2018-11-05 12:46:14,603 18692 INFO aureoll odoo.modules.loading: loading hr_period/data/ir_sequence_data.xml
+2018-11-05 12:46:14,609 18692 INFO aureoll odoo.modules.loading: loading hr_period/security/ir.model.access.csv
+2018-11-05 12:46:14,716 18692 INFO aureoll odoo.modules.loading: loading hr_period/views/menu.xml
+2018-11-05 12:46:14,729 18692 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_period_view.xml
+2018-11-05 12:46:14,931 18692 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_fiscalyear_view.xml
+2018-11-05 12:46:15,107 18692 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_payslip_view.xml
+2018-11-05 12:46:15,275 18692 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_payslip_run_view.xml
+2018-11-05 12:46:15,459 18692 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_payslip_employee_view.xml
+2018-11-05 12:46:15,534 18692 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_contract_view.xml
+2018-11-05 12:46:16,008 18692 WARNING aureoll odoo.fields: Field hr.payroll.advice.line.bysal: parameter 'digits_compute' is no longer supported; use 'digits' instead.
+2018-11-05 12:46:16,192 18692 INFO aureoll odoo.modules.registry: module hr_payroll_advice: creating or updating database tables
+2018-11-05 12:46:16,342 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/security/ir.model.access.csv
+2018-11-05 12:46:16,496 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/hr_payroll_advice_report.xml
+2018-11-05 12:46:16,553 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2592]
+2018-11-05 12:46:16,561 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/data/hr_payroll_advice_sequence.xml
+2018-11-05 12:46:16,566 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/report_payrolladvice.xml
+2018-11-05 12:46:16,621 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/wizard/print_run_advice_view.xml
+2018-11-05 12:46:16,684 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payroll_advice.xml
+2018-11-05 12:46:16,879 18692 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2593]
+2018-11-05 12:46:16,882 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payslip_run.xml
+2018-11-05 12:46:17,040 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payslip.xml
+2018-11-05 12:46:17,120 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payroll_advice_line.xml
+2018-11-05 12:46:17,215 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/report_payslip.xml
+2018-11-05 12:46:17,274 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/report_payslipdetails.xml
+2018-11-05 12:46:17,815 18692 INFO aureoll odoo.modules.registry: module hr_payroll_email_slip: creating or updating database tables
+2018-11-05 12:46:17,907 18692 WARNING aureoll odoo.addons.base.module.module: module hr_payroll_email_slip: description is empty !
+2018-11-05 12:46:17,910 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_email_slip/views/hr_payslip_view.xml
+2018-11-05 12:46:18,041 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_email_slip/views/hr_payslip_run_view.xml
+2018-11-05 12:46:18,211 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_email_slip/data/payslip_emailtemplate.xml
+2018-11-05 12:46:18,568 18692 INFO aureoll odoo.modules.registry: module hr_payslip_amendment: creating or updating database tables
+2018-11-05 12:46:18,708 18692 WARNING aureoll odoo.addons.base.module.module: module hr_payslip_amendment: description is empty !
+2018-11-05 12:46:18,711 18692 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_amendment_category_view.xml
+2018-11-05 12:46:18,858 18692 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_amendment_view.xml
+2018-11-05 12:46:19,045 18692 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_amendment_workflow.xml
+2018-11-05 12:46:19,091 18692 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_view.xml
+2018-11-05 12:46:19,176 18692 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_run.xml
+2018-11-05 12:46:19,275 18692 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/security/ir.model.access.csv
+2018-11-05 12:46:19,844 18692 INFO aureoll odoo.modules.registry: module hr_payroll_loan: creating or updating database tables
+2018-11-05 12:46:20,029 18692 WARNING aureoll odoo.addons.base.module.module: module hr_payroll_loan: description is empty !
+2018-11-05 12:46:20,032 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/menu.xml
+2018-11-05 12:46:20,093 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_payroll_loan_type.xml
+2018-11-05 12:46:20,205 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_payroll_loan.xml
+2018-11-05 12:46:20,382 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_employee.xml
+2018-11-05 12:46:20,481 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_payslip_run_view.xml
+2018-11-05 12:46:20,580 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/security/ir.model.access.csv
+2018-11-05 12:46:20,722 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/data/hr_payroll_loan_sequence.xml
+2018-11-05 12:46:20,727 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/report_payslip.xml
+2018-11-05 12:46:20,782 18692 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/report_payslipdetails.xml
+2018-11-05 12:46:21,143 18692 INFO aureoll odoo.modules.loading: 47 modules loaded in 51.65s, 87 queries
+2018-11-05 12:46:21,144 18692 WARNING aureoll odoo.modules.graph: module mail_cc_group: not installable, skipped
+2018-11-05 12:46:21,145 18692 WARNING aureoll odoo.modules.graph: module hr_employee_contract_history: not installable, skipped
+2018-11-05 12:46:21,146 18692 WARNING aureoll odoo.modules.graph: module hr_employment_termination: not installable, skipped
+2018-11-05 12:46:21,149 18692 WARNING aureoll odoo.modules.graph: module hr_employee_onboarding: not installable, skipped
+2018-11-05 12:46:21,151 18692 ERROR aureoll odoo.modules.graph: module aureol: Unmet dependencies: hr_employee_onboarding
+2018-11-05 12:46:21,197 18692 INFO aureoll odoo.modules.loading: loading 47 modules...
+2018-11-05 12:46:21,197 18692 INFO aureoll odoo.modules.loading: 47 modules loaded in 0.00s, 0 queries
+2018-11-05 12:46:21,199 18692 WARNING aureoll odoo.modules.graph: module mail_cc_group: not installable, skipped
+2018-11-05 12:46:21,200 18692 WARNING aureoll odoo.modules.graph: module hr_employee_contract_history: not installable, skipped
+2018-11-05 12:46:21,201 18692 WARNING aureoll odoo.modules.graph: module hr_employment_termination: not installable, skipped
+2018-11-05 12:46:21,203 18692 WARNING aureoll odoo.modules.graph: module hr_employee_onboarding: not installable, skipped
+2018-11-05 12:46:21,205 18692 ERROR aureoll odoo.modules.graph: module aureol: Unmet dependencies: hr_employee_onboarding
+2018-11-05 12:46:21,247 18692 INFO aureoll odoo.modules.loading: loading 47 modules...
+2018-11-05 12:46:21,247 18692 INFO aureoll odoo.modules.loading: 47 modules loaded in 0.00s, 0 queries
+2018-11-05 12:46:21,479 18692 WARNING aureoll odoo.modules.loading: The model hr.endofservice.rule has no access rules, consider adding one. E.g. access_hr_endofservice_rule,access_hr_endofservice_rule,model_hr_endofservice_rule,,1,0,0,0
+2018-11-05 12:46:21,608 18692 WARNING aureoll odoo.modules.loading: Model report.hr_payroll.report_payroll is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,610 18692 WARNING aureoll odoo.modules.loading: Model hr.employee.termination.reason is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,611 18692 WARNING aureoll odoo.modules.loading: Model hr.employment.end is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,611 18692 WARNING aureoll odoo.modules.loading: Model hr.employee.termination is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,612 18692 WARNING aureoll odoo.modules.loading: Model report.aureol_payroll_report is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,613 18692 WARNING aureoll odoo.modules.loading: Model report.aureol.payroll_report_template is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,613 18692 WARNING aureoll odoo.modules.loading: Model report.aureol.nassit_report_template is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,613 18692 WARNING aureoll odoo.modules.loading: Model report.aureol.nra_report_template is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:46:21,802 18692 INFO aureoll odoo.modules.loading: Modules loaded.
+2018-11-05 12:46:21,814 18692 INFO aureoll odoo.addons.base.ir.ir_http: Generating routing map
+2018-11-05 12:46:22,193 18692 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-11-05 12:47:00,286 18692 WARNING ? odoo.addons.base.ir.ir_cron: Skipping database aureoll because of modules to install/upgrade/remove.
+2018-11-05 12:47:00,289 18692 WARNING ? odoo.addons.base.ir.ir_cron: Skipping database aureoll because of modules to install/upgrade/remove.
+2018-11-05 12:47:12,197 18692 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:47:12] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:47:35,517 18692 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:47:35] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:48:01,298 18692 WARNING ? odoo.addons.base.ir.ir_cron: Skipping database aureoll because of modules to install/upgrade/remove.
+2018-11-05 12:48:01,344 18692 WARNING ? odoo.addons.base.ir.ir_cron: Skipping database aureoll because of modules to install/upgrade/remove.
+2018-11-05 12:48:04,483 18692 INFO aureoll odoo.service.server: Initiating shutdown
+2018-11-05 12:48:04,483 18692 INFO aureoll odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-11-05 12:48:06,095 19187 INFO ? odoo: Odoo version 10.0
+2018-11-05 12:48:06,096 19187 INFO ? odoo: Using configuration file at /srv/Byte-Core/.conf/conf.conf
+2018-11-05 12:48:06,096 19187 INFO ? odoo: addons paths: ['/home/nebula/.local/share/Odoo/addons/10.0', u'/srv/Byte-Core/odoo/addons', u'/srv/Byte-Core/addons', u'/srv/Byte-Core/custom/school', u'/srv/Byte-Core/custom/theme', u'/srv/Byte-Core/custom/hotel', u'/srv/Byte-Core/custom/payroll', u'/srv/Byte-Core/custom/community/noviat', u'/srv/Byte-Core/custom/misc', u'/srv/Byte-Core/custom/community/general', u'/srv/Byte-Core/custom/clients/africell', u'/srv/Byte-Core/custom/clients/pendrax', u'/srv/Byte-Core/custom/clients/aureol']
+2018-11-05 12:48:06,097 19187 INFO ? odoo: database: default@default:5432
+2018-11-05 12:48:06,112 19187 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-11-05 12:48:06,130 19187 INFO aureoll odoo.modules.loading: loading 1 modules...
+2018-11-05 12:48:06,588 19187 INFO aureoll odoo.modules.registry: module base: creating or updating database tables
+2018-11-05 12:48:08,039 19187 INFO aureoll odoo.modules.loading: loading base/res/res.lang.csv
+2018-11-05 12:48:09,072 19187 INFO aureoll odoo.modules.loading: loading base/base_data.xml
+2018-11-05 12:48:09,109 19187 INFO aureoll odoo.modules.loading: loading base/res/res_currency_data.xml
+2018-11-05 12:48:09,458 19187 INFO aureoll odoo.modules.loading: loading base/res/res_country_data.xml
+2018-11-05 12:48:09,977 19187 INFO aureoll odoo.modules.loading: loading base/security/base_security.xml
+2018-11-05 12:48:11,544 19187 INFO aureoll odoo.modules.loading: loading base/base_menu.xml
+2018-11-05 12:48:11,783 19187 INFO aureoll odoo.modules.loading: loading base/res/res_config.xml
+2018-11-05 12:48:11,863 19187 INFO aureoll odoo.modules.loading: loading base/res/res.country.state.csv
+2018-11-05 12:48:14,729 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_actions.xml
+2018-11-05 12:48:15,795 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_config_parameter_view.xml
+2018-11-05 12:48:15,933 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_cron_view.xml
+2018-11-05 12:48:16,122 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_filters.xml
+2018-11-05 12:48:16,273 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_mail_server_view.xml
+2018-11-05 12:48:16,419 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_model_view.xml
+2018-11-05 12:48:17,306 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_attachment_view.xml
+2018-11-05 12:48:17,469 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_rule_view.xml
+2018-11-05 12:48:17,636 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_sequence_view.xml
+2018-11-05 12:48:17,797 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_translation_view.xml
+2018-11-05 12:48:17,993 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_ui_menu_view.xml
+2018-11-05 12:48:18,155 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_ui_view_view.xml
+2018-11-05 12:48:18,445 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_values_view.xml
+2018-11-05 12:48:18,668 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_autovacuum.xml
+2018-11-05 12:48:18,684 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_model_report.xml
+2018-11-05 12:48:18,715 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2597]
+2018-11-05 12:48:18,723 19187 INFO aureoll odoo.modules.loading: loading base/ir/report_ir_model.xml
+2018-11-05 12:48:18,771 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_logging_view.xml
+2018-11-05 12:48:18,917 19187 INFO aureoll odoo.modules.loading: loading base/ir/ir_qweb.xml
+2018-11-05 12:48:18,962 19187 INFO aureoll odoo.modules.loading: loading base/workflow/workflow_view.xml
+2018-11-05 12:48:19,731 19187 INFO aureoll odoo.modules.loading: loading base/module/module_view.xml
+2018-11-05 12:48:20,075 19187 INFO aureoll odoo.modules.loading: loading base/module/module_data.xml
+2018-11-05 12:48:21,724 19187 INFO aureoll odoo.modules.loading: loading base/module/module_report.xml
+2018-11-05 12:48:21,749 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2598]
+2018-11-05 12:48:21,759 19187 INFO aureoll odoo.modules.loading: loading base/module/report/report_ir_module_reference.xml
+2018-11-05 12:48:21,807 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_update_view.xml
+2018-11-05 12:48:21,874 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_language_install_view.xml
+2018-11-05 12:48:21,989 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_import_language_view.xml
+2018-11-05 12:48:22,059 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_upgrade_view.xml
+2018-11-05 12:48:22,186 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_configuration_view.xml
+2018-11-05 12:48:22,239 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_export_language_view.xml
+2018-11-05 12:48:22,316 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_update_translations_view.xml
+2018-11-05 12:48:22,392 19187 INFO aureoll odoo.modules.loading: loading base/module/wizard/base_module_immediate_install.xml
+2018-11-05 12:48:22,421 19187 INFO aureoll odoo.modules.loading: loading base/res/res_company_view.xml
+2018-11-05 12:48:22,578 19187 INFO aureoll odoo.modules.loading: loading base/res/res_request_view.xml
+2018-11-05 12:48:22,730 19187 INFO aureoll odoo.modules.loading: loading base/res/res_lang_view.xml
+2018-11-05 12:48:22,889 19187 INFO aureoll odoo.modules.loading: loading base/res/res_partner_view.xml
+2018-11-05 12:48:23,474 19187 INFO aureoll odoo.modules.loading: loading base/res/res_bank_view.xml
+2018-11-05 12:48:23,718 19187 INFO aureoll odoo.modules.loading: loading base/res/res_country_view.xml
+2018-11-05 12:48:24,016 19187 INFO aureoll odoo.modules.loading: loading base/res/res_currency_view.xml
+2018-11-05 12:48:24,390 19187 INFO aureoll odoo.modules.loading: loading base/res/res_users_view.xml
+2018-11-05 12:48:24,497 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2599]
+2018-11-05 12:48:25,497 19187 INFO aureoll odoo.modules.loading: loading base/res/res_partner_data.xml
+2018-11-05 12:48:25,511 19187 INFO aureoll odoo.modules.loading: loading base/res/ir_property_view.xml
+2018-11-05 12:48:25,654 19187 INFO aureoll odoo.modules.loading: loading base/res/res_security.xml
+2018-11-05 12:48:25,673 19187 INFO aureoll odoo.modules.loading: loading base/security/ir.model.access.csv
+2018-11-05 12:48:31,171 19187 INFO aureoll odoo.modules.loading: 1 modules loaded in 25.04s, 0 queries
+2018-11-05 12:48:31,251 19187 INFO aureoll odoo.modules.loading: updating modules list
+2018-11-05 12:48:32,900 19187 INFO ? odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-11-05 12:48:33,300 19187 WARNING ? odoo.addons.hr_payroll_management_xls: report_xlsx_helpers not available in addons path
+2018-11-05 12:48:33,343 19187 ERROR ? root: Failed to import fintech
+2018-11-05 12:48:33,345 19187 ERROR ? root: Failed to import fintech
+2018-11-05 12:48:33,349 19187 ERROR ? root: Failed to import fintech
+2018-11-05 12:48:33,351 19187 ERROR ? root: Failed to import fintech
+2018-11-05 12:48:33,647 19187 INFO ? odoo.http: HTTP Configuring static files
+2018-11-05 12:48:37,084 19187 INFO aureoll odoo.modules.loading: loading 52 modules...
+2018-11-05 12:48:37,160 19187 INFO aureoll odoo.modules.registry: module hr_tools_aureol: creating or updating database tables
+2018-11-05 12:48:37,191 19187 WARNING aureoll odoo.addons.base.module.module: module hr_tools_aureol: description is empty !
+2018-11-05 12:48:37,191 19187 INFO aureoll odoo.modules.loading: loading hr_tools_aureol/wizard/hr_tool_view.xml
+2018-11-05 12:48:37,417 19187 INFO aureoll odoo.modules.registry: module auth_crypt: creating or updating database tables
+2018-11-05 12:48:37,443 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:48:37,580 19187 INFO aureoll odoo.modules.registry: module decimal_precision: creating or updating database tables
+2018-11-05 12:48:37,629 19187 INFO aureoll odoo.modules.loading: loading decimal_precision/views/decimal_precision_views.xml
+2018-11-05 12:48:37,746 19187 INFO aureoll odoo.modules.loading: loading decimal_precision/security/ir.model.access.csv
+2018-11-05 12:48:37,966 19187 INFO aureoll odoo.modules.registry: module resource: creating or updating database tables
+2018-11-05 12:48:38,011 19187 WARNING aureoll odoo.models.schema: Table 'resource_resource': unable to set a NOT NULL constraint on column 'name' !
+If you want to have it, you should update the records and execute manually:
+ALTER TABLE resource_resource ALTER COLUMN name SET NOT NULL
+2018-11-05 12:48:38,060 19187 INFO aureoll odoo.modules.loading: loading resource/security/ir.model.access.csv
+2018-11-05 12:48:38,214 19187 INFO aureoll odoo.modules.loading: loading resource/security/resource_security.xml
+2018-11-05 12:48:38,218 19187 INFO aureoll odoo.modules.loading: loading resource/views/resource_views.xml
+2018-11-05 12:48:38,564 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2600]
+2018-11-05 12:48:38,586 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2601]
+2018-11-05 12:48:39,114 19187 INFO aureoll odoo.modules.registry: module utm: creating or updating database tables
+2018-11-05 12:48:39,172 19187 INFO aureoll odoo.modules.loading: loading utm/security/ir.model.access.csv
+2018-11-05 12:48:39,312 19187 INFO aureoll odoo.modules.loading: loading utm/views/utm.xml
+2018-11-05 12:48:39,660 19187 INFO aureoll odoo.modules.loading: loading utm/data/utm_data.xml
+2018-11-05 12:48:39,912 19187 INFO aureoll odoo.modules.registry: module web: creating or updating database tables
+2018-11-05 12:48:39,941 19187 INFO aureoll odoo.modules.loading: loading web/views/webclient_templates.xml
+2018-11-05 12:48:40,763 19187 INFO aureoll odoo.modules.registry: module bus: creating or updating database tables
+2018-11-05 12:48:40,808 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:48:40,880 19187 INFO aureoll odoo.modules.loading: loading bus/views/bus.xml
+2018-11-05 12:48:40,944 19187 INFO aureoll odoo.modules.loading: loading bus/security/ir.model.access.csv
+2018-11-05 12:48:41,152 19187 INFO aureoll odoo.modules.registry: module document: creating or updating database tables
+2018-11-05 12:48:41,200 19187 INFO aureoll odoo.modules.loading: loading document/views/document_templates.xml
+2018-11-05 12:48:41,391 19187 INFO aureoll odoo.modules.registry: module web_calendar: creating or updating database tables
+2018-11-05 12:48:41,411 19187 INFO aureoll odoo.modules.loading: loading web_calendar/views/web_calendar_templates.xml
+2018-11-05 12:48:41,615 19187 INFO aureoll odoo.modules.registry: module web_diagram: creating or updating database tables
+2018-11-05 12:48:41,637 19187 INFO aureoll odoo.modules.loading: loading web_diagram/views/web_diagram_templates.xml
+2018-11-05 12:48:41,888 19187 INFO aureoll odoo.modules.registry: module web_editor: creating or updating database tables
+2018-11-05 12:48:42,042 19187 INFO aureoll odoo.modules.loading: loading web_editor/security/ir.model.access.csv
+2018-11-05 12:48:42,097 19187 INFO aureoll odoo.modules.loading: loading web_editor/views/editor.xml
+2018-11-05 12:48:42,586 19187 INFO aureoll odoo.modules.loading: loading web_editor/views/iframe.xml
+2018-11-05 12:48:42,668 19187 INFO aureoll odoo.modules.loading: loading web_editor/views/snippets.xml
+2018-11-05 12:48:43,022 19187 INFO aureoll odoo.modules.registry: module web_kanban: creating or updating database tables
+2018-11-05 12:48:43,048 19187 INFO aureoll odoo.modules.loading: loading web_kanban/views/web_kanban_templates.xml
+2018-11-05 12:48:43,288 19187 INFO aureoll odoo.modules.registry: module web_planner: creating or updating database tables
+2018-11-05 12:48:43,328 19187 INFO aureoll odoo.modules.loading: loading web_planner/security/ir.model.access.csv
+2018-11-05 12:48:43,406 19187 INFO aureoll odoo.modules.loading: loading web_planner/security/web_planner_security.xml
+2018-11-05 12:48:43,466 19187 INFO aureoll odoo.modules.loading: loading web_planner/views/web_planner_templates.xml
+2018-11-05 12:48:43,714 19187 INFO aureoll odoo.modules.loading: loading web_planner/views/web_planner_views.xml
+2018-11-05 12:48:44,060 19187 INFO aureoll odoo.modules.registry: module web_responsive: creating or updating database tables
+2018-11-05 12:48:44,084 19187 INFO aureoll odoo.modules.loading: loading web_responsive/views/assets.xml
+2018-11-05 12:48:44,238 19187 INFO aureoll odoo.modules.loading: loading web_responsive/views/web.xml
+2018-11-05 12:48:44,748 19187 INFO aureoll odoo.modules.registry: module web_tour: creating or updating database tables
+2018-11-05 12:48:44,805 19187 INFO aureoll odoo.modules.loading: loading web_tour/security/ir.model.access.csv
+2018-11-05 12:48:44,838 19187 INFO aureoll odoo.modules.loading: loading web_tour/views/tour_templates.xml
+2018-11-05 12:48:44,984 19187 INFO aureoll odoo.modules.loading: loading web_tour/views/tour_views.xml
+2018-11-05 12:48:45,342 19187 INFO aureoll odoo.modules.registry: module base_import: creating or updating database tables
+2018-11-05 12:48:45,508 19187 INFO aureoll odoo.modules.loading: loading base_import/security/ir.model.access.csv
+2018-11-05 12:48:45,825 19187 INFO aureoll odoo.modules.loading: loading base_import/views/base_import_templates.xml
+2018-11-05 12:48:46,094 19187 INFO aureoll odoo.modules.registry: module base_setup: creating or updating database tables
+2018-11-05 12:48:46,143 19187 INFO aureoll odoo.modules.loading: loading base_setup/views/res_config_views.xml
+2018-11-05 12:48:46,258 19187 INFO aureoll odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2018-11-05 12:48:46,487 19187 INFO aureoll odoo.modules.registry: module web_kanban_gauge: creating or updating database tables
+2018-11-05 12:48:46,516 19187 INFO aureoll odoo.modules.loading: loading web_kanban_gauge/views/web_kanban_gauge_templates.xml
+2018-11-05 12:48:46,802 19187 INFO aureoll odoo.modules.registry: module web_settings_dashboard: creating or updating database tables
+2018-11-05 12:48:46,826 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:48:46,856 19187 INFO aureoll odoo.modules.loading: loading web_settings_dashboard/views/dashboard_views.xml
+2018-11-05 12:48:46,890 19187 INFO aureoll odoo.modules.loading: loading web_settings_dashboard/views/dashboard_templates.xml
+2018-11-05 12:48:47,279 19187 INFO aureoll odoo.modules.registry: module mail: creating or updating database tables
+2018-11-05 12:48:47,573 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:48:47,802 19187 INFO aureoll odoo.modules.loading: loading mail/wizard/invite_view.xml
+2018-11-05 12:48:47,866 19187 INFO aureoll odoo.modules.loading: loading mail/wizard/mail_compose_message_view.xml
+2018-11-05 12:48:47,954 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2603]
+2018-11-05 12:48:47,958 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2018-11-05 12:48:48,078 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_tracking_views.xml
+2018-11-05 12:48:48,244 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_message_views.xml
+2018-11-05 12:48:48,459 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2018-11-05 12:48:48,623 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2018-11-05 12:48:48,733 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_channel_views.xml
+2018-11-05 12:48:49,063 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_shortcode_views.xml
+2018-11-05 12:48:49,157 19187 INFO aureoll odoo.modules.loading: loading mail/views/res_config_views.xml
+2018-11-05 12:48:49,228 19187 INFO aureoll odoo.modules.loading: loading mail/data/mail_data.xml
+2018-11-05 12:48:49,262 19187 INFO aureoll odoo.modules.loading: loading mail/data/mail_channel_data.xml
+2018-11-05 12:48:49,271 19187 INFO aureoll odoo.modules.loading: loading mail/data/mail_shortcode_data.xml
+2018-11-05 12:48:49,362 19187 INFO aureoll odoo.modules.loading: loading mail/security/mail_security.xml
+2018-11-05 12:48:49,372 19187 INFO aureoll odoo.modules.loading: loading mail/security/ir.model.access.csv
+2018-11-05 12:48:50,167 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2018-11-05 12:48:50,315 19187 INFO aureoll odoo.modules.loading: loading mail/views/res_users_views.xml
+2018-11-05 12:48:50,551 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_templates.xml
+2018-11-05 12:48:50,747 19187 INFO aureoll odoo.modules.loading: loading mail/wizard/email_template_preview_view.xml
+2018-11-05 12:48:50,806 19187 INFO aureoll odoo.modules.loading: loading mail/views/mail_template_views.xml
+2018-11-05 12:48:50,949 19187 INFO aureoll odoo.modules.loading: loading mail/views/ir_actions_views.xml
+2018-11-05 12:48:51,121 19187 INFO aureoll odoo.modules.loading: loading mail/views/res_partner_views.xml
+2018-11-05 12:48:51,282 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2625]
+2018-11-05 12:48:52,432 19187 INFO aureoll odoo.modules.registry: module report: creating or updating database tables
+2018-11-05 12:48:52,571 19187 INFO aureoll odoo.modules.loading: loading report/data/report_paperformat_data.xml
+2018-11-05 12:48:52,589 19187 INFO aureoll odoo.modules.loading: loading report/security/ir.model.access.csv
+2018-11-05 12:48:52,659 19187 INFO aureoll odoo.modules.loading: loading report/views/layout_templates.xml
+2018-11-05 12:48:53,056 19187 INFO aureoll odoo.modules.loading: loading report/views/report_paperformat_views.xml
+2018-11-05 12:48:53,284 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2604]
+2018-11-05 12:48:53,320 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2605]
+2018-11-05 12:48:53,329 19187 INFO aureoll odoo.modules.loading: loading report/views/report_templates.xml
+2018-11-05 12:48:53,439 19187 INFO aureoll odoo.modules.loading: loading report/views/base_config_settings_views.xml
+2018-11-05 12:48:53,509 19187 INFO aureoll odoo.modules.loading: loading report/views/ir_actions_report_views.xml
+2018-11-05 12:48:54,095 19187 INFO aureoll odoo.modules.registry: module auth_signup: creating or updating database tables
+2018-11-05 12:48:54,194 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:48:54,227 19187 INFO aureoll odoo.modules.loading: loading auth_signup/data/auth_signup_data.xml
+2018-11-05 12:48:54,240 19187 INFO aureoll odoo.modules.loading: loading auth_signup/views/res_config_views.xml
+2018-11-05 12:48:54,338 19187 INFO aureoll odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2018-11-05 12:48:54,467 19187 INFO aureoll odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2018-11-05 12:48:54,985 19187 INFO aureoll odoo.modules.registry: module base_action_rule: creating or updating database tables
+2018-11-05 12:48:55,090 19187 INFO aureoll odoo.modules.loading: loading base_action_rule/security/ir.model.access.csv
+2018-11-05 12:48:55,213 19187 INFO aureoll odoo.modules.loading: loading base_action_rule/data/base_action_rule_data.xml
+2018-11-05 12:48:55,219 19187 INFO aureoll odoo.modules.loading: loading base_action_rule/views/base_action_rule_view.xml
+2018-11-05 12:48:55,838 19187 INFO aureoll odoo.modules.registry: module fetchmail: creating or updating database tables
+2018-11-05 12:48:55,915 19187 INFO aureoll odoo.modules.loading: loading fetchmail/data/fetchmail_data.xml
+2018-11-05 12:48:55,920 19187 INFO aureoll odoo.modules.loading: loading fetchmail/security/ir.model.access.csv
+2018-11-05 12:48:55,974 19187 INFO aureoll odoo.modules.loading: loading fetchmail/views/fetchmail_views.xml
+2018-11-05 12:48:56,311 19187 INFO aureoll odoo.modules.loading: loading fetchmail/views/mail_mail_views.xml
+2018-11-05 12:48:56,429 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2606]
+2018-11-05 12:48:56,807 19187 INFO aureoll odoo.modules.registry: module hr: creating or updating database tables
+2018-11-05 12:48:56,991 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:48:57,075 19187 INFO aureoll odoo.modules.loading: loading hr/security/hr_security.xml
+2018-11-05 12:48:57,899 19187 INFO aureoll odoo.modules.loading: loading hr/security/ir.model.access.csv
+2018-11-05 12:48:58,130 19187 INFO aureoll odoo.modules.loading: loading hr/views/hr_views.xml
+2018-11-05 12:48:58,917 19187 INFO aureoll odoo.modules.loading: loading hr/views/hr_templates.xml
+2018-11-05 12:48:59,046 19187 INFO aureoll odoo.modules.loading: loading hr/data/hr_data.xml
+2018-11-05 12:48:59,554 19187 INFO aureoll odoo.modules.registry: module mail_cc_group: creating or updating database tables
+2018-11-05 12:48:59,918 19187 INFO aureoll odoo.modules.registry: module product: creating or updating database tables
+2018-11-05 12:49:00,344 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:49:00,385 19187 INFO aureoll odoo.modules.loading: loading product/data/product_data.xml
+2018-11-05 12:49:00,454 19187 INFO aureoll odoo.modules.loading: loading product/security/product_security.xml
+2018-11-05 12:49:01,888 19187 INFO aureoll odoo.modules.loading: loading product/security/ir.model.access.csv
+2018-11-05 12:49:02,252 19187 INFO aureoll odoo.modules.loading: loading product/wizard/product_price_list_views.xml
+2018-11-05 12:49:02,318 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2607]
+2018-11-05 12:49:02,322 19187 INFO aureoll odoo.modules.loading: loading product/views/base_config_settings_views.xml
+2018-11-05 12:49:02,405 19187 INFO aureoll odoo.modules.loading: loading product/views/product_attribute_views.xml
+2018-11-05 12:49:02,650 19187 INFO aureoll odoo.modules.loading: loading product/views/product_uom_views.xml
+2018-11-05 12:49:02,806 19187 INFO aureoll odoo.modules.loading: loading product/views/product_views.xml
+2018-11-05 12:49:03,084 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [111, 112, 113]
+2018-11-05 12:49:03,639 19187 INFO aureoll odoo.modules.loading: loading product/views/product_template_views.xml
+2018-11-05 12:49:03,831 19187 INFO aureoll odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2018-11-05 12:49:04,125 19187 INFO aureoll odoo.modules.loading: loading product/views/res_partner_views.xml
+2018-11-05 12:49:04,220 19187 INFO aureoll odoo.modules.loading: loading product/report/product_reports.xml
+2018-11-05 12:49:04,246 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2608]
+2018-11-05 12:49:04,275 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2609]
+2018-11-05 12:49:04,303 19187 INFO aureoll odoo.modules.loading: loading product/report/product_pricelist_templates.xml
+2018-11-05 12:49:04,359 19187 INFO aureoll odoo.modules.loading: loading product/report/product_product_templates.xml
+2018-11-05 12:49:04,448 19187 INFO aureoll odoo.modules.loading: loading product/report/product_template_templates.xml
+2018-11-05 12:49:05,402 19187 INFO aureoll odoo.modules.registry: module calendar: creating or updating database tables
+2018-11-05 12:49:05,646 19187 INFO aureoll odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-05 12:49:05,746 19187 INFO aureoll odoo.modules.loading: loading calendar/security/ir.model.access.csv
+2018-11-05 12:49:06,039 19187 INFO aureoll odoo.modules.loading: loading calendar/security/calendar_security.xml
+2018-11-05 12:49:06,052 19187 INFO aureoll odoo.modules.loading: loading calendar/data/calendar_cron.xml
+2018-11-05 12:49:06,058 19187 INFO aureoll odoo.modules.loading: loading calendar/data/calendar_data.xml
+2018-11-05 12:49:06,097 19187 INFO aureoll odoo.modules.loading: loading calendar/views/calendar_templates.xml
+2018-11-05 12:49:06,291 19187 INFO aureoll odoo.modules.loading: loading calendar/views/calendar_views.xml
+2018-11-05 12:49:07,243 19187 INFO aureoll odoo.modules.registry: module hr_contract: creating or updating database tables
+2018-11-05 12:49:07,381 19187 INFO aureoll odoo.modules.loading: loading hr_contract/security/ir.model.access.csv
+2018-11-05 12:49:07,570 19187 INFO aureoll odoo.modules.loading: loading hr_contract/data/hr_contract_data.xml
+2018-11-05 12:49:07,606 19187 INFO aureoll odoo.modules.loading: loading hr_contract/views/base_action_rule_views.xml
+2018-11-05 12:49:07,806 19187 INFO aureoll odoo.modules.loading: loading hr_contract/views/hr_contract_views.xml
+2018-11-05 12:49:08,699 19187 INFO aureoll odoo.modules.registry: module hr_employee_config_setting: creating or updating database tables
+2018-11-05 12:49:08,742 19187 INFO aureoll odoo.modules.loading: loading hr_employee_config_setting/res_config_view.xml
+2018-11-05 12:49:09,062 19187 INFO aureoll odoo.modules.registry: module portal: creating or updating database tables
+2018-11-05 12:49:09,140 19187 INFO aureoll odoo.modules.loading: loading portal/data/portal_data.xml
+2018-11-05 12:49:09,148 19187 INFO aureoll odoo.modules.loading: loading portal/views/portal_views.xml
+2018-11-05 12:49:09,278 19187 INFO aureoll odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2018-11-05 12:49:09,298 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2610]
+2018-11-05 12:49:09,354 19187 INFO aureoll odoo.modules.loading: loading portal/security/ir.model.access.csv
+2018-11-05 12:49:09,676 19187 INFO aureoll odoo.modules.registry: module procurement: creating or updating database tables
+2018-11-05 12:49:09,781 19187 INFO aureoll odoo.modules.loading: loading procurement/security/ir.model.access.csv
+2018-11-05 12:49:09,868 19187 INFO aureoll odoo.modules.loading: loading procurement/security/procurement_security.xml
+2018-11-05 12:49:09,874 19187 INFO aureoll odoo.modules.loading: loading procurement/data/procurement_data.xml
+2018-11-05 12:49:09,881 19187 INFO aureoll odoo.modules.loading: loading procurement/wizard/procurement_order_compute_all_views.xml
+2018-11-05 12:49:09,959 19187 INFO aureoll odoo.modules.loading: loading procurement/views/procurement_views.xml
+2018-11-05 12:49:10,366 19187 INFO aureoll odoo.modules.loading: loading procurement/views/product_views.xml
+2018-11-05 12:49:10,930 19187 INFO aureoll odoo.modules.registry: module hr_contract_reference: creating or updating database tables
+2018-11-05 12:49:10,990 19187 WARNING aureoll odoo.addons.base.module.module: module hr_contract_reference: description is empty !
+2018-11-05 12:49:10,993 19187 INFO aureoll odoo.modules.loading: loading hr_contract_reference/data/hr_contract_sequence.xml
+2018-11-05 12:49:11,224 19187 INFO aureoll odoo.modules.registry: module hr_employee_contract_history: creating or updating database tables
+2018-11-05 12:49:11,338 19187 INFO aureoll odoo.modules.loading: loading hr_employee_contract_history/views/hr_contract_view.xml
+2018-11-05 12:49:11,505 19187 INFO aureoll odoo.modules.loading: loading hr_employee_contract_history/data/hr_contract_cron.xml
+2018-11-05 12:49:11,790 19187 INFO aureoll odoo.modules.registry: module hr_employee_service_length: creating or updating database tables
+2018-11-05 12:49:11,910 19187 WARNING aureoll odoo.addons.base.module.module: module hr_employee_service_length: description is empty !
+2018-11-05 12:49:11,913 19187 INFO aureoll odoo.modules.loading: loading hr_employee_service_length/views/hr_employee.xml
+2018-11-05 12:49:12,080 19187 INFO aureoll odoo.modules.loading: loading hr_employee_service_length/views/res_company.xml
+2018-11-05 12:49:12,146 19187 INFO aureoll odoo.modules.loading: loading hr_employee_service_length/views/res_config_views.xml
+2018-11-05 12:49:12,576 19187 INFO aureoll odoo.modules.registry: module hr_holidays: creating or updating database tables
+2018-11-05 12:49:12,799 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/data/report_paperformat.xml
+2018-11-05 12:49:12,810 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/data/hr_holidays_data.xml
+2018-11-05 12:49:12,851 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/security/hr_holidays_security.xml
+2018-11-05 12:49:13,539 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/security/ir.model.access.csv
+2018-11-05 12:49:13,753 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/views/resource_views.xml
+2018-11-05 12:49:13,865 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/views/hr_holidays_views.xml
+2018-11-05 12:49:14,870 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2611]
+2018-11-05 12:49:14,939 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/views/hr_views.xml
+2018-11-05 12:49:15,193 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/wizard/hr_holidays_summary_department_views.xml
+2018-11-05 12:49:15,256 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/wizard/hr_holidays_summary_employees_views.xml
+2018-11-05 12:49:15,321 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_templates.xml
+2018-11-05 12:49:15,377 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_reports.xml
+2018-11-05 12:49:15,405 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_leaves_report_views.xml
+2018-11-05 12:49:15,486 19187 INFO aureoll odoo.modules.loading: loading hr_holidays/report/hr_holidays_views.xml
+2018-11-05 12:49:16,380 19187 INFO aureoll odoo.modules.registry: module hr_employment_termination: creating or updating database tables
+2018-11-05 12:49:16,514 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/security/ir.model.access.csv
+2018-11-05 12:49:16,645 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/wizard/end_employment_view.xml
+2018-11-05 12:49:16,718 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/data/hr_employee_data.xml
+2018-11-05 12:49:16,744 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/data/cron.xml
+2018-11-05 12:49:16,760 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/views/hr_employee.xml
+2018-11-05 12:49:16,921 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/views/hr_employee_termination.xml
+2018-11-05 12:49:17,085 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/views/hr_employee_termination_reason.xml
+2018-11-05 12:49:17,113 19187 INFO aureoll odoo.modules.loading: loading hr_employment_termination/data/email_template.xml
+2018-11-05 12:49:17,541 19187 INFO aureoll odoo.modules.registry: module hr_payroll: creating or updating database tables
+2018-11-05 12:49:17,904 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/security/hr_payroll_security.xml
+2018-11-05 12:49:17,917 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/security/ir.model.access.csv
+2018-11-05 12:49:18,168 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/wizard/hr_payroll_payslips_by_employees_views.xml
+2018-11-05 12:49:18,251 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/views/hr_payroll_views.xml
+2018-11-05 12:49:18,739 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2612]
+2018-11-05 12:49:19,512 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2613]
+2018-11-05 12:49:19,680 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2614]
+2018-11-05 12:49:19,684 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/data/hr_payroll_sequence.xml
+2018-11-05 12:49:19,690 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/views/hr_payroll_report.xml
+2018-11-05 12:49:19,733 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2615]
+2018-11-05 12:49:19,766 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2616]
+2018-11-05 12:49:19,774 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/data/hr_payroll_data.xml
+2018-11-05 12:49:19,808 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/wizard/hr_payroll_contribution_register_report_views.xml
+2018-11-05 12:49:19,871 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/views/res_config_views.xml
+2018-11-05 12:49:19,951 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/views/report_contributionregister_templates.xml
+2018-11-05 12:49:19,998 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/views/report_payslip_templates.xml
+2018-11-05 12:49:20,049 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/views/report_payslipdetails_templates.xml
+2018-11-05 12:49:20,095 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/views/payroll_approval_templates.xml
+2018-11-05 12:49:20,289 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/report/hr_payroll_report.xml
+2018-11-05 12:49:20,319 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2617]
+2018-11-05 12:49:20,327 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/report/payroll_report_template.xml
+2018-11-05 12:49:20,380 19187 INFO aureoll odoo.modules.loading: loading hr_payroll/data/payroll_emailtemplate.xml
+2018-11-05 12:49:21,249 19187 INFO aureoll odoo.modules.registry: module hr_employee_bank: creating or updating database tables
+2018-11-05 12:49:21,287 19187 WARNING aureoll odoo.addons.base.module.module: module hr_employee_bank: description is empty !
+2018-11-05 12:49:21,290 19187 INFO aureoll odoo.modules.loading: loading hr_employee_bank/views/hr_bank.xml
+2018-11-05 12:49:21,664 19187 INFO aureoll odoo.modules.registry: module hr_employee_endofservice_benefit: creating or updating database tables
+2018-11-05 12:49:21,776 19187 WARNING aureoll odoo.addons.base.module.module: module hr_employee_endofservice_benefit: description is empty !
+2018-11-05 12:49:21,780 19187 INFO aureoll odoo.modules.loading: loading hr_employee_endofservice_benefit/views/hr_contract_type.xml
+2018-11-05 12:49:22,190 19187 INFO aureoll odoo.modules.registry: module hr_employee_name_split: creating or updating database tables
+2018-11-05 12:49:22,294 19187 WARNING aureoll odoo.addons.base.module.module: module hr_employee_name_split: description is empty !
+2018-11-05 12:49:22,297 19187 INFO aureoll odoo.modules.loading: loading hr_employee_name_split/views/hr_employee.xml
+2018-11-05 12:49:22,727 19187 INFO aureoll odoo.modules.registry: module hr_employee_onboarding: creating or updating database tables
+2018-11-05 12:49:22,848 19187 INFO aureoll odoo.modules.loading: loading hr_employee_onboarding/views/hr_view.xml
+2018-11-05 12:49:23,314 19187 INFO aureoll odoo.modules.registry: module hr_payroll_allowance: creating or updating database tables
+2018-11-05 12:49:23,420 19187 WARNING aureoll odoo.addons.base.module.module: module hr_payroll_allowance: description is empty !
+2018-11-05 12:49:23,424 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/views/hr_payroll_allowance.xml
+2018-11-05 12:49:23,567 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/views/hr_contract.xml
+2018-11-05 12:49:23,649 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/security/ir.model.access.csv
+2018-11-05 12:49:23,799 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_allowance/security/ir_rule.xml
+2018-11-05 12:49:24,117 19187 INFO aureoll odoo.modules.registry: module hr_payroll_chatter: creating or updating database tables
+2018-11-05 12:49:24,205 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_chatter/payslip_view.xml
+2018-11-05 12:49:24,613 19187 INFO aureoll odoo.modules.registry: module hr_payslip_run_button_box: creating or updating database tables
+2018-11-05 12:49:24,648 19187 WARNING aureoll odoo.addons.base.module.module: module hr_payslip_run_button_box: description is empty !
+2018-11-05 12:49:24,652 19187 INFO aureoll odoo.modules.loading: loading hr_payslip_run_button_box/views/hr_payslip_run.xml
+2018-11-05 12:49:25,022 19187 INFO aureoll odoo.modules.registry: module hr_period: creating or updating database tables
+2018-11-05 12:49:25,193 19187 WARNING aureoll odoo.addons.base.module.module: module hr_period: description is empty !
+2018-11-05 12:49:25,196 19187 INFO aureoll odoo.modules.loading: loading hr_period/data/ir_sequence_data.xml
+2018-11-05 12:49:25,203 19187 INFO aureoll odoo.modules.loading: loading hr_period/security/ir.model.access.csv
+2018-11-05 12:49:25,310 19187 INFO aureoll odoo.modules.loading: loading hr_period/views/menu.xml
+2018-11-05 12:49:25,325 19187 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_period_view.xml
+2018-11-05 12:49:25,518 19187 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_fiscalyear_view.xml
+2018-11-05 12:49:25,693 19187 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_payslip_view.xml
+2018-11-05 12:49:25,863 19187 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_payslip_run_view.xml
+2018-11-05 12:49:26,065 19187 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_payslip_employee_view.xml
+2018-11-05 12:49:26,126 19187 INFO aureoll odoo.modules.loading: loading hr_period/views/hr_contract_view.xml
+2018-11-05 12:49:26,605 19187 WARNING aureoll odoo.fields: Field hr.payroll.advice.line.bysal: parameter 'digits_compute' is no longer supported; use 'digits' instead.
+2018-11-05 12:49:26,770 19187 INFO aureoll odoo.modules.registry: module hr_payroll_advice: creating or updating database tables
+2018-11-05 12:49:26,929 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/security/ir.model.access.csv
+2018-11-05 12:49:27,165 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/hr_payroll_advice_report.xml
+2018-11-05 12:49:27,218 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2618]
+2018-11-05 12:49:27,225 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/data/hr_payroll_advice_sequence.xml
+2018-11-05 12:49:27,234 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/report_payrolladvice.xml
+2018-11-05 12:49:27,285 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/wizard/print_run_advice_view.xml
+2018-11-05 12:49:27,345 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payroll_advice.xml
+2018-11-05 12:49:27,543 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2619]
+2018-11-05 12:49:27,546 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payslip_run.xml
+2018-11-05 12:49:27,687 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payslip.xml
+2018-11-05 12:49:27,773 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/hr_payroll_advice_line.xml
+2018-11-05 12:49:27,858 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/report_payslip.xml
+2018-11-05 12:49:27,912 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_advice/views/report_payslipdetails.xml
+2018-11-05 12:49:28,464 19187 INFO aureoll odoo.modules.registry: module hr_payroll_email_slip: creating or updating database tables
+2018-11-05 12:49:28,567 19187 WARNING aureoll odoo.addons.base.module.module: module hr_payroll_email_slip: description is empty !
+2018-11-05 12:49:28,571 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_email_slip/views/hr_payslip_view.xml
+2018-11-05 12:49:28,681 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_email_slip/views/hr_payslip_run_view.xml
+2018-11-05 12:49:28,772 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_email_slip/data/payslip_emailtemplate.xml
+2018-11-05 12:49:29,130 19187 INFO aureoll odoo.modules.registry: module hr_payslip_amendment: creating or updating database tables
+2018-11-05 12:49:29,270 19187 WARNING aureoll odoo.addons.base.module.module: module hr_payslip_amendment: description is empty !
+2018-11-05 12:49:29,274 19187 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_amendment_category_view.xml
+2018-11-05 12:49:29,421 19187 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_amendment_view.xml
+2018-11-05 12:49:29,615 19187 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_amendment_workflow.xml
+2018-11-05 12:49:29,655 19187 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_view.xml
+2018-11-05 12:49:29,740 19187 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/views/hr_payslip_run.xml
+2018-11-05 12:49:29,830 19187 INFO aureoll odoo.modules.loading: loading hr_payslip_amendment/security/ir.model.access.csv
+2018-11-05 12:49:30,421 19187 INFO aureoll odoo.modules.registry: module aureol: creating or updating database tables
+2018-11-05 12:49:30,454 19187 WARNING aureoll odoo.models.schema: Table 'hr_employee': unable to set a NOT NULL constraint on column 'gender' !
+If you want to have it, you should update the records and execute manually:
+ALTER TABLE hr_employee ALTER COLUMN gender SET NOT NULL
+2018-11-05 12:49:30,563 19187 WARNING aureoll odoo.addons.base.module.module: module aureol: description is empty !
+2018-11-05 12:49:30,569 19187 INFO aureoll odoo.modules.loading: loading aureol/views/hr_employee.xml
+2018-11-05 12:49:30,727 19187 INFO aureoll odoo.modules.loading: loading aureol/report/reports.xml
+2018-11-05 12:49:30,751 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2594]
+2018-11-05 12:49:30,783 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2595]
+2018-11-05 12:49:30,811 19187 INFO aureoll odoo.models.unlink: User #1 deleted ir.values records with IDs: [2596]
+2018-11-05 12:49:30,817 19187 INFO aureoll odoo.modules.loading: loading aureol/report/nassit_report_template.xml
+2018-11-05 12:49:30,866 19187 INFO aureoll odoo.modules.loading: loading aureol/report/nra_report_template.xml
+2018-11-05 12:49:30,912 19187 INFO aureoll odoo.modules.loading: loading aureol/report/payroll_report_template.xml
+2018-11-05 12:49:31,338 19187 INFO aureoll odoo.modules.registry: module hr_payroll_loan: creating or updating database tables
+2018-11-05 12:49:31,359 19187 WARNING aureoll odoo.models.schema: Table 'hr_employee': unable to set a NOT NULL constraint on column 'gender' !
+If you want to have it, you should update the records and execute manually:
+ALTER TABLE hr_employee ALTER COLUMN gender SET NOT NULL
+2018-11-05 12:49:31,532 19187 WARNING aureoll odoo.addons.base.module.module: module hr_payroll_loan: description is empty !
+2018-11-05 12:49:31,536 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/menu.xml
+2018-11-05 12:49:31,602 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_payroll_loan_type.xml
+2018-11-05 12:49:31,707 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_payroll_loan.xml
+2018-11-05 12:49:31,878 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_employee.xml
+2018-11-05 12:49:31,993 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/hr_payslip_run_view.xml
+2018-11-05 12:49:32,100 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/security/ir.model.access.csv
+2018-11-05 12:49:32,251 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/data/hr_payroll_loan_sequence.xml
+2018-11-05 12:49:32,258 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/report_payslip.xml
+2018-11-05 12:49:32,316 19187 INFO aureoll odoo.modules.loading: loading hr_payroll_loan/views/report_payslipdetails.xml
+2018-11-05 12:49:32,777 19187 INFO aureoll odoo.modules.loading: 52 modules loaded in 55.69s, 87 queries
+2018-11-05 12:49:33,008 19187 WARNING aureoll odoo.modules.loading: The model hr.endofservice.rule has no access rules, consider adding one. E.g. access_hr_endofservice_rule,access_hr_endofservice_rule,model_hr_endofservice_rule,,1,0,0,0
+2018-11-05 12:49:33,146 19187 WARNING aureoll odoo.modules.loading: Model report.hr_payroll.report_payroll is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:49:33,151 19187 WARNING aureoll odoo.modules.loading: Model report.aureol_payroll_report is declared but cannot be loaded! (Perhaps a module was partially removed or renamed)
+2018-11-05 12:49:33,353 19187 INFO aureoll odoo.modules.loading: Modules loaded.
+2018-11-05 12:49:33,372 19187 INFO aureoll odoo.addons.base.ir.ir_http: Generating routing map
+2018-11-05 12:49:33,772 19187 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
