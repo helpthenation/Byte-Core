@@ -33,7 +33,7 @@ Payroll Advice
     - Payroll Advice and Report
     """,
     'data': [
-        #'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'hr_payroll_advice_report.xml',
         'data/hr_payroll_advice_sequence.xml',
         'views/report_payrolladvice.xml',

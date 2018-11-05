@@ -38,9 +38,10 @@ Generic Payroll system.
         'views/report_contributionregister_templates.xml',
         'views/report_payslip_templates.xml',
         'views/report_payslipdetails_templates.xml',
+        'views/payroll_approval_templates.xml',
         'report/hr_payroll_report.xml',
         'report/payroll_report_template.xml',
-        #'data/payroll_emailtemplate.xml',
+        'data/payroll_emailtemplate.xml',
     ],
     'demo': ['data/hr_payroll_demo.xml'],
 }

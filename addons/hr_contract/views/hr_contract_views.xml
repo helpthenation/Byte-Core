@@ -26,14 +26,14 @@
                     </xpath>
                     <xpath expr="//field[@name='parent_id']" position="after">
                         <field name="manager" groups="base.group_no_one"/>
-                    </xpath><!--
+                    </xpath>
                     <xpath expr="//group[@name='active_group']" position="after">
                         <group string="Current Contract">
-                            <field name="medic_exam" string="Medical Exam"/>
-                            <field name="vehicle"/>
-                            <field name="vehicle_distance"/>
+                            <field name="medic_exam" string="Medical Exam" invisible="1"/>
+                            <field name="vehicle" invisible="1"/>
+                            <field name="vehicle_distance" invisible="1"/>
                         </group>
-                    </xpath>-->
+                    </xpath>
                     <xpath expr="//field[@name='marital']" position="after">
                         <field name="children"/>
                     </xpath>

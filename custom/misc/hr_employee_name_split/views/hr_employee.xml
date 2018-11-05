@@ -10,20 +10,14 @@
                     <data>
                         <field name="category_ids" position="replace"/>
                         <field name="name" position="replace">
-                            <label for="name" class="oe_edit_only"/>
                             <h4>
-                                <field name="fname" placeholder="First" />
-                                <br/>
-                                <field name="mname" placeholder="Middle"/>
-                                <br/>
-                                <field name="lname" placeholder="Last" />
-                                <!--<table>
+                                <table>
                                 <tr>
-                                <td><field name="fname" placeholder="First" style="padding-right:15px" /></td>
-                                <td><field name="mname" placeholder="Middle" style="padding-right:15px" /></td>
-                                <td><field name="lname" placeholder="Last" style="padding-right:15px" /></td>
+                                <td align="left"><field name="fname" placeholder="First" style="padding-right:15px" /></td>
+                                <td align="middle"><field name="mname" placeholder="Middle" style="padding-right:15px" /></td>
+                                <td align="right"><field name="lname" placeholder="Last" style="padding-right:15px" /></td>
                                 </tr>
-                                </table>-->
+                                </table>
                             </h4>
                         </field>
                     </data>

@@ -3,4 +3,4 @@
 
 import hr_payroll
 import res_config
-import res_company
+#import res_company

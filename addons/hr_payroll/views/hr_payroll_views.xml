@@ -4,7 +4,7 @@
 
         <menuitem id="menu_hr_payroll_root" name="Payroll" sequence="45" web_icon="hr_payroll,static/description/icon.png"/>
         <menuitem id="menu_hr_payroll_configuration" name="Configuration" parent="menu_hr_payroll_root"
-            sequence="100" groups="hr_payroll.group_hr_payroll_manager"/>
+            sequence="100" groups="hr_payroll.group_hr_payroll_user"/>
 
         <!-- Contract View -->
         <record id="hr_contract_form_inherit" model="ir.ui.view">
@@ -97,6 +97,7 @@
             id="menu_hr_payroll_structure_view"
             action="action_view_hr_payroll_structure_list_form"
             parent="menu_hr_payroll_configuration"
+            groups="base.group_system"
             sequence="2"
         />
         <record id="action_view_hr_payroll_structure_tree" model="ir.actions.act_window">
@@ -110,6 +111,7 @@
             id="menu_hr_payroll_structure_tree"
             action="action_view_hr_payroll_structure_tree"
             parent="menu_hr_payroll_configuration"
+            groups="base.group_system"
             sequence="2"
         />
         <!-- End Salary structure -->
@@ -542,6 +544,7 @@
             id="menu_action_hr_contribution_register_form"
             action="action_contribution_register_form"
             parent="menu_hr_payroll_configuration"
+            groups="base.group_system"
             sequence="14"
         />
 
@@ -657,7 +660,11 @@
             <field name="search_view_id" ref="view_hr_rule_filter"/>
         </record>
 
-        <menuitem id="menu_action_hr_salary_rule_form" action="action_salary_rule_form" parent="menu_hr_payroll_configuration" sequence="12"/>
+        <menuitem id="menu_action_hr_salary_rule_form"
+                  action="action_salary_rule_form"
+                  parent="menu_hr_payroll_configuration"
+                  groups="base.group_system"
+                  sequence="12"/>
 
 
         <act_window name="All Children Rules"
@@ -709,7 +716,7 @@
                     <button string="Set to Draft" name="draft_payslip_run" type="object" states="reject" />
                     <button string="Request Approval" name="set_to_request" type="object" states="draft" class="oe_highlight"/>
                     <button string="Reject" name="set_to_request" type="object" states="reject" />
-                    <button string="Approve" name="close_payslip_run" type="object" states="request" class="oe_highlight"/>
+                    <button string="Approve" name="close_payslip_run" type="object" states="request" class="oe_highlight" groups="hr_payroll.group_hr_payroll_manager"/>
                     <button string="Notify via SMS" name="send_payment_notification" type="object" states="close" class="oe_highlight"/>
                     <field name="state" widget="statusbar"/>
                 </header>
@@ -740,7 +747,10 @@
             <field name="view_id" ref="hr_payslip_run_tree"/>
             <field name="search_view_id" ref="hr_payslip_run_filter"/>
         </record>
-        <menuitem action="action_hr_payslip_run_tree" id="menu_hr_payslip_run" parent="menu_hr_payroll_root"/>
+        <menuitem action="action_hr_payslip_run_tree"
+                  id="menu_hr_payslip_run"
+                  parent="menu_hr_payroll_root"
+                  groups="hr_payroll.group_hr_payroll_user"/>
 
         <!--  Shortcuts -->
 

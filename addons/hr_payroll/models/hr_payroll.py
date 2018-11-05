@@ -6,6 +6,10 @@ from datetime import datetime, timedelta
 from dateutil import relativedelta
 import requests
 
+import random
+import werkzeug
+from urlparse import urljoin
+
 
 import babel
 
@@ -14,6 +18,9 @@ from odoo.exceptions import UserError, ValidationError
 from odoo.tools.safe_eval import safe_eval
 
 from odoo.addons import decimal_precision as dp
+
+class ApprovalError(Exception):
+    pass
 
 
 class HrPayrollStructure(models.Model):
@@ -153,6 +160,172 @@ class HrPayslipRun(models.Model):
     currency_id = fields.Many2one('res.currency',related='company_id.currency_id', store=True, string='Currency')
     first_approver_id = fields.Many2one(comodel_name='hr.employee', string='Payroll Aproval by: ')
 
+    approval_token = fields.Char(copy=False)
+    approval_expiration = fields.Datetime(copy=False)
+    approval_valid = fields.Boolean(compute='_compute_approval_valid', string='Signup Token is Valid')
+    approval_url = fields.Char(compute='_compute_approval_url', string='Approval URL')
+    approval_note = fields.Text(string='Approval Note')
+    refuse_note = fields.Text(string='Refusal Note')
+
+    def now(self, **kwargs):
+        dt = datetime.now() + timedelta(**kwargs)
+        return fields.Datetime.to_string(dt)
+
+    def random_token(self):
+        # the token has an entropy of about 120 bits (6 bits/char * 20 chars)
+        chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+        return ''.join(random.SystemRandom().choice(chars) for i in xrange(20))
+
+    @api.multi
+    def _compute_approval_valid(self):
+        dt = self.now()
+        for run in self:
+            run.approval_valid = bool(run.approval_token) and \
+            (not run.approval_expiration or dt <= run.approval_expiration)
+
+    @api.multi
+    def _compute_approval_url(self):
+        """ proxy for function field towards actual implementation """
+        result = self._get_approval_url_for_action()
+        for run in self:
+            run.approval_url = result.get(run.id, False)
+
+    @api.multi
+    def _get_approval_url_for_action(self, action=None, view_type=None, menu_id=None, res_id=None, model=None):
+        """ generate a signup url for the given partner ids and action, possibly overriding
+            the url state components (menu_id, id, view_type) """
+
+        res = dict.fromkeys(self.ids, False)
+        base_url = self.env['ir.config_parameter'].get_param('web.base.url')
+        for run in self:
+            # when required, make sure the partner has a valid signup token
+            if self.env.context.get('approval_valid'):
+                run.approval_prepare()
+
+            route = 'approval'
+            # the parameters to encode for the query
+            query = dict(db=self.env.cr.dbname)
+
+            if run.approval_token:
+                query['token'] = run.approval_token
+            else:
+                continue        # no signup token, no user, thus no signup url!
+
+            fragment = dict()
+            base = '/web#'
+            if action == '/mail/view':
+                base = '/mail/view?'
+            elif action:
+                fragment['action'] = action
+            if view_type:
+                fragment['view_type'] = view_type
+            if menu_id:
+                fragment['menu_id'] = menu_id
+            if model:
+                fragment['model'] = model
+            if res_id:
+                fragment['res_id'] = res_id
+
+            if fragment:
+                query['redirect'] = base + werkzeug.url_encode(fragment)
+
+            res[run.id] = urljoin(base_url, "/web/%s?%s" % (route, werkzeug.url_encode(query)))
+        return res
+
+    @api.multi
+    def approval_prepare(self, expiration=False):
+        """ generate a new token for the partners with the given validity, if necessary
+            :param expiration: the expiration datetime of the token (string, optional)
+        """
+        for run in self:
+            if expiration or not run.approval_valid:
+                token = self.random_token()
+                while self._approval_retrieve_run(token):
+                    token = self.random_token()
+                run.write({'approval_token': token, 'approval_expiration': expiration})
+        return True
+
+    @api.model
+    def _approval_retrieve_run(self, token, check_validity=False, raise_exception=False):
+        """ find the partner corresponding to a token, and possibly check its validity
+            :param token: the token to resolve
+            :param check_validity: if True, also check validity
+            :param raise_exception: if True, raise exception instead of returning False
+            :return: partner (browse record) or False (if raise_exception is False)
+        """
+        run = self.search([('approval_token', '=', token)], limit=1)
+        if not run:
+            if raise_exception:
+                raise ApprovalError("Approval token '%s' is not valid" % token)
+            return False
+        if check_validity and not run.approval_valid:
+            if raise_exception:
+                raise ApprovalError("Approval token '%s' is no longer valid" % token)
+            return False
+        return run
+
+    @api.model
+    def approval_retrieve_info(self, token):
+        """ retrieve the user info about the token
+            :return: a dictionary with the user information:
+                - 'db': the name of the database
+                - 'token': the token, if token is valid
+                - 'name': the name of the partner, if token is valid
+                - 'login': the user login, if the user already exists
+                - 'email': the partner email, if the user does not exist
+        """
+        run = self._approval_retrieve_run(token, raise_exception=True)
+        res = {'db': self.env.cr.dbname}
+        if run.approval_valid:
+            res['token'] = token
+            res['name'] = run.name
+        return res
+
+
+    @api.multi
+    def set_to_request(self):
+        """ create signup token for each user, and send their signup url by email """
+        # prepare reset password signup
+        create_mode = bool(self.env.context.get('create_user'))
+
+        # no time limit for initial invitation, only for reset password
+        expiration = now(days=+30)
+
+        self.approval_prepare(expiration=expiration)
+
+        # send email to users with their signup url
+        template = self.env.ref('hr_payroll.payroll_email_template')
+        assert template._name == 'mail.template'
+        for run in self:
+            if not run.first_approver_id.work_email:
+                raise UserError(_("Cannot send email: Approver %s has no email address.") % run.first_approver_id.name)
+            template.with_context(lang=self.env.user.lang).send_mail(run.id, force_send=True, raise_exception=True)
+            #_logger.info("Password reset email sent for user <%s> to <%s>", user.login, user.email)
+
+    @api.model
+    def approve(self, note, token=None):
+        if token:
+            # signup with a token: find the corresponding partner id
+            run = self.env['hr.payslip.run']._approval_retrieve_run(token, check_validity=True, raise_exception=True)
+            # invalidate signup token
+            run.write({'approval_token': False, 'approval_expiration': False, 'approval_note': note})
+            run.close_payslip_run()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     @api.multi
     def draft_payslip_run(self):
@@ -163,36 +336,18 @@ class HrPayslipRun(models.Model):
         return self.write({'state': 'close'})
 
     @api.multi
-    def set_to_request(self):
-        self.write({'state': 'request'})
+    def set_to_requests(self):
         '''
         This function opens a window to compose an email, with email template
         message loaded by default
         '''
         self.ensure_one()
 
-        template = self.env.ref('hr_payroll.email_template_payroll')
+        template = self.env.ref('hr_payroll.payroll_email_template')
         compose_form = self.env.ref(
             'mail.email_compose_message_wizard_form')
-        self = self.with_context(
-            default_model='hr.payslip.run',
-            default_res_id=self.id,
-            default_use_template=bool(template),
-            default_template_id=template.id,
-            default_composition_mode='mass_mail',
-            default_email_from=self.company_id.email,
-            mark_so_as_sent=True,
-        )
-        return {
-            'type': 'ir.actions.act_window',
-            'view_type': 'form',
-            'view_mode': 'form',
-            'res_model': 'mail.compose.message',
-            'views': [(compose_form.id, 'form')],
-            'view_id': compose_form.id,
-            'target': 'new',
-            'context': self.env.context,
-        }
+        self.env['mail.template'].browse(template.id).send_mail(self.id)
+        self.write({'state': 'request'})
 
 
 

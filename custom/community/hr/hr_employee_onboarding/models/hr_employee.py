@@ -67,7 +67,7 @@ class HrEmployee(models.Model):
 
     @api.multi
     def unlink(self):
-        if self.filtered(lambda r: r.status != ('new', 'onboarding')):
+        if self.status not in ('new', 'onboarding', 'inactive'):
             raise ValidationError(
                 'You cannot delete an active employee record. '
                 'Please inactivate the employee instead!')

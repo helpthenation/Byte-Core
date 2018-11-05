@@ -9,8 +9,8 @@
     "data": [
         "views/hr_payroll_allowance.xml",
         'views/hr_contract.xml',
-        # 'security/ir.model.access.csv',
-        # 'security/ir_rule.xml'
+        'security/ir.model.access.csv',
+        'security/ir_rule.xml'
     ],
     'installable': True,
 }

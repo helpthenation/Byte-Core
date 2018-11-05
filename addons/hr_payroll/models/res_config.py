@@ -10,6 +10,7 @@ class HrPayrollConfigSettings(models.TransientModel):
 
     module_hr_payroll_account = fields.Boolean(string='Link your payroll to accounting system',
         help="Create journal entries from payslips")
+    '''
     first_approver_id = fields.Many2one(comodel_name='hr.employee', string='Payroll Aproval by: ')
 
     @api.model
@@ -23,3 +24,4 @@ class HrPayrollConfigSettings(models.TransientModel):
     def set_company_values(self):
         company = self.env.user.company_id
         company.first_approver_id = self.first_approver_id
+    '''

@@ -14,7 +14,7 @@
                                             <span t-esc="get_header_text(o)"/>
                                         </td>
                                     </tr>
-                                    <tr>
+                                    <tr class="bg-gray-lighter">
                                         <th>ER Number</th>
                                         <th>Est. Name</th>
                                         <th>Social Security No.</th>

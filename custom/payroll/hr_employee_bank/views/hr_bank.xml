@@ -23,7 +23,7 @@
         </record>
 
         <menuitem id="menu_banks" name="Banks" action="base.action_res_bank_form" parent="hr.menu_human_resources_configuration"
-        sequence="106"/>
+        sequence="106" groups="hr.group_hr_user"/>
         <menuitem id="menu_bank_accounts" name="Bank Accounts" action="action_partner_bank" parent="hr.menu_human_resources_configuration"
         sequence="107"/>
     </data>

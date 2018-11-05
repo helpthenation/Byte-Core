@@ -90,10 +90,7 @@
                                         </td>
                                         <td>
                                             <span t-esc="l['name']"/>
-                                        </td><!--
-                                        <td>
-                                            <span t-esc="l['empid']"/>
-                                        </td>-->
+                                        </td>
                                         <td>
                                             <span t-esc="l['acc_no']"/>
                                         </td>

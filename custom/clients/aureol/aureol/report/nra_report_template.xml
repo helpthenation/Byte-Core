@@ -41,8 +41,8 @@
                                             <span t-esc="formatLang(s['cumm_paye'], currency_obj = o.currency_id)"/>
                                         </td>
                                     </tr>
-                                    <tfoot class="bg-gray-lighter">
-                                        <tr>
+                                        <tr class="border-black bg-gray-lighter"
+                                        style="border-bottom: 1px solid black">>
                                         <th>
                                             <span t-esc="get_totals(o.slip_ids)['name']"/>
                                         </th>
@@ -59,13 +59,12 @@
                                             <span t-esc="formatLang(get_totals(o.slip_ids)['total_cumm_paye'], currency_obj = o.currency_id)"/>
                                         </th>
                                     </tr>
-                                    </tfoot>
                                 </tbody>
                             </table>
                             <br/>
                             <strong><h4> <span t-esc="get_footer_text(o)"/> <span t-esc="formatLang(get_totals(o.slip_ids)['total_paye'], currency_obj = o.currency_id)"/></h4></strong>
                             <br/>
-                            <table class="table " border="0">
+                            <table class="table">
                                 <tr>
                                 <td align="left"><span><strong><h4> Date:....................</h4></strong></span></td>
                                 <td></td>

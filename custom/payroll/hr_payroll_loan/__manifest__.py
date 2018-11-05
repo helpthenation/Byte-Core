@@ -13,8 +13,8 @@
         "views/hr_payroll_loan_type.xml",
         "views/hr_payroll_loan.xml",
         "views/hr_employee.xml",
-        #         "views/hr_payslip_run_view.xml",
-        #'security/ir.model.access.csv',
+        "views/hr_payslip_run_view.xml",
+        'security/ir.model.access.csv',
         'data/hr_payroll_loan_sequence.xml',
         'views/report_payslip.xml',
         'views/report_payslipdetails.xml'

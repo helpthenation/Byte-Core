@@ -58,6 +58,7 @@
         <menuitem action="action_hr_payslip_amendment_category"
                   id="menu_hr_payslip_amendment_category"
                   parent="hr_payroll.menu_hr_payroll_configuration"
+                  groups="hr_payroll.group_hr_payroll_user"
                    sequence="20"/>
     </data>
 </odoo>

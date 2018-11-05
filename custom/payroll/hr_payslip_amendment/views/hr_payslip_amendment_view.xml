@@ -110,7 +110,9 @@
             </field>
         </record>
         <menuitem action="action_payslip_amendment" id="menu_payslip_amendment"
-                  parent="hr_payroll.menu_hr_payroll_root" sequence="20"/>
+                  parent="hr_payroll.menu_hr_payroll_root"
+                  groups="hr_payroll.group_hr_payroll_user"
+                  sequence="20"/>
 
         <record id="action_payslip_amendment_1" model="ir.actions.act_window">
             <field name="name">Amendments</field>

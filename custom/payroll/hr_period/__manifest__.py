@@ -31,7 +31,7 @@
     ],
     'data': [
         'data/ir_sequence_data.xml',
-        #'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
         'views/menu.xml',
         'views/hr_period_view.xml',
         'views/hr_fiscalyear_view.xml',

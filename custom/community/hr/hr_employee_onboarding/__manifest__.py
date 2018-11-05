@@ -31,8 +31,7 @@ Track the HR status of employees.
     """,
     'author': 'Michael Telahun Makonnen>',
     'depends': [
-        'hr_payroll', 'hr_employment_termination', 'hr_recruitment',
-        'hr_employee_id'
+        'hr_payroll', 'hr_employment_termination'
     ],
     'data': [
         'views/hr_view.xml',

@@ -37,7 +37,7 @@
         'views/hr_payslip_amendment_workflow.xml',
         'views/hr_payslip_view.xml',
         'views/hr_payslip_run.xml',
-        #'security/ir.model.access.csv'
+        'security/ir.model.access.csv'
     ],
     'installable': True,
 }
