@@ -6,14 +6,20 @@
                 <t t-call="report.external_layout">
                     <t t-foreach="objects" t-as="o">
                         <div class="page">
-
+                            <strong>
+                            <center>
+                            GOVERNMENT OF SIERRA LEONE
+                            <br/>
+                            INCOME TAX DEPARTMENT
+                            </center>
+                            RETURN BY EMPLOYER INCOME TAX DEDUCTION FROM EMPLOYEES REMUNERATION, SECTION 23 OF INCOME TAX ACT 2000
+                            <br/>
+                            MONTH ENDED: <span t-esc="get_footer_text(o)[-1]"/>
+                            <br/>
+                            EMPLOYER'S NAME: AUREOL INSURANCE COMPANY LIMITED
+                            </strong>
                             <table class="table table-bordered mb64">
                                 <thead>
-                                    <tr>
-                                        <td colspan="10" align="middle">
-                                            <span t-esc="get_header_text(o)"/>
-                                        </td>
-                                    </tr>
                                     <tr>
                                         <th>Employee's Name</th>
                                         <th>Gross Emolument for the month</th>
@@ -42,7 +48,7 @@
                                         </td>
                                     </tr>
                                         <tr class="border-black bg-gray-lighter"
-                                        style="border-bottom: 1px solid black">>
+                                        style="border-bottom: 1px solid black">
                                         <th>
                                             <span t-esc="get_totals(o.slip_ids)['name']"/>
                                         </th>
@@ -62,11 +68,11 @@
                                 </tbody>
                             </table>
                             <br/>
-                            <strong><h4> <span t-esc="get_footer_text(o)"/> <span t-esc="formatLang(get_totals(o.slip_ids)['total_paye'], currency_obj = o.currency_id)"/></h4></strong>
+                            <strong><h4> <span t-esc="get_footer_text(o)[0]"/></h4></strong>
                             <br/>
                             <table class="table">
                                 <tr>
-                                <td align="left"><span><strong><h4> Date:....................</h4></strong></span></td>
+                                <td align="left"><span><strong><h4> Date:.............................</h4></strong></span></td>
                                 <td></td>
                                 <td  align="right"><span><strong><h4> Signature:.............................................</h4></strong></span></td>
                                 </tr>

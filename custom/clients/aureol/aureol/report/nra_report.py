@@ -14,24 +14,25 @@ class AureolNraReport(report_sxw.rml_parse):
         self.localcontext.update({
             'time': time,
             'get_month':self.get_month,
-            'get_header_text':self.get_header_text,
             'get_footer_text':self.get_footer_text,
             'get_detail':self.get_detail,
             'get_totals':self.get_totals,
 
         })
         self.context = context
-    def get_header_text(self, run_id):
-        date = run_id.date_payment
-        date_dt = datetime.strptime(date, '%Y-%m-%d')
-        return "CONTRIBUTION SCHEDULE FOR THE MONTH OF " +date_dt.strftime("%B").upper()+", "+str(date_dt.year)
 
     def get_footer_text(self, run_id):
         date = run_id.date_payment
+        day = datetime.strptime(date,'%Y-%m-%d').date().day
+        if 4 <= day <= 20 or 24 <= day <= 30:
+            suffix = "th"
+        else:
+            suffix = ["st", "nd", "rd"][day % 10 - 1]
         date_dt = datetime.strptime(date, '%Y-%m-%d')
-        return "I.........................................................hereby declare that the return is a true account " \
-               "of all deductions/refunds of income tax made from the emoluments of employees for the month ended 30TH " +date_dt.strftime("%B").upper()+", "+str(date_dt.year)\
-               +" in accordance with the table of monthly deductions and enclose cash/cheque remittance totalling "
+        month = " "+str(day)+str(suffix)+" " +date_dt.strftime("%B").upper()+", "+str(date_dt.year)
+        return ["I.........................................................hereby declare that the return is a true account " \
+               "of all deductions/refunds of income tax made from the emoluments of employees for the month ended "+ str(month)
+               +" in accordance with the table of monthly deductions and enclose cash/cheque remittance totalling ", str(month)]
 
 
     def get_month(self, run_id):
