@@ -12,9 +12,9 @@ _logger = logging.getLogger(__name__)
 
 class AuthSignupHome(Home):
 
-    @http.route('/web/approval', type='http', auth='public', website=True)
+    @http.route('/web/payroll/approve', type='http', auth='public', website=True)
     def get_run_approval(self, *args, **kw):
-        qcontext = self.get_approval_qcontext()
+        qcontext = self.get_approval_qcontext('approve')
 
         if not qcontext.get('token'):
             raise werkzeug.exceptions.NotFound()
@@ -22,7 +22,7 @@ class AuthSignupHome(Home):
         if 'error' not in qcontext and request.httprequest.method == 'POST':
             try:
                 if qcontext.get('token'):
-                    self.do_approval(qcontext)
+                    self.do_approval(qcontext, 'approve')
                     return request.render('hr_payroll.payroll_approved', qcontext)
                 else:
                     login = qcontext.get('login')
@@ -39,13 +39,40 @@ class AuthSignupHome(Home):
                 qcontext['error'] = e.message or e.name
 
         return request.render('hr_payroll.approve_approve', qcontext)
+    @http.route('/web/payroll/refuse', type='http', auth='public', website=True)
+    def get_run_refusal(self, *args, **kw):
+        qcontext = self.get_approval_qcontext('refuse')
 
-    def get_approval_qcontext(self):
+        if not qcontext.get('token'):
+            raise werkzeug.exceptions.NotFound()
+
+        if 'error' not in qcontext and request.httprequest.method == 'POST':
+            try:
+                if qcontext.get('token'):
+                    self.do_approval(qcontext, 'refuse')
+                    return request.render('hr_payroll.payroll_refused', qcontext)
+                else:
+                    login = qcontext.get('login')
+                    assert login, "No login provided."
+                    _logger.info(
+                        "Password reset attempt for <%s> by user <%s> from %s",
+                        login, request.env.user.login, request.httprequest.remote_addr)
+                    request.env['res.users'].sudo().reset_password(login)
+                    qcontext['message'] = _("An email has been sent with credentials to reset your password")
+            except SignupError:
+                qcontext['error'] = _("Could not reset your password")
+                _logger.exception('error when resetting password')
+            except Exception, e:
+                qcontext['error'] = e.message or e.name
+
+        return request.render('hr_payroll.refuse_refuse', qcontext)
+
+    def get_approval_qcontext(self, option):
         """ Shared helper returning the rendering context for signup and reset password """
         qcontext = request.params.copy()
         if qcontext.get('token'):
             try:
-                token_infos = request.env['hr.payslip.run'].sudo().approval_retrieve_info(qcontext.get('token'))
+                token_infos = request.env['hr.payslip.run'].sudo().approval_retrieve_info(qcontext.get('token'), option)
                 for k in token_infos.items():
                     qcontext.setdefault(k)
             except:
@@ -53,11 +80,11 @@ class AuthSignupHome(Home):
                 qcontext['invalid_token'] = True
         return qcontext
 
-    def do_approval(self, qcontext):
+    def do_approval(self, qcontext, option):
         """ Shared helper that creates a res.partner out of a token """
         note = qcontext['approval_note']
-        self._approve(qcontext.get('token'), note)
+        self._approve(qcontext.get('token'), option, note)
         request.env.cr.commit()
 
-    def _approve(self, token, note):
-        request.env['hr.payslip.run'].sudo().approve(note, token)
+    def _approve(self, token, option, note):
+        request.env['hr.payslip.run'].sudo().approve(note, option, token)

@@ -161,9 +161,11 @@ class HrPayslipRun(models.Model):
     first_approver_id = fields.Many2one(comodel_name='hr.employee', string='Payroll Aproval by: ')
 
     approval_token = fields.Char(copy=False)
+    refusal_token = fields.Char(copy=False)
     approval_expiration = fields.Datetime(copy=False)
-    approval_valid = fields.Boolean(compute='_compute_approval_valid', string='Signup Token is Valid')
+    approval_valid = fields.Boolean(compute='_compute_approval_valid', string='Approval Token is Valid')
     approval_url = fields.Char(compute='_compute_approval_url', string='Approval URL')
+    refusal_url = fields.Char(compute='_compute_approval_url', string='Refusal URL')
     approval_note = fields.Text(string='Approval Note')
     refuse_note = fields.Text(string='Refusal Note')
 
@@ -186,9 +188,11 @@ class HrPayslipRun(models.Model):
     @api.multi
     def _compute_approval_url(self):
         """ proxy for function field towards actual implementation """
-        result = self._get_approval_url_for_action()
+        approve_result = self._get_approval_url_for_action()
+        refuse_result = self._get_refusal_url_for_action()
         for run in self:
-            run.approval_url = result.get(run.id, False)
+            run.approval_url = approve_result.get(run.id, False)
+            run.refusal_url = refuse_result.get(run.id, False)
 
     @api.multi
     def _get_approval_url_for_action(self, action=None, view_type=None, menu_id=None, res_id=None, model=None):
@@ -202,12 +206,53 @@ class HrPayslipRun(models.Model):
             if self.env.context.get('approval_valid'):
                 run.approval_prepare()
 
-            route = 'approval'
+            route = 'payroll/approve'
             # the parameters to encode for the query
             query = dict(db=self.env.cr.dbname)
 
             if run.approval_token:
                 query['token'] = run.approval_token
+            else:
+                continue        # no signup token, no user, thus no signup url!
+
+            fragment = dict()
+            base = '/web#'
+            if action == '/mail/view':
+                base = '/mail/view?'
+            elif action:
+                fragment['action'] = action
+            if view_type:
+                fragment['view_type'] = view_type
+            if menu_id:
+                fragment['menu_id'] = menu_id
+            if model:
+                fragment['model'] = model
+            if res_id:
+                fragment['res_id'] = res_id
+
+            if fragment:
+                query['redirect'] = base + werkzeug.url_encode(fragment)
+
+            res[run.id] = urljoin(base_url, "/web/%s?%s" % (route, werkzeug.url_encode(query)))
+        return res
+    @api.multi
+    def _get_refusal_url_for_action(self, action=None, view_type=None, menu_id=None, res_id=None, model=None):
+        """ generate a signup url for the given partner ids and action, possibly overriding
+            the url state components (menu_id, id, view_type) """
+
+        res = dict.fromkeys(self.ids, False)
+        base_url = self.env['ir.config_parameter'].get_param('web.base.url')
+        for run in self:
+            # when required, make sure the partner has a valid signup token
+            if self.env.context.get('approval_valid'):
+                run.approval_prepare()
+
+            route = 'payroll/refuse'
+            # the parameters to encode for the query
+            query = dict(db=self.env.cr.dbname)
+
+            if run.refusal_token:
+                query['token'] = run.refusal_token
             else:
                 continue        # no signup token, no user, thus no signup url!
 
@@ -238,22 +283,28 @@ class HrPayslipRun(models.Model):
             :param expiration: the expiration datetime of the token (string, optional)
         """
         for run in self:
-            if expiration or not run.approval_valid:
-                token = self.random_token()
-                while self._approval_retrieve_run(token):
-                    token = self.random_token()
-                run.write({'approval_token': token, 'approval_expiration': expiration})
+            if expiration:
+                approval_token = self.random_token()
+                refusal_token = self.random_token()
+                if self._approval_retrieve_run(approval_token, 'approve'):
+                    approval_token = self.random_token()
+                if self._approval_retrieve_run(refusal_token, 'refuse'):
+                    refusal_token = self.random_token()
+                run.write({'refusal_token': refusal_token, 'approval_token': approval_token, 'approval_expiration': expiration})
         return True
 
     @api.model
-    def _approval_retrieve_run(self, token, check_validity=False, raise_exception=False):
+    def _approval_retrieve_run(self, token, option, check_validity=False, raise_exception=False):
         """ find the partner corresponding to a token, and possibly check its validity
             :param token: the token to resolve
             :param check_validity: if True, also check validity
             :param raise_exception: if True, raise exception instead of returning False
             :return: partner (browse record) or False (if raise_exception is False)
         """
-        run = self.search([('approval_token', '=', token)], limit=1)
+        if option=='approve':
+            run = self.search([('approval_token', '=', token)], limit=1)
+        if option=='refuse':
+            run = self.search([('refusal_token', '=', token)], limit=1)
         if not run:
             if raise_exception:
                 raise ApprovalError("Approval token '%s' is not valid" % token)
@@ -265,7 +316,7 @@ class HrPayslipRun(models.Model):
         return run
 
     @api.model
-    def approval_retrieve_info(self, token):
+    def approval_retrieve_info(self, token, option):
         """ retrieve the user info about the token
             :return: a dictionary with the user information:
                 - 'db': the name of the database
@@ -274,7 +325,7 @@ class HrPayslipRun(models.Model):
                 - 'login': the user login, if the user already exists
                 - 'email': the partner email, if the user does not exist
         """
-        run = self._approval_retrieve_run(token, raise_exception=True)
+        run = self._approval_retrieve_run(token, option, raise_exception=True)
         res = {'db': self.env.cr.dbname}
         if run.approval_valid:
             res['token'] = token
@@ -301,24 +352,19 @@ class HrPayslipRun(models.Model):
                 raise UserError(_("Cannot send email: Approver %s has no email address.") % run.first_approver_id.name)
             template.with_context(lang=self.env.user.lang).send_mail(run.id, force_send=True, raise_exception=True)
             #_logger.info("Password reset email sent for user <%s> to <%s>", user.login, user.email)
+        self.write({'state': 'request'})
 
     @api.model
-    def approve(self, note, token=None):
+    def approve(self, note, option, token=None):
         if token:
             # signup with a token: find the corresponding partner id
-            run = self.env['hr.payslip.run']._approval_retrieve_run(token, check_validity=True, raise_exception=True)
+            run = self.env['hr.payslip.run']._approval_retrieve_run(token, option, check_validity=True, raise_exception=True)
             # invalidate signup token
-            run.write({'approval_token': False, 'approval_expiration': False, 'approval_note': note})
-            run.close_payslip_run()
-
-
-
-
-
-
-
-
-
+            run.write({'approval_token': False, 'refusal_token': False, 'approval_expiration': False, 'approval_note': note})
+            if option=='approve':
+                run.close_payslip_run()
+            if option=='refuse':
+                run.set_to_reject()
 
 
 
@@ -333,7 +379,7 @@ class HrPayslipRun(models.Model):
 
     @api.multi
     def set_to_reject(self):
-        return self.write({'state': 'close'})
+        return self.write({'state': 'reject'})
 
     @api.multi
     def set_to_requests(self):

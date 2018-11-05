@@ -81,3 +81,4 @@ class HrPayslipRun(models.Model):
                 raise UserError(_("Cannot send email: Approver %s has no email address.") % run.first_approver_id.name)
             template.with_context(lang=self.env.user.lang).send_mail(run.id, force_send=True, raise_exception=True)
             #_logger.info("Password reset email sent for user <%s> to <%s>", user.login, user.email)
+            self.write({'state': 'request'})
