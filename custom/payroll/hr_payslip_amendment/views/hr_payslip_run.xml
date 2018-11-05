@@ -15,9 +15,6 @@
                                    widget="statinfo" string="Amendments"/>
                         </button>
                     </div>
-                    <field name="hr_period_id" position="replace">
-                        <field name="hr_period_id" required="1"/>
-                    </field>
                 </data>
             </field>
         </record>
