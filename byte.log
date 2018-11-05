@@ -4137,3 +4137,30 @@ ALTER TABLE hr_employee ALTER COLUMN gender SET NOT NULL
 2018-11-05 12:49:33,353 19187 INFO aureoll odoo.modules.loading: Modules loaded.
 2018-11-05 12:49:33,372 19187 INFO aureoll odoo.addons.base.ir.ir_http: Generating routing map
 2018-11-05 12:49:33,772 19187 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-11-05 12:50:23,781 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:50:23] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:50:47,525 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:50:47] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:51:06,287 19187 INFO aureoll odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-11-05 12:51:06,305 19187 INFO aureoll odoo.addons.base.ir.ir_cron: Starting job `Run Event Reminder`.
+2018-11-05 12:51:37,553 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:51:37] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:52:27,585 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:52:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:53:17,616 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:53:17] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:54:07,644 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:54:07] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:54:57,674 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:54:57] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:55:47,703 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:55:47] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:56:37,735 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:56:37] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:57:27,764 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:57:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:58:17,794 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:58:17] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:59:00,616 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:00] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-05 12:59:00,658 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:00] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:59:02,001 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:02] "POST /web/dataset/call_kw/hr.payslip/read HTTP/1.1" 200 -
+2018-11-05 12:59:02,083 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:02] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-05 12:59:02,111 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:02] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-05 12:59:02,137 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:02] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-11-05 12:59:02,212 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:02] "POST /web/dataset/call_kw/hr.payslip.line/fields_get HTTP/1.1" 200 -
+2018-11-05 12:59:02,236 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:02] "POST /web/dataset/call_kw/hr.payslip.line/read HTTP/1.1" 200 -
+2018-11-05 12:59:07,825 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:07] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 12:59:57,869 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 12:59:57] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 13:00:47,897 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 13:00:47] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 13:01:37,937 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 13:01:37] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 13:02:27,974 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 13:02:27] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-05 13:03:18,006 19187 INFO aureoll werkzeug: 127.0.0.1 - - [05/Nov/2018 13:03:18] "POST /longpolling/poll HTTP/1.1" 200 -

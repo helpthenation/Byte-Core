@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.conf/conf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/.conf/conf.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_payslip_amendment/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_payslip_amendment/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_payslip_amendment/hr_payslip_amendment.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_payslip_amendment/hr_payslip_amendment_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_payslip_amendment/hr_payslip_amendment_workflow.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +66,7 @@
           <entry key="sh" value="3" />
           <entry key="txt" value="5" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="502" />
+          <entry key="xml" value="503" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -88,7 +81,7 @@
           <entry key="Properties" value="1" />
           <entry key="Python" value="838" />
           <entry key="ReST" value="11" />
-          <entry key="XML" value="502" />
+          <entry key="XML" value="503" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -106,7 +99,7 @@
           <entry key="py" value="23598" />
           <entry key="txt" value="17" />
           <entry key="vmoptions" value="3" />
-          <entry key="xml" value="9967" />
+          <entry key="xml" value="9968" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -116,7 +109,7 @@
           <entry key="Log" value="32" />
           <entry key="PLAIN_TEXT" value="565" />
           <entry key="Python" value="26104" />
-          <entry key="XML" value="9967" />
+          <entry key="XML" value="9968" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -132,7 +125,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.conf/conf.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="14">
@@ -142,10 +135,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_amendment_view.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-714" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="718" column="3" selection-start-line="718" selection-start-column="3" selection-end-line="718" selection-end-column="3" />
+            <state relative-caret-position="-337">
+              <caret line="679" column="45" selection-start-line="679" selection-start-column="31" selection-end-line="679" selection-end-column="45" />
+              <folding>
+                <element signature="e#9895#18310#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -153,16 +156,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_view.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+            <state relative-caret-position="126">
+              <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_run_view.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-420" />
           </provider>
         </entry>
       </file>
@@ -175,15 +171,17 @@
         <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="19" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/views/hr_payslip_run_view.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-456" />
+            <state relative-caret-position="210">
+              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+            </state>
           </provider>
         </entry>
       </file>
@@ -208,10 +206,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>_notification_recipients</find>
-      <find>button</find>
-      <find>auth_signup.fields</find>
-      <find>_qcontext</find>
       <find>signup</find>
       <find>_signup_retrieve_partner</find>
       <find>web_login</find>
@@ -238,6 +232,10 @@
       <find>name=&quot;state&quot;</find>
       <find>manage</find>
       <find>approval</find>
+      <find>hr_payslip_run_form</find>
+      <find>hr</find>
+      <find>oe_button_box</find>
+      <find>hr.payslip.run</find>
     </findStrings>
     <replaceStrings>
       <replace>base.group_hr_user</replace>
@@ -296,7 +294,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_onboarding/__manifest__.py" />
         <option value="$PROJECT_DIR$/custom/community/hr/hr_employee_onboarding/models/hr_employee.py" />
         <option value="$PROJECT_DIR$/custom/community/general/access_apps/__manifest__.py" />
         <option value="$PROJECT_DIR$/custom/community/general/access_apps/views/access_apps.xml" />
@@ -327,7 +324,6 @@
         <option value="$PROJECT_DIR$/addons/hr_payroll/models/__init__.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/models/res_config.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/views/res_config_views.xml" />
-        <option value="$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/__init__.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/__manifest__.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/views/payroll_approval_templates.xml" />
@@ -347,6 +343,8 @@
         <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py" />
         <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml" />
         <option value="$PROJECT_DIR$/.conf/conf.conf" />
+        <option value="$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml" />
+        <option value="$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml" />
       </list>
     </option>
   </component>
@@ -391,14 +389,22 @@
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
-              <item name="hr" type="462c0819:PsiDirectoryNode" />
+              <item name="payroll" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
               <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
               <item name="custom" type="462c0819:PsiDirectoryNode" />
               <item name="payroll" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_period" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="payroll" type="462c0819:PsiDirectoryNode" />
+              <item name="hr_period" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -456,11 +462,11 @@
       <recent name="$PROJECT_DIR$/addons/hr_payroll/security" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom/payroll" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
       <recent name="$PROJECT_DIR$/custom/community" />
-      <recent name="$PROJECT_DIR$/custom/community/general" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -522,6 +528,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-18" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -534,7 +541,7 @@
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.42880794" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.37086093" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.24172185" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -791,11 +798,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/hr_holidays/data/hr_holidays_demo.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-597" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_holidays/data/report_paperformat.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1067,32 +1069,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="718" column="3" selection-start-line="718" selection-start-column="3" selection-end-line="718" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="33" lean-forward="true" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/views/hr_payslip_run_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-456" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/views/hr_fiscalyear_view.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1109,11 +1085,6 @@
         <state relative-caret-position="-1212" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_run_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_contract_reference/__manifest__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1121,6 +1092,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="14">
           <caret line="1" column="112" selection-start-line="1" selection-start-column="112" selection-end-line="1" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_amendment_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_run_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-337">
+          <caret line="679" column="45" selection-start-line="679" selection-start-column="31" selection-end-line="679" selection-end-column="45" />
+          <folding>
+            <element signature="e#9895#18310#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/views/hr_payslip_run_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
         </state>
       </provider>
     </entry>
