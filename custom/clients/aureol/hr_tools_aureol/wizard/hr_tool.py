@@ -59,17 +59,6 @@ class WizardGetRecord(models.TransientModel):
 
 
     @api.multi
-    def set_guard(self):
-        employee_object = self.env['hr.employee'].search([])
-        self.ensure_one()
-        for employee in employee_object:
-            if employee.job_id.guard_position:
-                employee.is_guard=True
-
-
-
-
-    @api.multi
     def confirm_ammend(self):
         ammend = self.env['hr.payslip.amendment']
         for amm in ammend.search([]):
