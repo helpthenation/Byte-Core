@@ -8,6 +8,7 @@
     'depends': [],
     'data': [
         'wizard/hr_tool_view.xml'
+        #'security/ir.model.access.csv'
     ],
     'installable': True,
 }
