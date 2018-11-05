@@ -409,8 +409,8 @@ class HrPayslipRun(models.Model):
                 post_data = {'api_key': api_key, 'api_secret': api_secret, 'to': to, 'from': sender,
                              'text': message
                              }
-                requests.post('https://rest.nexmo.com/sms/json', data=post_data)
-                print requests
+                #requests.post('https://rest.nexmo.com/sms/json', data=post_data)
+                pass
         return True
 
     @api.multi

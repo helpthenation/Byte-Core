@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/hr_payroll/controllers/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/addons/hr_payroll/controllers/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/hr_payroll/data/payroll_emailtemplate.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/hr_payroll/data/payroll_emailtemplate.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/hr_payroll/models/hr_payroll.py" beforeDir="false" afterPath="$PROJECT_DIR$/addons/hr_payroll/models/hr_payroll.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/hr_payroll/views/payroll_approval_templates.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/hr_payroll/views/payroll_approval_templates.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -131,11 +125,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addons/hr_payroll/controllers/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1204">
-              <caret line="86" selection-start-line="86" selection-end-line="86" />
+            <state relative-caret-position="13">
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#99#113#0" expanded="true" />
               </folding>
@@ -169,7 +163,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="23">
@@ -571,7 +565,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.3062914" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.50993377" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
       <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.79801327" />
@@ -804,21 +798,6 @@
           <url>file://$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_payslip_run.py</url>
           <line>134</line>
           <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/addons/hr_payroll/controllers/main.py</url>
-          <line>89</line>
-          <option name="timeStamp" value="303" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/addons/hr_payroll/controllers/main.py</url>
-          <line>85</line>
-          <option name="timeStamp" value="304" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/addons/hr_payroll/controllers/main.py</url>
-          <line>86</line>
-          <option name="timeStamp" value="309" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/addons/hr_payroll/models/hr_payroll.py</url>
@@ -1125,16 +1104,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/controllers/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="86" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="e#99#113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_payroll/models/hr_payroll.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1150,6 +1119,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/controllers/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="13">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#99#113#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
