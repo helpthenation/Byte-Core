@@ -62,6 +62,8 @@
                             <page sring="Product Requests">
                                 <field name="products_line_ids" context="{'default_warehouse_request_id': active_id}">
                                     <tree string="Requests" editable="bottom">
+                                        <field name="category_id"/>
+                                        <field name="sub_category_id"/>
                                         <field name="product_id"/>
                                         <field name="product_uom_qty"/>
                                     </tree>

@@ -284,7 +284,8 @@
                                type="action" attrs="{'invisible':[('type', '!=', 'product')]}">
                             <field name="qty_available" widget="statinfo" string="On Hand"/>
                         </button>
-                        <button type="action"
+
+                        <button type="action" invisible="1"
                             name="%(stock.action_stock_level_forecast_report_product)d"
                             attrs="{'invisible':[('type', '!=', 'product')]}"
                             class="oe_stat_button" icon="fa-building-o">
@@ -298,19 +299,19 @@
                                 <span class="o_stat_text">Forecasted</span>
                             </div>
                         </button>
-                       <button string="Traceability"
+                       <button string="Traceability" invisible="1"
                             type="action"
                             name= "%(act_product_stock_move_open)d"
                             attrs="{'invisible':[('type', 'not in', ['product', 'consu'])]}"
                             class="oe_stat_button" icon="fa-arrows-v"
                             groups="stock.group_stock_user"/>
-                       <button type="action"
+                       <button type="action" invisible="1"
                             name="%(product_open_orderpoint)d"
                             attrs="{'invisible':['|',('type', '!=', 'product'),('nbr_reordering_rules', '==', 1)]}"
                             class="oe_stat_button" icon="fa-refresh">
                             <field name="nbr_reordering_rules" widget="statinfo"/>
                         </button>
-                        <button name="%(product_open_orderpoint)d" type="action"
+                        <button name="%(product_open_orderpoint)d" type="action" invisible="1"
                             attrs="{'invisible':['|',('type', 'not in', ['product', 'consu']),('nbr_reordering_rules', '!=', 1)]}"
                             class="oe_stat_button" icon="fa-refresh">
                             <div class="o_form_field o_stat_info mr4">
@@ -322,7 +323,7 @@
                                 <span class="o_stat_value"><field name="reordering_max_qty"/></span>
                             </div>
                         </button>
-                       <button string="Routes" type="object"
+                       <button string="Routes" type="object" invisible="1"
                             name="action_view_routes"
                             attrs="{'invisible':[('type', '!=', 'product')]}"
                             class="oe_stat_button" icon="fa-cogs" groups="stock.group_adv_location"/>
@@ -426,10 +427,12 @@
             </p>
         </field>
     </record>
+    <!--
+    NEBULAMENU
     <menuitem id="menu_product_variant_config_stock" name="Products" action="product_template_action_product"
-        parent="stock.menu_stock_inventory_control" sequence="1"/>
-    <menuitem id="product_product_menu" name="Product Variants" action="product.product_normal_action"
-        parent="menu_stock_inventory_control" sequence="2" groups="product.group_product_variant"/>
+        parent="stock.menu_stock_inventory_control" sequence="1"  groups="product.group_product_variant" /> -->
+    <menuitem id="product_product_menu" name="Spare Parts" action="product.product_normal_action"
+        parent="stock.menu_product_in_config_stock" sequence="9"/>
 
     </data>
 </odoo>

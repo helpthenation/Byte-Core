@@ -132,11 +132,14 @@
             </field>
         </record>
 
+    <!--
+    NEBULAMENU
     <menuitem
         id="menu_stock_scrap"
         name="Scrap"
         parent="menu_stock_inventory_control"
         action="action_stock_scrap"
         sequence="99"/>
+        -->
 
 </odoo>

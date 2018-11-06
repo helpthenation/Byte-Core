@@ -3,14 +3,40 @@
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/account/views/account_menuitem.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/account/views/account_menuitem.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/procurement_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/procurement_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/product_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/product_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/stock_config_settings_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/stock_config_settings_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/stock_menu_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/stock_menu_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/stock_move_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/stock_move_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/stock_quant_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/stock_quant_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/stock_scrap_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/stock_scrap_views.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/stock_warehouse_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/stock_warehouse_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/__manifest__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/data/sequence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/menus/menus.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/departments.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/ir_ui_meni.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/ir_ui_menu.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/procurement_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/procurement_request_line.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/res_users.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/stock_location.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/security/.~lock.ir.model.access.csv#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/security/ir.model.access.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/security/security.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/product_product.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/res_users.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_department.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_procurement.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/warehouse_request.xml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +82,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="conf" value="31" />
+          <entry key="conf" value="32" />
           <entry key="css" value="10" />
           <entry key="csv" value="30" />
           <entry key="gitignore" value="4" />
@@ -69,12 +95,12 @@
           <entry key="png" value="6" />
           <entry key="po" value="2" />
           <entry key="properties" value="1" />
-          <entry key="py" value="850" />
+          <entry key="py" value="854" />
           <entry key="rst" value="11" />
           <entry key="sh" value="3" />
           <entry key="txt" value="6" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="515" />
+          <entry key="xml" value="520" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -85,11 +111,11 @@
           <entry key="JavaScript" value="18" />
           <entry key="Log" value="5" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="90" />
+          <entry key="PLAIN_TEXT" value="91" />
           <entry key="Properties" value="1" />
-          <entry key="Python" value="850" />
+          <entry key="Python" value="854" />
           <entry key="ReST" value="11" />
-          <entry key="XML" value="515" />
+          <entry key="XML" value="520" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -132,21 +158,21 @@
     <favorites_list name="Byte-Core" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="588">
               <caret line="46" column="18" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-573">
-              <caret line="13" column="72" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="72" />
+            <state relative-caret-position="9">
+              <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -154,7 +180,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-112">
+            <state relative-caret-position="56">
               <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -166,8 +192,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+            <state relative-caret-position="2044">
+              <caret line="146" column="97" selection-start-line="146" selection-end-line="147" />
             </state>
           </provider>
         </entry>
@@ -184,16 +210,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="1708">
+              <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.conf/conf.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="1" column="131" selection-start-line="1" selection-start-column="131" selection-end-line="1" selection-end-column="131" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
+            <state relative-caret-position="1134">
               <caret line="81" column="172" selection-start-line="81" selection-start-column="172" selection-end-line="81" selection-end-column="172" />
             </state>
           </provider>
@@ -202,7 +237,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
+            <state relative-caret-position="224">
               <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
             </state>
           </provider>
@@ -211,20 +246,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment_category.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
+            <state relative-caret-position="1820">
               <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="134" selection-end-column="53" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -396,52 +422,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="aureol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="aureol" type="462c0819:PsiDirectoryNode" />
-              <item name="aureol" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="aureol" type="462c0819:PsiDirectoryNode" />
-              <item name="aureol" type="462c0819:PsiDirectoryNode" />
-              <item name="report" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -520,6 +500,38 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name=".conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="addons" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -530,19 +542,19 @@
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/custom/clients/aureol/aureol/views" />
-      <recent name="$PROJECT_DIR$/custom/clients/aureol/hr_tools_aureol/security" />
-      <recent name="$PROJECT_DIR$/addons/hr_payroll" />
-      <recent name="$PROJECT_DIR$/addons/hr_payroll/views" />
-      <recent name="$PROJECT_DIR$/custom/community/general" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom/clients/africell" />
       <recent name="$PROJECT_DIR$/custom/clients/aureol/aureol/models" />
       <recent name="$PROJECT_DIR$/custom/payroll" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/addons" />
+      <recent name="$PROJECT_DIR$/custom/clients/aureol/aureol/views" />
+      <recent name="$PROJECT_DIR$/custom/clients/aureol/hr_tools_aureol/security" />
+      <recent name="$PROJECT_DIR$/addons/hr_payroll" />
+      <recent name="$PROJECT_DIR$/addons/hr_payroll/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -571,7 +583,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odoo-bin" />
-      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=aureoll -u hr_payroll,aureol,hr_payslip_amendment -d aureoll" />
+      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=africell -u all -d africell" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -604,9 +616,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -617,7 +628,7 @@
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49069247" weight="0.34768212" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.33278146" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.865894" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5093075" side_tool="true" weight="0.6456954" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -898,13 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.conf/conf.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="1" column="131" selection-start-line="1" selection-start-column="131" selection-end-line="1" selection-end-column="131" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -924,8 +928,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/stock/views/product_views.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        <state relative-caret-position="238">
+          <caret line="107" column="42" lean-forward="true" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -954,13 +958,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/hr_payslip_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/hr_payslip_run.py" />
     <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/views/hr_employee.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -989,9 +987,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="28">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1009,37 +1004,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment_category.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="134" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="588">
           <caret line="46" column="18" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-112">
+        <state relative-caret-position="56">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2044">
+          <caret line="146" column="97" selection-start-line="146" selection-end-line="147" />
         </state>
       </provider>
     </entry>
@@ -1052,29 +1037,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        <state relative-caret-position="1708">
+          <caret line="122" column="28" selection-start-line="122" selection-start-column="28" selection-end-line="122" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report_template.xml">
+    <entry file="file://$PROJECT_DIR$/.conf/conf.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-573">
-          <caret line="13" column="72" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        <state relative-caret-position="14">
+          <caret line="1" column="131" selection-start-line="1" selection-start-column="131" selection-end-line="1" selection-end-column="131" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
+        <state relative-caret-position="1134">
           <caret line="81" column="172" selection-start-line="81" selection-start-column="172" selection-end-line="81" selection-end-column="172" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment_category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1820">
+          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="134" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="62" column="33" selection-start-line="62" selection-start-column="33" selection-end-line="62" selection-end-column="33" />
         </state>
       </provider>
     </entry>

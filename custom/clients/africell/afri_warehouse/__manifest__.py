@@ -11,6 +11,7 @@
         'export_stockinfo_xls',
         'abs_warehouse_product',
         'warehouse_stock_restrictions',
+        'web_responsive',
     ],
     'data': [
         'data/sequence.xml',
