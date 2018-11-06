@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/product_product.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/product_product.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
           <entry key="sh" value="3" />
           <entry key="txt" value="5" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="294" />
+          <entry key="xml" value="295" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -80,7 +79,7 @@
           <entry key="Properties" value="1" />
           <entry key="Python" value="523" />
           <entry key="ReST" value="8" />
-          <entry key="XML" value="294" />
+          <entry key="XML" value="295" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -123,19 +122,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py">
+        <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="227">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/product_product.xml">
+        <entry file="file://$PROJECT_DIR$/addons/stock/views/product_views.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="12" column="21" selection-start-line="11" selection-end-line="14" />
+            <state relative-caret-position="100">
+              <caret line="286" column="24" selection-start-line="286" selection-start-column="24" selection-end-line="286" selection-end-column="24" />
+              <folding>
+                <element signature="n#button#1;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+                <element signature="n#button#2;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+                <element signature="n#button#3;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+                <element signature="n#button#4;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="107">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
             </state>
           </provider>
         </entry>
@@ -151,7 +165,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>country_id</find>
       <find>childre</find>
       <find>Number of Children</find>
       <find>no</find>
@@ -181,6 +194,7 @@
       <find>Update Product Quantity</find>
       <find>&lt;button</find>
       <find>_compute_leaves</find>
+      <find>open</find>
     </findStrings>
     <replaceStrings>
       <replace>ByteSchool</replace>
@@ -238,7 +252,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views/web_asset_backend_template.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/less/guard_status.less" />
         <option value="$PROJECT_DIR$/addons/hr_attendance/static/src/js/presence_widgets.js" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js" />
@@ -289,6 +302,7 @@
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/product_product.xml" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
       </list>
     </option>
   </component>
@@ -316,50 +330,19 @@
             <path>
               <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name=".conf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stock" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="afri_warehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="afri_warehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="afri_warehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stock" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
@@ -449,19 +432,19 @@
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models" />
-      <recent name="$PROJECT_DIR$/custom/payroll" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
       <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
       <recent name="$PROJECT_DIR$/custom/community" />
       <recent name="$PROJECT_DIR$/custom/community/general" />
       <recent name="$PROJECT_DIR$/custom/theme" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models" />
+      <recent name="$PROJECT_DIR$/custom/payroll" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -525,7 +508,7 @@
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -533,10 +516,10 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.6225166" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.24503312" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.36754966" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.36754966" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -713,8 +696,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/views/hr_employee_views.xml" />
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py" />
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_district.py" />
     <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/hr_employee.py" />
     <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/data/hr_employee_sequence.xml" />
@@ -758,8 +739,8 @@
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="36" selection-start-line="36" selection-end-line="36" selection-end-column="8" />
+        <state relative-caret-position="107">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
@@ -803,6 +784,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="12" column="21" selection-start-line="11" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/stock/views/product_views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="286" column="24" selection-start-line="286" selection-start-column="24" selection-end-line="286" selection-end-column="24" />
+          <folding>
+            <element signature="n#button#1;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+            <element signature="n#button#2;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+            <element signature="n#button#3;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+            <element signature="n#button#4;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>

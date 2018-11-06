@@ -284,6 +284,7 @@
                                type="action" attrs="{'invisible':[('type', '!=', 'product')]}">
                             <field name="qty_available" widget="statinfo" string="On Hand"/>
                         </button>
+
                         <button type="action"
                             name="%(stock.action_stock_level_forecast_report_product)d"
                             attrs="{'invisible':[('type', '!=', 'product')]}"

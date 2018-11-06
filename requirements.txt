@@ -43,4 +43,4 @@ xlrd==1.0.0
 cryptography==2.3
 paramiko==2.4.2
 pysftp
-
+evdev
