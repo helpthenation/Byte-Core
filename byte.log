@@ -5717,3 +5717,1723 @@ ALTER TABLE stock_location ALTER COLUMN department_id SET NOT NULL
 2018-11-06 08:55:08,409 6331 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:55:08] "POST /web/dataset/call_kw/product.pricelist.item/fields_get HTTP/1.1" 200 -
 2018-11-06 08:55:08,447 6331 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:55:08] "GET /web/image/res.partner/3/image_small HTTP/1.1" 200 -
 2018-11-06 08:55:50,208 6331 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:55:50] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 08:56:40,238 6331 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:56:40] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 08:57:11,280 6331 INFO africell odoo.service.server: Initiating shutdown
+2018-11-06 08:57:11,280 6331 INFO africell odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-11-06 08:57:12,987 8740 INFO ? odoo: Odoo version 10.0
+2018-11-06 08:57:12,987 8740 INFO ? odoo: Using configuration file at /srv/Byte-Core/.conf/africell.conf
+2018-11-06 08:57:12,988 8740 INFO ? odoo: addons paths: ['/home/nebula/.local/share/Odoo/addons/10.0', u'/srv/Byte-Core/odoo/addons', u'/srv/Byte-Core/addons', u'/srv/Byte-Core/custom/theme', u'/srv/Byte-Core/custom/community/general', u'/srv/Byte-Core/custom/clients/africell']
+2018-11-06 08:57:12,988 8740 INFO ? odoo: database: default@default:5432
+2018-11-06 08:57:13,005 8740 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-11-06 08:57:13,019 8740 INFO africell odoo.modules.loading: loading 1 modules...
+2018-11-06 08:57:13,177 8740 INFO africell odoo.modules.loading: 1 modules loaded in 0.16s, 0 queries
+2018-11-06 08:57:15,603 8740 INFO africell odoo.modules.loading: loading 45 modules...
+2018-11-06 08:57:15,811 8740 INFO africell odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-11-06 08:57:16,790 8740 INFO africell odoo.modules.registry: module stock: creating or updating database tables
+2018-11-06 08:57:18,017 8740 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 08:57:18,076 8740 INFO africell odoo.modules.loading: loading stock/security/stock_security.xml
+2018-11-06 08:57:22,628 8740 INFO africell odoo.modules.loading: loading stock/security/ir.model.access.csv
+2018-11-06 08:57:25,009 8740 INFO africell odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2018-11-06 08:57:25,215 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_forecast.xml
+2018-11-06 08:57:25,368 8740 INFO africell odoo.modules.loading: loading stock/report/stock_report_views.xml
+2018-11-06 08:57:25,406 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [543]
+2018-11-06 08:57:25,437 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [544]
+2018-11-06 08:57:25,466 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [545]
+2018-11-06 08:57:25,498 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [546]
+2018-11-06 08:57:25,527 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [547]
+2018-11-06 08:57:25,556 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [548]
+2018-11-06 08:57:25,589 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [549]
+2018-11-06 08:57:25,597 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_view.xml
+2018-11-06 08:57:25,766 8740 INFO africell odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2018-11-06 08:57:25,866 8740 INFO africell odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2018-11-06 08:57:25,916 8740 INFO africell odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2018-11-06 08:57:26,017 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2018-11-06 08:57:26,191 8740 INFO africell odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2018-11-06 08:57:26,323 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2018-11-06 08:57:26,381 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_change_product_qty_views.xml
+2018-11-06 08:57:26,452 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_picking_return_views.xml
+2018-11-06 08:57:26,530 8740 INFO africell odoo.modules.loading: loading stock/wizard/make_procurement_views.xml
+2018-11-06 08:57:26,592 8740 INFO africell odoo.modules.loading: loading stock/wizard/procurement_orderpoint_compute_views.xml
+2018-11-06 08:57:26,647 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_immediate_transfer_views.xml
+2018-11-06 08:57:26,697 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2018-11-06 08:57:26,748 8740 INFO africell odoo.modules.loading: loading stock/views/stock_scrap_views.xml
+2018-11-06 08:57:26,959 8740 INFO africell odoo.modules.loading: loading stock/views/res_partner_views.xml
+2018-11-06 08:57:27,268 8740 INFO africell odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2018-11-06 08:57:27,403 8740 INFO africell odoo.modules.loading: loading stock/views/stock_inventory_views.xml
+2018-11-06 08:57:27,815 8740 INFO africell odoo.modules.loading: loading stock/views/stock_incoterms_views.xml
+2018-11-06 08:57:27,973 8740 INFO africell odoo.modules.loading: loading stock/views/stock_production_lot_views.xml
+2018-11-06 08:57:28,163 8740 INFO africell odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2018-11-06 08:57:29,039 8740 INFO africell odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2018-11-06 08:57:29,715 8740 INFO africell odoo.modules.loading: loading stock/views/stock_location_views.xml
+2018-11-06 08:57:29,740 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [550]
+2018-11-06 08:57:30,279 8740 INFO africell odoo.modules.loading: loading stock/views/procurement_views.xml
+2018-11-06 08:57:30,603 8740 INFO africell odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2018-11-06 08:57:31,027 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [551]
+2018-11-06 08:57:31,033 8740 INFO africell odoo.modules.loading: loading stock/views/stock_move_views.xml
+2018-11-06 08:57:31,659 8740 INFO africell odoo.modules.loading: loading stock/views/stock_pack_operation_views.xml
+2018-11-06 08:57:31,896 8740 INFO africell odoo.modules.loading: loading stock/views/product_views.xml
+2018-11-06 08:57:31,972 8740 INFO africell odoo.addons.base.ir.ir_ui_view: Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+2018-11-06 08:57:31,975 8740 WARNING africell odoo.modules.loading: Transient module states were reset
+2018-11-06 08:57:31,977 8740 ERROR africell odoo.modules.registry: Failed to load registry
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:57:31,981 8740 CRITICAL africell odoo.service.server: Failed to initialize database `africell`.
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/service/server.py", line 911, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:57:40,474 8740 INFO ? odoo.http: HTTP Configuring static files
+2018-11-06 08:57:40,485 8740 INFO africell odoo.modules.loading: loading 1 modules...
+2018-11-06 08:57:40,522 8740 INFO africell odoo.modules.loading: 1 modules loaded in 0.04s, 0 queries
+2018-11-06 08:57:40,595 8740 INFO africell odoo.modules.loading: loading 45 modules...
+2018-11-06 08:57:41,633 8740 INFO africell odoo.modules.registry: module stock: creating or updating database tables
+2018-11-06 08:57:43,065 8740 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 08:57:43,125 8740 INFO africell odoo.modules.loading: loading stock/security/stock_security.xml
+2018-11-06 08:57:48,063 8740 INFO africell odoo.modules.loading: loading stock/security/ir.model.access.csv
+2018-11-06 08:57:49,757 8740 INFO africell odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2018-11-06 08:57:50,030 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_forecast.xml
+2018-11-06 08:57:50,222 8740 INFO africell odoo.modules.loading: loading stock/report/stock_report_views.xml
+2018-11-06 08:57:50,254 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [543]
+2018-11-06 08:57:50,296 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [544]
+2018-11-06 08:57:50,334 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [545]
+2018-11-06 08:57:50,364 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [546]
+2018-11-06 08:57:50,400 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [547]
+2018-11-06 08:57:50,439 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [548]
+2018-11-06 08:57:50,475 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [549]
+2018-11-06 08:57:50,486 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_view.xml
+2018-11-06 08:57:50,697 8740 INFO africell odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2018-11-06 08:57:50,840 8740 INFO africell odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2018-11-06 08:57:50,925 8740 INFO africell odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2018-11-06 08:57:51,080 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2018-11-06 08:57:51,297 8740 INFO africell odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2018-11-06 08:57:51,416 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2018-11-06 08:57:51,475 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_change_product_qty_views.xml
+2018-11-06 08:57:51,560 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_picking_return_views.xml
+2018-11-06 08:57:51,635 8740 INFO africell odoo.modules.loading: loading stock/wizard/make_procurement_views.xml
+2018-11-06 08:57:51,714 8740 INFO africell odoo.modules.loading: loading stock/wizard/procurement_orderpoint_compute_views.xml
+2018-11-06 08:57:51,786 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_immediate_transfer_views.xml
+2018-11-06 08:57:51,851 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2018-11-06 08:57:51,916 8740 INFO africell odoo.modules.loading: loading stock/views/stock_scrap_views.xml
+2018-11-06 08:57:52,208 8740 INFO africell odoo.modules.loading: loading stock/views/res_partner_views.xml
+2018-11-06 08:57:52,585 8740 INFO africell odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2018-11-06 08:57:52,718 8740 INFO africell odoo.modules.loading: loading stock/views/stock_inventory_views.xml
+2018-11-06 08:57:53,462 8740 INFO africell odoo.modules.loading: loading stock/views/stock_incoterms_views.xml
+2018-11-06 08:57:53,662 8740 INFO africell odoo.modules.loading: loading stock/views/stock_production_lot_views.xml
+2018-11-06 08:57:53,901 8740 INFO africell odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2018-11-06 08:57:54,859 8740 INFO africell odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2018-11-06 08:57:55,470 8740 INFO africell odoo.modules.loading: loading stock/views/stock_location_views.xml
+2018-11-06 08:57:55,499 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [550]
+2018-11-06 08:57:56,185 8740 INFO africell odoo.modules.loading: loading stock/views/procurement_views.xml
+2018-11-06 08:57:56,573 8740 INFO africell odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2018-11-06 08:57:57,087 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [551]
+2018-11-06 08:57:57,090 8740 INFO africell odoo.modules.loading: loading stock/views/stock_move_views.xml
+2018-11-06 08:57:57,831 8740 INFO africell odoo.modules.loading: loading stock/views/stock_pack_operation_views.xml
+2018-11-06 08:57:58,120 8740 INFO africell odoo.modules.loading: loading stock/views/product_views.xml
+2018-11-06 08:57:58,195 8740 INFO africell odoo.addons.base.ir.ir_ui_view: Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+2018-11-06 08:57:58,199 8740 WARNING africell odoo.modules.loading: Transient module states were reset
+2018-11-06 08:57:58,200 8740 ERROR africell odoo.modules.registry: Failed to load registry
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:57:58,222 8740 INFO africell odoo.modules.loading: loading 1 modules...
+2018-11-06 08:57:58,256 8740 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:57:58] "POST /longpolling/poll HTTP/1.1" 500 -
+2018-11-06 08:57:58,294 8740 ERROR africell werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 193, in run_wsgi
+    execute(self.server.app)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 181, in execute
+    application_iter = app(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/server.py", line 246, in app
+    return self.app(e, s)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 186, in application
+    return application_unproxied(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 172, in application_unproxied
+    result = handler(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1314, in __call__
+    return self.dispatch(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1288, in __call__
+    return self.app(environ, start_wrapped)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/wsgi.py", line 599, in __call__
+    return self.app(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1470, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/srv/Byte-Core/odoo/__init__.py", line 52, in registry
+    return modules.registry.Registry(database_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 59, in __new__
+    return cls.new(db_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:57:58,328 8740 INFO africell odoo.modules.loading: 1 modules loaded in 0.10s, 0 queries
+2018-11-06 08:57:58,396 8740 INFO africell odoo.modules.loading: loading 45 modules...
+2018-11-06 08:57:58,859 8740 INFO africell odoo.modules.registry: module stock: creating or updating database tables
+2018-11-06 08:58:00,276 8740 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 08:58:00,339 8740 INFO africell odoo.modules.loading: loading stock/security/stock_security.xml
+2018-11-06 08:58:05,456 8740 INFO africell odoo.modules.loading: loading stock/security/ir.model.access.csv
+2018-11-06 08:58:07,152 8740 INFO africell odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2018-11-06 08:58:07,396 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_forecast.xml
+2018-11-06 08:58:07,581 8740 INFO africell odoo.modules.loading: loading stock/report/stock_report_views.xml
+2018-11-06 08:58:07,611 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [543]
+2018-11-06 08:58:07,648 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [544]
+2018-11-06 08:58:07,684 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [545]
+2018-11-06 08:58:07,717 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [546]
+2018-11-06 08:58:07,749 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [547]
+2018-11-06 08:58:07,782 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [548]
+2018-11-06 08:58:07,816 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [549]
+2018-11-06 08:58:07,827 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_view.xml
+2018-11-06 08:58:08,016 8740 INFO africell odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2018-11-06 08:58:08,127 8740 INFO africell odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2018-11-06 08:58:08,182 8740 INFO africell odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2018-11-06 08:58:08,297 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2018-11-06 08:58:08,494 8740 INFO africell odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2018-11-06 08:58:08,606 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2018-11-06 08:58:08,663 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_change_product_qty_views.xml
+2018-11-06 08:58:08,741 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_picking_return_views.xml
+2018-11-06 08:58:08,815 8740 INFO africell odoo.modules.loading: loading stock/wizard/make_procurement_views.xml
+2018-11-06 08:58:08,890 8740 INFO africell odoo.modules.loading: loading stock/wizard/procurement_orderpoint_compute_views.xml
+2018-11-06 08:58:08,967 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_immediate_transfer_views.xml
+2018-11-06 08:58:09,040 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2018-11-06 08:58:09,098 8740 INFO africell odoo.modules.loading: loading stock/views/stock_scrap_views.xml
+2018-11-06 08:58:09,365 8740 INFO africell odoo.modules.loading: loading stock/views/res_partner_views.xml
+2018-11-06 08:58:09,725 8740 INFO africell odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2018-11-06 08:58:09,841 8740 INFO africell odoo.modules.loading: loading stock/views/stock_inventory_views.xml
+2018-11-06 08:58:10,297 8740 INFO africell odoo.modules.loading: loading stock/views/stock_incoterms_views.xml
+2018-11-06 08:58:10,531 8740 INFO africell odoo.modules.loading: loading stock/views/stock_production_lot_views.xml
+2018-11-06 08:58:10,782 8740 INFO africell odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2018-11-06 08:58:11,753 8740 INFO africell odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2018-11-06 08:58:12,322 8740 INFO africell odoo.modules.loading: loading stock/views/stock_location_views.xml
+2018-11-06 08:58:12,349 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [550]
+2018-11-06 08:58:12,974 8740 INFO africell odoo.modules.loading: loading stock/views/procurement_views.xml
+2018-11-06 08:58:13,370 8740 INFO africell odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2018-11-06 08:58:13,843 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [551]
+2018-11-06 08:58:13,847 8740 INFO africell odoo.modules.loading: loading stock/views/stock_move_views.xml
+2018-11-06 08:58:14,584 8740 INFO africell odoo.modules.loading: loading stock/views/stock_pack_operation_views.xml
+2018-11-06 08:58:14,856 8740 INFO africell odoo.modules.loading: loading stock/views/product_views.xml
+2018-11-06 08:58:14,931 8740 INFO africell odoo.addons.base.ir.ir_ui_view: Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+2018-11-06 08:58:14,933 8740 WARNING africell odoo.modules.loading: Transient module states were reset
+2018-11-06 08:58:14,934 8740 ERROR africell odoo.modules.registry: Failed to load registry
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:58:14,957 8740 INFO africell odoo.modules.loading: loading 1 modules...
+2018-11-06 08:58:14,998 8740 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:58:14] "GET /web HTTP/1.1" 500 -
+2018-11-06 08:58:15,058 8740 ERROR africell werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 193, in run_wsgi
+    execute(self.server.app)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 181, in execute
+    application_iter = app(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/server.py", line 246, in app
+    return self.app(e, s)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 186, in application
+    return application_unproxied(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 172, in application_unproxied
+    result = handler(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1314, in __call__
+    return self.dispatch(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1288, in __call__
+    return self.app(environ, start_wrapped)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/wsgi.py", line 599, in __call__
+    return self.app(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1470, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/srv/Byte-Core/odoo/__init__.py", line 52, in registry
+    return modules.registry.Registry(database_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 59, in __new__
+    return cls.new(db_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:58:15,108 8740 INFO africell odoo.modules.loading: 1 modules loaded in 0.15s, 0 queries
+2018-11-06 08:58:15,294 8740 INFO africell odoo.modules.loading: loading 45 modules...
+2018-11-06 08:58:15,959 8740 INFO africell odoo.modules.registry: module stock: creating or updating database tables
+2018-11-06 08:58:17,269 8740 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 08:58:17,345 8740 INFO africell odoo.modules.loading: loading stock/security/stock_security.xml
+2018-11-06 08:58:22,256 8740 INFO africell odoo.modules.loading: loading stock/security/ir.model.access.csv
+2018-11-06 08:58:24,012 8740 INFO africell odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2018-11-06 08:58:24,268 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_forecast.xml
+2018-11-06 08:58:24,459 8740 INFO africell odoo.modules.loading: loading stock/report/stock_report_views.xml
+2018-11-06 08:58:24,486 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [543]
+2018-11-06 08:58:24,517 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [544]
+2018-11-06 08:58:24,546 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [545]
+2018-11-06 08:58:24,575 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [546]
+2018-11-06 08:58:24,607 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [547]
+2018-11-06 08:58:24,640 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [548]
+2018-11-06 08:58:24,676 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [549]
+2018-11-06 08:58:24,685 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_view.xml
+2018-11-06 08:58:24,971 8740 INFO africell odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2018-11-06 08:58:25,124 8740 INFO africell odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2018-11-06 08:58:25,176 8740 INFO africell odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2018-11-06 08:58:25,289 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2018-11-06 08:58:25,466 8740 INFO africell odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2018-11-06 08:58:25,571 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2018-11-06 08:58:25,639 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_change_product_qty_views.xml
+2018-11-06 08:58:25,722 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_picking_return_views.xml
+2018-11-06 08:58:25,806 8740 INFO africell odoo.modules.loading: loading stock/wizard/make_procurement_views.xml
+2018-11-06 08:58:25,907 8740 INFO africell odoo.modules.loading: loading stock/wizard/procurement_orderpoint_compute_views.xml
+2018-11-06 08:58:25,977 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_immediate_transfer_views.xml
+2018-11-06 08:58:26,047 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2018-11-06 08:58:26,101 8740 INFO africell odoo.modules.loading: loading stock/views/stock_scrap_views.xml
+2018-11-06 08:58:26,405 8740 INFO africell odoo.modules.loading: loading stock/views/res_partner_views.xml
+2018-11-06 08:58:26,936 8740 INFO africell odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2018-11-06 08:58:27,068 8740 INFO africell odoo.modules.loading: loading stock/views/stock_inventory_views.xml
+2018-11-06 08:58:27,486 8740 INFO africell odoo.modules.loading: loading stock/views/stock_incoterms_views.xml
+2018-11-06 08:58:27,663 8740 INFO africell odoo.modules.loading: loading stock/views/stock_production_lot_views.xml
+2018-11-06 08:58:27,919 8740 INFO africell odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2018-11-06 08:58:28,874 8740 INFO africell odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2018-11-06 08:58:29,496 8740 INFO africell odoo.modules.loading: loading stock/views/stock_location_views.xml
+2018-11-06 08:58:29,522 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [550]
+2018-11-06 08:58:30,180 8740 INFO africell odoo.modules.loading: loading stock/views/procurement_views.xml
+2018-11-06 08:58:30,556 8740 INFO africell odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2018-11-06 08:58:31,079 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [551]
+2018-11-06 08:58:31,084 8740 INFO africell odoo.modules.loading: loading stock/views/stock_move_views.xml
+2018-11-06 08:58:31,860 8740 INFO africell odoo.modules.loading: loading stock/views/stock_pack_operation_views.xml
+2018-11-06 08:58:32,163 8740 INFO africell odoo.modules.loading: loading stock/views/product_views.xml
+2018-11-06 08:58:32,234 8740 INFO africell odoo.addons.base.ir.ir_ui_view: Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+2018-11-06 08:58:32,236 8740 WARNING africell odoo.modules.loading: Transient module states were reset
+2018-11-06 08:58:32,237 8740 ERROR africell odoo.modules.registry: Failed to load registry
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:58:32,243 8740 INFO africell odoo.modules.loading: loading 1 modules...
+2018-11-06 08:58:32,278 8740 INFO africell odoo.modules.loading: 1 modules loaded in 0.03s, 0 queries
+2018-11-06 08:58:32,293 8740 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:58:32] "POST /web/dataset/search_read HTTP/1.1" 500 -
+2018-11-06 08:58:32,319 8740 ERROR africell werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 193, in run_wsgi
+    execute(self.server.app)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 181, in execute
+    application_iter = app(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/server.py", line 246, in app
+    return self.app(e, s)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 186, in application
+    return application_unproxied(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 172, in application_unproxied
+    result = handler(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1314, in __call__
+    return self.dispatch(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1288, in __call__
+    return self.app(environ, start_wrapped)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/wsgi.py", line 599, in __call__
+    return self.app(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1470, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/srv/Byte-Core/odoo/__init__.py", line 52, in registry
+    return modules.registry.Registry(database_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 59, in __new__
+    return cls.new(db_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:58:32,364 8740 INFO africell odoo.modules.loading: loading 45 modules...
+2018-11-06 08:58:32,797 8740 INFO africell odoo.modules.registry: module stock: creating or updating database tables
+2018-11-06 08:58:34,069 8740 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 08:58:34,127 8740 INFO africell odoo.modules.loading: loading stock/security/stock_security.xml
+2018-11-06 08:58:38,866 8740 INFO africell odoo.modules.loading: loading stock/security/ir.model.access.csv
+2018-11-06 08:58:40,534 8740 INFO africell odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2018-11-06 08:58:40,781 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_forecast.xml
+2018-11-06 08:58:40,948 8740 INFO africell odoo.modules.loading: loading stock/report/stock_report_views.xml
+2018-11-06 08:58:40,973 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [543]
+2018-11-06 08:58:41,008 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [544]
+2018-11-06 08:58:41,048 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [545]
+2018-11-06 08:58:41,083 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [546]
+2018-11-06 08:58:41,111 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [547]
+2018-11-06 08:58:41,141 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [548]
+2018-11-06 08:58:41,173 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [549]
+2018-11-06 08:58:41,182 8740 INFO africell odoo.modules.loading: loading stock/report/report_stock_view.xml
+2018-11-06 08:58:41,355 8740 INFO africell odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2018-11-06 08:58:41,454 8740 INFO africell odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2018-11-06 08:58:41,507 8740 INFO africell odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2018-11-06 08:58:41,614 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2018-11-06 08:58:41,887 8740 INFO africell odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2018-11-06 08:58:41,992 8740 INFO africell odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2018-11-06 08:58:42,046 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_change_product_qty_views.xml
+2018-11-06 08:58:42,107 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_picking_return_views.xml
+2018-11-06 08:58:42,172 8740 INFO africell odoo.modules.loading: loading stock/wizard/make_procurement_views.xml
+2018-11-06 08:58:42,239 8740 INFO africell odoo.modules.loading: loading stock/wizard/procurement_orderpoint_compute_views.xml
+2018-11-06 08:58:42,304 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_immediate_transfer_views.xml
+2018-11-06 08:58:42,349 8740 INFO africell odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2018-11-06 08:58:42,398 8740 INFO africell odoo.modules.loading: loading stock/views/stock_scrap_views.xml
+2018-11-06 08:58:42,628 8740 INFO africell odoo.modules.loading: loading stock/views/res_partner_views.xml
+2018-11-06 08:58:42,955 8740 INFO africell odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2018-11-06 08:58:43,073 8740 INFO africell odoo.modules.loading: loading stock/views/stock_inventory_views.xml
+2018-11-06 08:58:43,473 8740 INFO africell odoo.modules.loading: loading stock/views/stock_incoterms_views.xml
+2018-11-06 08:58:43,636 8740 INFO africell odoo.modules.loading: loading stock/views/stock_production_lot_views.xml
+2018-11-06 08:58:43,852 8740 INFO africell odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2018-11-06 08:58:44,714 8740 INFO africell odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2018-11-06 08:58:45,236 8740 INFO africell odoo.modules.loading: loading stock/views/stock_location_views.xml
+2018-11-06 08:58:45,268 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [550]
+2018-11-06 08:58:45,823 8740 INFO africell odoo.modules.loading: loading stock/views/procurement_views.xml
+2018-11-06 08:58:46,169 8740 INFO africell odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2018-11-06 08:58:46,581 8740 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [551]
+2018-11-06 08:58:46,586 8740 INFO africell odoo.modules.loading: loading stock/views/stock_move_views.xml
+2018-11-06 08:58:47,259 8740 INFO africell odoo.modules.loading: loading stock/views/stock_pack_operation_views.xml
+2018-11-06 08:58:47,509 8740 INFO africell odoo.modules.loading: loading stock/views/product_views.xml
+2018-11-06 08:58:47,577 8740 INFO africell odoo.addons.base.ir.ir_ui_view: Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+2018-11-06 08:58:47,579 8740 WARNING africell odoo.modules.loading: Transient module states were reset
+2018-11-06 08:58:47,580 8740 ERROR africell odoo.modules.registry: Failed to load registry
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 08:58:47,587 8740 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 08:58:47] "GET /web HTTP/1.1" 500 -
+2018-11-06 08:58:47,608 8740 ERROR africell werkzeug: Error on request:
+Traceback (most recent call last):
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 193, in run_wsgi
+    execute(self.server.app)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/serving.py", line 181, in execute
+    application_iter = app(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/server.py", line 246, in app
+    return self.app(e, s)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 186, in application
+    return application_unproxied(environ, start_response)
+  File "/srv/Byte-Core/odoo/service/wsgi_server.py", line 172, in application_unproxied
+    result = handler(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1314, in __call__
+    return self.dispatch(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1288, in __call__
+    return self.app(environ, start_wrapped)
+  File "/srv/env/byteenv/lib/python2.7/site-packages/werkzeug/wsgi.py", line 599, in __call__
+    return self.app(environ, start_response)
+  File "/srv/Byte-Core/odoo/http.py", line 1470, in dispatch
+    odoo.registry(db).check_signaling()
+  File "/srv/Byte-Core/odoo/__init__.py", line 52, in registry
+    return modules.registry.Registry(database_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 59, in __new__
+    return cls.new(db_name)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 09:05:36,390 8740 INFO africell odoo.service.server: Initiating shutdown
+2018-11-06 09:05:36,390 8740 INFO africell odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-11-06 09:05:38,011 10018 INFO ? odoo: Odoo version 10.0
+2018-11-06 09:05:38,012 10018 INFO ? odoo: Using configuration file at /srv/Byte-Core/.conf/africell.conf
+2018-11-06 09:05:38,012 10018 INFO ? odoo: addons paths: ['/home/nebula/.local/share/Odoo/addons/10.0', u'/srv/Byte-Core/odoo/addons', u'/srv/Byte-Core/addons', u'/srv/Byte-Core/custom/theme', u'/srv/Byte-Core/custom/community/general', u'/srv/Byte-Core/custom/clients/africell']
+2018-11-06 09:05:38,012 10018 INFO ? odoo: database: default@default:5432
+2018-11-06 09:05:38,035 10018 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-11-06 09:05:38,051 10018 INFO africell odoo.modules.loading: loading 1 modules...
+2018-11-06 09:05:38,198 10018 INFO africell odoo.modules.loading: 1 modules loaded in 0.15s, 0 queries
+2018-11-06 09:05:40,458 10018 INFO africell odoo.modules.loading: loading 45 modules...
+2018-11-06 09:05:40,659 10018 INFO africell odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-11-06 09:05:41,600 10018 INFO africell odoo.modules.registry: module stock: creating or updating database tables
+2018-11-06 09:05:42,752 10018 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:05:42,816 10018 INFO africell odoo.modules.loading: loading stock/security/stock_security.xml
+2018-11-06 09:05:46,988 10018 INFO africell odoo.modules.loading: loading stock/security/ir.model.access.csv
+2018-11-06 09:05:49,228 10018 INFO africell odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2018-11-06 09:05:49,446 10018 INFO africell odoo.modules.loading: loading stock/report/report_stock_forecast.xml
+2018-11-06 09:05:49,598 10018 INFO africell odoo.modules.loading: loading stock/report/stock_report_views.xml
+2018-11-06 09:05:49,630 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [543]
+2018-11-06 09:05:49,669 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [544]
+2018-11-06 09:05:49,702 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [545]
+2018-11-06 09:05:49,739 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [546]
+2018-11-06 09:05:49,770 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [547]
+2018-11-06 09:05:49,806 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [548]
+2018-11-06 09:05:49,841 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [549]
+2018-11-06 09:05:49,849 10018 INFO africell odoo.modules.loading: loading stock/report/report_stock_view.xml
+2018-11-06 09:05:50,039 10018 INFO africell odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2018-11-06 09:05:50,128 10018 INFO africell odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2018-11-06 09:05:50,176 10018 INFO africell odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2018-11-06 09:05:50,278 10018 INFO africell odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2018-11-06 09:05:50,439 10018 INFO africell odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2018-11-06 09:05:50,532 10018 INFO africell odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2018-11-06 09:05:50,586 10018 INFO africell odoo.modules.loading: loading stock/wizard/stock_change_product_qty_views.xml
+2018-11-06 09:05:50,650 10018 INFO africell odoo.modules.loading: loading stock/wizard/stock_picking_return_views.xml
+2018-11-06 09:05:50,721 10018 INFO africell odoo.modules.loading: loading stock/wizard/make_procurement_views.xml
+2018-11-06 09:05:50,798 10018 INFO africell odoo.modules.loading: loading stock/wizard/procurement_orderpoint_compute_views.xml
+2018-11-06 09:05:50,858 10018 INFO africell odoo.modules.loading: loading stock/wizard/stock_immediate_transfer_views.xml
+2018-11-06 09:05:50,910 10018 INFO africell odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2018-11-06 09:05:50,967 10018 INFO africell odoo.modules.loading: loading stock/views/stock_scrap_views.xml
+2018-11-06 09:05:51,210 10018 INFO africell odoo.modules.loading: loading stock/views/res_partner_views.xml
+2018-11-06 09:05:51,537 10018 INFO africell odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2018-11-06 09:05:51,638 10018 INFO africell odoo.modules.loading: loading stock/views/stock_inventory_views.xml
+2018-11-06 09:05:52,023 10018 INFO africell odoo.modules.loading: loading stock/views/stock_incoterms_views.xml
+2018-11-06 09:05:52,192 10018 INFO africell odoo.modules.loading: loading stock/views/stock_production_lot_views.xml
+2018-11-06 09:05:52,388 10018 INFO africell odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2018-11-06 09:05:53,200 10018 INFO africell odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2018-11-06 09:05:53,678 10018 INFO africell odoo.modules.loading: loading stock/views/stock_location_views.xml
+2018-11-06 09:05:53,712 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [550]
+2018-11-06 09:05:54,248 10018 INFO africell odoo.modules.loading: loading stock/views/procurement_views.xml
+2018-11-06 09:05:54,581 10018 INFO africell odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2018-11-06 09:05:54,970 10018 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [551]
+2018-11-06 09:05:54,974 10018 INFO africell odoo.modules.loading: loading stock/views/stock_move_views.xml
+2018-11-06 09:05:55,560 10018 INFO africell odoo.modules.loading: loading stock/views/stock_pack_operation_views.xml
+2018-11-06 09:05:55,798 10018 INFO africell odoo.modules.loading: loading stock/views/product_views.xml
+2018-11-06 09:05:55,884 10018 INFO africell odoo.addons.base.ir.ir_ui_view: Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+2018-11-06 09:05:55,889 10018 WARNING africell odoo.modules.loading: Transient module states were reset
+2018-11-06 09:05:55,891 10018 ERROR africell odoo.modules.registry: Failed to load registry
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 09:05:55,896 10018 CRITICAL africell odoo.service.server: Failed to initialize database `africell`.
+Traceback (most recent call last):
+  File "/srv/Byte-Core/odoo/service/server.py", line 911, in preload_registries
+    registry = Registry.new(dbname, update_module=update_module)
+  File "/srv/Byte-Core/odoo/modules/registry.py", line 83, in new
+    odoo.modules.load_modules(registry._db, force_demo, status, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 335, in load_modules
+    force, status, report, loaded_modules, update_module)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 237, in load_marked_modules
+    loaded, processed = load_module_graph(cr, graph, progressdict, report=report, skip_modules=loaded_modules, perform_checks=perform_checks)
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 156, in load_module_graph
+    _load_data(cr, module_name, idref, mode, kind='data')
+  File "/srv/Byte-Core/odoo/modules/loading.py", line 95, in _load_data
+    tools.convert_file(cr, module_name, filename, idref, mode, noupdate, kind, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 845, in convert_file
+    convert_xml_import(cr, module, fp, idref, mode, noupdate, report)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 915, in convert_xml_import
+    obj.parse(doc.getroot(), mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 796, in parse
+    self.parse(rec, mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 799, in parse
+    self._tags[rec.tag](rec, de, mode=mode)
+  File "/srv/Byte-Core/odoo/tools/convert.py", line 707, in _tag_record
+    id = self.env(context=rec_context)['ir.model.data']._update(rec_model, self.module, res, rec_id or False, not self.isnoupdate(data_node), noupdate=self.isnoupdate(data_node), mode=self.mode)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_model.py", line 1190, in _update
+    record.write(values)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3578, in write
+    field.determine_inverse(records)
+  File "/srv/Byte-Core/odoo/fields.py", line 1045, in determine_inverse
+    getattr(records, self.inverse)()
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 220, in _inverse_arch
+    view.write(data)
+  File "/srv/Byte-Core/odoo/addons/base/ir/ir_ui_view.py", line 380, in write
+    return super(View, self).write(self._compute_defaults(vals))
+  File "/srv/Byte-Core/odoo/models.py", line 3560, in write
+    self._write(old_vals)
+  File "/srv/Byte-Core/odoo/models.py", line 3724, in _write
+    self._validate_fields(vals)
+  File "/srv/Byte-Core/odoo/models.py", line 1081, in _validate_fields
+    raise ValidationError("%s\n\n%s" % (_("Error while validating constraint"), tools.ustr(e)))
+ParseError: "Error while validating constraint
+
+Field `is_category` does not exist
+
+Error context:
+View `product.category.form`
+[view_id: 634, xml_id: stock.product_category_form_view_inherit, model: product.category, parent_id: 310]
+None" while parsing /srv/Byte-Core/addons/stock/views/product_views.xml:5, near
+<record id="product_category_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.category.form</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="arch" type="xml">
+                <group name="first" position="after">
+                    <group string="Logistics">
+                        <field name="route_ids" widget="many2many_tags"/>
+                        <div colspan="2" attrs="{'invisible': [('parent_id', '=', False)]}">
+                            The following routes will apply to the products in this category taking into account parent categories: 
+                            <field name="total_route_ids" nolabel="1" widget="many2many_tags"/>
+                        </div>
+                        <field name="removal_strategy_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+            </field>
+        </record>
+2018-11-06 09:07:37,028 10018 INFO africell odoo.service.server: Initiating shutdown
+2018-11-06 09:07:37,028 10018 INFO africell odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown.
+2018-11-06 09:08:40,993 10572 INFO ? odoo: Odoo version 10.0
+2018-11-06 09:08:40,994 10572 INFO ? odoo: Using configuration file at /srv/Byte-Core/.conf/africell.conf
+2018-11-06 09:08:40,994 10572 INFO ? odoo: addons paths: ['/home/nebula/.local/share/Odoo/addons/10.0', u'/srv/Byte-Core/odoo/addons', u'/srv/Byte-Core/addons', u'/srv/Byte-Core/custom/theme', u'/srv/Byte-Core/custom/community/general', u'/srv/Byte-Core/custom/clients/africell']
+2018-11-06 09:08:40,994 10572 INFO ? odoo: database: default@default:5432
+2018-11-06 09:08:41,012 10572 INFO ? odoo.service.server: HTTP service (werkzeug) running on 0.0.0.0:8069
+2018-11-06 09:08:41,028 10572 INFO africell odoo.modules.loading: loading 1 modules...
+2018-11-06 09:08:41,374 10572 INFO africell odoo.modules.registry: module base: creating or updating database tables
+2018-11-06 09:08:42,927 10572 INFO africell odoo.modules.loading: loading base/res/res.lang.csv
+2018-11-06 09:08:43,978 10572 INFO africell odoo.modules.loading: loading base/base_data.xml
+2018-11-06 09:08:44,015 10572 INFO africell odoo.modules.loading: loading base/res/res_currency_data.xml
+2018-11-06 09:08:44,418 10572 INFO africell odoo.modules.loading: loading base/res/res_country_data.xml
+2018-11-06 09:08:44,995 10572 INFO africell odoo.modules.loading: loading base/security/base_security.xml
+2018-11-06 09:08:48,283 10572 INFO africell odoo.modules.loading: loading base/base_menu.xml
+2018-11-06 09:08:48,553 10572 INFO africell odoo.modules.loading: loading base/res/res_config.xml
+2018-11-06 09:08:48,638 10572 INFO africell odoo.modules.loading: loading base/res/res.country.state.csv
+2018-11-06 09:08:52,074 10572 INFO africell odoo.modules.loading: loading base/ir/ir_actions.xml
+2018-11-06 09:08:53,323 10572 INFO africell odoo.modules.loading: loading base/ir/ir_config_parameter_view.xml
+2018-11-06 09:08:53,475 10572 INFO africell odoo.modules.loading: loading base/ir/ir_cron_view.xml
+2018-11-06 09:08:53,679 10572 INFO africell odoo.modules.loading: loading base/ir/ir_filters.xml
+2018-11-06 09:08:53,853 10572 INFO africell odoo.modules.loading: loading base/ir/ir_mail_server_view.xml
+2018-11-06 09:08:54,014 10572 INFO africell odoo.modules.loading: loading base/ir/ir_model_view.xml
+2018-11-06 09:08:55,001 10572 INFO africell odoo.modules.loading: loading base/ir/ir_attachment_view.xml
+2018-11-06 09:08:55,180 10572 INFO africell odoo.modules.loading: loading base/ir/ir_rule_view.xml
+2018-11-06 09:08:55,367 10572 INFO africell odoo.modules.loading: loading base/ir/ir_sequence_view.xml
+2018-11-06 09:08:55,529 10572 INFO africell odoo.modules.loading: loading base/ir/ir_translation_view.xml
+2018-11-06 09:08:55,747 10572 INFO africell odoo.modules.loading: loading base/ir/ir_ui_menu_view.xml
+2018-11-06 09:08:55,919 10572 INFO africell odoo.modules.loading: loading base/ir/ir_ui_view_view.xml
+2018-11-06 09:08:56,250 10572 INFO africell odoo.modules.loading: loading base/ir/ir_values_view.xml
+2018-11-06 09:08:56,499 10572 INFO africell odoo.modules.loading: loading base/ir/ir_autovacuum.xml
+2018-11-06 09:08:56,510 10572 INFO africell odoo.modules.loading: loading base/ir/ir_model_report.xml
+2018-11-06 09:08:56,533 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [501]
+2018-11-06 09:08:56,545 10572 INFO africell odoo.modules.loading: loading base/ir/report_ir_model.xml
+2018-11-06 09:08:56,599 10572 INFO africell odoo.modules.loading: loading base/ir/ir_logging_view.xml
+2018-11-06 09:08:56,764 10572 INFO africell odoo.modules.loading: loading base/ir/ir_qweb.xml
+2018-11-06 09:08:56,813 10572 INFO africell odoo.modules.loading: loading base/workflow/workflow_view.xml
+2018-11-06 09:08:57,710 10572 INFO africell odoo.modules.loading: loading base/module/module_view.xml
+2018-11-06 09:08:58,089 10572 INFO africell odoo.modules.loading: loading base/module/module_data.xml
+2018-11-06 09:09:01,677 10572 INFO africell odoo.modules.loading: loading base/module/module_report.xml
+2018-11-06 09:09:01,699 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [502]
+2018-11-06 09:09:01,709 10572 INFO africell odoo.modules.loading: loading base/module/report/report_ir_module_reference.xml
+2018-11-06 09:09:01,758 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_module_update_view.xml
+2018-11-06 09:09:01,839 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_language_install_view.xml
+2018-11-06 09:09:01,958 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_import_language_view.xml
+2018-11-06 09:09:02,036 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_module_upgrade_view.xml
+2018-11-06 09:09:02,168 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_module_configuration_view.xml
+2018-11-06 09:09:02,215 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_export_language_view.xml
+2018-11-06 09:09:02,304 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_update_translations_view.xml
+2018-11-06 09:09:02,384 10572 INFO africell odoo.modules.loading: loading base/module/wizard/base_module_immediate_install.xml
+2018-11-06 09:09:02,411 10572 INFO africell odoo.modules.loading: loading base/res/res_company_view.xml
+2018-11-06 09:09:02,576 10572 INFO africell odoo.modules.loading: loading base/res/res_request_view.xml
+2018-11-06 09:09:02,737 10572 INFO africell odoo.modules.loading: loading base/res/res_lang_view.xml
+2018-11-06 09:09:02,925 10572 INFO africell odoo.modules.loading: loading base/res/res_partner_view.xml
+2018-11-06 09:09:03,563 10572 INFO africell odoo.modules.loading: loading base/res/res_bank_view.xml
+2018-11-06 09:09:03,812 10572 INFO africell odoo.modules.loading: loading base/res/res_country_view.xml
+2018-11-06 09:09:04,122 10572 INFO africell odoo.modules.loading: loading base/res/res_currency_view.xml
+2018-11-06 09:09:04,502 10572 INFO africell odoo.modules.loading: loading base/res/res_users_view.xml
+2018-11-06 09:09:04,611 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [503]
+2018-11-06 09:09:06,474 10572 INFO africell odoo.modules.loading: loading base/res/res_partner_data.xml
+2018-11-06 09:09:06,490 10572 INFO africell odoo.modules.loading: loading base/res/ir_property_view.xml
+2018-11-06 09:09:06,650 10572 INFO africell odoo.modules.loading: loading base/res/res_security.xml
+2018-11-06 09:09:06,664 10572 INFO africell odoo.modules.loading: loading base/security/ir.model.access.csv
+2018-11-06 09:09:12,939 10572 INFO africell odoo.modules.loading: 1 modules loaded in 31.91s, 0 queries
+2018-11-06 09:09:13,008 10572 INFO africell odoo.modules.loading: updating modules list
+2018-11-06 09:09:17,150 10572 INFO africell odoo.modules.loading: loading 45 modules...
+2018-11-06 09:09:17,222 10572 INFO africell odoo.modules.registry: module hw_proxy: creating or updating database tables
+2018-11-06 09:09:17,360 10572 INFO africell odoo.modules.registry: module auth_crypt: creating or updating database tables
+2018-11-06 09:09:17,390 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:17,523 10572 INFO africell odoo.modules.registry: module decimal_precision: creating or updating database tables
+2018-11-06 09:09:17,577 10572 INFO africell odoo.modules.loading: loading decimal_precision/views/decimal_precision_views.xml
+2018-11-06 09:09:17,701 10572 INFO africell odoo.modules.loading: loading decimal_precision/security/ir.model.access.csv
+2018-11-06 09:09:17,933 10572 INFO africell odoo.modules.registry: module hw_scanner: creating or updating database tables
+2018-11-06 09:09:18,058 10572 INFO africell odoo.modules.registry: module report_xlsx: creating or updating database tables
+2018-11-06 09:09:18,212 10572 INFO africell odoo.modules.registry: module web: creating or updating database tables
+2018-11-06 09:09:18,231 10572 INFO africell odoo.modules.loading: loading web/views/webclient_templates.xml
+2018-11-06 09:09:19,097 10572 INFO africell odoo.modules.registry: module barcodes: creating or updating database tables
+2018-11-06 09:09:19,148 10572 INFO africell odoo.modules.loading: loading barcodes/data/barcodes_data.xml
+2018-11-06 09:09:19,163 10572 INFO africell odoo.modules.loading: loading barcodes/views/barcodes_view.xml
+2018-11-06 09:09:19,333 10572 INFO africell odoo.modules.loading: loading barcodes/security/ir.model.access.csv
+2018-11-06 09:09:19,470 10572 INFO africell odoo.modules.loading: loading barcodes/views/barcodes_templates.xml
+2018-11-06 09:09:19,702 10572 INFO africell odoo.modules.registry: module bus: creating or updating database tables
+2018-11-06 09:09:19,748 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:19,819 10572 INFO africell odoo.modules.loading: loading bus/views/bus.xml
+2018-11-06 09:09:19,899 10572 INFO africell odoo.modules.loading: loading bus/security/ir.model.access.csv
+2018-11-06 09:09:20,109 10572 INFO africell odoo.modules.registry: module web_calendar: creating or updating database tables
+2018-11-06 09:09:20,129 10572 INFO africell odoo.modules.loading: loading web_calendar/views/web_calendar_templates.xml
+2018-11-06 09:09:20,344 10572 INFO africell odoo.modules.registry: module web_diagram: creating or updating database tables
+2018-11-06 09:09:20,366 10572 INFO africell odoo.modules.loading: loading web_diagram/views/web_diagram_templates.xml
+2018-11-06 09:09:20,621 10572 INFO africell odoo.modules.registry: module web_editor: creating or updating database tables
+2018-11-06 09:09:20,781 10572 INFO africell odoo.modules.loading: loading web_editor/security/ir.model.access.csv
+2018-11-06 09:09:20,833 10572 INFO africell odoo.modules.loading: loading web_editor/views/editor.xml
+2018-11-06 09:09:21,298 10572 INFO africell odoo.modules.loading: loading web_editor/views/iframe.xml
+2018-11-06 09:09:21,386 10572 INFO africell odoo.modules.loading: loading web_editor/views/snippets.xml
+2018-11-06 09:09:21,756 10572 INFO africell odoo.modules.registry: module web_kanban: creating or updating database tables
+2018-11-06 09:09:21,775 10572 INFO africell odoo.modules.loading: loading web_kanban/views/web_kanban_templates.xml
+2018-11-06 09:09:22,014 10572 INFO africell odoo.modules.registry: module web_planner: creating or updating database tables
+2018-11-06 09:09:22,054 10572 INFO africell odoo.modules.loading: loading web_planner/security/ir.model.access.csv
+2018-11-06 09:09:22,140 10572 INFO africell odoo.modules.loading: loading web_planner/security/web_planner_security.xml
+2018-11-06 09:09:22,192 10572 INFO africell odoo.modules.loading: loading web_planner/views/web_planner_templates.xml
+2018-11-06 09:09:22,498 10572 INFO africell odoo.modules.loading: loading web_planner/views/web_planner_views.xml
+2018-11-06 09:09:22,841 10572 INFO africell odoo.modules.registry: module web_responsive: creating or updating database tables
+2018-11-06 09:09:22,862 10572 INFO africell odoo.modules.loading: loading web_responsive/views/assets.xml
+2018-11-06 09:09:23,016 10572 INFO africell odoo.modules.loading: loading web_responsive/views/web.xml
+2018-11-06 09:09:23,710 10572 INFO africell odoo.modules.registry: module web_tour: creating or updating database tables
+2018-11-06 09:09:23,756 10572 INFO africell odoo.modules.loading: loading web_tour/security/ir.model.access.csv
+2018-11-06 09:09:23,789 10572 INFO africell odoo.modules.loading: loading web_tour/views/tour_templates.xml
+2018-11-06 09:09:23,956 10572 INFO africell odoo.modules.loading: loading web_tour/views/tour_views.xml
+2018-11-06 09:09:24,328 10572 INFO africell odoo.modules.registry: module base_import: creating or updating database tables
+2018-11-06 09:09:24,505 10572 INFO africell odoo.modules.loading: loading base_import/security/ir.model.access.csv
+2018-11-06 09:09:24,855 10572 INFO africell odoo.modules.loading: loading base_import/views/base_import_templates.xml
+2018-11-06 09:09:25,147 10572 INFO africell odoo.modules.registry: module base_setup: creating or updating database tables
+2018-11-06 09:09:25,188 10572 INFO africell odoo.modules.loading: loading base_setup/views/res_config_views.xml
+2018-11-06 09:09:25,295 10572 INFO africell odoo.modules.loading: loading base_setup/views/res_partner_views.xml
+2018-11-06 09:09:25,533 10572 INFO africell odoo.modules.registry: module web_kanban_gauge: creating or updating database tables
+2018-11-06 09:09:25,558 10572 INFO africell odoo.modules.loading: loading web_kanban_gauge/views/web_kanban_gauge_templates.xml
+2018-11-06 09:09:25,852 10572 INFO africell odoo.modules.registry: module web_settings_dashboard: creating or updating database tables
+2018-11-06 09:09:25,879 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:25,908 10572 INFO africell odoo.modules.loading: loading web_settings_dashboard/views/dashboard_views.xml
+2018-11-06 09:09:25,933 10572 INFO africell odoo.modules.loading: loading web_settings_dashboard/views/dashboard_templates.xml
+2018-11-06 09:09:26,394 10572 INFO africell odoo.modules.registry: module mail: creating or updating database tables
+2018-11-06 09:09:26,703 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:26,942 10572 INFO africell odoo.modules.loading: loading mail/wizard/invite_view.xml
+2018-11-06 09:09:27,012 10572 INFO africell odoo.modules.loading: loading mail/wizard/mail_compose_message_view.xml
+2018-11-06 09:09:27,102 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [505]
+2018-11-06 09:09:27,106 10572 INFO africell odoo.modules.loading: loading mail/views/mail_message_subtype_views.xml
+2018-11-06 09:09:27,218 10572 INFO africell odoo.modules.loading: loading mail/views/mail_tracking_views.xml
+2018-11-06 09:09:27,333 10572 INFO africell odoo.modules.loading: loading mail/views/mail_message_views.xml
+2018-11-06 09:09:27,551 10572 INFO africell odoo.modules.loading: loading mail/views/mail_mail_views.xml
+2018-11-06 09:09:27,727 10572 INFO africell odoo.modules.loading: loading mail/views/mail_followers_views.xml
+2018-11-06 09:09:27,845 10572 INFO africell odoo.modules.loading: loading mail/views/mail_channel_views.xml
+2018-11-06 09:09:28,222 10572 INFO africell odoo.modules.loading: loading mail/views/mail_shortcode_views.xml
+2018-11-06 09:09:28,326 10572 INFO africell odoo.modules.loading: loading mail/views/res_config_views.xml
+2018-11-06 09:09:28,392 10572 INFO africell odoo.modules.loading: loading mail/data/mail_data.xml
+2018-11-06 09:09:28,465 10572 INFO africell odoo.modules.loading: loading mail/data/mail_channel_data.xml
+2018-11-06 09:09:28,473 10572 INFO africell odoo.modules.loading: loading mail/data/mail_shortcode_data.xml
+2018-11-06 09:09:28,563 10572 INFO africell odoo.modules.loading: loading mail/security/mail_security.xml
+2018-11-06 09:09:28,574 10572 INFO africell odoo.modules.loading: loading mail/security/ir.model.access.csv
+2018-11-06 09:09:29,443 10572 INFO africell odoo.modules.loading: loading mail/views/mail_alias_views.xml
+2018-11-06 09:09:29,594 10572 INFO africell odoo.modules.loading: loading mail/views/res_users_views.xml
+2018-11-06 09:09:30,024 10572 INFO africell odoo.modules.loading: loading mail/views/mail_templates.xml
+2018-11-06 09:09:30,217 10572 INFO africell odoo.modules.loading: loading mail/wizard/email_template_preview_view.xml
+2018-11-06 09:09:30,274 10572 INFO africell odoo.modules.loading: loading mail/views/mail_template_views.xml
+2018-11-06 09:09:30,446 10572 INFO africell odoo.modules.loading: loading mail/views/ir_actions_views.xml
+2018-11-06 09:09:30,643 10572 INFO africell odoo.modules.loading: loading mail/views/res_partner_views.xml
+2018-11-06 09:09:30,815 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [612]
+2018-11-06 09:09:32,190 10572 INFO africell odoo.addons.report.models.report: Will use the Wkhtmltopdf binary at /usr/local/bin/wkhtmltopdf
+2018-11-06 09:09:32,337 10572 INFO africell odoo.modules.registry: module report: creating or updating database tables
+2018-11-06 09:09:32,519 10572 INFO africell odoo.modules.loading: loading report/data/report_paperformat_data.xml
+2018-11-06 09:09:32,536 10572 INFO africell odoo.modules.loading: loading report/security/ir.model.access.csv
+2018-11-06 09:09:32,607 10572 INFO africell odoo.modules.loading: loading report/views/layout_templates.xml
+2018-11-06 09:09:33,061 10572 INFO africell odoo.modules.loading: loading report/views/report_paperformat_views.xml
+2018-11-06 09:09:33,363 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [506]
+2018-11-06 09:09:33,395 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [507]
+2018-11-06 09:09:33,405 10572 INFO africell odoo.modules.loading: loading report/views/report_templates.xml
+2018-11-06 09:09:33,520 10572 INFO africell odoo.modules.loading: loading report/views/base_config_settings_views.xml
+2018-11-06 09:09:33,590 10572 INFO africell odoo.modules.loading: loading report/views/ir_actions_report_views.xml
+2018-11-06 09:09:34,199 10572 INFO africell odoo.modules.registry: module analytic: creating or updating database tables
+2018-11-06 09:09:34,290 10572 INFO africell odoo.modules.loading: loading analytic/security/analytic_security.xml
+2018-11-06 09:09:34,745 10572 INFO africell odoo.modules.loading: loading analytic/security/ir.model.access.csv
+2018-11-06 09:09:34,831 10572 INFO africell odoo.modules.loading: loading analytic/views/analytic_account_views.xml
+2018-11-06 09:09:35,705 10572 INFO africell odoo.modules.registry: module auth_signup: creating or updating database tables
+2018-11-06 09:09:35,805 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:35,837 10572 INFO africell odoo.modules.loading: loading auth_signup/data/auth_signup_data.xml
+2018-11-06 09:09:35,852 10572 INFO africell odoo.modules.loading: loading auth_signup/views/res_config_views.xml
+2018-11-06 09:09:35,955 10572 INFO africell odoo.modules.loading: loading auth_signup/views/res_users_views.xml
+2018-11-06 09:09:36,247 10572 INFO africell odoo.modules.loading: loading auth_signup/views/auth_signup_login_templates.xml
+2018-11-06 09:09:36,967 10572 INFO africell odoo.modules.registry: module fetchmail: creating or updating database tables
+2018-11-06 09:09:37,075 10572 INFO africell odoo.modules.loading: loading fetchmail/data/fetchmail_data.xml
+2018-11-06 09:09:37,083 10572 INFO africell odoo.modules.loading: loading fetchmail/security/ir.model.access.csv
+2018-11-06 09:09:37,126 10572 INFO africell odoo.modules.loading: loading fetchmail/views/fetchmail_views.xml
+2018-11-06 09:09:37,669 10572 INFO africell odoo.modules.loading: loading fetchmail/views/mail_mail_views.xml
+2018-11-06 09:09:37,831 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [508]
+2018-11-06 09:09:38,257 10572 INFO africell odoo.modules.registry: module product: creating or updating database tables
+2018-11-06 09:09:38,757 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:38,809 10572 INFO africell odoo.modules.loading: loading product/data/product_data.xml
+2018-11-06 09:09:38,910 10572 INFO africell odoo.modules.loading: loading product/security/product_security.xml
+2018-11-06 09:09:42,281 10572 INFO africell odoo.modules.loading: loading product/security/ir.model.access.csv
+2018-11-06 09:09:42,759 10572 INFO africell odoo.modules.loading: loading product/wizard/product_price_list_views.xml
+2018-11-06 09:09:42,837 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [509]
+2018-11-06 09:09:42,842 10572 INFO africell odoo.modules.loading: loading product/views/base_config_settings_views.xml
+2018-11-06 09:09:42,951 10572 INFO africell odoo.modules.loading: loading product/views/product_attribute_views.xml
+2018-11-06 09:09:43,242 10572 INFO africell odoo.modules.loading: loading product/views/product_uom_views.xml
+2018-11-06 09:09:43,414 10572 INFO africell odoo.modules.loading: loading product/views/product_views.xml
+2018-11-06 09:09:43,696 10572 INFO africell odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [76, 77, 78]
+2018-11-06 09:09:44,321 10572 INFO africell odoo.modules.loading: loading product/views/product_template_views.xml
+2018-11-06 09:09:44,528 10572 INFO africell odoo.modules.loading: loading product/views/product_pricelist_views.xml
+2018-11-06 09:09:44,840 10572 INFO africell odoo.modules.loading: loading product/views/res_partner_views.xml
+2018-11-06 09:09:44,943 10572 INFO africell odoo.modules.loading: loading product/report/product_reports.xml
+2018-11-06 09:09:44,970 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [510]
+2018-11-06 09:09:44,997 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [511]
+2018-11-06 09:09:45,026 10572 INFO africell odoo.modules.loading: loading product/report/product_pricelist_templates.xml
+2018-11-06 09:09:45,080 10572 INFO africell odoo.modules.loading: loading product/report/product_product_templates.xml
+2018-11-06 09:09:45,171 10572 INFO africell odoo.modules.loading: loading product/report/product_template_templates.xml
+2018-11-06 09:09:46,122 10572 INFO africell odoo.modules.registry: module sales_team: creating or updating database tables
+2018-11-06 09:09:46,232 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:46,287 10572 INFO africell odoo.modules.loading: loading sales_team/security/sales_team_security.xml
+2018-11-06 09:09:47,879 10572 INFO africell odoo.modules.loading: loading sales_team/security/ir.model.access.csv
+2018-11-06 09:09:47,967 10572 INFO africell odoo.modules.loading: loading sales_team/data/sales_team_data.xml
+2018-11-06 09:09:48,827 10572 INFO africell odoo.modules.loading: loading sales_team/views/res_config_view.xml
+2018-11-06 09:09:48,896 10572 INFO africell odoo.modules.loading: loading sales_team/views/crm_team_views.xml
+2018-11-06 09:09:49,607 10572 INFO africell odoo.modules.loading: loading sales_team/views/sales_team_dashboard.xml
+2018-11-06 09:09:50,531 10572 INFO africell odoo.modules.registry: module account: creating or updating database tables
+2018-11-06 09:09:52,204 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:09:52,267 10572 INFO africell odoo.modules.loading: loading account/security/account_security.xml
+2018-11-06 09:09:55,227 10572 INFO africell odoo.modules.loading: loading account/security/ir.model.access.csv
+2018-11-06 09:09:57,414 10572 INFO africell odoo.modules.loading: loading account/data/data_account_type.xml
+2018-11-06 09:09:57,468 10572 INFO africell odoo.modules.loading: loading account/data/account_data.xml
+2018-11-06 09:09:57,519 10572 INFO africell odoo.modules.loading: loading account/views/account_menuitem.xml
+2018-11-06 09:09:57,690 10572 INFO africell odoo.modules.loading: loading account/views/account_payment_view.xml
+2018-11-06 09:09:58,114 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [512]
+2018-11-06 09:09:58,120 10572 INFO africell odoo.modules.loading: loading account/wizard/account_reconcile_view.xml
+2018-11-06 09:09:58,243 10572 INFO africell odoo.modules.loading: loading account/wizard/account_unreconcile_view.xml
+2018-11-06 09:09:58,311 10572 INFO africell odoo.modules.loading: loading account/wizard/account_move_reversal_view.xml
+2018-11-06 09:09:58,387 10572 INFO africell odoo.modules.loading: loading account/views/account_view.xml
+2018-11-06 09:09:58,582 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [513]
+2018-11-06 09:09:58,608 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [514]
+2018-11-06 09:09:58,633 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [515]
+2018-11-06 09:09:58,665 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [516]
+2018-11-06 09:09:58,700 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [517]
+2018-11-06 09:09:58,732 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [518]
+2018-11-06 09:09:58,773 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [519]
+2018-11-06 09:09:58,798 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [520]
+2018-11-06 09:09:58,823 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [521]
+2018-11-06 09:09:58,850 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [522]
+2018-11-06 09:09:58,879 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [523]
+2018-11-06 09:09:58,904 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [524]
+2018-11-06 09:09:59,164 10572 INFO africell odoo.models.unlink: User #1 deleted ir.actions.act_window.view records with IDs: [79, 80]
+2018-11-06 09:09:59,253 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [525]
+2018-11-06 09:09:59,282 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [526]
+2018-11-06 09:10:00,965 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [527]
+2018-11-06 09:10:02,616 10572 INFO africell odoo.modules.loading: loading account/views/account_report.xml
+2018-11-06 09:10:02,655 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [528]
+2018-11-06 09:10:02,709 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [529]
+2018-11-06 09:10:02,749 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [530]
+2018-11-06 09:10:02,792 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [531]
+2018-11-06 09:10:02,847 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [532]
+2018-11-06 09:10:02,897 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [533]
+2018-11-06 09:10:02,944 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [534]
+2018-11-06 09:10:02,988 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [535]
+2018-11-06 09:10:03,001 10572 INFO africell odoo.modules.loading: loading account/wizard/account_invoice_refund_view.xml
+2018-11-06 09:10:03,084 10572 INFO africell odoo.modules.loading: loading account/wizard/account_validate_move_view.xml
+2018-11-06 09:10:03,170 10572 INFO africell odoo.modules.loading: loading account/wizard/account_invoice_state_view.xml
+2018-11-06 09:10:03,250 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [536]
+2018-11-06 09:10:03,312 10572 INFO africell odoo.modules.loading: loading account/wizard/pos_box.xml
+2018-11-06 09:10:03,386 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [537]
+2018-11-06 09:10:03,462 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [538]
+2018-11-06 09:10:03,466 10572 INFO africell odoo.modules.loading: loading account/views/account_end_fy.xml
+2018-11-06 09:10:03,469 10572 INFO africell odoo.modules.loading: loading account/views/account_invoice_view.xml
+2018-11-06 09:10:04,371 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [539]
+2018-11-06 09:10:04,377 10572 INFO africell odoo.modules.loading: loading account/data/invoice_action_data.xml
+2018-11-06 09:10:04,390 10572 INFO africell odoo.modules.loading: loading account/views/partner_view.xml
+2018-11-06 09:10:04,921 10572 INFO africell odoo.modules.loading: loading account/views/product_view.xml
+2018-11-06 09:10:05,087 10572 INFO africell odoo.modules.loading: loading account/views/account_analytic_view.xml
+2018-11-06 09:10:05,411 10572 INFO africell odoo.modules.loading: loading account/views/res_config_view.xml
+2018-11-06 09:10:05,535 10572 INFO africell odoo.modules.loading: loading account/views/account_tip_data.xml
+2018-11-06 09:10:05,538 10572 INFO africell odoo.modules.loading: loading account/views/account.xml
+2018-11-06 09:10:05,684 10572 INFO africell odoo.modules.loading: loading account/views/report_invoice.xml
+2018-11-06 09:10:05,879 10572 INFO africell odoo.modules.loading: loading account/report/account_invoice_report_view.xml
+2018-11-06 09:10:06,129 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [540]
+2018-11-06 09:10:06,134 10572 INFO africell odoo.modules.loading: loading account/report/inherited_layouts.xml
+2018-11-06 09:10:06,196 10572 INFO africell odoo.modules.loading: loading account/views/account_journal_dashboard_view.xml
+2018-11-06 09:10:06,297 10572 INFO africell odoo.modules.loading: loading account/views/report_overdue.xml
+2018-11-06 09:10:06,390 10572 INFO africell odoo.modules.loading: loading account/views/web_planner_data.xml
+2018-11-06 09:10:06,476 10572 INFO africell odoo.modules.loading: loading account/views/report_overdue.xml
+2018-11-06 09:10:06,559 10572 INFO africell odoo.modules.loading: loading account/wizard/account_report_common_view.xml
+2018-11-06 09:10:06,627 10572 INFO africell odoo.modules.loading: loading account/wizard/account_report_print_journal_view.xml
+2018-11-06 09:10:06,721 10572 INFO africell odoo.modules.loading: loading account/views/report_journal.xml
+2018-11-06 09:10:06,779 10572 INFO africell odoo.modules.loading: loading account/wizard/account_report_partner_ledger_view.xml
+2018-11-06 09:10:06,888 10572 INFO africell odoo.modules.loading: loading account/views/report_partnerledger.xml
+2018-11-06 09:10:06,941 10572 INFO africell odoo.modules.loading: loading account/wizard/account_report_general_ledger_view.xml
+2018-11-06 09:10:07,048 10572 INFO africell odoo.modules.loading: loading account/views/report_generalledger.xml
+2018-11-06 09:10:07,099 10572 INFO africell odoo.modules.loading: loading account/wizard/account_report_trial_balance_view.xml
+2018-11-06 09:10:07,196 10572 INFO africell odoo.modules.loading: loading account/views/report_trialbalance.xml
+2018-11-06 09:10:07,249 10572 INFO africell odoo.modules.loading: loading account/views/account_financial_report_data.xml
+2018-11-06 09:10:07,277 10572 INFO africell odoo.modules.loading: loading account/wizard/account_financial_report_view.xml
+2018-11-06 09:10:07,419 10572 INFO africell odoo.modules.loading: loading account/views/report_financial.xml
+2018-11-06 09:10:07,478 10572 INFO africell odoo.modules.loading: loading account/wizard/account_report_aged_partner_balance_view.xml
+2018-11-06 09:10:07,558 10572 INFO africell odoo.modules.loading: loading account/views/report_agedpartnerbalance.xml
+2018-11-06 09:10:07,612 10572 INFO africell odoo.modules.loading: loading account/views/tax_adjustments.xml
+2018-11-06 09:10:07,643 10572 INFO africell odoo.modules.loading: loading account/wizard/wizard_tax_adjustments_view.xml
+2018-11-06 09:10:10,553 10572 INFO africell odoo.modules.registry: module portal: creating or updating database tables
+2018-11-06 09:10:10,660 10572 INFO africell odoo.modules.loading: loading portal/data/portal_data.xml
+2018-11-06 09:10:10,669 10572 INFO africell odoo.modules.loading: loading portal/views/portal_views.xml
+2018-11-06 09:10:10,899 10572 INFO africell odoo.modules.loading: loading portal/wizard/portal_wizard_views.xml
+2018-11-06 09:10:10,923 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [541]
+2018-11-06 09:10:10,981 10572 INFO africell odoo.modules.loading: loading portal/security/ir.model.access.csv
+2018-11-06 09:10:11,406 10572 INFO africell odoo.modules.registry: module procurement: creating or updating database tables
+2018-11-06 09:10:11,524 10572 INFO africell odoo.modules.loading: loading procurement/security/ir.model.access.csv
+2018-11-06 09:10:11,609 10572 INFO africell odoo.modules.loading: loading procurement/security/procurement_security.xml
+2018-11-06 09:10:11,615 10572 INFO africell odoo.modules.loading: loading procurement/data/procurement_data.xml
+2018-11-06 09:10:11,626 10572 INFO africell odoo.modules.loading: loading procurement/wizard/procurement_order_compute_all_views.xml
+2018-11-06 09:10:11,722 10572 INFO africell odoo.modules.loading: loading procurement/views/procurement_views.xml
+2018-11-06 09:10:12,164 10572 INFO africell odoo.modules.loading: loading procurement/views/product_views.xml
+2018-11-06 09:10:12,915 10572 INFO africell odoo.modules.registry: module account_bank_statement_import: creating or updating database tables
+2018-11-06 09:10:13,061 10572 INFO africell odoo.modules.loading: loading account_bank_statement_import/account_bank_statement_import_view.xml
+2018-11-06 09:10:13,228 10572 INFO africell odoo.modules.loading: loading account_bank_statement_import/account_import_tip_data.xml
+2018-11-06 09:10:13,231 10572 INFO africell odoo.modules.loading: loading account_bank_statement_import/wizard/journal_creation.xml
+2018-11-06 09:10:13,697 10572 INFO africell odoo.modules.registry: module payment: creating or updating database tables
+2018-11-06 09:10:13,969 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:10:14,039 10572 INFO africell odoo.modules.loading: loading payment/data/account_data.xml
+2018-11-06 09:10:14,048 10572 INFO africell odoo.modules.loading: loading payment/data/payment_acquirer_data.xml
+2018-11-06 09:10:14,081 10572 INFO africell odoo.modules.loading: loading payment/views/payment_views.xml
+2018-11-06 09:10:14,695 10572 INFO africell odoo.modules.loading: loading payment/views/account_config_settings_views.xml
+2018-11-06 09:10:14,783 10572 INFO africell odoo.modules.loading: loading payment/views/account_payment_views.xml
+2018-11-06 09:10:14,915 10572 INFO africell odoo.modules.loading: loading payment/views/payment_templates.xml
+2018-11-06 09:10:15,062 10572 INFO africell odoo.modules.loading: loading payment/views/res_partner_views.xml
+2018-11-06 09:10:15,186 10572 INFO africell odoo.modules.loading: loading payment/security/ir.model.access.csv
+2018-11-06 09:10:15,486 10572 INFO africell odoo.modules.loading: loading payment/security/payment_security.xml
+2018-11-06 09:10:16,379 10572 INFO africell odoo.modules.registry: module sale: creating or updating database tables
+2018-11-06 09:10:17,083 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:10:17,138 10572 INFO africell odoo.modules.loading: loading sale/data/ir_sequence_data.xml
+2018-11-06 09:10:17,145 10572 INFO africell odoo.modules.loading: loading sale/data/sale_data.xml
+2018-11-06 09:10:17,172 10572 INFO africell odoo.modules.loading: loading sale/data/sale_tour.xml
+2018-11-06 09:10:17,204 10572 INFO africell odoo.modules.loading: loading sale/report/sale_report.xml
+2018-11-06 09:10:17,319 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [542]
+2018-11-06 09:10:17,327 10572 INFO africell odoo.modules.loading: loading sale/data/mail_template_data.xml
+2018-11-06 09:10:17,335 10572 INFO africell odoo.modules.loading: loading sale/report/sale_report_views.xml
+2018-11-06 09:10:17,525 10572 INFO africell odoo.modules.loading: loading sale/report/sale_report_templates.xml
+2018-11-06 09:10:17,621 10572 INFO africell odoo.modules.loading: loading sale/report/invoice_report_templates.xml
+2018-11-06 09:10:17,749 10572 INFO africell odoo.modules.loading: loading sale/security/sale_security.xml
+2018-11-06 09:10:22,649 10572 INFO africell odoo.modules.loading: loading sale/security/ir.model.access.csv
+2018-11-06 09:10:24,172 10572 INFO africell odoo.modules.loading: loading sale/wizard/sale_make_invoice_advance_views.xml
+2018-11-06 09:10:24,254 10572 INFO africell odoo.modules.loading: loading sale/views/sale_views.xml
+2018-11-06 09:10:26,320 10572 INFO africell odoo.modules.loading: loading sale/views/sales_team_views.xml
+2018-11-06 09:10:26,691 10572 INFO africell odoo.modules.loading: loading sale/views/res_partner_views.xml
+2018-11-06 09:10:26,937 10572 INFO africell odoo.modules.loading: loading sale/views/sale_config_settings_views.xml
+2018-11-06 09:10:27,004 10572 INFO africell odoo.modules.loading: loading sale/views/sale_templates.xml
+2018-11-06 09:10:27,153 10572 INFO africell odoo.modules.loading: loading sale/views/sale_layout_category_view.xml
+2018-11-06 09:10:29,362 10572 INFO africell odoo.modules.registry: module stock: creating or updating database tables
+2018-11-06 09:10:30,523 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:10:30,583 10572 INFO africell odoo.modules.loading: loading stock/security/stock_security.xml
+2018-11-06 09:10:34,811 10572 INFO africell odoo.modules.loading: loading stock/security/ir.model.access.csv
+2018-11-06 09:10:37,021 10572 INFO africell odoo.modules.loading: loading stock/views/stock_menu_views.xml
+2018-11-06 09:10:37,229 10572 INFO africell odoo.modules.loading: loading stock/report/report_stock_forecast.xml
+2018-11-06 09:10:37,386 10572 INFO africell odoo.modules.loading: loading stock/report/stock_report_views.xml
+2018-11-06 09:10:37,413 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [543]
+2018-11-06 09:10:37,445 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [544]
+2018-11-06 09:10:37,475 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [545]
+2018-11-06 09:10:37,509 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [546]
+2018-11-06 09:10:37,543 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [547]
+2018-11-06 09:10:37,573 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [548]
+2018-11-06 09:10:37,610 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [549]
+2018-11-06 09:10:37,619 10572 INFO africell odoo.modules.loading: loading stock/report/report_stock_view.xml
+2018-11-06 09:10:37,791 10572 INFO africell odoo.modules.loading: loading stock/report/report_package_barcode.xml
+2018-11-06 09:10:37,883 10572 INFO africell odoo.modules.loading: loading stock/report/report_lot_barcode.xml
+2018-11-06 09:10:37,932 10572 INFO africell odoo.modules.loading: loading stock/report/report_location_barcode.xml
+2018-11-06 09:10:38,038 10572 INFO africell odoo.modules.loading: loading stock/report/report_stockpicking_operations.xml
+2018-11-06 09:10:38,187 10572 INFO africell odoo.modules.loading: loading stock/report/report_deliveryslip.xml
+2018-11-06 09:10:38,287 10572 INFO africell odoo.modules.loading: loading stock/report/report_stockinventory.xml
+2018-11-06 09:10:38,339 10572 INFO africell odoo.modules.loading: loading stock/wizard/stock_change_product_qty_views.xml
+2018-11-06 09:10:38,411 10572 INFO africell odoo.modules.loading: loading stock/wizard/stock_picking_return_views.xml
+2018-11-06 09:10:38,474 10572 INFO africell odoo.modules.loading: loading stock/wizard/make_procurement_views.xml
+2018-11-06 09:10:38,539 10572 INFO africell odoo.modules.loading: loading stock/wizard/procurement_orderpoint_compute_views.xml
+2018-11-06 09:10:38,597 10572 INFO africell odoo.modules.loading: loading stock/wizard/stock_immediate_transfer_views.xml
+2018-11-06 09:10:38,645 10572 INFO africell odoo.modules.loading: loading stock/wizard/stock_backorder_confirmation_views.xml
+2018-11-06 09:10:38,694 10572 INFO africell odoo.modules.loading: loading stock/views/stock_scrap_views.xml
+2018-11-06 09:10:38,909 10572 INFO africell odoo.modules.loading: loading stock/views/res_partner_views.xml
+2018-11-06 09:10:39,214 10572 INFO africell odoo.modules.loading: loading stock/views/product_strategy_views.xml
+2018-11-06 09:10:39,317 10572 INFO africell odoo.modules.loading: loading stock/views/stock_inventory_views.xml
+2018-11-06 09:10:39,703 10572 INFO africell odoo.modules.loading: loading stock/views/stock_incoterms_views.xml
+2018-11-06 09:10:39,884 10572 INFO africell odoo.modules.loading: loading stock/views/stock_production_lot_views.xml
+2018-11-06 09:10:40,076 10572 INFO africell odoo.modules.loading: loading stock/views/stock_picking_views.xml
+2018-11-06 09:10:40,874 10572 INFO africell odoo.modules.loading: loading stock/views/stock_quant_views.xml
+2018-11-06 09:10:41,356 10572 INFO africell odoo.modules.loading: loading stock/views/stock_location_views.xml
+2018-11-06 09:10:41,387 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [550]
+2018-11-06 09:10:41,933 10572 INFO africell odoo.modules.loading: loading stock/views/procurement_views.xml
+2018-11-06 09:10:42,268 10572 INFO africell odoo.modules.loading: loading stock/views/stock_warehouse_views.xml
+2018-11-06 09:10:42,666 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [551]
+2018-11-06 09:10:42,670 10572 INFO africell odoo.modules.loading: loading stock/views/stock_move_views.xml
+2018-11-06 09:10:43,297 10572 INFO africell odoo.modules.loading: loading stock/views/stock_pack_operation_views.xml
+2018-11-06 09:10:43,531 10572 INFO africell odoo.modules.loading: loading stock/views/product_views.xml
+2018-11-06 09:10:44,871 10572 INFO africell odoo.modules.loading: loading stock/views/stock_config_settings_views.xml
+2018-11-06 09:10:44,975 10572 INFO africell odoo.modules.loading: loading stock/data/default_barcode_patterns.xml
+2018-11-06 09:10:45,014 10572 INFO africell odoo.modules.loading: loading stock/data/stock_data.xml
+2018-11-06 09:10:45,430 10572 INFO africell odoo.modules.loading: loading stock/data/stock_data.yml
+2018-11-06 09:10:45,514 10572 INFO africell odoo.modules.loading: loading stock/data/stock_incoterms_data.xml
+2018-11-06 09:10:45,584 10572 INFO africell odoo.modules.loading: loading stock/data/stock_sequence_data.xml
+2018-11-06 09:10:45,600 10572 INFO africell odoo.modules.loading: loading stock/data/web_planner_data.xml
+2018-11-06 09:10:48,934 10572 INFO africell odoo.modules.registry: module abs_warehouse_product: creating or updating database tables
+2018-11-06 09:10:49,060 10572 INFO africell odoo.modules.loading: loading abs_warehouse_product/views/stock_warehouse_view.xml
+2018-11-06 09:10:49,624 10572 INFO africell odoo.modules.registry: module payment_transfer: creating or updating database tables
+2018-11-06 09:10:49,763 10572 INFO africell odoo.modules.loading: loading payment_transfer/views/payment_transfer_templates.xml
+2018-11-06 09:10:49,869 10572 INFO africell odoo.modules.loading: loading payment_transfer/data/payment_acquirer_data.xml
+2018-11-06 09:10:50,253 10572 INFO africell odoo.modules.registry: module portal_sale: creating or updating database tables
+2018-11-06 09:10:50,443 10572 INFO africell odoo.modules.loading: loading portal_sale/security/portal_sale_security.xml
+2018-11-06 09:10:50,464 10572 INFO africell odoo.modules.loading: loading portal_sale/views/sale_order_views.xml
+2018-11-06 09:10:51,066 10572 INFO africell odoo.modules.registry: module stock_account: creating or updating database tables
+2018-11-06 09:10:51,650 10572 INFO africell odoo.modules.loading: loading stock_account/security/stock_account_security.xml
+2018-11-06 09:10:52,628 10572 INFO africell odoo.modules.loading: loading stock_account/security/ir.model.access.csv
+2018-11-06 09:10:52,853 10572 INFO africell odoo.modules.loading: loading stock_account/wizard/stock_change_standard_price_views.xml
+2018-11-06 09:10:52,918 10572 INFO africell odoo.modules.loading: loading stock_account/wizard/wizard_valuation_history_views.xml
+2018-11-06 09:10:52,994 10572 INFO africell odoo.modules.loading: loading stock_account/views/product_views.xml
+2018-11-06 09:10:53,265 10572 INFO africell odoo.modules.loading: loading stock_account/views/stock_account_views.xml
+2018-11-06 09:10:53,552 10572 INFO africell odoo.modules.loading: loading stock_account/views/stock_config_settings_views.xml
+2018-11-06 09:10:53,629 10572 INFO africell odoo.modules.loading: loading stock_account/report/stock_history_views.xml
+2018-11-06 09:10:53,870 10572 INFO africell odoo.modules.loading: loading stock_account/data/product_data.xml
+2018-11-06 09:10:53,883 10572 INFO africell odoo.modules.loading: loading stock_account/data/stock_account_data.xml
+2018-11-06 09:10:53,899 10572 INFO africell odoo.modules.loading: loading stock_account/data/stock_account_data_post_install.yml
+2018-11-06 09:10:54,709 10572 INFO africell odoo.modules.registry: module warehouse_stock_restrictions: creating or updating database tables
+2018-11-06 09:10:54,752 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:10:54,893 10572 INFO africell odoo.modules.loading: loading warehouse_stock_restrictions/users_view.xml
+2018-11-06 09:10:55,488 10572 INFO africell odoo.modules.loading: loading warehouse_stock_restrictions/security/security.xml
+2018-11-06 09:10:56,213 10572 INFO africell odoo.modules.registry: module purchase: creating or updating database tables
+2018-11-06 09:10:57,024 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:10:57,083 10572 INFO africell odoo.modules.loading: loading purchase/security/purchase_security.xml
+2018-11-06 09:10:59,581 10572 INFO africell odoo.modules.loading: loading purchase/security/ir.model.access.csv
+2018-11-06 09:11:01,055 10572 INFO africell odoo.modules.loading: loading purchase/views/account_invoice_views.xml
+2018-11-06 09:11:01,290 10572 INFO africell odoo.modules.loading: loading purchase/data/purchase_data.xml
+2018-11-06 09:11:01,309 10572 INFO africell odoo.modules.loading: loading purchase/data/purchase_data.yml
+2018-11-06 09:11:01,329 10572 INFO africell odoo.modules.loading: loading purchase/report/purchase_reports.xml
+2018-11-06 09:11:01,358 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [552]
+2018-11-06 09:11:01,390 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [553]
+2018-11-06 09:11:01,399 10572 INFO africell odoo.modules.loading: loading purchase/views/purchase_views.xml
+2018-11-06 09:11:02,952 10572 INFO africell odoo.modules.loading: loading purchase/views/procurement_views.xml
+2018-11-06 09:11:03,041 10572 INFO africell odoo.modules.loading: loading purchase/views/stock_views.xml
+2018-11-06 09:11:03,195 10572 INFO africell odoo.modules.loading: loading purchase/views/res_partner_views.xml
+2018-11-06 09:11:03,834 10572 INFO africell odoo.modules.loading: loading purchase/report/purchase_report_views.xml
+2018-11-06 09:11:04,032 10572 INFO africell odoo.modules.loading: loading purchase/data/mail_template_data.xml
+2018-11-06 09:11:04,042 10572 INFO africell odoo.modules.loading: loading purchase/views/res_config_views.xml
+2018-11-06 09:11:04,207 10572 INFO africell odoo.modules.loading: loading purchase/report/purchase_order_templates.xml
+2018-11-06 09:11:04,296 10572 INFO africell odoo.modules.loading: loading purchase/report/purchase_quotation_templates.xml
+2018-11-06 09:11:06,162 10572 INFO africell odoo.modules.registry: module sale_stock: creating or updating database tables
+2018-11-06 09:11:06,773 10572 INFO africell odoo.modules.loading: loading sale_stock/security/sale_stock_security.xml
+2018-11-06 09:11:07,276 10572 INFO africell odoo.modules.loading: loading sale_stock/security/ir.model.access.csv
+2018-11-06 09:11:07,857 10572 INFO africell odoo.modules.loading: loading sale_stock/views/sale_order_views.xml
+2018-11-06 09:11:08,035 10572 INFO africell odoo.modules.loading: loading sale_stock/views/stock_views.xml
+2018-11-06 09:11:08,328 10572 INFO africell odoo.modules.loading: loading sale_stock/views/sale_config_settings_views.xml
+2018-11-06 09:11:08,403 10572 INFO africell odoo.modules.loading: loading sale_stock/views/account_invoice_views.xml
+2018-11-06 09:11:08,595 10572 INFO africell odoo.modules.loading: loading sale_stock/report/sale_order_report_templates.xml
+2018-11-06 09:11:08,658 10572 INFO africell odoo.modules.loading: loading sale_stock/report/stock_report_deliveryslip.xml
+2018-11-06 09:11:09,657 10572 INFO africell odoo.modules.registry: module export_stockinfo_xls: creating or updating database tables
+2018-11-06 09:11:09,850 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:11:09,908 10572 INFO africell odoo.modules.loading: loading export_stockinfo_xls/views/wizard_view.xml
+2018-11-06 09:11:10,047 10572 INFO africell odoo.models.unlink: User #1 deleted ir.values records with IDs: [554]
+2018-11-06 09:11:10,450 10572 INFO africell odoo.modules.registry: module portal_stock: creating or updating database tables
+2018-11-06 09:11:10,505 10572 INFO africell odoo.modules.loading: loading portal_stock/security/portal_security.xml
+2018-11-06 09:11:10,514 10572 INFO africell odoo.modules.loading: loading portal_stock/security/ir.model.access.csv
+2018-11-06 09:11:11,079 10572 INFO africell odoo.modules.registry: module procurement_jit: creating or updating database tables
+2018-11-06 09:11:11,629 10572 INFO africell odoo.modules.registry: module afri_warehouse: creating or updating database tables
+2018-11-06 09:11:11,694 10572 INFO africell odoo.addons.auth_crypt.models.res_users: Hashing passwords, may be slow for databases with many users...
+2018-11-06 09:11:11,815 10572 WARNING africell odoo.models.schema: Table 'stock_location': unable to set a NOT NULL constraint on column 'department_id' !
+If you want to have it, you should update the records and execute manually:
+ALTER TABLE stock_location ALTER COLUMN department_id SET NOT NULL
+2018-11-06 09:11:11,945 10572 WARNING africell odoo.addons.base.module.module: module afri_warehouse: description is empty !
+2018-11-06 09:11:11,950 10572 INFO africell odoo.modules.loading: loading afri_warehouse/data/sequence.xml
+2018-11-06 09:11:11,962 10572 INFO africell odoo.modules.loading: loading afri_warehouse/security/security.xml
+2018-11-06 09:11:15,048 10572 INFO africell odoo.modules.loading: loading afri_warehouse/security/ir.model.access.csv
+2018-11-06 09:11:15,576 10572 INFO africell odoo.modules.loading: loading afri_warehouse/views/warehouse_department.xml
+2018-11-06 09:11:15,675 10572 INFO africell odoo.modules.loading: loading afri_warehouse/views/warehouse_procurement.xml
+2018-11-06 09:11:15,778 10572 INFO africell odoo.modules.loading: loading afri_warehouse/views/warehouse_request.xml
+2018-11-06 09:11:15,811 10572 INFO africell odoo.models.unlink: User #1 deleted ir.ui.menu records with IDs: [338]
+2018-11-06 09:11:15,981 10572 INFO africell odoo.modules.loading: loading afri_warehouse/views/product_product.xml
+2018-11-06 09:11:16,177 10572 INFO africell odoo.modules.loading: loading afri_warehouse/views/res_users.xml
+2018-11-06 09:11:16,445 10572 INFO africell odoo.modules.loading: loading afri_warehouse/menus/menus.xml
+2018-11-06 09:11:17,248 10572 INFO africell odoo.modules.loading: 45 modules loaded in 120.10s, 267 queries
+2018-11-06 09:11:17,599 10572 WARNING africell odoo.modules.loading: The model warehouse.procurement.request.line has no access rules, consider adding one. E.g. access_warehouse_procurement_request_line,access_warehouse_procurement_request_line,model_warehouse_procurement_request_line,,1,0,0,0
+2018-11-06 09:11:17,599 10572 WARNING africell odoo.modules.loading: The model warehouse.procurement.request has no access rules, consider adding one. E.g. access_warehouse_procurement_request,access_warehouse_procurement_request,model_warehouse_procurement_request,,1,0,0,0
+2018-11-06 09:11:18,119 10572 INFO africell odoo.modules.loading: Modules loaded.
+2018-11-06 09:11:18,125 10572 INFO africell odoo.models: Computing parent left and right for table product_category...
+2018-11-06 09:28:01,187 10572 INFO africell odoo.addons.base.ir.ir_cron: Starting job `Email Queue Manager`.
+2018-11-06 09:30:15,209 10572 INFO ? odoo.http: HTTP Configuring static files
+2018-11-06 09:30:15,215 10572 INFO africell odoo.addons.base.ir.ir_http: Generating routing map
+2018-11-06 09:30:17,260 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:17] "GET /web HTTP/1.1" 200 -
+2018-11-06 09:30:17,865 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:17] "GET /web/image/ir.ui.menu/79/web_icon_data HTTP/1.1" 200 -
+2018-11-06 09:30:17,921 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:17] "GET /web/image/ir.ui.menu/260/web_icon_data HTTP/1.1" 200 -
+2018-11-06 09:30:17,970 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:17] "GET /web/image/ir.ui.menu/224/web_icon_data HTTP/1.1" 200 -
+2018-11-06 09:30:18,004 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "GET /web/image/ir.ui.menu/181/web_icon_data HTTP/1.1" 200 -
+2018-11-06 09:30:18,037 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "GET /web/image/ir.ui.menu/105/web_icon_data HTTP/1.1" 200 -
+2018-11-06 09:30:18,085 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "GET /web/image/ir.ui.menu/5/web_icon_data HTTP/1.1" 200 -
+2018-11-06 09:30:18,230 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "GET /web/image/ir.ui.menu/4/web_icon_data HTTP/1.1" 200 -
+2018-11-06 09:30:18,576 10572 INFO ? werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "GET /web/static/src/img/favicon.ico HTTP/1.1" 200 -
+2018-11-06 09:30:18,682 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "POST /web/dataset/call HTTP/1.1" 200 -
+2018-11-06 09:30:18,811 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "GET /web/webclient/qweb?mods=web,web_kanban,base,bus,web_tour,mail,report,product,web_planner,account,account_bank_statement_import,barcodes,stock,abs_warehouse_product,sales_team,sale,purchase,report_xlsx,export_stockinfo_xls,web_editor,web_settings_dashboard,sale_stock,web_responsive,base_import,web_calendar,portal,payment,web_diagram,warehouse_stock_restrictions,payment_transfer,web_kanban_gauge HTTP/1.1" 200 -
+2018-11-06 09:30:18,851 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:18] "POST /web/webclient/translations HTTP/1.1" 200 -
+2018-11-06 09:30:19,085 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:19] "POST /mail/client_action HTTP/1.1" 200 -
+2018-11-06 09:30:19,219 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:19] "GET /web/image?model=res.users&field=image_small&id=1 HTTP/1.1" 200 -
+2018-11-06 09:30:19,306 10572 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres
+2018-11-06 09:30:19,801 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:19] "POST /web/menu/load_needaction HTTP/1.1" 200 -
+2018-11-06 09:30:19,837 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:19] "POST /web/action/load HTTP/1.1" 200 -
+2018-11-06 09:30:19,891 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:19] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-06 09:30:20,282 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/product.product/load_views HTTP/1.1" 200 -
+2018-11-06 09:30:20,688 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/product.product/read HTTP/1.1" 200 -
+2018-11-06 09:30:20,745 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/warehouse.department/fields_get HTTP/1.1" 200 -
+2018-11-06 09:30:20,778 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/product.attribute.value/fields_get HTTP/1.1" 200 -
+2018-11-06 09:30:20,825 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/stock.location.route/search HTTP/1.1" 200 -
+2018-11-06 09:30:20,836 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/stock.location.route/fields_get HTTP/1.1" 200 -
+2018-11-06 09:30:20,862 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/account.tax/fields_get HTTP/1.1" 200 -
+2018-11-06 09:30:20,876 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/account.tax/fields_get HTTP/1.1" 200 -
+2018-11-06 09:30:20,932 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /mail/read_followers HTTP/1.1" 200 -
+2018-11-06 09:30:20,962 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:20] "POST /web/dataset/call_kw/mail.message/message_format HTTP/1.1" 200 -
+2018-11-06 09:30:21,010 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:21] "POST /web/dataset/call_kw/stock.location.route/name_get HTTP/1.1" 200 -
+2018-11-06 09:30:21,035 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:21] "POST /web/dataset/search_read HTTP/1.1" 200 -
+2018-11-06 09:30:21,080 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:21] "GET /web/image/res.partner/3/image_small HTTP/1.1" 200 -
+2018-11-06 09:30:21,274 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:21] "POST /web/dataset/call_kw/product.pricelist.item/fields_get HTTP/1.1" 200 -
+2018-11-06 09:30:21,294 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:21] "POST /web/dataset/call_kw/product.packaging/load_views HTTP/1.1" 200 -
+2018-11-06 09:30:21,315 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:30:21] "POST /web/dataset/call_kw/product.supplierinfo/load_views HTTP/1.1" 200 -
+2018-11-06 09:31:09,315 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:31:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:31:59,346 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:31:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:32:49,381 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:32:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:33:39,424 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:33:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:34:29,467 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:34:29] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:35:19,514 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:35:19] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:36:09,551 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:36:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:36:59,586 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:36:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:37:49,621 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:37:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:38:39,653 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:38:39] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:39:29,701 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:39:29] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:40:19,738 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:40:19] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:41:09,775 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:41:09] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:41:59,810 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:41:59] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:42:49,853 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:42:49] "POST /longpolling/poll HTTP/1.1" 200 -
+2018-11-06 09:43:39,908 10572 INFO africell werkzeug: 127.0.0.1 - - [06/Nov/2018 09:43:39] "POST /longpolling/poll HTTP/1.1" 200 -
+                                                                                                                                   

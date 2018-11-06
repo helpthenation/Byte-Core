@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/stock/views/product_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/stock/views/product_views.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/ir_ui_meni.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/ir_ui_menu.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,9 +19,9 @@
     <session id="-2049166867">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="46" />
+          <entry key="project.closed" value="47" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.1" value="5" />
           <entry key="project.open.time.10" value="10" />
           <entry key="project.open.time.11" value="11" />
           <entry key="project.open.time.12" value="4" />
@@ -41,12 +45,12 @@
           <entry key="project.open.time.7" value="7" />
           <entry key="project.open.time.8" value="11" />
           <entry key="project.open.time.9" value="10" />
-          <entry key="project.opened" value="112" />
+          <entry key="project.opened" value="113" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="conf" value="25" />
+          <entry key="conf" value="26" />
           <entry key="css" value="9" />
           <entry key="csv" value="11" />
           <entry key="gitignore" value="5" />
@@ -59,12 +63,12 @@
           <entry key="png" value="6" />
           <entry key="po" value="2" />
           <entry key="properties" value="1" />
-          <entry key="py" value="523" />
+          <entry key="py" value="530" />
           <entry key="rst" value="8" />
           <entry key="sh" value="3" />
           <entry key="txt" value="5" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="295" />
+          <entry key="xml" value="296" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -75,11 +79,11 @@
           <entry key="JavaScript" value="17" />
           <entry key="Log" value="4" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="65" />
+          <entry key="PLAIN_TEXT" value="66" />
           <entry key="Properties" value="1" />
-          <entry key="Python" value="523" />
+          <entry key="Python" value="530" />
           <entry key="ReST" value="8" />
-          <entry key="XML" value="295" />
+          <entry key="XML" value="296" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -93,10 +97,10 @@
           <entry key="js" value="46" />
           <entry key="less" value="5" />
           <entry key="log" value="32" />
-          <entry key="py" value="15340" />
+          <entry key="py" value="15343" />
           <entry key="txt" value="17" />
           <entry key="vmoptions" value="3" />
-          <entry key="xml" value="6993" />
+          <entry key="xml" value="7030" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -104,8 +108,8 @@
           <entry key="JavaScript" value="46" />
           <entry key="Log" value="32" />
           <entry key="PLAIN_TEXT" value="284" />
-          <entry key="Python" value="16661" />
-          <entry key="XML" value="6993" />
+          <entry key="Python" value="16664" />
+          <entry key="XML" value="7030" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -122,10 +126,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+            <state relative-caret-position="126">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
+              <folding>
+                <element signature="e#0#25#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,23 +140,46 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/addons/stock/views/product_views.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="286" column="24" selection-start-line="286" selection-start-column="24" selection-end-line="286" selection-end-column="24" />
+            <state relative-caret-position="9">
+              <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
               <folding>
                 <element signature="n#button#1;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
                 <element signature="n#button#2;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
                 <element signature="n#button#3;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
                 <element signature="n#button#4;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+                <element signature="n#button#5;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state>
+              <folding>
+                <element signature="e#0#31#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -165,10 +195,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>childre</find>
-      <find>Number of Children</find>
-      <find>no</find>
-      <find>children</find>
       <find>address</find>
       <find>marital</find>
       <find>attrs=&quot;{'invisible':</find>
@@ -195,6 +221,10 @@
       <find>&lt;button</find>
       <find>_compute_leaves</find>
       <find>open</find>
+      <find>b</find>
+      <find>barcode</find>
+      <find>category</find>
+      <find>is_category</find>
     </findStrings>
     <replaceStrings>
       <replace>ByteSchool</replace>
@@ -252,8 +282,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/less/guard_status.less" />
-        <option value="$PROJECT_DIR$/addons/hr_attendance/static/src/js/presence_widgets.js" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/js/presence_widgets.js" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/static/src/xml/guard_status.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/operations_management/models/hr_employee.py" />
@@ -299,14 +327,16 @@
         <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/religion.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py" />
         <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/views/product_product.xml" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py" />
+        <option value="$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py" />
+        <option value="$PROJECT_DIR$/addons/stock/views/product_views.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-18" />
     <option name="y" value="27" />
     <option name="width" value="1279" />
@@ -320,35 +350,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="stock" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="stock" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -422,6 +423,84 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".conf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stock" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="stock" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="afri_warehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="afri_warehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="africell" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="afri_warehouse" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -461,6 +540,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Africell" type="PythonConfigurationType" factoryName="Python">
+      <module name="Byte-Core" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -471,9 +551,8 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odoo-bin" />
-      <option name="PARAMETERS" value="-c .conf/africell.conf --db-filter=africell -u afri_warehouse -d africell" />
+      <option name="PARAMETERS" value="-c .conf/africell.conf --db-filter=africell -u all -d africell" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -506,9 +585,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -519,7 +597,7 @@
       <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.24503312" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.36754966" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.8956954" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" weight="0.25165564" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -660,31 +738,6 @@
           <line>40</line>
           <option name="timeStamp" value="91" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py</url>
-          <line>14</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="107" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="108" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="109" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="110" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -696,10 +749,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/models/hr_district.py" />
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/hr_employee.py" />
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/data/hr_employee_sequence.xml" />
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/res_company.py" />
     <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/models/res_config.py" />
     <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_employee_id/views/res_config_views.xml" />
     <entry file="file://$PROJECT_DIR$/custom/school/school/models/school.py" />
@@ -739,7 +788,7 @@
     <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/__manifest__.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
+        <state relative-caret-position="153">
           <caret line="20" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
@@ -759,24 +808,10 @@
         <state relative-caret-position="-84" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="15" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_holidays/models/hr_holidays.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="41" column="38" selection-start-line="41" selection-start-column="38" selection-end-line="41" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -794,15 +829,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.conf/africell.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/addons/stock/views/product_views.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="286" column="24" selection-start-line="286" selection-start-column="24" selection-end-line="286" selection-end-column="24" />
+        <state relative-caret-position="9">
+          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
           <folding>
             <element signature="n#button#1;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
             <element signature="n#button#2;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
             <element signature="n#button#3;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
             <element signature="n#button#4;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
+            <element signature="n#button#5;n#div#0;n#data#0;n#field#3;n#record#14;n#data#0;n#odoo#0;n#!!top" />
           </folding>
         </state>
       </provider>
