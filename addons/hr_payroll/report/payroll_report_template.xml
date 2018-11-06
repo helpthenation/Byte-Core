@@ -10,21 +10,6 @@
                                 <tr>
                                     <td>
                                         <br/>
-                                        <p>
-                                            <strong><span t-esc="o.company_id.name"/></strong>
-                                        </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>
-                                            <span t-esc="o.company_id.street"/>
-                                        </strong>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <br/>
                                         <br/>
                                         <strong>
                                             <span t-esc="get_month(o)"/>
@@ -135,10 +120,8 @@
                             </table>
                             <br/>
                             <br/>
-                            <strong><h4> Prepared By: .................................................</h4></strong>
-                            <br/>
-                            <br/>
-                            <strong><h4> Checked By: ...................................................</h4></strong>
+                            <strong><h4> Date and Signature: .................................................</h4></strong>
+
                         </div>
                     </t>
                 </t>

@@ -2,201 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5018889e-d768-4a87-bb85-bf060d255002" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.conf/conf.conf" beforeDir="false" afterPath="$PROJECT_DIR$/.conf/conf.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/byte.log" beforeDir="false" afterPath="$PROJECT_DIR$/byte.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/data/cron.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/data/cron.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/models/hr_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee_personal_identification.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/models/hr_employee_personal_identification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/models/hr_employee_personal_identification_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/models/hr_employee_personal_identification_type.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/security/.~lock.ir.model.access.csv#" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/security/ir.model.access.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/tests/test_employee_id.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/tests/test_employee_id.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/views/hr_employee_id_type_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/views/hr_employee_id_type_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_employee_personal_identification/views/hr_employee_views.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_employee_personal_identification/views/hr_employee_views.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/hooks.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/ar.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/cs_CZ.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/de.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/es.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/fi.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/fr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/hr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/hr_HR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/hr_holidays_compute_days.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/it.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/lt.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/nl_NL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/pt_BR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/ro.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/i18n/sl.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/models/hr_employee.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/models/hr_holidays.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/models/hr_holidays_status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/models/resource_calendar.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/readme/CONFIGURE.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/readme/CONTRIBUTORS.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/readme/DESCRIPTION.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/readme/USAGE.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/static/description/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/static/description/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/tests/test_holidays_compute_days.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/views/hr_holidays_status_views.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_compute_days/views/hr_holidays_views.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/README.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/__manifest__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/data/cron.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/data/cron.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/models/hr_employee.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/models/hr_holidays.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays_evaluation_rule.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/models/hr_holidays_evaluation_rule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays_evaluation_ruleset.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/models/hr_holidays_evaluation_ruleset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays_status.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/models/hr_holidays_status.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/security/ir.model.access.csv" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/security/ir.model.access.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/tests/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/tests/test_holidays_evaluate_allocation.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/tests/test_holidays_evaluate_allocation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/views/hr_holidays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/views/hr_holidays.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/views/hr_holidays_evaluation_rule.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/views/hr_holidays_evaluation_rule.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/views/hr_holidays_evaluation_ruleset.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/views/hr_holidays_evaluation_ruleset.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/views/hr_holidays_status.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_holidays_evaluate_allocation/views/hr_holidays_status.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/ar.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/cs_CZ.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/de.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/es.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/fi.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/fr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/hr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/hr_HR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/hr_holidays_legal_leave.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/it.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/lt.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/nl_NL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/pt_BR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/ro.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/i18n/sl.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/hr_employee.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/hr_holidays_status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/res_company.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/models/res_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/static/description/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/tests/test_holidays_legal_leave.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/views/hr_holidays_status.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/views/res_company.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_legal_leave/views/res_config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/ar.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/cs_CZ.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/de.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/es.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/fi.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/fr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/hr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/hr_HR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/hr_holidays_settings.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/it.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/lt.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/nl_NL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/pt_BR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/ro.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/i18n/sl.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/models/hr_holidays_config_settings.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/static/description/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_settings/views/hr_holidays_config_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/models/hr_holidays.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/models/hr_holidays_evaluation_ruleset.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/models/hr_holidays_status.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/models/hr_holidays_upa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/models/res_company.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/models/res_config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/security/ir.model.access.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/tests/test_holidays_upa.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/views/hr_holidays_upa.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_holidays_upa/views/res_config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/data/date_range_type.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/data/ir_sequence_data.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/i18n/de.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/i18n/es.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/i18n/fr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/i18n/hr_period.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/date_range_type.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_contract.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_employee.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_fiscal_year.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_payslip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_payslip_employees.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_payslip_run.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_period.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/security/ir.model.access.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/static/description/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/tests/test_hr_fiscalyear.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/tests/test_payslip.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_fiscalyear_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_employee_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_run_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_period_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/README.rst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/__manifest__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/ar.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/cs_CZ.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/de.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/es.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/fi.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/fr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/hr.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/hr_HR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/hr_public_holidays.pot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/it.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/lt.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/nl_NL.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/pl.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/pt_BR.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/ro.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/i18n/sl.po" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/models/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/models/hr_public_holidays.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/models/hr_public_holidays_line.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/security/ir.model.access.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/static/description/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/static/description/icon.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/tests/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/tests/test_public_holidays.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/views/hr_public_holidays_view.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/wizards/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/wizards/public_holidays_next_year_wizard.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/community/hr/hr_public_holidays/wizards/public_holidays_next_year_wizard.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/__manifest__.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/__manifest__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml" beforeDir="false" afterPath="$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -255,12 +69,12 @@
           <entry key="png" value="6" />
           <entry key="po" value="2" />
           <entry key="properties" value="1" />
-          <entry key="py" value="839" />
+          <entry key="py" value="850" />
           <entry key="rst" value="11" />
           <entry key="sh" value="3" />
           <entry key="txt" value="6" />
           <entry key="vmoptions" value="1" />
-          <entry key="xml" value="507" />
+          <entry key="xml" value="515" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -273,9 +87,9 @@
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="90" />
           <entry key="Properties" value="1" />
-          <entry key="Python" value="839" />
+          <entry key="Python" value="850" />
           <entry key="ReST" value="11" />
-          <entry key="XML" value="507" />
+          <entry key="XML" value="515" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -290,10 +104,10 @@
           <entry key="js" value="46" />
           <entry key="less" value="5" />
           <entry key="log" value="32" />
-          <entry key="py" value="23598" />
+          <entry key="py" value="23953" />
           <entry key="txt" value="18" />
           <entry key="vmoptions" value="3" />
-          <entry key="xml" value="9978" />
+          <entry key="xml" value="10087" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
@@ -302,8 +116,8 @@
           <entry key="JavaScript" value="46" />
           <entry key="Log" value="32" />
           <entry key="PLAIN_TEXT" value="570" />
-          <entry key="Python" value="26104" />
-          <entry key="XML" value="9978" />
+          <entry key="Python" value="26459" />
+          <entry key="XML" value="10087" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -318,57 +132,99 @@
     <favorites_list name="Byte-Core" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/__manifest__.py">
+        <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="34" />
+            <state relative-caret-position="270">
+              <caret line="46" column="18" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_run_button_box/views/hr_payslip_run.xml">
+        <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+            <state relative-caret-position="-573">
+              <caret line="13" column="72" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="72" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml">
+        <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="42" column="62" selection-start-line="42" selection-start-column="62" selection-end-line="42" selection-end-column="62" />
+            <state relative-caret-position="-112">
+              <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml">
+        <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="21" column="7" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+            <state relative-caret-position="168">
+              <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.conf/conf.conf">
+        <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/hr_payroll_report.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="1" column="131" selection-start-line="1" selection-start-column="131" selection-end-line="1" selection-end-column="131" />
+            <state relative-caret-position="266">
+              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+        <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="74">
+              <caret line="81" column="172" selection-start-line="81" selection-start-column="172" selection-end-line="81" selection-end-column="172" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="98">
+              <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment_category.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="14">
+              <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="134" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -384,10 +240,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>web_auth_reset_password</find>
-      <find>confirm_password</find>
-      <find>note</find>
-      <find>partner</find>
       <find>super</find>
       <find>Invalid si</find>
       <find>get_run_approval</find>
@@ -414,6 +266,10 @@
       <find>parent_id</find>
       <find>id_number</find>
       <find>open</find>
+      <find>has been created</find>
+      <find>code</find>
+      <find>sorry</find>
+      <find>br</find>
     </findStrings>
     <replaceStrings>
       <replace>base.group_hr_user</replace>
@@ -465,18 +321,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master-remote" />
+        <entry key="$PROJECT_DIR$" value="africell" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/custom/community/general/access_apps/controllers/main.py" />
-        <option value="$PROJECT_DIR$/custom/community/general/access_restricted/security.xml" />
-        <option value="$PROJECT_DIR$/custom/community/general/access_restricted/tests/test_fields_view_get.py" />
-        <option value="$PROJECT_DIR$/custom/community/general/access_restricted/__manifest__.py" />
-        <option value="$PROJECT_DIR$/custom/community/general/ir_rule_protected/views.xml" />
         <option value="$PROJECT_DIR$/custom/community/general/access_apps/security/access_apps_security.xml" />
         <option value="$PROJECT_DIR$/custom/community/general/access_restricted/models.py" />
         <option value="$PROJECT_DIR$/custom/community/general/ir_rule_protected/models.py" />
@@ -495,7 +346,6 @@
         <option value="$PROJECT_DIR$/custom/payroll/hr_payroll_loan/__manifest__.py" />
         <option value="$PROJECT_DIR$/custom/payroll/hr_period/__manifest__.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/security/ir.model.access.csv" />
-        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/__manifest__.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/models/__init__.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/models/res_config.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/views/res_config_views.xml" />
@@ -504,25 +354,31 @@
         <option value="$PROJECT_DIR$/addons/hr_payroll/views/payroll_approval_templates.xml" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/data/payroll_emailtemplate.xml" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/controllers/main.py" />
-        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/models/hr_payroll.py" />
         <option value="$PROJECT_DIR$/custom/clients/aureol/hr_tools_aureol/security/ir.model.access.csv" />
         <option value="$PROJECT_DIR$/custom/clients/aureol/hr_tools_aureol/__manifest__.py" />
         <option value="$PROJECT_DIR$/addons/web/views/webclient_templates.xml" />
-        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py" />
         <option value="$PROJECT_DIR$/custom/clients/aureol/hr_tools_aureol/wizard/hr_tool.py" />
         <option value="$PROJECT_DIR$/custom/clients/aureol/hr_tools_aureol/wizard/hr_tool_view.xml" />
-        <option value="$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml" />
         <option value="$PROJECT_DIR$/byte.log" />
         <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py" />
-        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py" />
-        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml" />
         <option value="$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml" />
         <option value="$PROJECT_DIR$/custom/payroll/hr_payslip_run_button_box/views/hr_payslip_run.xml" />
         <option value="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views/hr_employee.xml" />
         <option value="$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/views/hr_payslip_run.xml" />
         <option value="$PROJECT_DIR$/.conf/conf.conf" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/hr_payslip_run.py" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/views/hr_payslip_run.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/__manifest__.py" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/models/__init__.py" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py" />
+        <option value="$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment_category.py" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml" />
+        <option value="$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml" />
+        <option value="$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml" />
       </list>
     </option>
   </component>
@@ -540,6 +396,52 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="aureol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="aureol" type="462c0819:PsiDirectoryNode" />
+              <item name="aureol" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="custom" type="462c0819:PsiDirectoryNode" />
+              <item name="clients" type="462c0819:PsiDirectoryNode" />
+              <item name="aureol" type="462c0819:PsiDirectoryNode" />
+              <item name="aureol" type="462c0819:PsiDirectoryNode" />
+              <item name="report" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -551,6 +453,24 @@
               <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name=".conf" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="hr_payroll" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="addons" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="hr_payroll" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
@@ -570,58 +490,31 @@
               <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="aureol" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
             <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aureol" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aureol" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name=".conf" type="462c0819:PsiDirectoryNode" />
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aureol" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aureol" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="models" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="clients" type="462c0819:PsiDirectoryNode" />
-              <item name="pendrax" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="community" type="462c0819:PsiDirectoryNode" />
-              <item name="hr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Byte-Core" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Byte-Core" type="462c0819:PsiDirectoryNode" />
-              <item name="custom" type="462c0819:PsiDirectoryNode" />
-              <item name="payroll" type="462c0819:PsiDirectoryNode" />
+              <item name="Byte-Core" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="custom" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="clients" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aureol" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="aureol" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="views" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -637,19 +530,19 @@
     <property name="settings.editor.selected.configurable" value="pyconsole" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/custom/payroll" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
-      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
-      <recent name="$PROJECT_DIR$/custom/community" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom/clients/aureol/aureol/views" />
       <recent name="$PROJECT_DIR$/custom/clients/aureol/hr_tools_aureol/security" />
       <recent name="$PROJECT_DIR$/addons/hr_payroll" />
       <recent name="$PROJECT_DIR$/addons/hr_payroll/views" />
       <recent name="$PROJECT_DIR$/custom/community/general" />
-      <recent name="$PROJECT_DIR$/addons/hr_payroll/security" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/custom/clients/aureol/aureol/models" />
+      <recent name="$PROJECT_DIR$/custom/payroll" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/operations_management/views" />
+      <recent name="$PROJECT_DIR$/custom/clients/pendrax/pendrax_entry/views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -678,7 +571,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/odoo-bin" />
-      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=pend -u all -d pendraxOct" />
+      <option name="PARAMETERS" value="-c .conf/conf.conf --db-filter=aureoll -u hr_payroll,aureol,hr_payslip_amendment -d aureoll" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -711,8 +604,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3149665" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -720,12 +614,12 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32917318" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49292627" weight="0.8062914" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49069247" weight="0.34768212" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32615894" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4996277" weight="0.3245033" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.26490065" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4899479" visible="true" weight="0.33278146" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.25165564" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51005214" side_tool="true" weight="0.49172187" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5093075" side_tool="true" weight="0.6456954" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -825,6 +719,26 @@
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/custom/community/hr/hr_contract_state/models/hr_contract.py</url>
+          <line>95</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/custom/community/hr/hr_contract_state/models/hr_contract.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/custom/community/hr/hr_contract_state/models/hr_contract.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/custom/community/hr/hr_holidays_evaluate_allocation/models/hr_holidays_evaluation_ruleset.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/odoo/addons/base/ir/ir_actions.py</url>
           <line>352</line>
           <option name="timeStamp" value="79" />
@@ -836,138 +750,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py</url>
-          <line>23</line>
+          <line>36</line>
           <option name="timeStamp" value="90" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>73</line>
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>75</line>
-          <option name="timeStamp" value="136" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="137" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>78</line>
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>106</line>
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>89</line>
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>94</line>
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>95</line>
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>108</line>
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>109</line>
-          <option name="timeStamp" value="149" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>110</line>
-          <option name="timeStamp" value="150" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>155</line>
-          <option name="timeStamp" value="151" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>154</line>
-          <option name="timeStamp" value="152" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_leave_unused/wizard/print_leave_summary.py</url>
-          <line>153</line>
-          <option name="timeStamp" value="153" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/payroll/hr_payslip_run_confirm_slips/models/hr_payslip_run.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="187" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/payroll/hr_payslip_run_confirm_slips/models/hr_payslip_run.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="188" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_payslip_run.py</url>
-          <line>133</line>
-          <option name="timeStamp" value="189" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/community/hr/hr_period/models/hr_payslip_run.py</url>
-          <line>134</line>
-          <option name="timeStamp" value="190" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py</url>
-          <line>22</line>
-          <option name="timeStamp" value="317" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="318" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py</url>
-          <line>24</line>
-          <option name="timeStamp" value="319" />
+          <url>file://$PROJECT_DIR$/custom/clients/pendrax/hr_employee__mass_update/wizard/employee_mass_update.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -980,86 +769,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/addons/auth_signup/data/auth_signup_data.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="81" column="10" selection-start-line="79" selection-start-column="4" selection-end-line="81" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/auth_signup/views/res_users_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="25" column="77" selection-start-line="25" selection-start-column="77" selection-end-line="25" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/auth_signup/models/res_users.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="74" column="80" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="74" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/mail/controllers/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="39" column="8" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_holidays/controllers/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/auth_signup/models/res_partner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="136" column="8" selection-start-line="136" selection-start-column="8" selection-end-line="136" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/auth_signup/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/controllers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/auth_signup/views/auth_signup_login_templates.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-308">
-          <caret line="32" column="83" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/auth_signup/controllers/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/__manifest__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="37" column="38" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/addons/auth_signup/controllers/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="245">
@@ -1076,13 +785,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_payroll/data/hr_payroll_data.xml">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_payroll/controllers/main.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1133,68 +835,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="133" column="40" lean-forward="true" selection-start-line="133" selection-start-column="40" selection-end-line="133" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/byte.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="4" column="40" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="13" column="72" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="72" column="36" selection-start-line="72" selection-start-column="36" selection-end-line="72" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/hr_payroll_report.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/addons/hr_payroll/data/payroll_emailtemplate.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="9" column="57" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1214,20 +861,7 @@
         <state relative-caret-position="-714" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="15" column="48" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-337">
-          <caret line="679" column="45" selection-start-line="679" selection-start-column="31" selection-end-line="679" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_view.xml" />
     <entry file="file://$PROJECT_DIR$/custom/payroll/hr_period/views/hr_payslip_run_view.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1235,13 +869,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_run_view.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-338">
-          <caret line="43" column="22" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/community/hr/hr_period/views/hr_payslip_run_view.xml" />
     <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/__manifest__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
@@ -1281,6 +909,172 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/stock/views/product_views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="91" column="14" selection-start-line="91" selection-start-column="14" selection-end-line="91" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_line.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/warehouse_request_lines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/africell/afri_warehouse/models/product_product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/hr_payslip_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="5" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/views/hr_employee.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/views/hr_payroll_views.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="708" column="39" selection-start-line="708" selection-start-column="20" selection-end-line="708" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/views/hr_payslip_run.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/__manifest__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="18" column="33" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_payslip_run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="22" column="19" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/models/hr_employee.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="16" column="49" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/payroll/hr_payslip_amendment/models/hr_payslip_amendment_category.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="131" column="29" selection-start-line="131" selection-start-column="29" selection-end-line="134" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/hr_payroll_report.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/addons/hr_payroll/report/payroll_report_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nassit_report_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-573">
+          <caret line="13" column="72" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/payroll_report_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="37" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom/clients/aureol/aureol/report/nra_report_template.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="81" column="172" selection-start-line="81" selection-start-column="172" selection-end-line="81" selection-end-column="172" />
         </state>
       </provider>
     </entry>

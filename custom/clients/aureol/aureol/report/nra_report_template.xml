@@ -8,9 +8,7 @@
                         <div class="page">
                             <strong>
                             <center>
-                            GOVERNMENT OF SIERRA LEONE
-                            <br/>
-                            INCOME TAX DEPARTMENT
+                            GOVERNMENT OF SIERRA LEONE. INCOME TAX DEPARTMENT
                             </center>
                             RETURN BY EMPLOYER INCOME TAX DEDUCTION FROM EMPLOYEES REMUNERATION, SECTION 23 OF INCOME TAX ACT 2000
                             <br/>
@@ -21,16 +19,21 @@
                             <table class="table table-bordered mb64">
                                 <thead>
                                     <tr>
+                                        <th>File No.</th>
                                         <th>Employee's Name</th>
                                         <th>Gross Emolument for the month</th>
                                         <th>Monthly Tax Deduction</th>
                                         <th>Cummiltive Gross Emolument up to end of month</th>
                                         <th>Cummiltive Tax Deduction up to end of month</th>
+                                        <th>Remarks</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr t-foreach="get_detail(o.slip_ids)"
                                         t-as="s">
+                                        <th>
+                                            <span>A-145</span>
+                                        </th>
                                         <th>
                                             <span t-esc="s['name']"/>
                                         </th>
@@ -46,9 +49,15 @@
                                         <td>
                                             <span t-esc="formatLang(s['cumm_paye'], currency_obj = o.currency_id)"/>
                                         </td>
+                                        <td>
+                                            <span></span>
+                                        </td>
                                     </tr>
                                         <tr class="border-black bg-gray-lighter"
                                         style="border-bottom: 1px solid black">
+                                        <th>
+                                            <span></span>
+                                        </th>
                                         <th>
                                             <span t-esc="get_totals(o.slip_ids)['name']"/>
                                         </th>
@@ -64,12 +73,13 @@
                                         <th>
                                             <span t-esc="formatLang(get_totals(o.slip_ids)['total_cumm_paye'], currency_obj = o.currency_id)"/>
                                         </th>
+                                        <th>
+                                            <span></span>
+                                        </th>
                                     </tr>
                                 </tbody>
                             </table>
-                            <br/>
-                            <strong><h4> <span t-esc="get_footer_text(o)[0]"/></h4></strong>
-                            <br/>
+                            <strong><h4> <span t-esc="get_footer_text(o)[0]"/><span t-esc="formatLang(get_totals(o.slip_ids)['total_paye'], currency_obj = o.currency_id)"/></h4></strong>
                             <table class="table">
                                 <tr>
                                 <td align="left"><span><strong><h4> Date:.............................</h4></strong></span></td>

@@ -19,6 +19,8 @@ from odoo.addons import decimal_precision as dp
 class HrPayslipRun(models.Model):
     _inherit = 'hr.payslip.run'
     first_approver_id = fields.Many2one(comodel_name='hr.employee', string='Payroll Aproval by: ', required=True)
+    same_gross = fields.Boolean(string='Same Gross', help='Same GROSS since start of FY')
+    same_paye = fields.Boolean(string='Same Paye', help='Same PAYE since start of FY')
 
     '''
     @api.multi

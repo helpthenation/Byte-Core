@@ -52,9 +52,9 @@ class AureolNraReport(report_sxw.rml_parse):
         for s in slip_ids:
             gross = s.line_ids.filtered(lambda r: r.code == "GROSS").total,
             paye = s.line_ids.filtered(lambda r: r.code == "PAYE").total * -1,
-            cumm_gross = s.employee_id.get_cummilative_details(s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
+            cumm_gross = s.employee_id.get_cummilative_details(s.payslip_run_id, s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
                               0]  or "",
-            cumm_paye = s.employee_id.get_cummilative_details(s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
+            cumm_paye = s.employee_id.get_cummilative_details(s.payslip_run_id, s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
                              -1] * -1 or "",
             total_paye+=paye[0]
             total_gross+=gross[0]
@@ -72,9 +72,9 @@ class AureolNraReport(report_sxw.rml_parse):
         for s in slip_ids:
             gross = s.line_ids.filtered(lambda r: r.code == "GROSS").total,
             paye = s.line_ids.filtered(lambda r: r.code == "PAYE").total * -1,
-            cumm_gross = s.employee_id.get_cummilative_details(s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
+            cumm_gross = s.employee_id.get_cummilative_details(s.payslip_run_id, s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
                               0] or "",
-            cumm_paye = s.employee_id.get_cummilative_details(s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
+            cumm_paye = s.employee_id.get_cummilative_details(s.payslip_run_id, s.hr_period_id.fiscalyear_id.date_start, s.date_to)[
                              -1] * -1 or "",
             result.append({
                 'name': s.employee_id.name or "",
