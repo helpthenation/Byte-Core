@@ -4,7 +4,7 @@
         <template id="report_payrolladvice">
             <t t-call="report.html_container">
                 <t t-call="report.external_layout">
-                    <t t-foreach="doc" t-as="o">
+                    <t t-foreach="objects" t-as="o">
                         <div class="page">
                             <table>
                                 <tr>
@@ -52,10 +52,10 @@
                                                     A/C no.
                                                     <span t-esc="o.company_bank_id.acc_number"/>
                                                 </span>
-                                                form period
+                                                <!--from
                                                 <span t-esc="get_month['from_name']"/>
                                                 to
-                                                <span t-esc="get_month['to_name']"/>
+                                                <span t-esc="get_month['to_name']"/>-->
                                             </strong>
                                         </p>
                                     </td>
@@ -74,16 +74,13 @@
                                     <tr style="border-top: 1px solid black">
                                         <th>SI No.</th>
                                         <th>Name Of Employee</th>
-<!--
-                                        <th>Identification No.</th>
--->
                                         <th>Bank Account No.</th>
-                                        <th>By salary (Le)</th>
+                                        <th>Salary</th>
                                         <th>C/D</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr t-foreach="get_detail"
+                                    <tr t-foreach="get_detail(o)"
                                         t-as="l">
                                         <td>
                                             <span t-esc="l_index+1">.</span>
@@ -94,9 +91,9 @@
                                         <td>
                                             <span t-esc="l['acc_no']"/>
                                         </td>
-                                        <td>
-                                            <span t-esc="l['bysal']"/>
-                                        </td>
+                                        <th>
+                                            <span t-esc="formatLang(l['bysal'], currency_obj = o.currency_id)"/>
+                                        </th>
                                         <td>
                                             <span t-esc="l['debit_credit']"/>
                                         </td>
@@ -105,38 +102,17 @@
                                         style="border-bottom: 1px solid black">
                                         <td colspan="2"/>
                                         <td colspan="2">
-                                            <strong>Total (Le):</strong>
+                                            <strong>Total:</strong>
                                         </td>
-                                        <td colspan="2">
+                                        <th colspan="2">
                                             <strong>
-                                                <span t-esc="get_bysal_total"/>
-
+                                                <span t-esc="formatLang(get_total_sal(o), currency_obj = o.currency_id)"/>
                                             </strong>
-                                        </td>
+                                        </th>
                                     </tr>
                                 </tbody>
                             </table>
                             <table>
-                                <tr>
-                                    <td>
-                                       <p>Prepared By:...................................... </p>
-                                        <p>Admin/HR Supervisor</p>
-                                        <p>Date:..........</p>
-                                        <p>Sign:..........</p>
-                                    </td>
-                                    <td>
-                                       <p>Reviewed By:...................................... </p>
-                                        <p>Office Manager</p>
-                                        <p>Date:..........</p>
-                                        <p>Sign:..........</p>
-                                    </td>
-                                    <td>
-                                       <p>Approved By:...................................... </p>
-                                        <p>Admin/Finance Director</p>
-                                        <p>Date:..........</p>
-                                        <p>Sign:..........</p>
-                                    </td>
-                                </tr>
                             </table>
                         </div>
                     </t>

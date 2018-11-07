@@ -95,10 +95,7 @@ class HrPayslipRun(models.Model):
 
     @api.multi
     def create_advice(self):
-        payslip_pool = self.env['hr.payslip']
-        payslip_line_pool = self.env['hr.payslip.line']
         advice_pool = self.env['hr.payroll.advice']
-        advice_line_pool = self.env['hr.payroll.advice.line']
         user = self.env.user
         for run in self:
             if run.advice_count:
@@ -123,7 +120,10 @@ class HrPayslipRun(models.Model):
                     'company_id': company.id,
                     'name': '%s - %s Advice' % (run.name, bank.name),
                     'date': run.date_end,
+                    'date_from': run.date_start,
+                    'date_to': run.date_end,
                     'bank_id': bank.id,
+                    'currency_id': run.currency_id.id,
                     # 'company_bank_id' : pay_from and pay_from[0].id or False
                 })
                 advice.compute_advice()

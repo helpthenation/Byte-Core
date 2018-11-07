@@ -21,4 +21,4 @@
 #
 ##############################################################################
 
-from . import report_payroll_advice
+from . import report_payroll_advice2

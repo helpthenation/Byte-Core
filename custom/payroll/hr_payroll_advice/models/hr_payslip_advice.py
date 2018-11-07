@@ -47,6 +47,14 @@ class PayrollAdvice(models.Model):
         help="Advice Date is used to search Payslips",
         default=fields.Date.today
     )
+    date_from = fields.Date(
+        readonly=True,
+        required=True,
+    )
+    date_to = fields.Date(
+        readonly=True,
+        required=True,
+    )
     state = fields.Selection(
         [
             ('draft', 'Draft'),
@@ -101,6 +109,8 @@ class PayrollAdvice(models.Model):
         store=True,
         readonly=True
     )
+
+    currency_id = fields.Many2one('res.currency', required=True)
 
     @api.constrains('company_bank_id')
     def _constrains_company_bank_id(self):

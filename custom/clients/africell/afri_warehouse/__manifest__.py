@@ -21,6 +21,7 @@
         'views/warehouse_procurement.xml',
         'views/warehouse_request.xml',
         'views/product_product.xml',
+        'views/product_category.xml',
         'views/res_users.xml',
         'menus/menus.xml',
     ],

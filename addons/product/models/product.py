@@ -45,11 +45,11 @@ class ProductCategory(models.Model):
         if not self._check_recursion():
             raise ValidationError(_('Error ! You cannot create recursive categories.'))
         return True
-
+    """
     @api.multi
     def name_get(self):
         def get_names(cat):
-            """ Return the list [cat.name, cat.parent_id.name, ...] """
+            Return the list [cat.name, cat.parent_id.name, ...]
             res = []
             while cat:
                 res.append(cat.name)
@@ -57,6 +57,7 @@ class ProductCategory(models.Model):
             return res
 
         return [(cat.id, " / ".join(reversed(get_names(cat)))) for cat in self]
+    """
 
     @api.model
     def name_search(self, name, args=None, operator='ilike', limit=100):

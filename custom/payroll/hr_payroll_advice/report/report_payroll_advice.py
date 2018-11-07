@@ -53,6 +53,9 @@ class payroll_advice_report(models.AbstractModel):
     def get_bysal_total(self):
         return self.total_bysal
 
+    def get_currency(self, advice):
+        return advice.currency_id
+
     def get_detail(self, advice):
         result = []
         self.total_bysal = 0.00
@@ -77,6 +80,7 @@ class payroll_advice_report(models.AbstractModel):
             'get_month': self.get_month(advice.date),
             'get_detail': self.get_detail(advice),
             'get_bysal_total': self.get_bysal_total(),
+            'get_currency': self.get_currency(advice),
             'currency': advice.company_id.currency_id.symbol,
         }
         return self.env['report'].render('hr_payroll_advice.report_payrolladvice', docargs)
