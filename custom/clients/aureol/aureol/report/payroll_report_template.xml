@@ -25,6 +25,7 @@
                                         <th>BASIC</th>
                                         <th>OVERTIME</th>
                                         <th>TRANSPORT</th>
+                                        <th>ENT</th>
                                         <th>GROSS</th>
                                         <th>P/FUND</th>
                                         <th>PAYE</th>
@@ -51,6 +52,9 @@
                                         </td>
                                         <td>
                                             <span t-esc="formatLang(s['transport'], currency_obj = o.currency_id)"/>
+                                        </td>
+                                        <td>
+                                            <span t-esc="formatLang(s['ent'], currency_obj = o.currency_id)"/>
                                         </td>
                                         <td>
                                             <span t-esc="formatLang(s['gross'], currency_obj = o.currency_id)"/>

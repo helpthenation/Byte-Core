@@ -38,7 +38,8 @@ class PayrollAdvice(models.Model):
     )
     note = fields.Text(
         'Description',
-        default="Please make the payroll transfer to the below mentioned account numbers towards employee salaries:"
+        compute='compute_note',
+        store=True
     )
     date = fields.Date(
         readonly=True,
@@ -125,6 +126,27 @@ class PayrollAdvice(models.Model):
         self.line_count = len(self.line_ids)
 
     @api.multi
+    def compute_note(self):
+        gender = ''
+        name=''
+        for rec in self:
+            if len(rec.line_ids)==1:
+                for line in rec.line_ids:
+                    if line.employee_id and line.employee_id.gender=='male':
+                        gender='his'
+                        name = 'name'
+                    if line.employee_id and line.employee_id.gender=='female':
+                        gender='her'
+                        name='name'
+            if len(rec.line_ids)>1:
+                gender='their'
+                name='names'
+            # lets get the note
+            note = "Upon receipt of this letter, kindly credit the undermentioned Accocunt with the amount against" \
+                   " "+ gender +" "+ name + " and Debit our Account Number 01-1031577 with the corresponding amount."
+            rec.note=note
+
+    @api.multi
     def compute_advice(self):
         """
         Advice - Create Advice lines in Payment Advice and
@@ -156,6 +178,7 @@ class PayrollAdvice(models.Model):
                     }
                     advice_line_pool.create(advice_line)
                     slip.advice_id = advice.id
+            advice.compute_note()
         return True
 
     @api.multi

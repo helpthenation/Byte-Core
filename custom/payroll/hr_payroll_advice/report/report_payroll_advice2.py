@@ -20,23 +20,12 @@ class PayrollAdviceReport(report_sxw.rml_parse):
         self.context = context
         self.total_bysal = 0.00
 
-    def get_month(self, input_date):
-        payslip_env = self.env.get('hr.payslip')
-        res = {
-            'from_name': '', 'to_name': ''
-        }
-        slip_ids = payslip_env.search([('date_from', '<=', input_date), ('date_to', '>=', input_date)],)
-        if slip_ids:
-            slip = slip_ids[0]
-            from_date = datetime.strptime(slip.date_from, '%Y-%m-%d')
-            to_date = datetime.strptime(slip.date_to, '%Y-%m-%d')
-            res['from_name'] = from_date.strftime(
-                '%d') + '-' + from_date.strftime(
-                '%B') + '-' + from_date.strftime(
-                '%Y')
-            res['to_name'] = to_date.strftime('%d') + '-' + to_date.strftime(
-                '%B') + '-' + to_date.strftime('%Y')
-        return res
+
+    def get_month(self, advice_id):
+        date = advice_id.date_from
+        date_dt = datetime.strptime(date, '%Y-%m-%d')
+        return date_dt.strftime("%B").upper()+" "+str(date_dt.year)
+
 
     def convert(self, amount, cur):
         return amount_to_text_en.amount_to_text(amount, 'en', cur)

@@ -60,10 +60,10 @@ class WizardGetRecord(models.TransientModel):
 
     @api.multi
     def confirm_ammend(self):
-        ammend = self.env['hr.payslip.amendment']
-        for amm in ammend.search([]):
+        ammend = self.env['hr.payslip.amendment'].search([('hr_period_id','=',9)])
+        for amm in ammend:
             amm.write({'state': 'validate',
-                       'hr_period_id':10})
+                       'hr_period_id':11})
         return True
 
     @api.multi

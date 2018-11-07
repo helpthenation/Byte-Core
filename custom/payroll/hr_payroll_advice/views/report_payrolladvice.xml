@@ -10,15 +10,8 @@
                                 <tr>
                                     <td>
                                         <p>
-                                            <span t-esc="time.strftime('%m-%d-%Y')"/>
+                                            <span t-esc="time.strftime('%d %B %Y')"/>
                                         </p>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <strong>
-                                            <span>To,</span>
-                                        </strong>
                                     </td>
                                 </tr>
                                 <tr>
@@ -32,10 +25,24 @@
                                     <td>
                                         <strong>
                                             <span t-esc="o.bank_id.name"/>
-                                            Bank
                                         </strong>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            <span t-esc="o.bank_id.street"/>
+                                        </strong>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>
+                                            <span t-esc="o.bank_id.city"/>
+                                        </strong>
+                                    </td>
+                                </tr>
+                                <br/>
                                 <tr>
                                     <td>
                                         <p>
@@ -45,13 +52,9 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <p class="text-center">
-                                            <strong>Payment Advice from
-                                                <span t-esc="o.name"/>
-                                                <span t-if="o.company_bank_id">
-                                                    A/C no.
-                                                    <span t-esc="o.company_bank_id.acc_number"/>
-                                                </span>
+                                        <p>
+                                            <strong>STAFF SALARY -
+                                                <span t-esc="get_month(o)"/>
                                                 <!--from
                                                 <span t-esc="get_month['from_name']"/>
                                                 to
@@ -76,7 +79,6 @@
                                         <th>Name Of Employee</th>
                                         <th>Bank Account No.</th>
                                         <th>Salary</th>
-                                        <th>C/D</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -94,16 +96,12 @@
                                         <th>
                                             <span t-esc="formatLang(l['bysal'], currency_obj = o.currency_id)"/>
                                         </th>
-                                        <td>
-                                            <span t-esc="l['debit_credit']"/>
-                                        </td>
                                     </tr>
-                                    <tr class="border-black"
-                                        style="border-bottom: 1px solid black">
-                                        <td colspan="2"/>
+                                    <tr >
                                         <td colspan="2">
                                             <strong>Total:</strong>
                                         </td>
+                                        <td></td>
                                         <th colspan="2">
                                             <strong>
                                                 <span t-esc="formatLang(get_total_sal(o), currency_obj = o.currency_id)"/>
@@ -114,6 +112,20 @@
                             </table>
                             <table>
                             </table>
+                            <p class="text-left"> Yours Faithfully</p>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <p>
+                                <span class="text-left">R.H.S. Macauley</span>
+                                <br></br>
+                                <span class="text-left">DEPUTY MANAGING DIRECTOR</span>
+                                <span style="float: right">Richmond Coker</span>
+                                <br></br>
+                                <span style="float: right">ACCOUNTS MANAGER</span>
+
+                            </p>
+
                         </div>
                     </t>
                 </t>

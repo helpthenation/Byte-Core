@@ -34,6 +34,7 @@ class AureolPayrollReport(report_sxw.rml_parse):
                 'basic': s.contract_id.wage,
                 'overtime': s.line_ids.filtered(lambda r:r.code=="OTM").total,
                 'transport': s.line_ids.filtered(lambda r:r.code=="TALW").total,
+                'ent': s.line_ids.filtered(lambda r:r.code=="ENT").total,
                 'gross': s.line_ids.filtered(lambda r:r.code=="GROSS").total,
                 'nassit': s.contract_id.wage*0.05,
                 'paye': s.line_ids.filtered(lambda r: r.code == "PAYE").total,
