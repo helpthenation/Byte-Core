@@ -168,6 +168,17 @@ class HrPayslipRun(models.Model):
     refusal_url = fields.Char(compute='_compute_approval_url', string='Refusal URL')
     approval_note = fields.Text(string='Approval Note')
     refuse_note = fields.Text(string='Refusal Note')
+    approval_buttom = fields.Boolean(default=False, compute='compute_approval_btn', store=True)
+    creator_id = fields.Many2one('res.users', default = lambda self: self.env.user.id, readonly=True)
+
+    @api.depends('first_approver_id')
+    def compute_approval_btn(self):
+        for rec in self:
+            if rec.creator_id == self.env.user:
+                rec.approval_buttom=False
+            if rec.creator_id.id == 1:
+                rec.approval_buttom=True
+
 
     def now(self, **kwargs):
         dt = datetime.now() + timedelta(**kwargs)
@@ -367,12 +378,6 @@ class HrPayslipRun(models.Model):
                 run.set_to_reject()
 
 
-
-
-
-
-
-
     @api.multi
     def draft_payslip_run(self):
         return self.write({'state': 'draft'})
@@ -388,10 +393,9 @@ class HrPayslipRun(models.Model):
         message loaded by default
         '''
         self.ensure_one()
+        self.compute_approval_btn()
 
         template = self.env.ref('hr_payroll.payroll_email_template')
-        compose_form = self.env.ref(
-            'mail.email_compose_message_wizard_form')
         self.env['mail.template'].browse(template.id).send_mail(self.id)
         self.write({'state': 'request'})
 

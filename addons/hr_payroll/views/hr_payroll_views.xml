@@ -713,10 +713,15 @@
                 <form string="Payslips Batches">
                 <header>
                     <button name="%(action_hr_payslip_by_employees)d" type="action" states="draft" string="Generate Payslips" class="oe_highlight"/>
-                    <button string="Set to Draft" name="draft_payslip_run" type="object" states="reject" />
+                    <button string="Set to draft" name="draft_payslip_run" type="object" states="reject,request" />
                     <button string="Request Approval" name="set_to_request" type="object" states="draft" class="oe_highlight"/>
                     <button string="Reject" name="set_to_request" type="object" states="reject" />
-                    <button string="Approve" name="close_payslip_run" type="object" states="request" class="oe_highlight" groups="hr_payroll.group_hr_payroll_manager"/>
+                    <button string="Approve"
+                            name="close_payslip_run" type="object"
+                            states="request"
+                            class="oe_highlight"
+                            attrs="{'invisible':[('approval_buttom','!=',True)]}"
+                            groups="hr_payroll.group_hr_payroll_manager"/>
                     <button string="Notify via SMS" name="send_payment_notification" type="object" states="close" class="oe_highlight"/>
                     <field name="state" widget="statusbar"/>
                 </header>
@@ -724,6 +729,8 @@
                     <label for="name" class="oe_edit_only"/>
                     <h1>
                         <field name="name"/>
+                        <field name="approval_buttom" />
+                        <field name="creator_id" />
                     </h1>
                     <group col="4">
                         <label for="date_start" string="Period"/>
