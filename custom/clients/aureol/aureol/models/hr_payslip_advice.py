@@ -10,28 +10,28 @@ class PayrollAdvice(models.Model):
         store=True
     )
 
-
     @api.multi
     def compute_note(self):
         gender = ''
-        name=''
+        name = ''
+        account = 'Account'
         for rec in self:
-            if len(rec.line_ids)==1:
+            if len(rec.line_ids) == 1:
                 for line in rec.line_ids:
-                    if line.employee_id and line.employee_id.gender=='male':
-                        gender='his'
+                    if line.employee_id and line.employee_id.gender == 'male':
+                        gender = 'his'
                         name = 'name'
-                    if line.employee_id and line.employee_id.gender=='female':
-                        gender='her'
-                        name='name'
-            if len(rec.line_ids)>1:
-                gender='their'
-                name='names'
+                    if line.employee_id and line.employee_id.gender == 'female':
+                        gender = 'her'
+                        name = 'name'
+            if len(rec.line_ids) > 1:
+                gender = 'their'
+                name = 'names'
+                account = 'Accounts'
             # lets get the note
-            note = "Upon receipt of this letter, kindly credit the undermentioned Accocunt with the amount against" \
-                   " " + gender + " " + name + " and Debit our Account Number 01-1031577 with the corresponding amount."
+            note = "Upon receipt of this letter, kindly credit the undermentioned " + account + " with the amount against" \
+                                                                                                " " + gender + " " + name + " and Debit our Account Number 01-1031577 with the corresponding amount."
             rec.note = note
-
     @api.multi
     def compute_advice(self):
         """

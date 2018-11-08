@@ -129,6 +129,7 @@ class PayrollAdvice(models.Model):
     def compute_note(self):
         gender = ''
         name=''
+        account='Account'
         for rec in self:
             if len(rec.line_ids)==1:
                 for line in rec.line_ids:
@@ -141,8 +142,9 @@ class PayrollAdvice(models.Model):
             if len(rec.line_ids)>1:
                 gender='their'
                 name='names'
+                account='Accounts'
             # lets get the note
-            note = "Upon receipt of this letter, kindly credit the undermentioned Accocunt with the amount against" \
+            note = "Upon receipt of this letter, kindly credit the undermentioned " + account +" with the amount against" \
                    " "+ gender +" "+ name + " and Debit our Account Number 01-1031577 with the corresponding amount."
             rec.note=note
 
