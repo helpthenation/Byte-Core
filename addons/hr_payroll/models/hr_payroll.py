@@ -170,7 +170,8 @@ class HrPayslipRun(models.Model):
     refuse_note = fields.Text(string='Refusal Note')
     approval_buttom = fields.Boolean(default=False, compute='compute_approval_btn', store=True)
     creator_id = fields.Many2one('res.users', default = lambda self: self.env.user.id, readonly=True)
-
+    signatory_1 = fields.Many2one('hr.employee', 'First Signatory')
+    signatory_2 = fields.Many2one('hr.employee', 'Second Signatory')
     @api.depends('first_approver_id')
     def compute_approval_btn(self):
         for rec in self:

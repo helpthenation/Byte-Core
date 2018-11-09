@@ -51,6 +51,7 @@ class HrPayslipRun(models.Model):
         readonly=True
     )
 
+
     @api.depends('advice_ids', 'advice_ids.line_ids')
     def _compute_advice_status(self):
 

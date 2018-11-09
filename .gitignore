@@ -34,5 +34,5 @@ install/win32/meta.py
 /src/
 
 # Conf
-.conf
 byte.log
+.idea/

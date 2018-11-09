@@ -117,12 +117,12 @@
                             <br/>
                             <br/>
                             <p>
-                                <span class="text-left">R.H.S. Macauley</span>
+                                <span style="float: left" t-esc="get_signatories(o)[0].name"/>
                                 <br></br>
-                                <span class="text-left">DEPUTY MANAGING DIRECTOR</span>
-                                <span style="float: right">Richmond Coker</span>
+                                 <span style="float: left" t-esc="get_signatories(o)[0].job_id.name"/>
+                                 <span style="float: right" t-esc="get_signatories(o)[-1].name"/>
                                 <br></br>
-                                <span style="float: right">ACCOUNTS MANAGER</span>
+                                 <span style="float: right" t-esc="get_signatories(o)[-1].job_id.name"/>
 
                             </p>
 

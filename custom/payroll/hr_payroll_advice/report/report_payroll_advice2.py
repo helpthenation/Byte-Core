@@ -15,6 +15,7 @@ class PayrollAdviceReport(report_sxw.rml_parse):
             'get_detail': self.get_detail,
             'get_total_sal': self.get_total_sal,
             'get_currency': self.get_currency,
+            'get_signatories': self.get_signatories,
 
         })
         self.context = context
@@ -25,6 +26,9 @@ class PayrollAdviceReport(report_sxw.rml_parse):
         date = advice_id.date_from
         date_dt = datetime.strptime(date, '%Y-%m-%d')
         return date_dt.strftime("%B").upper()+" "+str(date_dt.year)
+
+    def get_signatories(self, advice):
+        return [advice.batch_id.signatory_1, advice.batch_id.signatory_2]
 
 
     def convert(self, amount, cur):
