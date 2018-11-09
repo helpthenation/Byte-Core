@@ -128,8 +128,7 @@ class Employee(models.Model):
     department_id = fields.Many2one('hr.department', string='Department')
     address_id = fields.Many2one('res.partner', string='Working Address')
     address_home_id = fields.Many2one('res.partner', string='Home Address')
-    bank_account_id = fields.Many2one('res.partner.bank', string='Bank Account Number',
-        domain="[('partner_id', '=', address_home_id)]", help='Employee bank salary account', groups='hr.group_hr_user')
+    bank_account_id = fields.Many2one('res.partner.bank', string='Bank Account Number', help='Employee bank salary account', groups='hr.group_hr_user')
     work_phone = fields.Char('Work Phone')
     mobile_phone = fields.Char('Work Mobile')
     work_email = fields.Char('Work Email')
