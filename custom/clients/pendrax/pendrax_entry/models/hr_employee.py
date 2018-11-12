@@ -171,7 +171,8 @@ class HrEmployee(models.Model):
     @api.depends('name', 'empid')
     def compute_name_id(self):
         for rec in self:
-            rec.name_and_id = str(rec.name+" ("+rec.empid and rec.empid or ""+")")
+            if rec.empid:
+                rec.name_and_id = str(rec.name+" ("+rec.empid and rec.empid or ""+")")
 
     @api.multi
     def state_onboarding(self):

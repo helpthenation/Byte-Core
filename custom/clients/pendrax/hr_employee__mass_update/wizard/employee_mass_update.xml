@@ -11,6 +11,7 @@
                         <button name="update_admin_employees" type="object" string="Update Admin Staff" class="oe_highlight"/>
                         <button name="update_guard_employees" type="object" string="Update Guard Staff" class="oe_highlight"/>
                         <button name="create_employees" type="object" string="Create Employees" class="oe_highlight"/>
+                        <button name="name_id_valid" type="object" string="Update Employee Name" class="oe_highlight"/>
                     </header>
                     <newline/>
                     <div>

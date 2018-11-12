@@ -19,6 +19,10 @@ class WizardGetRecord(models.TransientModel):
     date = fields.Date(string='Date')
     dest_dir = fields.Char("Image Directory")
 
+    @api.multi
+    def name_id_valid(self):
+        for rec in self.env['hr.employee'].search([]):
+            rec.compute_name_id()
 
     @api.multi
     def correct_names(self):
