@@ -9,9 +9,9 @@ class HrEmployeeChildren(models.Model):
     employee_id = fields.Many2one(comodel_name='hr.employee', string='Parent')
     name = fields.Char(string='Name', required=True)
     age = fields.Integer(string='Age', compute='_compute_age', readonly=True, store=True)
-    date_of_birth = fields.Date(string='Date of birth', required=True)
+    date_of_birth = fields.Date(string='Date of birth')
     occupation = fields.Many2one(comodel_name='hr.children.occupation', readonly=True, string='Legacy Occupation')
-    occupation_id = fields.Many2one(comodel_name='hr.occupation', string='Occupation', required=True)
+    occupation_id = fields.Many2one(comodel_name='hr.occupation', string='Occupation')
 
     @api.multi
     @api.depends('date_of_birth')

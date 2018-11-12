@@ -51,7 +51,6 @@
                                         <field name="birthday" invisible="1"/>
                                         <field name="country_id" options='{"no_open": True, "no_create": True}'  attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="staff_category" attrs="{'required':[('incomplete_info','=',False)]}"/>
-                                        <field name="district_id" readonly="1" options='{"no_open": True, "no_create": True}' attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="emp_date" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="job_id" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="nassit_no" attrs="{'required':[('incomplete_info','=',False)]}"/>
@@ -65,7 +64,7 @@
                                         <field name="height_in" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="p_address" attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="area_id" attrs="{'required':[('incomplete_info','=',False)]}"/>
-                                        <field name="e_district_id" options='{"no_open": True, "no_create": True}' attrs="{'required':[('incomplete_info','=',False)]}"/>
+                                        <field name="district_id" options='{"no_open": True, "no_create": True}' attrs="{'required':[('incomplete_info','=',False)]}"/>
                                         <field name="coach_id" invisible="1"/>
                                     </group>
                                     <group string="Marital">

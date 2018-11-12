@@ -6,8 +6,8 @@ class HrEmployeeReference(models.Model):
     _rec_name = 'employee_id'
     employee_id = fields.Many2one(comodel_name='hr.employee',
                                   string='Employee')
-    name = fields.Char(string='Name', required=True)
-    address = fields.Char(string='Work Address', required=True)
-    phone = fields.Char(string='Phone', required=True)
+    name = fields.Char(string='Name', )
+    address = fields.Char(string='Work Address', )
+    phone = fields.Char(string='Phone', )
     email = fields.Char(string='Email')
-    occupation_id = fields.Many2one(comodel_name='hr.occupation', string='Occupation', required=True)
+    occupation_id = fields.Many2one(comodel_name='hr.occupation', string='Occupation', )
