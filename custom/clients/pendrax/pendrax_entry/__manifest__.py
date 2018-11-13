@@ -8,7 +8,7 @@
     'demo': [
     ],
     'depends': [
-        'hr',
+        'hr_employee_name_split',
     ],
     'data': [
         'views/hr_employee.xml',

@@ -98,9 +98,6 @@ class HrEmployee(models.Model):
     deployment = fields.Char(string='Location')
     district_id = fields.Many2one(comodel_name='hr.district', string='District')
     area_id = fields.Many2one(comodel_name='hr.area', string='Area', required=True)
-    fname = fields.Char(string='First Name', required=True)
-    mname = fields.Char(string='Middle Name')
-    lname = fields.Char(string='Last Name', required=True)
     refree_ids = fields.One2many(comodel_name='hr.employee.referee', inverse_name='employee_id', string='Refrees')
     mother_deceased = fields.Boolean(string="Mother Deceased", default=False)
     father_deceased = fields.Boolean(string="Father Deceased", default=False)
@@ -172,7 +169,7 @@ class HrEmployee(models.Model):
     def compute_name_id(self):
         for rec in self:
             if rec.empid:
-                rec.name_and_id = str(rec.name+" ("+rec.empid and rec.empid or ""+")")
+                rec.name_and_id = str(rec.name+" ("+rec.empid +")")
 
     @api.multi
     def state_onboarding(self):

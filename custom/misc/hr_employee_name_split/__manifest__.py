@@ -5,7 +5,7 @@
     'summary': 'HR Tools',
     'author': 'Francis Bangura<francis@byteltd.com>',
     'website': 'http://byteltd.com',
-    'depends': ['hr_payroll'],
+    'depends': ['hr'],
     'data': [
             'views/hr_employee.xml'
             ],

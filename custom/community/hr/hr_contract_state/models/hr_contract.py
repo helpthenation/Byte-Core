@@ -130,7 +130,7 @@ class hr_contract(models.Model):
                 days = relativedelta(
                     fields.Date.from_string(rec.trial_date_end),
                     fields.Date.from_string(fields.Date.today())).days
-                if 30 >= days:
+                if 30 >= days > 0:
                     rec.set_trail_end()
 
 
