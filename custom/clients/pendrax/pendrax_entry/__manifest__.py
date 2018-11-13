@@ -8,7 +8,7 @@
     'demo': [
     ],
     'depends': [
-        'hr_employee_name_split',
+        'hr_employee_name_split','hr_payroll_loan'
     ],
     'data': [
         'views/hr_employee.xml',
