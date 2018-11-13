@@ -17,5 +17,8 @@ from . import email_check
 from . import hr_occupation
 from . import hr_qualification
 from . import hr_area
+from . import res_company
+from . import hr_payroll_loan
+from . import hr_holidays
 #from . import hr_contract
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="hr_hr_holidays_inherit" model="ir.ui.view">
+            <field name="name">hr.holidays.form</field>
+            <field name="model">hr.holidays</field>
+            <field name="inherit_id" ref="hr_holidays.edit_holiday_new"/>
+            <field name="arch" type="xml">
+                <field name="holiday_status_id" position="after">
+                    <field name="state" invisible="1"/>
+                    <field name="f_approver" attrs="{'invisible': [('state','not in','draft')]}"/>
+                    <field name="confirmer_id" attrs="{'invisible': [('state','not in','approve')]}"/>
+                    <field name="approver_id" attrs="{'invisible': [('state','not in','confirm')]}"/>
+                </field>
+
+                <xpath expr="//header" position="replace">
+                    <header>
+                    <button string="Request HOD Approval" name="request_hod_approval" states="draft" type="object" class="oe_highlight"/>
+                    <button string="Validate and Request Confirmation" name="request_confirm" states="approve" type="object" groups="hr_holidays.group_hr_holidays_user" class="oe_highlight"/>
+                    <button string="Confirm and Request Approval" name="request_approval" states="confirm" type="object" groups="hr_holidays.group_hr_holidays_manager" class="oe_highlight"/>
+                    <button string="Approve" name="action_validate" states="validate1" type="object" groups="hr_holidays.group_hr_holidays_manager" class="oe_highlight"/>
+                    <button string="Refuse" name="action_refuse" states="confirm,validate,validate1" type="object" groups="hr_holidays.group_hr_holidays_user"/>
+                    <button string="Reset to Draft" name="action_draft" type="object"
+                            attrs="{'invisible': ['|', ('can_reset', '=', False), ('state', 'not in', ['confirm', 'refuse'])]}"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,validate"/>
+                </header>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
