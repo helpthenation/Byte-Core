@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="hr_holidays.edit_holiday_new"/>
             <field name="arch" type="xml">
                 <field name="holiday_status_id" position="after">
-                    <field name="state" invisible="1"/>
+                    <field name="state" readonly="1"/>
                     <field name="f_approver" attrs="{'invisible': [('state','not in','draft')]}"/>
                     <field name="confirmer_id" attrs="{'invisible': [('state','not in','approve')]}"/>
                     <field name="approver_id" attrs="{'invisible': [('state','not in','confirm')]}"/>
@@ -22,7 +22,7 @@
                     <button string="Refuse" name="action_refuse" states="confirm,validate,validate1" type="object" groups="hr_holidays.group_hr_holidays_user"/>
                     <button string="Reset to Draft" name="action_draft" type="object"
                             attrs="{'invisible': ['|', ('can_reset', '=', False), ('state', 'not in', ['confirm', 'refuse'])]}"/>
-                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,validate"/>
+                    <field name="state" widget="statusbar"/>
                 </header>
                 </xpath>
             </field>

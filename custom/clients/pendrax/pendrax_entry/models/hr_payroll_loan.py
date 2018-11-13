@@ -59,7 +59,7 @@ class HrPayrollLoan(models.Model):
                 body='Dear ' + str(rec.confirmer_id.name) + " there is a new Loan request for "+str(rec.employee_id.name)\
                      +" with ID "+str(rec.employee_id.empid)+" awaiting your confirmation"\
                      +"\nLoan Type: "+str(rec.type_id.name)\
-                +"\nTotal Amount Requested: "+str(rec.amount)+\
+                +"\nTotal Amount Requested: "+str(rec.amount)\
                 +"\nReference "+str(rec.name)
             if resuest=='approve':
                 subject='Loan Approval'

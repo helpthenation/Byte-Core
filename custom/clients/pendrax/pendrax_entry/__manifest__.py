@@ -24,6 +24,8 @@
         'views/hr_holidays_view.xml',
         'views/religion.xml',
         'data/sequence.xml',
+        'security/security.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True
 }

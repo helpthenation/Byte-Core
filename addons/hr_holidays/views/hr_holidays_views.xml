@@ -29,7 +29,6 @@
                     <filter string="Unread Messages" name="message_needaction" domain="[('message_needaction','=',True)]"/>
                     <separator/>
                     <filter string="My Department Leaves" name="department" domain="[('department_id.manager_id.user_id', '=', uid)]" help="My Department Leaves"/>
-                    <filter name="my_team_leaves" string="My Team Leaves" domain="[('employee_id.parent_id.user_id', '=', uid)]" groups="hr_holidays.group_hr_holidays_manager" help="Leaves of Your Team Member"/>
                     <separator/>
                     <filter string="To Report in Payslip" name="gray" domain="[('payslip_status', '=', False)]" groups="hr_holidays.group_hr_holidays_manager"/>
                     <separator/>
@@ -651,7 +650,7 @@
             <field name="src_model">hr.employee</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="context">{'search_default_employee_id': [active_id], 'default_employee_id': active_id, 'search_default_group_type': 1,
+            <field name="context">{'search_default_group_type': 1,
                 'search_default_year': 1}</field>
             <field name="domain">[('holiday_type','=','employee'), ('holiday_status_id.limit', '=', False), ('state','!=', 'refuse')]</field>
             <field name="search_view_id" ref="view_hr_holidays_filter"/>
@@ -712,9 +711,9 @@
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="context">{
-                'default_type': 'remove',
+                'default_type': 'remove',<!--
                 'search_default_department_id': [active_id],
-                'default_department_id': active_id,
+                'default_department_id': active_id,-->
                 'search_default_approve':1}
             </field>
             <field name="domain">[('type','=','remove')]</field>
@@ -728,9 +727,9 @@
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
             <field name="context">{
-                'default_type': 'add',
+                'default_type': 'add',<!--
                 'search_default_department_id': [active_id],
-                'default_department_id': active_id,
+                'default_department_id': active_id,-->
                 'search_default_approve':1}
             </field>
             <field name="domain">[('type','=','add')]</field>
