@@ -17,7 +17,7 @@
                 </xpath>
             </field>
         </record>
-        <record id="view_company_form" model="ir.ui.view">
+        <record id="view_company_form_leave_fon" model="ir.ui.view">
             <field name="name">res.company.sheet</field>
             <field name="model">res.company</field>
             <field name="inherit_id" ref="base.view_company_form"/>
