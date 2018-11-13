@@ -54,23 +54,23 @@ class HrHolidays(models.Model):
                 subject='Leave Request'
                 default_email = self.f_approver.email
                 body='Dear ' + str(rec.f_approver.name) + " there is a new Leave request for "+str(rec.employee_id.name)\
-                     +" with ID "+str(rec.employee_id.empid)+" awaiting your confirmation"\
-                     +"\nFrom: "+str(rec.type_id.name)\
-                +"\nTo: "+str(rec.amount)
+                     +" with ID "+str(rec.employee_id.empid)+" awaiting your Validation"\
+                     +"\nFrom: "+str(rec.date_from)\
+                +"\nTo: "+str(rec.date_to)
             if resuest=='confirm':
                 subject='Leave Confirmation'
                 default_email = self.confirmer_id.email
-                body='Dear ' + str(rec.confirmer_id.name) + " there is a new Loan request for "+str(rec.employee_id.name) \
-                     + " with ID " + str(rec.employee_id.empid)+" awaiting your approval" \
+                body='Dear ' + str(rec.confirmer_id.name) + " there is a new Leave request for "+str(rec.employee_id.name) \
+                     + " with ID " + str(rec.employee_id.empid)+" awaiting your Confirmation" \
                      + "\nFrom: " + str(rec.date_from) \
-                     + "\nTo: " + str(rec.amount)
+                     + "\nTo: " + str(rec.date_to)
             if resuest=='approve':
                 subject='Leave Approval'
-                default_email = self.disburse_id.email
-                body='Dear ' + str(rec.disburse_id.name) + " there is a new Loan request for "+str(rec.employee_id.name) \
-                     + " with ID " + str(rec.employee_id.empid)+" awaiting Disbursement" \
-                     + "\nFrom: " + str(rec.date_to) \
-                     + "\nTo: " + str(rec.amount)
+                default_email = self.approver_id.email
+                body='Dear ' + str(rec.approver_id.name) + " there is a new Leave request for "+str(rec.employee_id.name) \
+                     + " with ID " + str(rec.employee_id.empid)+" awaiting Approval" \
+                     + "\nFrom: " + str(rec.date_from) \
+                     + "\nTo: " + str(rec.date_to)
 
 
         mail_object = self.env['mail.mail']
