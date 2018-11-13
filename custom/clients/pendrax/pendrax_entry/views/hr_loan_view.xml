@@ -33,6 +33,10 @@
                                 states="approved" type="object"
                                 class="oe_highlight"
                                 />
+                        <button string="Print Approval" name="get_loan_approval"
+                                states="approved" type="object"
+                                class="oe_highlight"
+                                />
                         <button string="Generate Schedule" name="generate_payment_schedule"
                                 states="draft" type="object"
                                 class="oe_highlight"

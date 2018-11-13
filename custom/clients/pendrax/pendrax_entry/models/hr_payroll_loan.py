@@ -87,3 +87,7 @@ class HrPayrollLoan(models.Model):
                                     'email_to': default_email and default_email,
                                     'body_html': body})
         email.send()
+
+    @api.multi
+    def get_loan_approval(self):
+        return self.env['report'].get_action(self, 'pendrax_entry.report_loan_approval')

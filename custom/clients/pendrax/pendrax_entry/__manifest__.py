@@ -22,6 +22,8 @@
         'views/res_company.xml',
         'views/hr_loan_view.xml',
         'views/hr_holidays_view.xml',
+        'report/approval_reports.xml',
+        'report/approval_templates.xml',
         'views/religion.xml',
         'data/sequence.xml',
         'security/security.xml',
