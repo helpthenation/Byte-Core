@@ -31,27 +31,32 @@ class HrEmployee(models.Model):
     spouse_address = fields.Char(string='Spouse Address')
     spouse_phone = fields.Char(string='Spouse Phone')
     spouse_job = fields.Char(string='Spouse Occupation')
+    spouse_job_id = fields.Many2one(comodel_name='hr.occupation',string='Spouse Occupation')
 
     emergency_name = fields.Char(string='Emergency Contact Name')
     emergency_address = fields.Char(string='Emergency Contact Address')
     emergency_phone = fields.Char(string='Emergency Contact Phone')
+    emergency_job_id = fields.Many2one(comodel_name='hr.occupation', string='Emergency Contact Occupation')
     emergency_job = fields.Char(string='Emergency Contact Occupation')
 
     mother_name = fields.Char(string="Mother's Name")
     mother_address = fields.Char(string="Mother's Address")
     mother_phone = fields.Char(string="Mother's Phone")
     mother_job = fields.Char(string="Mother's Occupation")
+    mother_job_id = fields.Many2one(comodel_name='hr.occupation', string="Mother's Occupation")
 
     father_name = fields.Char(string="Father's Name")
     father_address = fields.Char(string="Father's Address")
     father_phone = fields.Char(string="Father's Phone")
+    father_job_id = fields.Many2one(comodel_name='hr.occupation', string="Father's Occupation")
     father_job = fields.Char(string="Father's Occupation")
-    
+
     friend_name = fields.Char(string="Friend/Relative's Name")
     friend_address = fields.Char(string="Friend/Relative's Address")
     friend_phone = fields.Char(string="Friend/Relative's Phone")
+    friend_job_id = fields.Many2one(comodel_name='hr.occupation', string="Friend/Relative's Occupation")
     friend_job = fields.Char(string="Friend/Relative's Occupation")
-    
+
     nextofkin_name = fields.Char(string="Next of Kin's Name")
     nextofkin_address = fields.Char(string="Next of Kin's Address")
     nextofkin_phone = fields.Char(string="Next of Kin's Phone")

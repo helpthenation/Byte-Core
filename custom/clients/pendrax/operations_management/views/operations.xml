@@ -2,7 +2,11 @@
 <odoo>
         <!-- Root Menus -->
 
-    <menuitem id="menu_operations_root" name="Operations" sequence="45" web_icon="operations_management,static/description/icon.png"/>
+    <menuitem id="menu_operations_root"
+              name="Operations"
+              sequence="45"
+              groups="pendrax_entry.group_operations_officer"
+              web_icon="operations_management,static/description/icon.png"/>
 
 
 
@@ -238,10 +242,10 @@
     </record>
 
     <!-- Top Menu Items -->
-    <menuitem id="menu_clients" name="Clients" parent="menu_operations_root" action="action_view_clients_list_form" sequence="1"/>
-    <menuitem id="menu_guards_root" name="Manage Guards" parent="menu_operations_root"  sequence="2"/>
-    <menuitem id="menu_zones" name="Zones" parent="menu_operations_root" action="action_view_zones_list_form" sequence="3"/>
-    <menuitem id="menu_schedule" name="Scheduling" parent="menu_operations_root" action="action_view_zones_list_form" sequence="4"/>
+    <menuitem id="menu_clients" name="Clients" parent="menu_operations_root" action="action_view_clients_list_form" sequence="1" groups="pendrax_entry.group_operations_officer"/>
+    <menuitem id="menu_guards_root" name="Manage Guards" parent="menu_operations_root"  sequence="2" groups="pendrax_entry.group_operations_officer"/>
+    <menuitem id="menu_zones" name="Zones" parent="menu_operations_root" action="action_view_zones_list_form" sequence="3" groups="pendrax_entry.group_operations_officer"/>
+    <menuitem id="menu_schedule" name="Scheduling" parent="menu_operations_root" action="action_view_zones_list_form" sequence="4" groups="pendrax_entry.group_operations_officer"/>
 
 
     <!-- Child Menu Items -->

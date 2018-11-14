@@ -6,6 +6,7 @@
             <t t-call="report.external_layout">
                 <div class="page">
                     <h2>Loan Approval for <span t-field="o.employee_id.name"/></h2>
+                    <h2>Reference: <span t-field="o.name"/></h2>
 
                     <table class="table table-condensed table-bordered">
                         <thead>

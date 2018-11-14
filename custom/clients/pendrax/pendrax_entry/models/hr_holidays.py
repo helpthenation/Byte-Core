@@ -81,3 +81,25 @@ class HrHolidays(models.Model):
                                     'email_to': default_email and default_email,
                                     'body_html': body})
         email.send()
+
+    @api.multi
+    def action_refuse(self):
+        if not self.env.user.has_group('hr_holidays.group_hr_holidays_user'):
+            raise UserError(_('Only an HR Officer or Manager can refuse leave requests.'))
+
+        manager = self.env['hr.employee'].search([('user_id', '=', self.env.uid)], limit=1)
+        for holiday in self:
+            if holiday.state not in ['confirm', 'validate', 'validate1', 'approve']:
+                raise UserError(_('Leave request must be confirmed or validated in order to refuse it.'))
+
+            if holiday.state == 'validate1':
+                holiday.write({'state': 'refuse', 'manager_id': manager.id})
+            else:
+                holiday.write({'state': 'refuse', 'manager_id2': manager.id})
+            # Delete the meeting
+            if holiday.meeting_id:
+                holiday.meeting_id.unlink()
+            # If a category that created several holidays, cancel all related
+            holiday.linked_request_ids.action_refuse()
+        self._remove_resource_leave()
+        return True

@@ -18,44 +18,101 @@
                         <button string="Request Confirmation" name="request_confirm"
                                 states="draft" type="object"
                                 class="oe_highlight"
+                                groups="pendrax_entry.group_hr_officer"
                                 />
                         <button string="Confirm and Request Approval" name="request_approval"
                                 confirm="Are you sure you want to Confirm this loan?"
                                 states="wait_confirm" type="object"
+                                groups="pendrax_entry.group_hr_manager"
                                 class="oe_highlight"
                                 />
                         <button string="Approve" name="confirm_approval"
                                 confirm="Are you sure you want to Approve this loan?"
                                 states="wait_approval" type="object"
                                 class="oe_highlight"
+                                groups="pendrax_entry.group_hr_director"
                                 />
                         <button string="Disburse" name="button_confirm"
                                 states="approved" type="object"
                                 class="oe_highlight"
+                                groups="pendrax_entry.group_finance_manager"
                                 />
                         <button string="Print Approval" name="get_loan_approval"
                                 states="approved" type="object"
                                 class="oe_highlight"
+                                groups="pendrax_entry.group_finance_manager"
                                 />
                         <button string="Generate Schedule" name="generate_payment_schedule"
                                 states="draft" type="object"
                                 class="oe_highlight"
+                                groups="pendrax_entry.group_hr_officer"
                                 />
                         <button string="Paid" name="button_view_paid"
                                 states="open" type="object" class="oe_highlight"
+                                groups="pendrax_entry.group_finance_manager"
                                 />
                         <button string="Reject" name="button_cancel"
                                 confirm="Are you sure you want to Reject this loan?"
-                                states="wait_approval" type="object"
+                                states="wait_approval,wait_confirm" type="object"
+                                groups="pendrax_entry.group_hr_manager"
                                 />
                         <button string="Reset" name="button_reset"
+                                groups="pendrax_entry.group_hr_director"
                                 states="cancel" type="object"/>
+
                         <button string="Writeoff" name="button_cancel"
                                 confirm="Are you sure you want to cancel this loan?"
                                 states="open" type="object"
+                                groups="pendrax_entry.group_hr_director"
                                 />
                         <field name="state" widget="statusbar"/>
                     </header>
+                </xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_loan_search_inherit">
+            <field name="name">Employee Loans Inherit Search</field>
+            <field name="model">hr.payroll.loan</field>
+            <field name="inherit_id" ref="hr_payroll_loan.view_loan_search"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="replace">
+                    <search string="Employee Loans">
+                        <field name="name"/>
+                        <field name="employee_id"/>
+                        <field name="type_id" invisible="1"/>
+                        <field name="state" invisible="1"/>
+                        <group expand="1" string="Filter By">
+                            <filter icon="terp-check"
+                                    string="Awaiting Confirmation"
+                                    name="search_pending"
+                                    domain="[('state','=', 'wait_confirm')]"
+                                    help="Awaiting Confirmation by Office Manager"/>
+                            <filter icon="terp-camera_test" string="Awaiting Approval"
+                                    name="search_awaiting_action"
+                                    domain="[('state','=','wait_approval')]"
+                                    help="Awating Approval"/>
+                            <filter icon="terp-check" string="Approved"
+                                    name="defaulting"
+                                    domain="[('state', '=', 'approved')]"
+                                    help="Approved"/>
+                            <filter icon="terp-check" string="Disbursed"
+                                    name="disbursed"
+                                    domain="[('state', '=', 'open')]"
+                                    help="Disbursed"/>
+                            <filter icon="terp-camera_test" string="Cancelled"
+                                    name="search_approved_action"
+                                    domain="[('state','=','cancel')]"
+                                    help="Cancelled"/>
+                        </group>
+                        <group expand="0" string="Group By...">
+                            <filter string="Loan Type" icon="terp-crm"
+                                    context="{'group_by':'type_id'}"/>
+                            <filter string="Status"
+                                    icon="terp-stock_effects-object-colorize"
+                                    context="{'group_by':'state'}"/>
+                        </group>
+                    </search>
                 </xpath>
             </field>
         </record>

@@ -126,7 +126,7 @@ class hr_contract(models.Model):
     @api.multi
     def try_check_expiry(self):
         for rec in self.search([('state','=', 'open')]):
-            if rec.trial_date_end and rec.trial_date_end:
+            if rec.trial_date_end:
                 days = relativedelta(
                     fields.Date.from_string(rec.trial_date_end),
                     fields.Date.from_string(fields.Date.today())).days

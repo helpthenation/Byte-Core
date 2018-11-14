@@ -25,6 +25,14 @@ class WizardGetRecord(models.TransientModel):
             rec.compute_name_id()
 
     @api.multi
+    def set_all_contracts(self):
+        for rec in self.env['hr.contract'].search([]):
+            rec.state_confirm()
+        for employee in self.env['hr.employee'].search([]):
+            if employee.staff_category=="guard":
+                employee.is_guard=True
+
+    @api.multi
     def correct_names(self):
         self.ensure_one()
         employee_object = self.env['hr.employee'].search([])

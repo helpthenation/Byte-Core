@@ -5,7 +5,7 @@
     "category": "Human Resources",
     "summary": "manage employee contract history",
     "depends": [
-        'hr_contract'
+        'hr_contract','hr_contract_state'
     ],
     "data": [
         'views/hr_contract_view.xml',

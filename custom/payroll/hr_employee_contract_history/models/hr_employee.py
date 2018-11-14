@@ -52,7 +52,7 @@ class HrEmployee(models.Model):
         contracts = self.contract_ids.filtered(
             lambda r: r.date_start <= fields.Date.today()
             and (not r.date_end or r.date_end >= fields.Date.today())
-            and r.state in ('open', 'pending')
+            and r.state in ('open', 'pending', 'trial_ending')
         )
 
         if contracts:

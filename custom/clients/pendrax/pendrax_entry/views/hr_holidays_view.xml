@@ -15,15 +15,76 @@
 
                 <xpath expr="//header" position="replace">
                     <header>
-                    <button string="Request HOD Approval" name="request_hod_approval" states="draft" type="object" class="oe_highlight"/>
-                    <button string="Validate and Request Confirmation" name="request_confirm" states="approve" type="object" groups="hr_holidays.group_hr_holidays_user" class="oe_highlight"/>
-                    <button string="Confirm and Request Approval" name="request_approval" states="confirm" type="object" groups="hr_holidays.group_hr_holidays_manager" class="oe_highlight"/>
-                    <button string="Approve" name="action_validate" states="validate1" type="object" groups="hr_holidays.group_hr_holidays_manager" class="oe_highlight"/>
-                    <button string="Refuse" name="action_refuse" states="confirm,validate,validate1" type="object" groups="hr_holidays.group_hr_holidays_user"/>
-                    <button string="Reset to Draft" name="action_draft" type="object"
+                    <button string="Request HOD Approval"
+                            name="request_hod_approval"
+                            states="draft" type="object"
+                            groups="pendrax_entry.group_hr_officer"
+                            class="oe_highlight"/>
+                    <button string="Validate and Request Confirmation"
+                            name="request_confirm"
+                            states="approve" type="object"
+                            groups="pendrax_entry.group_hr_manager,pendrax_entry.group_maintenence_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
+                            class="oe_highlight"/>
+                    <button string="Confirm and Request Approval"
+                            name="request_approval"
+                            states="confirm" type="object"
+                            groups="pendrax_entry.group_hr_manager"
+                            class="oe_highlight"/>
+                    <button string="Approve"
+                            name="action_validate" states="validate1"
+                            type="object" groups="pendrax_entry.group_hr_director"
+                            class="oe_highlight"/>
+                    <button string="Refuse"
+                            name="action_refuse"
+                            states="confirm,approve,validate1"
+                            groups="pendrax_entry.group_hr_manager,pendrax_entry.group_maintenence_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
+                            type="object" />
+                    <button string="Reset to Draft"
+                            name="action_draft"
+                            type="object"
                             attrs="{'invisible': ['|', ('can_reset', '=', False), ('state', 'not in', ['confirm', 'refuse'])]}"/>
                     <field name="state" widget="statusbar"/>
                 </header>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="hr_hr_holidays_search_inherit" model="ir.ui.view">
+            <field name="name">hr.holidays.search</field>
+            <field name="model">hr.holidays</field>
+            <field name="inherit_id" ref="hr_holidays.view_hr_holidays_filter"/>
+            <field name="arch" type="xml">
+                <xpath expr="//search" position="replace">
+                <search string="Search Leave">
+                    <field name="name"/>
+                    <filter domain="[('state','=','validate1')]" string="To Approve" name="approve"/>
+                    <separator/>
+                    <filter string="Approved Leaves" domain="[('state', '=', 'validate')]" name="validated"/>
+                    <filter string="Cancelled" domain="[('state', '=', 'cancel')]"/>
+                    <filter string="Refused" domain="[('state', '=', 'refuse')]"/>
+                    <filter string="Awaiting HOD Validation" domain="[('state', '=', 'approve')]"/>
+                    <filter string="Awaiting Confirmation" domain="[('state', '=', 'confirm')]"/>
+                    <separator/>
+                    <filter string="My Department Leaves" name="department" domain="[('department_id.manager_id.user_id', '=', uid)]" help="My Department Leaves"/>
+                    <separator/>
+                    <filter name="year" string="Current Year"
+                        domain="[('holiday_status_id.active', '=', True)]" help="Active Leaves and Allocations"/>
+                    <separator/>
+                    <filter string="My Requests" name="my_leaves" domain="[('user_id', '=', uid)]"/>
+                    <separator/>
+                    <field name="employee_id"/>
+                    <field name="department_id"/>
+                    <field name="holiday_status_id"/>
+                    <group expand="0" string="Group By">
+                        <filter name="group_employee" string="Employee" context="{'group_by':'employee_id'}"/>
+                        <filter name="group_category" string="Category" context="{'group_by':'category_id'}"/>
+                        <filter string="Manager" context="{'group_by':'manager_id'}"/>
+                        <filter name="group_type" string="Type" context="{'group_by':'holiday_status_id'}"/>
+                        <separator/>
+                        <filter name="group_date_from" string="Start Month" context="{'group_by':'date_from'}"/>
+                    </group>
+                </search>
                 </xpath>
             </field>
         </record>
