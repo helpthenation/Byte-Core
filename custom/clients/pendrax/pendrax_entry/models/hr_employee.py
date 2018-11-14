@@ -110,6 +110,16 @@ class HrEmployee(models.Model):
                                ('female', 'Female')],
                               required=True,
                               string='Gender')
+    current_leave_state = fields.Selection(compute='_compute_leave_status', string="Current Leave Status",
+                                           selection=[
+                                               ('draft', 'To Submit'),
+                                               ('approve', 'Awaiting HOD Validation'),
+                                               ('confirm', 'Awaiting Confirmation'),
+                                               ('cancel', 'Cancelled'),
+                                               ('refuse', 'Refused'),
+                                               ('validate1', 'Awaiting Approval'),
+                                               ('validate', 'Approved')
+                                           ])
 
 
     _sql_constraints = [
