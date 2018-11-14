@@ -8,9 +8,13 @@
             <field name="arch" type="xml">
                 <field name="type_id" position="after">
                     <field name="state" readonly="1"/>
-                    <field name="confirmer_id"/>
-                    <field name="approver_id" attrs="{'invisible': [('state','in','draft')]}"/>
-                    <field name="disburse_id" attrs="{'invisible': [('state','not in',('approved', 'wait_approval','open','done'))]}"/>
+                    <field name="confirmer_id" attrs="{'readonly': [('state','not in','draft')]}"/>
+                    <field name="approver_id"
+                           groups="pendrax_entry.group_pendrax_manager"
+                           attrs="{'invisible': [('state','in','draft')], 'readonly': [('state','not in','wait_confirm')]}"/>
+                    <field name="disburse_id"
+                           groups="pendrax_entry.group_pendrax_director"
+                           attrs="{'invisible': [('state','not in',('approved', 'wait_approval','open','done'))]'readonly': [('state','not in','wait_approval')]}"/>
                 </field>
 
                 <xpath expr="//header" position="replace">
@@ -18,19 +22,19 @@
                         <button string="Request Confirmation" name="request_confirm"
                                 states="draft" type="object"
                                 class="oe_highlight"
-                                groups="pendrax_entry.group_hr_officer"
+                                groups="pendrax_entry.group_pendrax_officer"
                                 />
                         <button string="Confirm and Request Approval" name="request_approval"
                                 confirm="Are you sure you want to Confirm this loan?"
                                 states="wait_confirm" type="object"
-                                groups="pendrax_entry.group_hr_manager"
+                                groups="pendrax_entry.group_pendrax_manager"
                                 class="oe_highlight"
                                 />
                         <button string="Approve" name="confirm_approval"
                                 confirm="Are you sure you want to Approve this loan?"
                                 states="wait_approval" type="object"
                                 class="oe_highlight"
-                                groups="pendrax_entry.group_hr_director"
+                                groups="pendrax_entry.group_pendrax_director"
                                 />
                         <button string="Disburse" name="button_confirm"
                                 states="approved" type="object"
@@ -45,7 +49,7 @@
                         <button string="Generate Schedule" name="generate_payment_schedule"
                                 states="draft" type="object"
                                 class="oe_highlight"
-                                groups="pendrax_entry.group_hr_officer"
+                                groups="pendrax_entry.group_pendrax_officer"
                                 />
                         <button string="Paid" name="button_view_paid"
                                 states="open" type="object" class="oe_highlight"
@@ -54,16 +58,16 @@
                         <button string="Reject" name="button_cancel"
                                 confirm="Are you sure you want to Reject this loan?"
                                 states="wait_approval,wait_confirm" type="object"
-                                groups="pendrax_entry.group_hr_manager"
+                                groups="pendrax_entry.group_pendrax_manager"
                                 />
                         <button string="Reset" name="button_reset"
-                                groups="pendrax_entry.group_hr_director"
+                                groups="pendrax_entry.group_pendrax_director"
                                 states="cancel" type="object"/>
 
                         <button string="Writeoff" name="button_cancel"
                                 confirm="Are you sure you want to cancel this loan?"
                                 states="open" type="object"
-                                groups="pendrax_entry.group_hr_director"
+                                groups="pendrax_entry.group_pendrax_director"
                                 />
                         <field name="state" widget="statusbar"/>
                     </header>

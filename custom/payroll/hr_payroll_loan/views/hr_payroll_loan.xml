@@ -63,7 +63,7 @@
                         <notebook>
                             <page string="Payment Schedule">
                                 <field name="payment_ids" colspan="4"
-                                       nolabel="1">
+                                       nolabel="1" attrs="{'readonly': [('state','not in','draft')]}">
                                     <tree string="Payment Schedule"
                                           editable="top">
                                         <field name="name"/>

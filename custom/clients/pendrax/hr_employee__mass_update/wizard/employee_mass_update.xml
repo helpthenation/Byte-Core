@@ -58,12 +58,14 @@
                 id="menu_hr_employee_tools"
                 parent="hr.menu_hr_root"
                 name="Tools"
+                groups="base.group_system"
                 sequence="5"/>
         <menuitem
                 action="action_wizard_update_employee"
                 id="menu_employee_mass_update_wizard"
                 parent="menu_hr_employee_tools"
                 name="Update Employee from CSV"
+                groups="base.group_system"
                 sequence="1"/>
 
 

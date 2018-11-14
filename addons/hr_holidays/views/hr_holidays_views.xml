@@ -273,6 +273,7 @@
             id="menu_hr_holidays_my_leaves"
             name="Leaves"
             parent="menu_hr_holidays_root"
+            groups="base.group_user"
             sequence="2"/>
 
         <menuitem
