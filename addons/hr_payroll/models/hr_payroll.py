@@ -169,7 +169,7 @@ class HrPayslipRun(models.Model):
     approval_note = fields.Text(string='Approval Note')
     refuse_note = fields.Text(string='Refusal Note')
     approval_buttom = fields.Boolean(default=False, compute='compute_approval_btn', store=True)
-    creator_id = fields.Many2one('res.users', default = lambda self: self.env.user.id, readonly=True)
+    creator_id = fields.Many2one('res.users', default = lambda self: self.env.user.id, readonly=True, string="Created by: ")
     signatory_1 = fields.Many2one('hr.employee', 'First Signatory')
     signatory_2 = fields.Many2one('hr.employee', 'Second Signatory')
     @api.depends('first_approver_id')
@@ -360,6 +360,8 @@ class HrPayslipRun(models.Model):
         template = self.env.ref('hr_payroll.payroll_email_template')
         assert template._name == 'mail.template'
         for run in self:
+            if len(run.slip_ids)<1:
+                raise ValidationError('Cannot Send a blank payroll for approval. Please Generate some payslips by clicking the Generate Payslips button')
             if not run.first_approver_id.work_email:
                 raise UserError(_("Cannot send email: Approver %s has no email address.") % run.first_approver_id.name)
             template.with_context(lang=self.env.user.lang).send_mail(run.id, force_send=True, raise_exception=True)

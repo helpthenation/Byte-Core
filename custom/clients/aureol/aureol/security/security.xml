@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<odoo>
+    <data noupdate="0">
+
+
+        <record id="rule_hr_employee_as_payroll_officer" model="ir.rule">
+            <field name="name">Rule Employee as Payroll Officer</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_user'))]"/>
+        </record>
+
+        <record id="rule_hr_employee_as_payroll_manager" model="ir.rule">
+            <field name="name">Rule Employee as Payroll Manager</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+        </record>
+
+        <record id="rule_hr_payslip_as_payroll_officer" model="ir.rule">
+            <field name="name">Rule Payslips as Payroll Officer</field>
+            <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('employee_id.aureol_staff_category','=','general')]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_user'))]"/>
+        </record>
+
+
+        <record id="rule_hr_payslip_as_payroll_manager" model="ir.rule">
+            <field name="name">Rule Payslips as Payroll Manager</field>
+            <field name="model_id" ref="hr_payroll.model_hr_payslip"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+        </record>
+
+
+        <record id="rule_hr_payslip_run_as_payroll_officer" model="ir.rule">
+            <field name="name">Rule Payslip Run as Payroll Officer</field>
+            <field name="model_id" ref="hr_payroll.model_hr_payslip_run"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('aureol_staff_category','=','general')]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_user'))]"/>
+        </record>
+
+        <record id="rule_hr_payslip_run_as_payroll_manager" model="ir.rule">
+            <field name="name">Rule Payslip Run as Payroll Manager</field>
+            <field name="model_id" ref="hr_payroll.model_hr_payslip_run"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+        </record>
+
+        <record id="rule_hr_payroll_advice_as_payroll_officer" model="ir.rule">
+            <field name="name">Rule Payroll Advice as Payroll Officer</field>
+            <field name="model_id" ref="hr_payroll_advice.model_hr_payroll_advice"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('batch_id.aureol_staff_category','=','general')]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_user'))]"/>
+        </record>
+
+
+        <record id="rule_hr_payroll_advice_as_payroll_manager" model="ir.rule">
+            <field name="name">Rule Payroll Advice as Payroll Manager</field>
+            <field name="model_id" ref="hr_payroll_advice.model_hr_payroll_advice"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+        </record>
+
+        <record id="rule_hr_payroll_amendment_as_payroll_officer" model="ir.rule">
+            <field name="name">Rule Payroll Advice as Payroll Manager</field>
+            <field name="model_id" ref="hr_payslip_amendment.model_hr_payslip_amendment"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[('employee_id.aureol_staff_category','=','general')]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_user'))]"/>
+        </record>
+
+        <record id="rule_hr_payroll_amendment_as_payroll_manager" model="ir.rule">
+            <field name="name">Rule Payroll Advice as Payroll Manager</field>
+            <field name="model_id" ref="hr_payslip_amendment.model_hr_payslip_amendment"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+        </record>
+
+
+    </data>
+</odoo>

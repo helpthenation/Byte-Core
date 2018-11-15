@@ -21,6 +21,8 @@
             'report/nassit_report_template.xml',
             'report/nra_report_template.xml',
             'report/payroll_report_template.xml',
+            'security/security.xml'
+
             ],
     'installable': True,
 }
