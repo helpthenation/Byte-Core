@@ -5,11 +5,11 @@ from odoo.exceptions import ValidationError
 class HrPayrollLoan(models.Model):
     _inherit = 'hr.payroll.loan'
 
-    confirmer_id = fields.Many2one('res.users', string='Corfirmer',
+    confirmer_id = fields.Many2one('hr.employee', string='Corfirmer',
                                    default=lambda self: self.env.user.company_id.loan_confirmer_id)
-    approver_id = fields.Many2one('res.users', string='Approver',
+    approver_id = fields.Many2one('hr.employee', string='Approver',
                                    default=lambda self: self.env.user.company_id.loan_approver_id)
-    disburse_id = fields.Many2one('res.users', string='Disburser',
+    disburse_id = fields.Many2one('hr.employee', string='Disburser',
                                    default=lambda self: self.env.user.company_id.loan_disburse_id)
     state = fields.Selection(
         [
@@ -49,29 +49,29 @@ class HrPayrollLoan(models.Model):
             rec.write({'state':'approved'})
 
     @api.multi
-    def get_authorization(self, resuest):
+    def get_authorization(self, request):
         subject=''
         body=''
         for rec in self:
-            if resuest=='confirm':
+            if request=='confirm':
                 subject='Loan Confirmation'
-                default_email = self.confirmer_id.email
+                default_email = rec.confirmer_id.work_email
                 body='Dear ' + str(rec.confirmer_id.name) + " there is a new Loan request for "+str(rec.employee_id.name)\
                      +" with ID "+str(rec.employee_id.empid)+" awaiting your confirmation"\
                      +"\nLoan Type: "+str(rec.type_id.name)\
                 +"\nTotal Amount Requested: "+str(rec.amount)\
                 +"\nReference "+str(rec.name)
-            if resuest=='approve':
+            if request=='approve':
                 subject='Loan Approval'
-                default_email = self.approver_id.email
+                default_email = rec.approver_id.work_email
                 body='Dear ' + str(rec.approver_id.name) + " there is a new Loan request for "+str(rec.employee_id.name) \
                      + " with ID " + str(rec.employee_id.empid)+" awaiting your approval"\
                 +"\nLoan Type: "+str(rec.type_id.name)\
                 +"\nTotal Amount Requested: "+str(rec.amount)\
                 +"\nReference "+str(rec.name)
-            if resuest=='disburse':
+            if request=='disburse':
                 subject='Loan Disburse'
-                default_email = self.disburse_id.email
+                default_email = rec.disburse_id.work_email
                 body='Dear ' + str(rec.disburse_id.name) + " there is a new Loan request for "+str(rec.employee_id.name) \
                      + " with ID " + str(rec.employee_id.empid)+" awaiting Disbursement"\
                 +"\nLoan Type: "+str(rec.type_id.name)\

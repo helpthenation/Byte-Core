@@ -67,10 +67,18 @@
         <!-- Rule For Warehouse Request Record As A Department User -->
 
         <record id="rule_hr_employee_as_hr_user" model="ir.rule">
-            <field name="name">Rule EMployee as HR User</field>
+            <field name="name">Rule Employee as HR User</field>
             <field name="model_id" ref="hr.model_hr_employee"/>
             <field name="global" eval="True"/>
             <field name="domain_force">['|',('user_id','=',user.id),('department_id.manager_id.user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('group_pendrax_user'))]"/>
+        </record>
+
+        <record id="rule_hr_employee_department_as_hr_user" model="ir.rule">
+            <field name="name">Rule Employee Department as HR User</field>
+            <field name="model_id" ref="hr.model_hr_department"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
             <field name="groups" eval="[(4, ref('group_pendrax_user'))]"/>
         </record>
 
@@ -104,6 +112,22 @@
             <field name="global" eval="True"/>
             <field name="domain_force">['|',('employee_id.user_id','=',user.id),('employee_id.department_id.manager_id.user_id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('group_pendrax_user'))]"/>
+        </record>
+
+        <record id="rule_hr_contract_as_hr_user" model="ir.rule">
+            <field name="name">Rule Leave as HR User</field>
+            <field name="model_id" ref="hr_contract.model_hr_contract"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|',('employee_id.user_id','=',user.id),('employee_id.department_id.manager_id.user_id','=',user.id)]</field>
+            <field name="groups" eval="[(4, ref('group_pendrax_user'))]"/>
+        </record>
+
+        <record id="rule_hr_contract_as_hr_supervisor" model="ir.rule">
+            <field name="name">Rule Leave as HR Supervisor</field>
+            <field name="model_id" ref="hr_contract.model_hr_contract"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('group_pendrax_supervisor'))]"/>
         </record>
 
         <record id="rule_hr_leave_as_hr_officer" model="ir.rule">
