@@ -8,11 +8,11 @@
             <field name="arch" type="xml">
                 <field name="holiday_status_id" position="after">
                     <field name="state" readonly="1"/>
-                    <field name="leave_allowance"/>
+                    <field name="leave_allowance" attrs="{'readonly': [('state','not in','draft')]}"/>
                     <field name="f_approver" attrs="{'invisible': [('state','not in','draft')]}"/>
                     <field name="confirmer_id" attrs="{'invisible': [('state','not in','approve')]}"/>
                     <field name="approver_id" attrs="{'invisible': [('state','not in','confirm')]}"/>
-                    <field name="leave_allowance_disburser_id" attrs="{'invisible': [('state','not in','validate')]}"/>
+                    <field name="leave_allowance_disburser_id" attrs="{'readonly': [('state','not in','validate1')], 'invisible': [('state','not in','validate')]}"/>
                 </field>
 
                 <xpath expr="//header" position="replace">

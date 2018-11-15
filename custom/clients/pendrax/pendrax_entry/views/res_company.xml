@@ -28,6 +28,7 @@
                            string="Leave Settings">
                         <field name="leave_confirmer_id"/>
                         <field name="leave_approver_id"/>
+                        <field name="leave_allowance_disburser_id"/>
                     </group>
                 </xpath>
             </field>

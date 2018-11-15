@@ -8,8 +8,8 @@
             <field name="arch" type="xml">
                 <form>
                 	<header>
-                        <button name="update_admin_employees" type="object" string="Update Admin Staff" class="oe_highlight"/>
-                        <button name="update_guard_employees" type="object" string="Update Guard Staff" class="oe_highlight"/>
+                        <button name="reset_payroll" type="object" string="Reset Payroll" class="oe_highlight"/>
+                        <button name="reset_amendments" type="object" string="Reset Amendment" class="oe_highlight"/>
                         <button name="create_employees" type="object" string="Create Employees" class="oe_highlight"/>
                         <button name="name_id_valid" type="object" string="Update Employee Name" class="oe_highlight"/>
                         <button name="set_all_contracts" type="object" string="Set Contract" class="oe_highlight"/>

@@ -19,6 +19,27 @@ class WizardGetRecord(models.TransientModel):
     date = fields.Date(string='Date')
     dest_dir = fields.Char("Image Directory")
 
+
+
+    @api.multi
+    def reset_payroll(self):
+        self.ensure_one()
+        payslip_object = self.env['hr.payslip.run'].search([])
+        for run in payslip_object:
+            for slip in run.slip_ids:
+                slip.state='draft'
+            run.state='draft'
+
+
+
+    @api.multi
+    def reset_amendments(self):
+        self.ensure_one()
+        amendment_object = self.env['hr.payslip.amendment'].search([])
+        for amm in amendment_object:
+            amm.state='draft'
+
+
     @api.multi
     def name_id_valid(self):
         for rec in self.env['hr.employee'].search([]):

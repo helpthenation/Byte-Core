@@ -1,6 +1,6 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
-
+HOURS_PER_DAY = 8
 
 class HrHolidays(models.Model):
     _inherit = 'hr.holidays'

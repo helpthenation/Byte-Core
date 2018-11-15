@@ -70,9 +70,7 @@ class HrEmployeePersonalId(models.Model):
     def try_check_expiry(self):
         for rec in self.search([]):
             if rec.expiry_date and rec.expiry_notification_days:
-                days = relativedelta(
-                    fields.Date.from_string(rec.expiry_date),
-                    fields.Date.from_string(fields.Date.today())).days
+                days = (fields.Date.from_string(rec.expiry_date) - fields.date.today()).days
                 if rec.expiry_notification_days >= days and days>=0:
                     rec.send_expiry_notification(days)
                 if days<1:
