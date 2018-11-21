@@ -110,6 +110,7 @@ class HrEmployee(models.Model):
                                ('female', 'Female')],
                               required=True,
                               string='Gender')
+    is_guard = fields.Boolean(string="Is Guard", default=False)
     current_leave_state = fields.Selection(compute='_compute_leave_status', string="Current Leave Status",
                                            selection=[
                                                ('draft', 'To Submit'),

@@ -4,8 +4,7 @@
 <odoo>
     <data noupdate="0">
 
-        <delete id="pendrax_entry.group_operations_manager" model="res.groups"/>
-        <delete id="pendrax_entry.group_operations_officer" model="res.groups"/>
+        <delete id="group_maintenence_manager" model="res.groups"/>
         <record id="module_category_pendrax" model="ir.module.category">
             <field name="name">Pendrax ERP Management</field>
             <field name="sequence">22</field>
@@ -46,7 +45,7 @@
             <field name="implied_ids" eval="[(4, ref('pendrax_entry.group_operations_officer'))]"/>
         </record>
 
-        <record id="group_maintenence_manager" model="res.groups">
+        <record id="group_maintenance_manager" model="res.groups">
             <field name="name">Pendrax Maintenance Manager</field>
             <field name="category_id" ref="module_category_pendrax"/>
             <field name="implied_ids" eval="[(4, ref('pendrax_entry.group_pendrax_user'))]"/>
@@ -62,10 +61,8 @@
         <record id="group_pendrax_director" model="res.groups">
             <field name="name">Pendrax Director</field>
             <field name="category_id" ref="module_category_pendrax"/>
-            <field name="implied_ids" eval="[(4, ref('pendrax_entry.group_pendrax_manager'))]"/>
+            <field name="implied_ids" eval="[(4, ref('pendrax_entry.group_pendrax_manager')),(4, ref('pendrax_entry.group_maintenance_manager')),(4, ref('pendrax_entry.group_operations_manager')),(4, ref('pendrax_entry.group_finance_manager'))]"/>
         </record>
-
-        <!-- Rule For Warehouse Request Record As A Department User -->
 
         <record id="rule_hr_employee_as_hr_user" model="ir.rule">
             <field name="name">Rule Employee as HR User</field>
@@ -73,6 +70,14 @@
             <field name="global" eval="True"/>
             <field name="domain_force">['|',('user_id','=',user.id),('department_id.manager_id.user_id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('group_pendrax_user'))]"/>
+        </record>
+
+        <record id="rule_hr_employee_as_operations_officer" model="ir.rule">
+            <field name="name">Rule Employee as Operations Officer</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">['|',('user_id','=',user.id),('is_guard','=',True)]</field>
+            <field name="groups" eval="[(4, ref('group_operations_officer'))]"/>
         </record>
 
         <record id="rule_hr_employee_department_as_hr_user" model="ir.rule">
@@ -103,7 +108,7 @@
             <field name="name">Rule Loan as HR User</field>
             <field name="model_id" ref="hr_payroll_loan.model_hr_payroll_loan"/>
             <field name="global" eval="True"/>
-            <field name="domain_force">[('employee_id.user_id','=',user.id)]</field>
+            <field name="domain_force">['|',('employee_id.user_id','=',user.id),('employee_id.department_id.manager_id.user_id','=',user.id)]</field>
             <field name="groups" eval="[(4, ref('group_pendrax_user'))]"/>
         </record>
 
@@ -148,22 +153,39 @@
         </record>
 
         <record id="rule_hr_employee_as_hr_officer" model="ir.rule">
-            <field name="name">Rule EMployee as HR Officer</field>
+            <field name="name">Rule Employee as HR Officer</field>
             <field name="model_id" ref="hr.model_hr_employee"/>
             <field name="global" eval="True"/>
             <field name="domain_force">[(1,'=',1)]</field>
             <field name="groups" eval="[(4, ref('group_pendrax_officer'))]"/>
         </record>
 
-        <record id="rule_hr_employee_as_hr_managers" model="ir.rule">
-            <field name="name">Rule EMployee as HR Managers</field>
-            <field name="model_id" ref="hr.model_hr_employee"/>
+        <record id="rule_hr_leave_as_manager" model="ir.rule">
+            <field name="name">Rule Leave as Manager</field>
+            <field name="model_id" ref="hr_holidays.model_hr_holidays"/>
             <field name="global" eval="True"/>
             <field name="domain_force">[(1,'=',1)]</field>
             <field name="groups" eval="[(4, ref('group_finance_manager')),
-                                        (4, ref('group_pendrax_officer')),
-                                        (4, ref('group_operations_manager')),
-                                        (4, ref('group_maintenence_manager'))]"/>
+                                        (4, ref('group_pendrax_officer')),]"/>
+        </record>
+
+        <record id="rule_hr_loan_as_manager" model="ir.rule">
+            <field name="name">Rule Loan as Manager</field>
+            <field name="model_id" ref="hr_payroll_loan.model_hr_payroll_loan"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('group_finance_manager')),
+                                        (4, ref('group_pendrax_officer'))]"/>
+        </record>
+
+
+        <record id="rule_hr_employee_as_other_managers" model="ir.rule">
+            <field name="name">Rule Employee as HR Officer</field>
+            <field name="model_id" ref="hr.model_hr_employee"/>
+            <field name="global" eval="True"/>
+            <field name="domain_force">[(1,'=',1)]</field>
+            <field name="groups" eval="[(4, ref('group_maintenance_manager')),
+                                        (4, ref('group_operations_manager'))]"/>
         </record>
 
     </data>

@@ -11,6 +11,7 @@
         'hr_employee_name_split','hr_payroll_loan'
     ],
     'data': [
+        'security/security.xml',
         'views/hr_employee.xml',
         'views/occupation.xml',
         'views/qualification.xml',
@@ -26,7 +27,6 @@
         'report/approval_templates.xml',
         'views/religion.xml',
         'data/sequence.xml',
-        'security/security.xml',
         'security/ir.model.access.csv',
     ],
     'installable': True

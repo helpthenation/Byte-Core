@@ -94,13 +94,20 @@ class HrHolidays(models.Model):
 
     @api.multi
     def action_refuse(self):
-        if not self.env.user.has_group('hr_holidays.group_hr_holidays_user'):
-            raise UserError(_('Only an HR Officer or Manager can refuse leave requests.'))
+        if any([self.env.user.has_group('pendrax_entry.group_maintenance_manager'),
+                                    self.env.user.has_group('pendrax_entry.group_operations_manager'),
+                                    self.env.user.has_group('pendrax_entry.group_finance_manager')]) and not self.env.user.has_group('pendrax_entry.group_pendrax_director'):
+            if not self.env.user.has_group('pendrax_entry.group_pendrax_manager'):
+                if self.state!='approve':
+                    raise ValidationError('Operation not Permitted! You can only refuse leave requests Awaiting HOD Validation.')
+        if not self.env.user.has_group('pendrax_entry.group_pendrax_director'):
+            if self.state=='validate1':
+                raise ValidationError('Operation not Permitted! You are not allowed to refuse leave in this state')
 
         manager = self.env['hr.employee'].search([('user_id', '=', self.env.uid)], limit=1)
         for holiday in self:
             if holiday.state not in ['confirm', 'validate', 'validate1', 'approve']:
-                raise UserError(_('Leave request must be confirmed or validated in order to refuse it.'))
+                raise ValidationError('Leave request must be confirmed or validated in order to refuse it.')
 
             if holiday.state == 'validate1':
                 holiday.write({'state': 'refuse', 'manager_id': manager.id})
@@ -117,7 +124,7 @@ class HrHolidays(models.Model):
     @api.multi
     def action_validate(self):
         if not self.env.user.has_group('hr_holidays.group_hr_holidays_user'):
-            raise UserError(_('Only an HR Officer or Manager can approve leave requests.'))
+            raise ValidationError('Only an HR Officer or Manager can approve leave requests.')
 
         manager = self.env['hr.employee'].search([('user_id', '=', self.env.uid)], limit=1)
         for holiday in self:
@@ -161,4 +168,7 @@ class HrHolidays(models.Model):
                 leaves.action_approve()
                 if leaves and leaves[0].double_validation:
                     leaves.action_validate()
+        return True
+
+    def _check_state_access_right(self, vals):
         return True

@@ -25,7 +25,7 @@
                     <button string="Validate and Request Confirmation"
                             name="request_confirm"
                             states="approve" type="object"
-                            groups="pendrax_entry.group_pendrax_manager,pendrax_entry.group_maintenence_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
+                            groups="pendrax_entry.group_pendrax_manager,pendrax_entry.group_maintenance_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
                             class="oe_highlight"/>
                     <button string="Confirm and Request Approval"
                             name="request_approval"
@@ -39,7 +39,7 @@
                     <button string="Refuse"
                             name="action_refuse"
                             states="confirm,approve,validate1"
-                            groups="pendrax_entry.group_pendrax_manager,pendrax_entry.group_maintenence_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
+                            groups="pendrax_entry.group_pendrax_manager,pendrax_entry.group_maintenance_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
                             type="object" />
                     <button string="Reset to Draft"
                             name="action_draft"

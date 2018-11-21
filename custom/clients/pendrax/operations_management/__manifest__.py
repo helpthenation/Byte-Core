@@ -22,6 +22,7 @@
         'views/client_quote.xml',
         'views/client_quote_templates.xml',
         'views/operations.xml',
+        'security/ir.model.access.csv',
     ],
     'installable': True,
     'application': True,

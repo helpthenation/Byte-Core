@@ -66,31 +66,41 @@
                         <button name="cancel" string="Cancel" type="object"
                                 icon="fa-thumbs-o-down" class="oe_highlight"
                                 confirm="Are you sure you want to cancel this Client Request?"
-                                states="new,survey,survey_complete,process_quote,quotation_sent"/>
+                                states="new,survey,survey_complete,process_quote,quotation_sent"
+                                groups="pendrax_entry.group_operations_manager"
+                        />
 
                         <button name="start_survey" string="Start Survey" type="object"
+                                groups="pendrax_entry.group_operations_manager"
                                 icon="fa-briefcase" class="oe_highlight" states="new"/>
 
                         <button name="survey_complete" string="Authorize Survey" type="object"
+                                groups="pendrax_entry.group_operations_manager"
                                 icon="fa-briefcase" class="oe_highlight" states="survey"/>
 
                         <button name="process_quote" string="Request Quotation" type="object"
+                                groups="pendrax_entry.group_operations_manager"
                                 icon="fa-table" class="oe_highlight" states="survey_complete"/>
 
                         <button name="quotation_sent" string="Send Quotation" type="object"
+                                groups="pendrax_entry.group_finance_manager"
                                 icon="fa-table" class="oe_highlight" states="process_quote"/>
 
                         <button name="onboard" string="Signal Deployment" type="object"
+                                groups="pendrax_entry.group_finance_manager"
                                 icon="fa-sun-o" class="oe_highlight" states="quotation_sent"/>
 
                         <button name="activate" string="Activate" type="object"
+                                groups="pendrax_entry.group_operations_manager"
                                 icon="fa-sign-in" class="oe_highlight" states="onboard"/>
 
                         <button name="inactivate" string="Deactivate" type="object"
+                                groups="pendrax_entry.group_operations_manager"
                                 confirm="Are you sure you want to Deactivate this Client?"
                                 icon="fa-sign-out" class="oe_highlight" states="active"/>
 
                         <button name="renew" string="Renew" type="object"
+                                groups="pendrax_entry.group_operations_manager"
                                 icon="fa-play" class="oe_highlight" states="inactive,cancel"/>
 
                          <field name="state" widget="statusbar" nolabel="1"/>
@@ -133,7 +143,10 @@
                             <field name="survey_notes"/>
 
                         </page>
-                        <page name="quotation" string="Quotation" attrs="{'invisible':[('state','in',['new','survey_complete','survey'])]}">
+                        <page name="quotation"
+                              string="Quotation"
+                              groups="pendrax_entry.group_operations_manager,pendrax_entry.group_finance_manager"
+                              attrs="{'invisible':[('state','in',['new','survey_complete','survey'])]}">
                             <field  name="quotaton_line_ids" context="{'default_client_id': active_id}">
                                 <tree>
                                     <field name="ref"/>
@@ -239,7 +252,6 @@
     <menuitem id="menu_clients" name="Clients" parent="menu_operations_root" action="action_view_clients_list_form" sequence="1" groups="pendrax_entry.group_finance_manager,pendrax_entry.group_operations_officer"/>
     <menuitem id="menu_guards_root" name="Manage Guards" parent="menu_operations_root"  sequence="2" groups="pendrax_entry.group_operations_officer"/>
     <menuitem id="menu_zones" name="Zones" parent="menu_operations_root" action="action_view_zones_list_form" sequence="3" groups="pendrax_entry.group_operations_officer"/>
-    <menuitem id="menu_schedule" name="Scheduling" parent="menu_operations_root" action="action_view_zones_list_form" sequence="4" groups="pendrax_entry.group_operations_officer"/>
 
 
     <!-- Child Menu Items -->
