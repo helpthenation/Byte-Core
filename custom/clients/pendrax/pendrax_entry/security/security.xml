@@ -4,6 +4,8 @@
 <odoo>
     <data noupdate="0">
 
+        <delete id="pendrax_entry.group_operations_manager" model="res.groups"/>
+        <delete id="pendrax_entry.group_operations_officer" model="res.groups"/>
         <record id="module_category_pendrax" model="ir.module.category">
             <field name="name">Pendrax ERP Management</field>
             <field name="sequence">22</field>

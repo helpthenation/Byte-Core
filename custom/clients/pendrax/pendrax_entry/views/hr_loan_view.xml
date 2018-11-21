@@ -14,7 +14,7 @@
                            attrs="{'invisible': [('state','in','draft')], 'readonly': [('state','not in','wait_confirm')]}"/>
                     <field name="disburse_id"
                            groups="pendrax_entry.group_pendrax_director"
-                           attrs="{'invisible': [('state','not in',('approved', 'wait_approval','open','done'))]'readonly': [('state','not in','wait_approval')]}"/>
+                           attrs="{'invisible': [('state','not in',('approved', 'wait_approval','open','done'))],'readonly': [('state','not in','wait_approval')]}"/>
                 </field>
 
                 <xpath expr="//header" position="replace">
