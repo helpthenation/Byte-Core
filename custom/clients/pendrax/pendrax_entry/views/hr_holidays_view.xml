@@ -25,24 +25,29 @@
                     <button string="Validate and Request Confirmation"
                             name="request_confirm"
                             states="approve" type="object"
+                            confirm="Are you sure you want to Validate this leave request?"
                             groups="pendrax_entry.group_pendrax_manager,pendrax_entry.group_maintenance_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
                             class="oe_highlight"/>
                     <button string="Confirm and Request Approval"
+                            confirm="Are you sure you want to Confirm this leave request?"
                             name="request_approval"
                             states="confirm" type="object"
                             groups="pendrax_entry.group_pendrax_manager"
                             class="oe_highlight"/>
                     <button string="Approve"
                             name="action_validate" states="validate1"
+                            confirm="Are you sure you want to Approve this leave request?"
                             type="object" groups="pendrax_entry.group_pendrax_director"
                             class="oe_highlight"/>
                     <button string="Refuse"
                             name="action_refuse"
+                            confirm="Are you sure you want to Refuse this leave request?"
                             states="confirm,approve,validate1"
                             groups="pendrax_entry.group_pendrax_manager,pendrax_entry.group_maintenance_manager,pendrax_entry.group_finance_manager,pendrax_entry.group_operations_manager"
                             type="object" />
                     <button string="Reset to Draft"
                             name="action_draft"
+                            confirm="Are you sure you want to reset this leave request?"
                             type="object"
                             attrs="{'invisible': ['|', ('can_reset', '=', False), ('state', 'not in', ['confirm', 'refuse'])]}"/>
                     <field name="state" widget="statusbar"/>

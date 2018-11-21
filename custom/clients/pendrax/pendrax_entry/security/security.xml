@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE html>
-
 <odoo>
     <data noupdate="0">
 
@@ -177,7 +176,6 @@
             <field name="groups" eval="[(4, ref('group_finance_manager')),
                                         (4, ref('group_pendrax_officer'))]"/>
         </record>
-
 
         <record id="rule_hr_employee_as_other_managers" model="ir.rule">
             <field name="name">Rule Employee as HR Officer</field>
